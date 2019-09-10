@@ -1,7 +1,47 @@
+
 # Papers_AIDB
 Papers for database systems powered by artificial intelligence
 
 有关机器学习、神经网络、强化学习、自调优技术等在数据库系统中的应用的文章列表
+
+Table of Contents
+=================
+
+* [Papers\_AIDB](#papers_aidb)
+  * [Systems](#systems)
+  * [Data Access](#data-access)
+    * [Configuration Tuning](#configuration-tuning)
+    * [Physical Design](#physical-design)
+      * [Index](#index)
+        * [Index Structure](#index-structure)
+        * [Index Recommendation](#index-recommendation)
+      * [Schema &amp; Partition](#schema--partition)
+        * [Offline](#offline)
+        * [Online](#online)
+        * [DRL](#drl)
+    * [Workload](#workload)
+    * [Query Optimization](#query-optimization)
+      * [Cardinality Estimation](#cardinality-estimation)
+        * [传统估算方法的自调优](#%E4%BC%A0%E7%BB%9F%E4%BC%B0%E7%AE%97%E6%96%B9%E6%B3%95%E7%9A%84%E8%87%AA%E8%B0%83%E4%BC%98)
+          * [curve\-fitting](#curve-fitting)
+          * [KDE](#kde)
+          * [Histogram 自调优](#histogram-%E8%87%AA%E8%B0%83%E4%BC%98)
+        * [Machine Learning](#machine-learning)
+        * [Neural Networks](#neural-networks)
+      * [Cost Estimation](#cost-estimation)
+        * [非并发](#%E9%9D%9E%E5%B9%B6%E5%8F%91)
+        * [并发](#%E5%B9%B6%E5%8F%91)
+          * [静态](#%E9%9D%99%E6%80%81)
+          * [动态](#%E5%8A%A8%E6%80%81)
+      * [Join Optimization](#join-optimization)
+      * [Query Plan](#query-plan)
+    * [Query Execution](#query-execution)
+      * [Join](#join)
+      * [Adaptive Query Processing](#adaptive-query-processing)
+      * [Sheduling](#sheduling)
+    * [SQL Related](#sql-related)
+
+
 ## Systems
 * ***SageDB: A Learned Database System (CIDR 2019)***
 
