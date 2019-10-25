@@ -22,12 +22,9 @@ Table of Contents
     * [Workload](#workload)
     * [Query Optimization](#query-optimization)
       * [Cardinality Estimation](#cardinality-estimation)
-        * [传统估算方法的自调优](#%E4%BC%A0%E7%BB%9F%E4%BC%B0%E7%AE%97%E6%96%B9%E6%B3%95%E7%9A%84%E8%87%AA%E8%B0%83%E4%BC%98)
-          * [curve\-fitting](#curve-fitting)
-          * [KDE](#kde)
-          * [Histogram 自调优](#histogram-%E8%87%AA%E8%B0%83%E4%BC%98)
-        * [Machine Learning](#machine-learning)
-        * [Neural Networks](#neural-networks)
+        * [Based on data distribution](#based-on-data-distribution)
+        * [Based on history workload](#based-on-history-workload)
+        * [Combining data and workload](#combining-data-and-workload)
       * [Cost Estimation](#cost-estimation)
         * [非并发](#%E9%9D%9E%E5%B9%B6%E5%8F%91)
         * [并发](#%E5%B9%B6%E5%8F%91)
@@ -63,6 +60,9 @@ Table of Contents
 
 * An End-to-End Automatic Cloud Database Tuning System Using Deep Reinforcement Learning
 
+* External vs . Internal : An Essay on Machine Learning Agents for Autonomous Database Management Systems
+
+* QTune: A Query-Aware Database Tuning System with Deep Reinforcement Learning (VLDB 2019)
 ### Physical Design
 #### Index
 ##### Index Structure
@@ -98,28 +98,35 @@ Table of Contents
 * Query-based Workload Forecasting for Self-Driving Database Management Systems (SIGMOD 2018）
 ### Query Optimization
 #### Cardinality Estimation
-##### 传统估算方法的自调优
-###### curve-fitting
+
+##### Based on data distribution
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
-###### KDE
+
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
 
 * Estimating Join Selectivities using Bandwidth-Optimized Kernel Density Models (VLDB 2017)
-###### Histogram 自调优
-##### Machine Learning
-* LEO - DB2's LEarning optimizer （VLDB 2011)
 
-* A Black-Box Approach to Query Cardinality Estimation (CIDR 07)
+* Multi-Attribute Selectivity Estimation Using Deep Learning (arXiv 2019)
+* DeepDB: Learn from Data, not from Queries! (arXiv 2019)
 
-* Towards a learning optimizer for shared clouds (VLDB 2018)
-##### Neural Networks
+##### Based on history workload
 * Selectivity Estimation in Extensible Databases -A Neural Network Approach （VLDB 1998）
 
 * Effective query size estimation using neural networks.  (Applied Intelligence 2002)
 
+* LEO - DB2's LEarning optimizer （VLDB 2011)
+
+* A Black-Box Approach to Query Cardinality Estimation (CIDR 07)
+
 * Cardinality Estimation Using Neural Networks (2015)
 
+* Towards a learning optimizer for shared clouds (VLDB 2018)
+
 * Learning State Representations for Query Optimization with Deep Reinforcement Learning  (DEEM@SIGMOD2018)
+
+* Flexible Operator Embeddings via Deep Learning (arXiv 2019)
+
+##### Combining data and workload
 
 * Learned Cardinalities: Estimating Correlated Joins with Deep Learning （CIDR2019）
 
@@ -127,9 +134,7 @@ Table of Contents
 
 * Selectivity estimation for range predicates using lightweight models (VLDB 2019)
 
-* Flexible Operator Embeddings via Deep Learning (2019)
-
-* Multi-Attribute Selectivity Estimation Using Deep Learning (2019)
+* (Review) An Empirical Analysis of Deep Learning for Cardinality Estimation (arXiv 2019)
 #### Cost Estimation
 ##### 非并发
 
@@ -143,7 +148,9 @@ Table of Contents
  
 * Robust estimation of resource consumption for SQL queries using statistical techniques (VLDB 2012)
  
-* Plan-Structured Deep Neural Network Models for Query Performance Prediction
+* Plan-Structured Deep Neural Network Models for Query Performance Prediction (arXiv 2019)
+
+* An End-to-End Learning-based Cost Estimator (arXiv 2019)
 ##### 并发
 ###### 静态
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
