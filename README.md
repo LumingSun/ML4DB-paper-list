@@ -23,6 +23,7 @@ Table of Contents
     * [Query Optimization](#query-optimization)
       * [Cardinality Estimation](#cardinality-estimation)
         * [Based on data distribution](#based-on-data-distribution)
+        * [Based on bayesian network (graphical models)](#based-on-bayesian-network-(graphical-models))
         * [Based on history workload](#based-on-history-workload)
         * [Combining data and workload](#combining-data-and-workload)
       * [Cost Estimation](#cost-estimation)
@@ -107,7 +108,19 @@ Table of Contents
 * Estimating Join Selectivities using Bandwidth-Optimized Kernel Density Models (VLDB 2017)
 
 * Multi-Attribute Selectivity Estimation Using Deep Learning (arXiv 2019)
+
 * DeepDB: Learn from Data, not from Queries! (arXiv 2019)
+
+* Deep Unsupervised Cardinality Estimation (VLDB 2019) (Unsupervised)
+
+##### Based on bayesian network (graphical models)
+* Selectivity estimation using probabilistic models (SIGMOD 2001)
+
+* Lightweight graphical models for selectivity estimation without independence assumptions (VLDB 2011)
+
+* Efficiently adapting graphical models for selectivity estimation (VLDB 2013)
+
+* An Approach Based on Bayesian Networks for Query Selectivity Estimation (DASFAA 2019)
 
 ##### Based on history workload
 * Selectivity Estimation in Extensible Databases -A Neural Network Approach （VLDB 1998）
@@ -150,7 +163,7 @@ Table of Contents
  
 * Plan-Structured Deep Neural Network Models for Query Performance Prediction (arXiv 2019)
 
-* An End-to-End Learning-based Cost Estimator (arXiv 2019)
+* An End-to-End Learning-based Cost Estimator (arXiv 2019)(VLDB 2019)
 ##### 并发
 ###### 静态
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
