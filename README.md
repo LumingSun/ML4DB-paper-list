@@ -91,16 +91,16 @@ Table of Contents
 * GridFormation : Towards Self-Driven Online Data Partitioning using Reinforcement Learning (aiDM@SIGMOD 2018)
 ##### DRL
 * Learning a Partitioning Advisor with Deep Reinforcement Learning
-### Workload
+## Workload
 * Workload Models for Autonomic Database Management Systems (International Conference on Autonomic and Autonomous Systems 2006)
 
 * Towards workload shift detection and prediction for autonomic databases (CIKM 2007)
 
 * Query-based Workload Forecasting for Self-Driving Database Management Systems (SIGMOD 2018）
-### Query Optimization
-#### Cardinality Estimation
+## Query Optimization
+### Cardinality Estimation
 
-##### Based on data distribution
+#### Based on data distribution
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
 
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
@@ -113,7 +113,7 @@ Table of Contents
 
 * Deep Unsupervised Cardinality Estimation (VLDB 2019) (Unsupervised)
 
-##### Based on bayesian network (graphical models)
+#### Based on bayesian network (graphical models)
 * Selectivity estimation using probabilistic models (SIGMOD 2001)
 
 * Lightweight graphical models for selectivity estimation without independence assumptions (VLDB 2011)
@@ -122,7 +122,7 @@ Table of Contents
 
 * An Approach Based on Bayesian Networks for Query Selectivity Estimation (DASFAA 2019)
 
-##### Based on history workload
+#### Based on history workload
 * Selectivity Estimation in Extensible Databases -A Neural Network Approach （VLDB 1998）
 
 * Effective query size estimation using neural networks.  (Applied Intelligence 2002)
@@ -139,7 +139,7 @@ Table of Contents
 
 * Flexible Operator Embeddings via Deep Learning (arXiv 2019)
 
-##### Combining data and workload
+#### Combining data and workload
 
 * Learned Cardinalities: Estimating Correlated Joins with Deep Learning （CIDR2019）
 
@@ -148,8 +148,8 @@ Table of Contents
 * Selectivity estimation for range predicates using lightweight models (VLDB 2019)
 
 * (Review) An Empirical Analysis of Deep Learning for Cardinality Estimation (arXiv 2019)
-#### Cost Estimation
-##### 非并发
+### Cost Estimation
+#### 非并发
 
 * Statistical learning techniques for costing XML queries (VLDB 2005)
 
@@ -164,8 +164,8 @@ Table of Contents
 * Plan-Structured Deep Neural Network Models for Query Performance Prediction (arXiv 2019)
 
 * An End-to-End Learning-based Cost Estimator (arXiv 2019)(VLDB 2019)
-##### 并发
-###### 静态
+#### 并发
+##### 静态
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
 
 * Performance Prediction for Concurrent Database Workloads (SIGMOD 2011)
@@ -173,17 +173,17 @@ Table of Contents
 * Predicting completion times of batch query workloads using interaction-aware models and simulation(EDBT 2011)
 
 * Interaction-aware scheduling of report-generation workloads (VLDB 2011) （有调度策略）
-###### 动态
+##### 动态
 * Towards predicting query execution time for concurrent and dynamic database workloads (not machine learning) （VLDB 2014）
 
 * Contender: A Resource Modeling Approach for Concurrent Query Performance Prediction （EDBT 2014）
-#### Join Optimization
+### Join Optimization
 * Adaptive Optimization of Very Large Join Queries (SIGMOD 2018) (Not machine learning
 
 * Deep Reinforcement Learning for Join Order Enumeration (aiDM@SIGMOD 2018)
 
 * Learning to Optimize Join Queries With Deep Reinforcement Learning (ArXiv)
-#### Query Plan
+### Query Plan
 * Plan Selection Based on Query Clustering （VLDB 2002)
 
 * Cost-Based Query Optimization via AI Planning (AAAI 2014)
@@ -195,21 +195,22 @@ Table of Contents
 * Towards a Hands-Free Query Optimizer through Deep Learning （CIDR 2019)
 
 * Neo: A Learned Query Optimizer (2019)
-### Query Execution
-#### Join
+## Query Execution
+### Join
 * SkinnerDB : Regret-Bounded Query Evaluation via Reinforcement Learning (VLDB 2018)
-#### Adaptive Query Processing
+### Adaptive Query Processing
 * Eddies: Continuously adaptive query processing. (SIGMOD 2000)
 
 * Micro adaptivity in Vectorwise (SIGMOD 2013)
 
 * Cuttlefish: A Lightweight Primitive for Adaptive Query Processing (2018)
-#### Sheduling
+### Sheduling
 * Workload management for cloud databases via machine learning (ICDE 2016 WiseDB)
 * A learning-based service for cost and performance management of cloud databases （ICDEW 2017）(short version for WiSeDB)
 * WiSeDB: A Learning-based Workload Management Advisor for Cloud Databases (2016 VLDB)
-### SQL Related
+## SQL Related
 * Query2Vec (ArXiv)
 
 * An End-to-end Neural Natural Language Interface for Databases
 
+* SQLNet: Generating Structured Queries From Natural Language Without Reinforcement Learning （ArXiv）
