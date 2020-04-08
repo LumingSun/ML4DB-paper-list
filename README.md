@@ -59,9 +59,9 @@ Table of Contents
 
 * The Case for Automatic Database Administration using Deep Reinforcement Learning ( 2018 ArXiv)
 
-* An End-to-End Automatic Cloud Database Tuning System Using Deep Reinforcement Learning
+* An End-to-End Automatic Cloud Database Tuning System Using Deep Reinforcement Learning (SIGMOD 2019)
 
-* External vs . Internal : An Essay on Machine Learning Agents for Autonomous Database Management Systems
+* External vs. Internal : An Essay on Machine Learning Agents for Autonomous Database Management Systems
 
 * QTune: A Query-Aware Database Tuning System with Deep Reinforcement Learning (VLDB 2019)
 ### Physical Design
@@ -69,11 +69,19 @@ Table of Contents
 ##### Index Structure
 * Learning to hash for indexing big data - A survey (2016)
 
-* The Case for Learned Index Structures
+* The Case for Learned Index Structures (SIGMOD 2018)
 
 * A-Tree: A Bounded Approximate Index Structure (2017)
 
+* FITing-Tree: A Data-aware Index Structure (SIGMOD 2019)
+
 * Learned Indexes for Dynamic Workloads (2019)
+
+* SOSD: A Benchmark for Learned Indexes (2019)
+
+* Learning Multi-dimensional Indexes (2019)
+
+* ALEX: An Updatable Adaptive Learned Index (SIGMOD 2020)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 
@@ -109,7 +117,7 @@ Table of Contents
 
 * Multi-Attribute Selectivity Estimation Using Deep Learning (arXiv 2019)
 
-* DeepDB: Learn from Data, not from Queries! (arXiv 2019)
+* DeepDB: Learn from Data, not from Queries! (VLDB 2020)
 
 * Deep Unsupervised Cardinality Estimation (VLDB 2019) (Unsupervised)
 
@@ -118,9 +126,9 @@ Table of Contents
 
 * Lightweight graphical models for selectivity estimation without independence assumptions (VLDB 2011)
 
-* Efficiently adapting graphical models for selectivity estimation (VLDB 2013)
-
 * An Approach Based on Bayesian Networks for Query Selectivity Estimation (DASFAA 2019)
+
+* Efficiently adapting graphical models for selectivity estimation (VLDB 2013)
 
 #### Based on history workload
 * Selectivity Estimation in Extensible Databases -A Neural Network Approach （VLDB 1998）
@@ -194,7 +202,7 @@ Table of Contents
 
 * Towards a Hands-Free Query Optimizer through Deep Learning （CIDR 2019)
 
-* Neo: A Learned Query Optimizer (2019)
+* Neo: A Learned Query Optimizer (VLDB 2019)
 ## Query Execution
 ### Join
 * SkinnerDB : Regret-Bounded Query Evaluation via Reinforcement Learning (VLDB 2018)
