@@ -36,6 +36,7 @@ Table of Contents
   * [Query Execution](#query-execution)
     * [Join](#join)
     * [Adaptive Query Processing](#adaptive-query-processing)
+    * [Approximate Query Processing](#Approximate-query-processing)
     * [Sheduling](#sheduling)
   * [SQL Related](#sql-related)
 
@@ -64,6 +65,8 @@ Table of Contents
 * External vs. Internal : An Essay on Machine Learning Agents for Autonomous Database Management Systems
 
 * QTune: A Query-Aware Database Tuning System with Deep Reinforcement Learning (VLDB 2019)
+
+* Optimizing Databases by Learning Hidden Parameters of Solid State Drives (VLDB 2019)
 ### Physical Design
 #### Index
 ##### Index Structure
@@ -172,6 +175,10 @@ Table of Contents
 * Plan-Structured Deep Neural Network Models for Query Performance Prediction (arXiv 2019)
 
 * An End-to-End Learning-based Cost Estimator (arXiv 2019)(VLDB 2019)
+
+* Cost Models for Big Data Query Processing: Learning, Retrofitting, and Our Findings (2020)
+
+* DBMS Fitting: Why should we learn what we already know? (CIDR 2020)
 #### 并发
 ##### 静态
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
@@ -191,6 +198,8 @@ Table of Contents
 * Deep Reinforcement Learning for Join Order Enumeration (aiDM@SIGMOD 2018)
 
 * Learning to Optimize Join Queries With Deep Reinforcement Learning (ArXiv)
+
+* Reinforcement Learning with Tree-LSTM for Join Order Selection (ICDE 2020)
 ### Query Plan
 * Plan Selection Based on Query Clustering （VLDB 2002)
 
@@ -212,6 +221,9 @@ Table of Contents
 * Micro adaptivity in Vectorwise (SIGMOD 2013)
 
 * Cuttlefish: A Lightweight Primitive for Adaptive Query Processing (2018)
+### Approximate Query Processing
+*DBEST: Revisiting approximate query processing engines with machine learning models (SIGMOD 2019)
+
 ### Sheduling
 * Workload management for cloud databases via machine learning (ICDE 2016 WiseDB)
 * A learning-based service for cost and performance management of cloud databases （ICDEW 2017）(short version for WiSeDB)
@@ -222,3 +234,5 @@ Table of Contents
 * An End-to-end Neural Natural Language Interface for Databases
 
 * SQLNet: Generating Structured Queries From Natural Language Without Reinforcement Learning （ArXiv）
+
+* Facilitating SQL Query Composition and Analysis (ArXiv 2020)
