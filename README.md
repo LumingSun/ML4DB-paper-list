@@ -27,10 +27,8 @@ Table of Contents
         * [Based on history workload](#based-on-history-workload)
         * [Combining data and workload](#combining-data-and-workload)
     * [Cost Estimation](#cost-estimation)
-      * [非并发](#%E9%9D%9E%E5%B9%B6%E5%8F%91)
-      * [并发](#%E5%B9%B6%E5%8F%91)
-        * [静态](#%E9%9D%99%E6%80%81)
-        * [动态](#%E5%8A%A8%E6%80%81)
+      * [Single Query](#single-query)
+      * [Concurrent](#Concurrent)
     * [Join Optimization](#join-optimization)
     * [Query Plan](#query-plan)
   * [Query Execution](#query-execution)
@@ -160,8 +158,7 @@ Table of Contents
 
 * (Review) An Empirical Analysis of Deep Learning for Cardinality Estimation (arXiv 2019)
 ### Cost Estimation
-#### 非并发
-
+#### Single Query
 * Statistical learning techniques for costing XML queries (VLDB 2005)
 
 * Predicting multiple metrics for queries: Better decisions enabled by machine learning （icde 2009)
@@ -179,8 +176,7 @@ Table of Contents
 * Cost Models for Big Data Query Processing: Learning, Retrofitting, and Our Findings (2020)
 
 * DBMS Fitting: Why should we learn what we already know? (CIDR 2020)
-#### 并发
-##### 静态
+#### Concurrent
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
 
 * Performance Prediction for Concurrent Database Workloads (SIGMOD 2011)
@@ -188,7 +184,7 @@ Table of Contents
 * Predicting completion times of batch query workloads using interaction-aware models and simulation(EDBT 2011)
 
 * Interaction-aware scheduling of report-generation workloads (VLDB 2011) （有调度策略）
-##### 动态
+
 * Towards predicting query execution time for concurrent and dynamic database workloads (not machine learning) （VLDB 2014）
 
 * Contender: A Resource Modeling Approach for Concurrent Query Performance Prediction （EDBT 2014）
