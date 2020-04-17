@@ -225,7 +225,7 @@ Table of Contents
 
 * Cuttlefish: A Lightweight Primitive for Adaptive Query Processing (2018)
 ### Approximate Query Processing
-*DBEST: Revisiting approximate query processing engines with machine learning models (SIGMOD 2019)
+* DBEST: Revisiting approximate query processing engines with machine learning models (SIGMOD 2019)
 
 ### Sheduling
 * Workload management for cloud databases via machine learning (ICDE 2016 WiseDB)
