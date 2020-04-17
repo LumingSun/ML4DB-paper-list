@@ -16,9 +16,6 @@ Table of Contents
         * [Index Structure](#index-structure)
         * [Index Recommendation](#index-recommendation)
       * [Schema &amp; Partition](#schema--partition)
-        * [Offline](#offline)
-        * [Online](#online)
-        * [DRL](#drl)
   * [Workload](#workload)
   * [Query Optimization](#query-optimization)
       * [Cardinality Estimation](#cardinality-estimation)
@@ -83,6 +80,8 @@ Table of Contents
 * Learning Multi-dimensional Indexes (2019)
 
 * ALEX: An Updatable Adaptive Learned Index (SIGMOD 2020)
+
+* The ML-Index: A Multidimensional, Learned Index for Point, Range, and Nearest-Neighbor Queries (EDBT 2020)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 
@@ -92,14 +91,15 @@ Table of Contents
 
 * AI Meets AI: Leveraging Query Executions to Improve Index Recommendations (SIGMOD 2019)
 #### Schema & Partition
-##### Offline
 * Schism: a Workload-Driven Approach to Database Replication and Partitioning (VLDB 2010)
 
 * Automated Data Partitioning for Highly Scalable and Strongly Consistent Transactions (2016 Transactions on Parallel and distributed systems)
-##### Online
+
 * GridFormation : Towards Self-Driven Online Data Partitioning using Reinforcement Learning (aiDM@SIGMOD 2018)
-##### DRL
-* Learning a Partitioning Advisor with Deep Reinforcement Learning
+
+* Learning a Partitioning Advisor with Deep Reinforcement Learning (2019)
+
+* Qd-tree: Learning Data Layouts for Big Data Analytics (SIGMOD 2020)
 ## Workload
 * Workload Models for Autonomic Database Management Systems (International Conference on Autonomic and Autonomous Systems 2006)
 
@@ -148,6 +148,13 @@ Table of Contents
 
 * Flexible Operator Embeddings via Deep Learning (arXiv 2019)
 
+* Improved Cardinality Estimation by Learning Queries Containment Rates (EDBT 2020)
+
+* NN-based Transformation of Any SQL Cardinality Estimator for Handling DISTINCT, AND, OR and NOT (2020)
+
+* QuickSel: Quick Selectivity Learning with Mixture Models (2020)
+
+* Bao: Learning to Steer Query Optimizers (2020)
 #### Combining data and workload
 
 * Learned Cardinalities: Estimating Correlated Joins with Deep Learning （CIDR2019）
