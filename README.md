@@ -8,7 +8,7 @@ Table of Contents
 =================
 
 * [Papers\_AIDB](#papers_aidb)
-  * [Systems](#systems)
+  * [System Level](#systems)
   * [Data Access](#data-access)
     * [Configuration Tuning](#configuration-tuning)
     * [Physical Design](#physical-design)
@@ -36,7 +36,7 @@ Table of Contents
   * [SQL Related](#sql-related)
 
 
-## Systems
+## System Level
 * ***SageDB: A Learned Database System (CIDR 2019)***
 
 * Database Learning: Toward a Database that Becomes Smarter Every Time (SIGMOD 2017)
@@ -45,6 +45,7 @@ Table of Contents
 
 * Self-Driving : From General Purpose to Specialized DBMSs (Phd@PVLDB 2018)  
 
+* Active Learning for ML Enhanced Database Systems (SIGMOD 2020)
 ## Data Access
 ### Configuration Tuning
 * SARD: A statistical approach for ranking database tuning parameters (ICDEW, 2008)
@@ -62,6 +63,8 @@ Table of Contents
 * QTune: A Query-Aware Database Tuning System with Deep Reinforcement Learning (VLDB 2019)
 
 * Optimizing Databases by Learning Hidden Parameters of Solid State Drives (VLDB 2019)
+
+* iBTune: Individualized Buffer Tuning for Large-scale Cloud Databases (VLDB 2019)
 ### Physical Design
 #### Index
 ##### Index Structure
@@ -229,8 +232,16 @@ Table of Contents
 
 ### Sheduling
 * Workload management for cloud databases via machine learning (ICDE 2016 WiseDB)
+
 * A learning-based service for cost and performance management of cloud databases （ICDEW 2017）(short version for WiSeDB)
+
 * WiSeDB: A Learning-based Workload Management Advisor for Cloud Databases (2016 VLDB)
+
+(transaction 👇)
+
+* Scheduling OLTP transactions via learned abort prediction (aiDM@SIGMOD 2019)
+
+* Scheduling OLTP Transactions via Machine Learning （2019）
 ## SQL Related
 * Query2Vec (ArXiv)
 
