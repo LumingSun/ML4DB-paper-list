@@ -29,6 +29,7 @@ Table of Contents
     * [Join Optimization](#join-optimization)
     * [Query Plan](#query-plan)
   * [Query Execution](#query-execution)
+    * [Sort](#sort)
     * [Join](#join)
     * [Adaptive Query Processing](#adaptive-query-processing)
     * [Approximate Query Processing](#Approximate-query-processing)
@@ -125,6 +126,9 @@ Table of Contents
 
 * Deep Unsupervised Cardinality Estimation (VLDB 2019) (Unsupervised)
 
+* Deep Learning Models for Selectivity Estimation of Multi-Attribute Queries (SIGMOD 2020)
+
+* NeuroCard: One Cardinality Estimator for All Tables (2020)
 #### Based on bayesian network (graphical models)
 * Selectivity estimation using probabilistic models (SIGMOD 2001)
 
@@ -155,7 +159,7 @@ Table of Contents
 
 * NN-based Transformation of Any SQL Cardinality Estimator for Handling DISTINCT, AND, OR and NOT (2020)
 
-* QuickSel: Quick Selectivity Learning with Mixture Models (2020)
+* QuickSel: Quick Selectivity Learning with Mixture Models (SIGMOD 2020)
 
 * Bao: Learning to Steer Query Optimizers (2020)
 #### Combining data and workload
@@ -219,6 +223,8 @@ Table of Contents
 
 * Neo: A Learned Query Optimizer (VLDB 2019)
 ## Query Execution
+### Sort
+* The Case for a Learned Sorting Algorithm (SIGMOD 2020)
 ### Join
 * SkinnerDB : Regret-Bounded Query Evaluation via Reinforcement Learning (VLDB 2018)
 ### Adaptive Query Processing
