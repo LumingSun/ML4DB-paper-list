@@ -8,7 +8,7 @@ Table of Contents
 =================
 
 * [Papers\_AIDB](#papers_aidb)
-  * [System Level](#systems)
+  * [System & Tutorial](#systems-&-tutorial)
   * [Data Access](#data-access)
     * [Configuration Tuning](#configuration-tuning)
     * [Physical Design](#physical-design)
@@ -19,10 +19,8 @@ Table of Contents
   * [Workload](#workload)
   * [Query Optimization](#query-optimization)
       * [Cardinality Estimation](#cardinality-estimation)
-        * [Based on data distribution](#based-on-data-distribution)
-        * [Based on bayesian network (graphical models)](#based-on-bayesian-network-(graphical-models))
-        * [Based on history workload](#based-on-history-workload)
-        * [Combining data and workload](#combining-data-and-workload)
+        * [Data-based](#data-based)
+        * [Query-based](#query-based)
     * [Cost Estimation](#cost-estimation)
       * [Single Query](#single-query)
       * [Concurrent](#Concurrent)
@@ -37,7 +35,7 @@ Table of Contents
   * [SQL Related](#sql-related)
 
 
-## System Level
+## System & Tutorial
 * ***SageDB: A Learned Database System (CIDR 2019)***
 
 * Database Learning: Toward a Database that Becomes Smarter Every Time (SIGMOD 2017)
@@ -47,6 +45,8 @@ Table of Contents
 * Self-Driving : From General Purpose to Specialized DBMSs (Phd@PVLDB 2018)  
 
 * Active Learning for ML Enhanced Database Systems (SIGMOD 2020)
+
+* Database Meets Artificial Intelligence: A Survey (TKDE 2020)
 ## Data Access
 ### Configuration Tuning
 * SARD: A statistical approach for ranking database tuning parameters (ICDEW, 2008)
@@ -113,23 +113,25 @@ Table of Contents
 ## Query Optimization
 ### Cardinality Estimation
 
-#### Based on data distribution
-* Adaptive selectivity estimation using query feedback (SIGMOD 1994)
-
+#### Data-based
+(kernal density model)
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
 
 * Estimating Join Selectivities using Bandwidth-Optimized Kernel Density Models (VLDB 2017)
 
-* Multi-Attribute Selectivity Estimation Using Deep Learning (arXiv 2019)
-
+(sum-product network)
 * DeepDB: Learn from Data, not from Queries! (VLDB 2020)
 
-* Deep Unsupervised Cardinality Estimation (VLDB 2019) (Unsupervised)
+(autoregressive model)
+* Deep Unsupervised Cardinality Estimation (VLDB 2019) 
+
+* Multi-Attribute Selectivity Estimation Using Deep Learning (arXiv 2019)
 
 * Deep Learning Models for Selectivity Estimation of Multi-Attribute Queries (SIGMOD 2020)
 
 * NeuroCard: One Cardinality Estimator for All Tables (2020)
-#### Based on bayesian network (graphical models)
+
+(graphical models)
 * Selectivity estimation using probabilistic models (SIGMOD 2001)
 
 * Lightweight graphical models for selectivity estimation without independence assumptions (VLDB 2011)
@@ -138,7 +140,9 @@ Table of Contents
 
 * Efficiently adapting graphical models for selectivity estimation (VLDB 2013)
 
-#### Based on history workload
+#### Query-based
+* Adaptive selectivity estimation using query feedback (SIGMOD 1994)
+
 * Selectivity Estimation in Extensible Databases -A Neural Network Approach （VLDB 1998）
 
 * Effective query size estimation using neural networks.  (Applied Intelligence 2002)
@@ -153,17 +157,6 @@ Table of Contents
 
 * Learning State Representations for Query Optimization with Deep Reinforcement Learning  (DEEM@SIGMOD2018)
 
-* Flexible Operator Embeddings via Deep Learning (arXiv 2019)
-
-* Improved Cardinality Estimation by Learning Queries Containment Rates (EDBT 2020)
-
-* NN-based Transformation of Any SQL Cardinality Estimator for Handling DISTINCT, AND, OR and NOT (2020)
-
-* QuickSel: Quick Selectivity Learning with Mixture Models (SIGMOD 2020)
-
-* Bao: Learning to Steer Query Optimizers (2020)
-#### Combining data and workload
-
 * Learned Cardinalities: Estimating Correlated Joins with Deep Learning （CIDR2019）
 
 * Estimating Cardinalities with Deep Sketches (SIGMOD 2019)
@@ -171,6 +164,14 @@ Table of Contents
 * Selectivity estimation for range predicates using lightweight models (VLDB 2019)
 
 * (Review) An Empirical Analysis of Deep Learning for Cardinality Estimation (arXiv 2019)
+
+* Flexible Operator Embeddings via Deep Learning (arXiv 2019)
+
+* Improved Cardinality Estimation by Learning Queries Containment Rates (EDBT 2020)
+
+* NN-based Transformation of Any SQL Cardinality Estimator for Handling DISTINCT, AND, OR and NOT (2020)
+
+* QuickSel: Quick Selectivity Learning with Mixture Models (SIGMOD 2020)
 ### Cost Estimation
 #### Single Query
 * Statistical learning techniques for costing XML queries (VLDB 2005)
@@ -222,6 +223,8 @@ Table of Contents
 * Towards a Hands-Free Query Optimizer through Deep Learning （CIDR 2019)
 
 * Neo: A Learned Query Optimizer (VLDB 2019)
+
+* Bao: Learning to Steer Query Optimizers (2020)
 ## Query Execution
 ### Sort
 * The Case for a Learned Sorting Algorithm (SIGMOD 2020)
