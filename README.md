@@ -203,6 +203,8 @@ Table of Contents
 * Towards predicting query execution time for concurrent and dynamic database workloads (not machine learning) （VLDB 2014）
 
 * Contender: A Resource Modeling Approach for Concurrent Query Performance Prediction （EDBT 2014）
+
+* Query Performance Prediction for Concurrent Queries using Graph Embedding (VLDB 2020)
 ### Join Optimization
 * Adaptive Optimization of Very Large Join Queries (SIGMOD 2018) (Not machine learning
 
