@@ -1,5 +1,5 @@
 
-# AIDB/ML4DB (machine learning for database)
+# [Paper List] AI4DB / autonomous database / 智能数据库 / self-driving database
 Paper list for database systems with artificial intelligence (machine learning, deep learning, reinforcement learning)
 
 有关机器学习、神经网络、强化学习、自调优技术等在数据库系统中的应用的文章列表
