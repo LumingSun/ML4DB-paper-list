@@ -4,6 +4,10 @@ Paper list for database systems with artificial intelligence (machine learning, 
 
 有关机器学习、神经网络、强化学习、自调优技术等在数据库系统中的应用的文章列表
 
+Welcome to PR! 
+
+欢迎大家补充！
+
 Table of Contents
 =================
 
