@@ -252,6 +252,8 @@ Table of Contents
 
 * WiSeDB: A Learning-based Workload Management Advisor for Cloud Databases (2016 VLDB)
 
+* Buffer Pool Aware Query Scheduling via Deep Reinforcement Learning (Computer Science 2020)
+
 (transaction 👇)
 
 * Scheduling OLTP transactions via learned abort prediction (aiDM@SIGMOD 2019)
