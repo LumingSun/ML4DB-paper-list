@@ -98,6 +98,8 @@ Table of Contents
 * Self-Tuning Database Systems: A Decade of Progress (VLDB 2007)
 
 * AI Meets AI: Leveraging Query Executions to Improve Index Recommendations (SIGMOD 2019)
+
+* Automated Database Indexing using Model-free Reinforcement Learning (2020)
 #### Schema & Partition
 * Schism: a Workload-Driven Approach to Database Replication and Partitioning (VLDB 2010)
 
@@ -114,6 +116,8 @@ Table of Contents
 * Towards workload shift detection and prediction for autonomic databases (CIKM 2007)
 
 * Query-based Workload Forecasting for Self-Driving Database Management Systems (SIGMOD 2018）
+
+* Diagnosing Root Causes of Intermittent Slow Queries in Cloud Databases (VLDB 2020)
 ## Query Optimization
 ### Cardinality Estimation
 
