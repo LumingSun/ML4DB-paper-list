@@ -16,6 +16,7 @@ Table of Contents
   * [Data Access](#data-access)
     * [Configuration Tuning](#configuration-tuning)
     * [Physical Design](#physical-design)
+      * [LSM-tree related](#lsm-tree-related)
       * [Index](#index)
         * [Index Structure](#index-structure)
         * [Index Recommendation](#index-recommendation)
@@ -71,6 +72,8 @@ Table of Contents
 
 * iBTune: Individualized Buffer Tuning for Large-scale Cloud Databases (VLDB 2019)
 ### Physical Design
+#### LSM-tree related
+* Leaper: A Learned Prefetcher for Cache Invalidation in LSM-tree based Storage Engines （VLDB 2020）
 #### Index
 ##### Index Structure
 * Learning to hash for indexing big data - A survey (2016)
@@ -90,6 +93,10 @@ Table of Contents
 * ALEX: An Updatable Adaptive Learned Index (SIGMOD 2020)
 
 * The ML-Index: A Multidimensional, Learned Index for Point, Range, and Nearest-Neighbor Queries (EDBT 2020)
+
+* Effectively Learning Spatial Indices (VLDB 2020)
+
+* Stable Learned Bloom Filters for Data Streams (VLDB 2020)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 
@@ -180,6 +187,8 @@ Table of Contents
 * NN-based Transformation of Any SQL Cardinality Estimator for Handling DISTINCT, AND, OR and NOT (2020)
 
 * QuickSel: Quick Selectivity Learning with Mixture Models (SIGMOD 2020)
+
+* Efficiently Approximating Selectivity Functions using Low Overhead Regression Models (VLDB 2020)
 ### Cost Estimation
 #### Single Query
 * Statistical learning techniques for costing XML queries (VLDB 2005)
