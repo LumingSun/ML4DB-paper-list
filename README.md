@@ -52,6 +52,8 @@ Table of Contents
 * Active Learning for ML Enhanced Database Systems (SIGMOD 2020)
 
 * Database Meets Artificial Intelligence: A Survey (TKDE 2020)
+
+* Self-driving database systems: a conceptual approach (Distributed and Parallel Databases 2020)
 ## Data Access
 ### Configuration Tuning
 * SARD: A statistical approach for ranking database tuning parameters (ICDEW, 2008)
@@ -71,6 +73,10 @@ Table of Contents
 * Optimizing Databases by Learning Hidden Parameters of Solid State Drives (VLDB 2019)
 
 * iBTune: Individualized Buffer Tuning for Large-scale Cloud Databases (VLDB 2019)
+
+* Black or White? How to Develop an AutoTuner for Memory-based Analytics (SIGMOD 2020)
+
+* Learning Efficient Parameter Server Synchronization Policies for Distributed SGD (ICLR 2020)
 ### Physical Design
 #### LSM-tree related
 * Leaper: A Learned Prefetcher for Cache Invalidation in LSM-tree based Storage Engines （VLDB 2020）
@@ -97,6 +103,12 @@ Table of Contents
 * Effectively Learning Spatial Indices (VLDB 2020)
 
 * Stable Learned Bloom Filters for Data Streams (VLDB 2020)
+
+* START — Self-Tuning Adaptive Radix Tree (ICDEW 2020)
+
+* Learned Data Structures (2020)
+
+* The ML-Index: A Multidimensional, Learned Index for Point, Range, and Nearest-Neighbor Queries (EDBT 2020)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 
@@ -107,6 +119,8 @@ Table of Contents
 * AI Meets AI: Leveraging Query Executions to Improve Index Recommendations (SIGMOD 2019)
 
 * Automated Database Indexing using Model-free Reinforcement Learning (2020)
+
+* DRLindex: deep reinforcement learning index advisor for a cluster database (2020 Symposium on International Database Engineering & Applications)
 #### Schema & Partition
 * Schism: a Workload-Driven Approach to Database Replication and Partitioning (VLDB 2010)
 
@@ -208,6 +222,8 @@ Table of Contents
 * Cost Models for Big Data Query Processing: Learning, Retrofitting, and Our Findings (2020)
 
 * DBMS Fitting: Why should we learn what we already know? (CIDR 2020)
+
+* A Note On Operator-Level Query Execution Cost Modeling (2020)
 #### Concurrent
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
 
@@ -244,6 +260,8 @@ Table of Contents
 * Neo: A Learned Query Optimizer (VLDB 2019)
 
 * Bao: Learning to Steer Query Optimizers (2020)
+
+* ML-based Cross-Platform Query Optimization (ICDE 2020)
 ## Query Execution
 ### Sort
 * The Case for a Learned Sorting Algorithm (SIGMOD 2020)
@@ -258,6 +276,11 @@ Table of Contents
 ### Approximate Query Processing
 * DBEST: Revisiting approximate query processing engines with machine learning models (SIGMOD 2019)
 
+* LAQP: Learning-based Approximate Query Processing (2020)
+
+* Approximate Query Processing for Data Exploration using Deep Generative Models (ICDE 2020)
+
+* ML-AQP: Query-Driven Approximate Query Processing based on Machine Learning (2020)
 ### Sheduling
 * Workload management for cloud databases via machine learning (ICDE 2016 WiseDB)
 
@@ -267,6 +290,7 @@ Table of Contents
 
 * Buffer Pool Aware Query Scheduling via Deep Reinforcement Learning (Computer Science 2020)
 
+* CrocodileDB: Efficient Database Execution through Intelligent Deferment (CIDT 2020)
 (transaction 👇)
 
 * Scheduling OLTP transactions via learned abort prediction (aiDM@SIGMOD 2019)
