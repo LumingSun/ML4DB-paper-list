@@ -303,3 +303,5 @@ Table of Contents
 * SQLNet: Generating Structured Queries From Natural Language Without Reinforcement Learning （ArXiv）
 
 * Facilitating SQL Query Composition and Analysis (ArXiv 2020)
+
+* Natural language to SQL: Where are we today? (VLDB 2020）
