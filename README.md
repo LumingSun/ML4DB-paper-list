@@ -244,6 +244,9 @@ Table of Contents
 * Learning to Optimize Join Queries With Deep Reinforcement Learning (ArXiv)
 
 * Reinforcement Learning with Tree-LSTM for Join Order Selection (ICDE 2020)
+
+* Research Challenges in Deep Reinforcement Learning-based Join Query Optimization (aiDM 2020)
+
 ### Query Plan
 * Plan Selection Based on Query Clustering （VLDB 2002)
 
@@ -290,6 +293,7 @@ Table of Contents
 
 * CrocodileDB: Efficient Database Execution through Intelligent Deferment (CIDT 2020)
 
+* Buffer Pool Aware Query Scheduling via Deep Reinforcement Learning (2020)
 (transaction 👇)
 
 * Scheduling OLTP transactions via learned abort prediction (aiDM@SIGMOD 2019)
