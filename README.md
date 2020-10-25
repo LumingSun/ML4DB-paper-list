@@ -119,6 +119,8 @@ Table of Contents
 * Automated Database Indexing using Model-free Reinforcement Learning (2020)
 
 * DRLindex: deep reinforcement learning index advisor for a cluster database (2020 Symposium on International Database Engineering & Applications)
+
+* An Index Advisor Using Deep Reinforcement Learning (CIKM 2020)
 #### Schema & Partition
 * Schism: a Workload-Driven Approach to Database Replication and Partitioning (VLDB 2010)
 
