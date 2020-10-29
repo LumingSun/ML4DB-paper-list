@@ -158,8 +158,9 @@ Table of Contents
 
 * Deep Learning Models for Selectivity Estimation of Multi-Attribute Queries (SIGMOD 2020)
 
-* NeuroCard: One Cardinality Estimator for All Tables (2020)
+* NeuroCard: One Cardinality Estimator for All Tables (VLDB 2020)
 
+* Learning to Sample: Counting with Complex Queries (VLDB 2020)
 (graphical models)
 * Selectivity estimation using probabilistic models (SIGMOD 2001)
 
