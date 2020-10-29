@@ -107,6 +107,8 @@ Table of Contents
 * Learned Data Structures (2020)
 
 * The ML-Index: A Multidimensional, Learned Index for Point, Range, and Nearest-Neighbor Queries (EDBT 2020)
+
+* The PGM-index: a fully-dynamic compressed learned index with provable worst-case bounds (VLDB 2020)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 
