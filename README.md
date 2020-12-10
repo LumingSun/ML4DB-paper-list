@@ -75,6 +75,10 @@ Table of Contents
 * Black or White? How to Develop an AutoTuner for Memory-based Analytics (SIGMOD 2020)
 
 * Learning Efficient Parameter Server Synchronization Policies for Distributed SGD (ICLR 2020)
+
+* Too Many Knobs to Tune? Towards Faster Database Tuning by Pre-selecting Important Knobs (HotStorage 2020)
+
+* Dynamic Configuration Tuning of Working Database Management Systems (LifeTech 2020)
 ### Physical Design
 #### LSM-tree related
 * Leaper: A Learned Prefetcher for Cache Invalidation in LSM-tree based Storage Engines （VLDB 2020）
@@ -109,6 +113,9 @@ Table of Contents
 * The ML-Index: A Multidimensional, Learned Index for Point, Range, and Nearest-Neighbor Queries (EDBT 2020)
 
 * The PGM-index: a fully-dynamic compressed learned index with provable worst-case bounds (VLDB 2020)
+
+* A Tutorial on Learned Multi-dimensional Indexes (SIGSPATIAL 2020)
+
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 
@@ -168,9 +175,11 @@ Table of Contents
 
 * Lightweight graphical models for selectivity estimation without independence assumptions (VLDB 2011)
 
+* Efficiently adapting graphical models for selectivity estimation (VLDB 2013)
+
 * An Approach Based on Bayesian Networks for Query Selectivity Estimation (DASFAA 2019)
 
-* Efficiently adapting graphical models for selectivity estimation (VLDB 2013)
+* FLAT: Fast, Lightweight and Accurate Method for Cardinality Estimation (2020 arXiv)
 
 #### Query-based
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
