@@ -115,7 +115,7 @@ Table of Contents
 * The PGM-index: a fully-dynamic compressed learned index with provable worst-case bounds (VLDB 2020)
 
 * A Tutorial on Learned Multi-dimensional Indexes (SIGSPATIAL 2020)
-
+* Benchmarking Learned Indexes (VLDB 2020)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 
@@ -148,6 +148,8 @@ Table of Contents
 * Query-based Workload Forecasting for Self-Driving Database Management Systems (SIGMOD 2018）
 
 * Diagnosing Root Causes of Intermittent Slow Queries in Cloud Databases (VLDB 2020)
+
+* Seagull: An Infrastructure for Load Prediction and Optimized Resource Allocation (VLDB 2020)
 ## Query Optimization
 ### Cardinality Estimation
 
