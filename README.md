@@ -14,6 +14,7 @@ Table of Contents
 * [Data Access](#data-access)
   * [Configuration Tuning](#configuration-tuning)
   * [Physical Design](#physical-design)
+    * [Learned structure](#learned-structure)
     * [LSM-tree related](#lsm-tree-related)
     * [Index](#index)
       * [Index Structure](#index-structure)
@@ -80,6 +81,8 @@ Table of Contents
 
 * Dynamic Configuration Tuning of Working Database Management Systems (LifeTech 2020)
 ### Physical Design
+#### Learned structure
+* Stacked Filters: Learning to Filter by Structure (VLDB 2021)
 #### LSM-tree related
 * Leaper: A Learned Prefetcher for Cache Invalidation in LSM-tree based Storage Engines （VLDB 2020）
 #### Index
@@ -183,6 +186,7 @@ Table of Contents
 
 * FLAT: Fast, Lightweight and Accurate Method for Cardinality Estimation (2020 arXiv)
 
+* Astrid: Accurate Selectivity Estimation for String Predicates using Deep Learning (VLDB 2021)
 #### Query-based
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
 
