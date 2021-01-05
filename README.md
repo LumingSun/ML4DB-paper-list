@@ -118,7 +118,10 @@ Table of Contents
 * The PGM-index: a fully-dynamic compressed learned index with provable worst-case bounds (VLDB 2020)
 
 * A Tutorial on Learned Multi-dimensional Indexes (SIGSPATIAL 2020)
+
 * Benchmarking Learned Indexes (VLDB 2020)
+
+* Why Are Learned Indexes So Effective? (ICML 2020)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 
@@ -143,6 +146,8 @@ Table of Contents
 * Learning a Partitioning Advisor with Deep Reinforcement Learning (2019)
 
 * Qd-tree: Learning Data Layouts for Big Data Analytics (SIGMOD 2020)
+
+* A Genetic Optimization Physical Planner for Big Data Warehouses (2020)
 ## Workload
 * Workload Models for Autonomic Database Management Systems (International Conference on Autonomic and Autonomous Systems 2006)
 
@@ -187,6 +192,8 @@ Table of Contents
 * FLAT: Fast, Lightweight and Accurate Method for Cardinality Estimation (2020 arXiv)
 
 * Astrid: Accurate Selectivity Estimation for String Predicates using Deep Learning (VLDB 2021)
+
+* BayesCard: A Unified Bayesian Framework for Cardinality Estimation (2020)
 #### Query-based
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
 
@@ -283,6 +290,8 @@ Table of Contents
 * Bao: Learning to Steer Query Optimizers (2020)
 
 * ML-based Cross-Platform Query Optimization (ICDE 2020)
+
+* Learning-based Declarative Query Optimization (2021)
 ## Query Execution
 ### Sort
 * The Case for a Learned Sorting Algorithm (SIGMOD 2020)
