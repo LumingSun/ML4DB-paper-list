@@ -327,6 +327,7 @@ Table of Contents
 * CrocodileDB: Efficient Database Execution through Intelligent Deferment (CIDT 2020)
 
 * Buffer Pool Aware Query Scheduling via Deep Reinforcement Learning (2020)
+
 (transaction 👇)
 
 * Scheduling OLTP transactions via learned abort prediction (aiDM@SIGMOD 2019)
