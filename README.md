@@ -122,6 +122,8 @@ Table of Contents
 * Benchmarking Learned Indexes (VLDB 2020)
 
 * Why Are Learned Indexes So Effective? (ICML 2020)
+
+* Tsunami: A Learned Multi-dimensional Index for Correlated Data and Skewed Workloads (VLDB 2020)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 
@@ -228,6 +230,8 @@ Table of Contents
 * QuickSel: Quick Selectivity Learning with Mixture Models (SIGMOD 2020)
 
 * Efficiently Approximating Selectivity Functions using Low Overhead Regression Models (VLDB 2020)
+
+* Flow-Loss: Learning Cardinality Estimates That Matter (arXiv 2020)
 ### Cost Estimation
 #### Single Query
 * Statistical learning techniques for costing XML queries (VLDB 2005)
