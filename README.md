@@ -163,6 +163,8 @@ Table of Contents
 ## Query Optimization
 ### Cardinality Estimation
 
+Are We Ready For Learned Cardinality Estimation? (arXiv 2020)
+
 #### Data-based
 (kernal density model)
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
