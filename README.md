@@ -124,6 +124,8 @@ Table of Contents
 * Why Are Learned Indexes So Effective? (ICML 2020)
 
 * Tsunami: A Learned Multi-dimensional Index for Correlated Data and Skewed Workloads (VLDB 2020)
+
+* A Lazy Approach for Efficient Index Learning (2021)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 
@@ -198,6 +200,10 @@ Are We Ready For Learned Cardinality Estimation? (arXiv 2020)
 * Astrid: Accurate Selectivity Estimation for String Predicates using Deep Learning (VLDB 2021)
 
 * BayesCard: A Unified Bayesian Framework for Cardinality Estimation (2020)
+
+* Online Sketch-based Query Optimization (2021)
+
+* LMKG: Learned Models for Cardinality Estimation in Knowledge Graphs (2021)
 #### Query-based
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
 
@@ -317,6 +323,8 @@ Are We Ready For Learned Cardinality Estimation? (arXiv 2020)
 * Approximate Query Processing for Data Exploration using Deep Generative Models (ICDE 2020)
 
 * ML-AQP: Query-Driven Approximate Query Processing based on Machine Learning (2020)
+
+* Approximate Query Processing for Group-By Queries based on Conditional Generative Models (2021)
 ### Sheduling
 * Workload management for cloud databases via machine learning (ICDE 2016 WiseDB)
 
