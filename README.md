@@ -80,6 +80,8 @@ Table of Contents
 * Too Many Knobs to Tune? Towards Faster Database Tuning by Pre-selecting Important Knobs (HotStorage 2020)
 
 * Dynamic Configuration Tuning of Working Database Management Systems (LifeTech 2020)
+
+* Adaptive Multi-Model Reinforcement Learning for Online Database Tuning (EDBT 2021)
 ### Physical Design
 #### Learned structure
 * Stacked Filters: Learning to Filter by Structure (VLDB 2021)
@@ -240,6 +242,8 @@ Are We Ready For Learned Cardinality Estimation? (arXiv 2020)
 * Efficiently Approximating Selectivity Functions using Low Overhead Regression Models (VLDB 2020)
 
 * Flow-Loss: Learning Cardinality Estimates That Matter (arXiv 2020)
+
+* Learned Cardinality Estimation for Similarity Queries (SIGMOD 2021)
 ### Cost Estimation
 #### Single Query
 * Statistical learning techniques for costing XML queries (VLDB 2005)
@@ -261,6 +265,8 @@ Are We Ready For Learned Cardinality Estimation? (arXiv 2020)
 * DBMS Fitting: Why should we learn what we already know? (CIDR 2020)
 
 * A Note On Operator-Level Query Execution Cost Modeling (2020)
+
+* Efficient Deep Learning Pipelines for Accurate Cost Estimations Over Large Scale Query Workload (2021)
 #### Concurrent
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
 
@@ -325,6 +331,8 @@ Are We Ready For Learned Cardinality Estimation? (arXiv 2020)
 * ML-AQP: Query-Driven Approximate Query Processing based on Machine Learning (2020)
 
 * Approximate Query Processing for Group-By Queries based on Conditional Generative Models (2021)
+
+* Learned Approximate Query Processing: Make it Light, Accurate and Fast (CIDR 2021)
 ### Sheduling
 * Workload management for cloud databases via machine learning (ICDE 2016 WiseDB)
 
@@ -353,3 +361,5 @@ Are We Ready For Learned Cardinality Estimation? (arXiv 2020)
 * Facilitating SQL Query Composition and Analysis (ArXiv 2020)
 
 * Natural language to SQL: Where are we today? (VLDB 2020）
+
+* From Natural Language Processing to Neural Databases (VLDB 2021)
