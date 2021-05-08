@@ -128,6 +128,8 @@ Table of Contents
 * Tsunami: A Learned Multi-dimensional Index for Correlated Data and Skewed Workloads (VLDB 2020)
 
 * A Lazy Approach for Efficient Index Learning (2021)
+
+* Updatable Learned Index with Precise Positions (ArXiv 2021)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 
@@ -266,7 +268,7 @@ Are We Ready For Learned Cardinality Estimation? (arXiv 2020)
 
 * A Note On Operator-Level Query Execution Cost Modeling (2020)
 
-* Efficient Deep Learning Pipelines for Accurate Cost Estimations Over Large Scale Query Workload (2021)
+* Efficient Deep Learning Pipelines for Accurate Cost Estimations Over Large Scale Query Workload (arXiv 2021)
 #### Concurrent
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
 
