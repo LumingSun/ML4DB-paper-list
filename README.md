@@ -87,6 +87,7 @@ Table of Contents
 * Stacked Filters: Learning to Filter by Structure (VLDB 2021)
 #### LSM-tree related
 * Leaper: A Learned Prefetcher for Cache Invalidation in LSM-tree based Storage Engines （VLDB 2020）
+* From WiscKey to Bourbon: A Learned Index for Log-Structured Merge Trees (OSDI 2020)
 #### Index
 ##### Index Structure
 * Learning to hash for indexing big data - A survey (2016)
