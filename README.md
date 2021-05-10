@@ -53,6 +53,7 @@ Table of Contents
 * Database Meets Artificial Intelligence: A Survey (TKDE 2020)
 
 * Self-driving database systems: a conceptual approach (Distributed and Parallel Databases 2020)
+* One Model to Rule them All: Towards Zero-Shot Learning for Databases (arXiv 2021)
 ## Data Access
 ### Configuration Tuning
 * SARD: A statistical approach for ranking database tuning parameters (ICDEW, 2008)
@@ -131,6 +132,8 @@ Table of Contents
 * A Lazy Approach for Efficient Index Learning (2021)
 
 * Updatable Learned Index with Precise Positions (ArXiv 2021)
+* The RLR-Tree: A Reinforcement Learning Based R-Tree for Spatial Data (arXiv 2021)
+* Spatial Interpolation-based Learned Index for Range and kNN Queries (arXiv 2021)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 
@@ -366,3 +369,4 @@ Are We Ready For Learned Cardinality Estimation? (arXiv 2020)
 * Natural language to SQL: Where are we today? (VLDB 2020）
 
 * From Natural Language Processing to Neural Databases (VLDB 2021)
+* BERT Meets Relational DB: Contextual Representations of Relational Databases
