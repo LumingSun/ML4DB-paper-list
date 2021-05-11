@@ -48,6 +48,7 @@ Table of Contents
 * Database Meets Artificial Intelligence: A Survey (TKDE 2020)
 * Self-driving database systems: a conceptual approach (Distributed and Parallel Databases 2020)
 * One Model to Rule them All: Towards Zero-Shot Learning for Databases (arXiv 2021)
+* UDO: Universal Database Optimization using Reinforcement Learning (arXiv 201)
 ## Data Access
 ### Configuration Tuning
 * SARD: A statistical approach for ranking database tuning parameters (ICDEW, 2008)
