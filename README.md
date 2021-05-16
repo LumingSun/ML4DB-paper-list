@@ -103,7 +103,9 @@ Table of Contents
 * AI Meets AI: Leveraging Query Executions to Improve Index Recommendations (SIGMOD 2019)
 * Automated Database Indexing using Model-free Reinforcement Learning (2020)
 * DRLindex: deep reinforcement learning index advisor for a cluster database (2020 Symposium on International Database Engineering & Applications)
+* Magic mirror in my hand, which is the best in the land? An Experimental Evaluation of Index Selection Algorithms (VLDB 2020)
 * An Index Advisor Using Deep Reinforcement Learning (CIKM 2020)
+* DBA bandits: Self-driving index tuning under ad-hoc, analytical workloads with safety guarantees (ICDE 2021)
 #### Schema & Partition
 * Schism: a Workload-Driven Approach to Database Replication and Partitioning (VLDB 2010)
 * Automated Data Partitioning for Highly Scalable and Strongly Consistent Transactions (2016 Transactions on Parallel and distributed systems)
