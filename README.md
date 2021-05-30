@@ -70,6 +70,7 @@ Table of Contents
 ### Physical Design
 #### Learned structure
 * Stacked Filters: Learning to Filter by Structure (VLDB 2021)
+* LEA: A Learned Encoding Advisor for Column Stores (aiDM 2021)
 #### LSM-tree related
 * Leaper: A Learned Prefetcher for Cache Invalidation in LSM-tree based Storage Engines （VLDB 2020）
 * From WiscKey to Bourbon: A Learned Index for Log-Structured Merge Trees (OSDI 2020)
@@ -98,6 +99,7 @@ Table of Contents
 * Updatable Learned Index with Precise Positions (ArXiv 2021)
 * The RLR-Tree: A Reinforcement Learning Based R-Tree for Spatial Data (arXiv 2021)
 * Spatial Interpolation-based Learned Index for Range and kNN Queries (arXiv 2021)
+* APEX: A High-Performance Learned Index on Persistent Memory (arXiv 2021)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -121,6 +123,8 @@ Table of Contents
 * Query-based Workload Forecasting for Self-Driving Database Management Systems (SIGMOD 2018）
 * Diagnosing Root Causes of Intermittent Slow Queries in Cloud Databases (VLDB 2020)
 * Seagull: An Infrastructure for Load Prediction and Optimized Resource Allocation (VLDB 2020)
+* Database Workload Characterization with Query Plan Encoders (arXiv 2021)
+
 ## Query Optimization
 ### Cardinality Estimation
 * Are We Ready For Learned Cardinality Estimation? (arXiv 2020)
