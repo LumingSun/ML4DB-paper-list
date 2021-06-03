@@ -67,6 +67,7 @@ Table of Contents
 * Too Many Knobs to Tune? Towards Faster Database Tuning by Pre-selecting Important Knobs (HotStorage 2020)
 * Dynamic Configuration Tuning of Working Database Management Systems (LifeTech 2020)
 * Adaptive Multi-Model Reinforcement Learning for Online Database Tuning (EDBT 2021)
+* An inquiry into machine learning-based automatic configuration tuning services on real-world database management systems (VLDB 2021)
 ### Physical Design
 #### Learned structure
 * Stacked Filters: Learning to Filter by Structure (VLDB 2021)
