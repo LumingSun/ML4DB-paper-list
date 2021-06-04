@@ -244,3 +244,4 @@ Table of Contents
 * Natural language to SQL: Where are we today? (VLDB 2020）
 * From Natural Language Processing to Neural Databases (VLDB 2021)
 * BERT Meets Relational DB: Contextual Representations of Relational Databases
+* Natural language to SQL [Resource repo](https://github.com/yechens/NL2SQL)
