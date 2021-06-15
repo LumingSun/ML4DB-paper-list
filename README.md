@@ -118,6 +118,7 @@ Table of Contents
 * Learning a Partitioning Advisor with Deep Reinforcement Learning (2019)
 * Qd-tree: Learning Data Layouts for Big Data Analytics (SIGMOD 2020)
 * A Genetic Optimization Physical Planner for Big Data Warehouses (2020)
+* Lachesis: Automated Partitioning for UDF-Centric Analytics (VLDB 2021)
 ## Workload
 * Workload Models for Autonomic Database Management Systems (International Conference on Autonomic and Autonomous Systems 2006)
 * Towards workload shift detection and prediction for autonomic databases (CIKM 2007)
@@ -208,6 +209,8 @@ Table of Contents
 * Bao: Learning to Steer Query Optimizers (2020)
 * ML-based Cross-Platform Query Optimization (ICDE 2020)
 * Learning-based Declarative Query Optimization (2021)
+* Bao: Making LearnedQuery Optimization Practica (SIGMOD 2021)
+* Microlearner: A fine-grained Learning Optimizer for Big Data Workloads at Microsoft (2021)
 ## Query Execution
 ### Sort
 * The Case for a Learned Sorting Algorithm (SIGMOD 2020)
