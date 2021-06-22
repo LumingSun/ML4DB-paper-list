@@ -51,6 +51,9 @@ Table of Contents
 * UDO: Universal Database Optimization using Reinforcement Learning (arXiv 2021)
 * Towards a Benchmark for Learned Systems (SMDB workshop 2021)
 * A Unified Transferable Model for ML-Enhanced DBMS [Vision] (arXiv 2021)
+* AI Meets Database: AI4DB and DB4AI (SIGMOD 2021)
+* Expand your Training Limits! Generating Training Data for ML-based Data Management (SIGMOD 2021)
+* MB2: Decomposed Behavior Modeling for Self-Driving Database Management Systems (SIGMOD 2021)
 ## Data Access
 ### Configuration Tuning
 * SARD: A statistical approach for ranking database tuning parameters (ICDEW, 2008)
@@ -101,6 +104,7 @@ Table of Contents
 * The RLR-Tree: A Reinforcement Learning Based R-Tree for Spatial Data (arXiv 2021)
 * Spatial Interpolation-based Learned Index for Range and kNN Queries (arXiv 2021)
 * APEX: A High-Performance Learned Index on Persistent Memory (arXiv 2021)
+* RUSLI: Real-time Updatable Spline Learned Index (aiDM 2021)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -119,6 +123,7 @@ Table of Contents
 * Qd-tree: Learning Data Layouts for Big Data Analytics (SIGMOD 2020)
 * A Genetic Optimization Physical Planner for Big Data Warehouses (2020)
 * Lachesis: Automated Partitioning for UDF-Centric Analytics (VLDB 2021)
+* Instance-Optimized Data Layouts for Cloud Analytics Workloads (SIGMOD 2021)
 ## Workload
 * Workload Models for Autonomic Database Management Systems (International Conference on Autonomic and Autonomous Systems 2006)
 * Towards workload shift detection and prediction for autonomic databases (CIKM 2007)
@@ -128,8 +133,11 @@ Table of Contents
 * Database Workload Characterization with Query Plan Encoders (arXiv 2021)
 
 ## Query Optimization
+### Query Rewrite
+* Sia: Optimizing Queries using Learned Predicates (SIGMOD 2021)
 ### Cardinality Estimation
 * Are We Ready For Learned Cardinality Estimation? (arXiv 2020)
+* A Unified Deep Model of Learning from both Data and Queries for Cardinality Estimation (SIGMOD 2021)
 #### Data-based
 (kernal density model)
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
@@ -211,6 +219,7 @@ Table of Contents
 * Learning-based Declarative Query Optimization (2021)
 * Bao: Making LearnedQuery Optimization Practica (SIGMOD 2021)
 * Microlearner: A fine-grained Learning Optimizer for Big Data Workloads at Microsoft (2021)
+* Steering Query Optimizers: A Practical Take on Big Data Workloads (SIGMOD 2021)
 ## Query Execution
 ### Sort
 * The Case for a Learned Sorting Algorithm (SIGMOD 2020)
