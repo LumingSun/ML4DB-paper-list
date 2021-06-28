@@ -105,6 +105,7 @@ Table of Contents
 * Spatial Interpolation-based Learned Index for Range and kNN Queries (arXiv 2021)
 * APEX: A High-Performance Learned Index on Persistent Memory (arXiv 2021)
 * RUSLI: Real-time Updatable Spline Learned Index (aiDM 2021)
+
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -131,6 +132,7 @@ Table of Contents
 * Diagnosing Root Causes of Intermittent Slow Queries in Cloud Databases (VLDB 2020)
 * Seagull: An Infrastructure for Load Prediction and Optimized Resource Allocation (VLDB 2020)
 * Database Workload Characterization with Query Plan Encoders (arXiv 2021)
+* Workload-Aware Performance Tuning for Autonomous DBMSs (ICDE 2021)
 
 ## Query Optimization
 ### Query Rewrite
@@ -138,6 +140,7 @@ Table of Contents
 ### Cardinality Estimation
 * Are We Ready For Learned Cardinality Estimation? (arXiv 2020)
 * A Unified Deep Model of Learning from both Data and Queries for Cardinality Estimation (SIGMOD 2021)
+* LATEST: Learning-Assisted Selectivity Estimation Over Spatio-Textual Streams (ICDE 2021)
 #### Data-based
 (kernal density model)
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
@@ -160,6 +163,7 @@ Table of Contents
 * BayesCard: A Unified Bayesian Framework for Cardinality Estimation (2020)
 * Online Sketch-based Query Optimization (2021)
 * LMKG: Learned Models for Cardinality Estimation in Knowledge Graphs (2021)
+* LHist: Towards Learning Multi-dimensional Histogram for Massive Spatial Data (ICDE 2021)
 #### Query-based
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
 * Selectivity Estimation in Extensible Databases -A Neural Network Approach （VLDB 1998）
@@ -242,6 +246,7 @@ Table of Contents
 * WiSeDB: A Learning-based Workload Management Advisor for Cloud Databases (2016 VLDB)
 * CrocodileDB: Efficient Database Execution through Intelligent Deferment (CIDT 2020)
 * Buffer Pool Aware Query Scheduling via Deep Reinforcement Learning (2020)
+* Polyjuice: High-Performance Transactions via Learned Concurrency Control (arXiv 2021)
 
 (transaction 👇)
 
