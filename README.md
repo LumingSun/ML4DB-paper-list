@@ -20,7 +20,14 @@ Table of Contents
       * [Index Structure](#index-structure)
       * [Index Recommendation](#index-recommendation)
     * [Schema &amp; Partition](#schema--partition)
+      * [Offline](#offline)
+      * [Online](#online)
 * [Workload](#workload)
+    * [Resource Estimation and Auto-scaling](#resource-estimation-and-auto-scaling)
+    * [Performance Diagnosis and Modeling](#performance-diagnosis-and-modeling)
+    * [Workload Shift Detection](#workload-shift-detection)
+    * [Metrics Prediction for Queries](#metrics-prediction-for-queries)
+    * [Workload Characterization](#workload-characterization)
 * [Query Optimization](#query-optimization)
     * [Cardinality Estimation](#cardinality-estimation)
       * [Data-based](#data-based)
@@ -140,13 +147,13 @@ Table of Contents
 
 ## Workload
 
-### Resource estimation and auto-scaling
+### Resource Estimation and Auto-scaling
 
 * Automated Demand-driven Resource Scaling in Relational Database-as-a-Service (SIGMOD 2016)
 * Database Workload Capacity Planning using Time Series Analysis and Machine Learning (SIGMOD 2020)
 * Seagull: An Infrastructure for Load Prediction and Optimized Resource Allocation (VLDB 2020)
 
-### Performance diagnosis and modeling
+### Performance Diagnosis and Modeling
 
 - Performance and resource modeling in highly-concurrent OLTP workloads (SIGMOD 2013)
 - DBSherlock: A Performance Diagnostic Tool for Transactional Databases (SIGMOD 2016)
@@ -154,19 +161,19 @@ Table of Contents
 - Diagnosing Root Causes of Intermittent Slow Queries in Cloud Databases (VLDB 2020)
 - Workload-Aware Performance Tuning for Autonomous DBMSs (ICDE 2021)
 
-### Workload shift detection
+### Workload Shift Detection
 
 - Towards workload shift detection and prediction for autonomic databases (CIKM 2007)
 - Consistent on-line classification of dbs workload events (CIKM 2009)
 - On predictive modeling for optimizing transaction execution in parallel OLTP systems (VLDB 2011)
 
-### Metrics prediction for queries
+### Metrics Prediction for Queries
 
 * PQR: Predicting Query Execution Times for Autonomous Workload Management (ICAC 2008)
 * Predicting multiple metrics for queries: Better decisions enabled by machine learning (ICDE 2009)
 * Learning-based SPARQL query performance modeling and prediction (WWW 2017)
 
-### Workload characterization
+### Workload Characterization
 
 * On Workload Characterization of Relational Database Environments (TSE 1992)
 * Workload Models for Autonomic Database Management Systems (International Conference on Autonomic and Autonomous Systems 2006)
