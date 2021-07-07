@@ -20,7 +20,14 @@ Table of Contents
       * [Index Structure](#index-structure)
       * [Index Recommendation](#index-recommendation)
     * [Schema &amp; Partition](#schema--partition)
+      * [Offline](#offline)
+      * [Online](#online)
 * [Workload](#workload)
+    * [Resource Estimation and Auto-scaling](#resource-estimation-and-auto-scaling)
+    * [Performance Diagnosis and Modeling](#performance-diagnosis-and-modeling)
+    * [Workload Shift Detection](#workload-shift-detection)
+    * [Metrics Prediction for Queries](#metrics-prediction-for-queries)
+    * [Workload Characterization](#workload-characterization)
 * [Query Optimization](#query-optimization)
     * [Cardinality Estimation](#cardinality-estimation)
       * [Data-based](#data-based)
@@ -117,7 +124,11 @@ Table of Contents
 * An Index Advisor Using Deep Reinforcement Learning (CIKM 2020)
 * DBA bandits: Self-driving index tuning under ad-hoc, analytical workloads with safety guarantees (ICDE 2021)
 #### Schema & Partition
+
+##### Offline
+
 * Schism: a Workload-Driven Approach to Database Replication and Partitioning (VLDB 2010)
+* Skew-Aware Automatic Database Partitioning in Shared-Nothing, Parallel OLTP Systems (SIGMOD 2012)
 * Automated Data Partitioning for Highly Scalable and Strongly Consistent Transactions (2016 Transactions on Parallel and distributed systems)
 * GridFormation : Towards Self-Driven Online Data Partitioning using Reinforcement Learning (aiDM@SIGMOD 2018)
 * Learning a Partitioning Advisor with Deep Reinforcement Learning (2019)
@@ -125,14 +136,50 @@ Table of Contents
 * A Genetic Optimization Physical Planner for Big Data Warehouses (2020)
 * Lachesis: Automated Partitioning for UDF-Centric Analytics (VLDB 2021)
 * Instance-Optimized Data Layouts for Cloud Analytics Workloads (SIGMOD 2021)
+* Jigsaw: A Data Storage and Query Processing Engine for Irregular Table Partitioning (SIGMOD 2021)
+
+##### Online
+
+- Relax and Let the Database Do the Partitioning Online (BIRTE 2011)
+- SWORD: Scalable Workload-Aware Data Placement for Transactional Workloads (EDBT 2013)
+- Online Data Partitioning in Distributed Database Systems (EDBT 2015)
+- A Robust Partitioning Scheme for Ad-Hoc Query Workloads (SOCC 2017)
+
 ## Workload
-* Workload Models for Autonomic Database Management Systems (International Conference on Autonomic and Autonomous Systems 2006)
-* Towards workload shift detection and prediction for autonomic databases (CIKM 2007)
-* Query-based Workload Forecasting for Self-Driving Database Management Systems (SIGMOD 2018）
-* Diagnosing Root Causes of Intermittent Slow Queries in Cloud Databases (VLDB 2020)
+
+### Resource Estimation and Auto-scaling
+
+* Automated Demand-driven Resource Scaling in Relational Database-as-a-Service (SIGMOD 2016)
+* Database Workload Capacity Planning using Time Series Analysis and Machine Learning (SIGMOD 2020)
 * Seagull: An Infrastructure for Load Prediction and Optimized Resource Allocation (VLDB 2020)
+
+### Performance Diagnosis and Modeling
+
+- Performance and resource modeling in highly-concurrent OLTP workloads (SIGMOD 2013)
+- DBSherlock: A Performance Diagnostic Tool for Transactional Databases (SIGMOD 2016)
+- A Top-Down Approach to Achieving Performance Predictability in Database Systems (SIGMOD 2017)
+- Diagnosing Root Causes of Intermittent Slow Queries in Cloud Databases (VLDB 2020)
+- Workload-Aware Performance Tuning for Autonomous DBMSs (ICDE 2021)
+
+### Workload Shift Detection
+
+- Towards workload shift detection and prediction for autonomic databases (CIKM 2007)
+- Consistent on-line classification of dbs workload events (CIKM 2009)
+- On predictive modeling for optimizing transaction execution in parallel OLTP systems (VLDB 2011)
+
+### Metrics Prediction for Queries
+
+* PQR: Predicting Query Execution Times for Autonomous Workload Management (ICAC 2008)
+* Predicting multiple metrics for queries: Better decisions enabled by machine learning (ICDE 2009)
+* Learning-based SPARQL query performance modeling and prediction (WWW 2017)
+
+### Workload Characterization
+
+* On Workload Characterization of Relational Database Environments (TSE 1992)
+* Workload Models for Autonomic Database Management Systems (International Conference on Autonomic and Autonomous Systems 2006)
+* Workload characterization and prediction in the cloud: A multiple time series approach (APNOMS 2012）
+* Query-based Workload Forecasting for Self-Driving Database Management Systems (SIGMOD 2018）
 * Database Workload Characterization with Query Plan Encoders (arXiv 2021)
-* Workload-Aware Performance Tuning for Autonomous DBMSs (ICDE 2021)
 
 ## Query Optimization
 ### Query Rewrite
