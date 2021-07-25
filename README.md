@@ -231,6 +231,7 @@ Table of Contents
 * Efficiently Approximating Selectivity Functions using Low Overhead Regression Models (VLDB 2020)
 * Flow-Loss: Learning Cardinality Estimates That Matter (arXiv 2020)
 * Learned Cardinality Estimation for Similarity Queries (SIGMOD 2021)
+* Uncertainty-aware Cardinality Estimation by Neural Network Gaussian Process (arXiv 2021)
 ### Cost Estimation
 #### Single Query
 * Statistical learning techniques for costing XML queries (VLDB 2005)
@@ -274,12 +275,14 @@ Table of Contents
 ## Query Execution
 ### Sort
 * The Case for a Learned Sorting Algorithm (SIGMOD 2020)
+* Defeating duplicates: A re-design of the LearnedSort algorithm (aiXiv 2021)
 ### Join
 * SkinnerDB : Regret-Bounded Query Evaluation via Reinforcement Learning (VLDB 2018)
 ### Adaptive Query Processing
 * Eddies: Continuously adaptive query processing. (SIGMOD 2000)
 * Micro adaptivity in Vectorwise (SIGMOD 2013)
 * Cuttlefish: A Lightweight Primitive for Adaptive Query Processing (2018)
+* Scalable Multi-Query Execution using Reinforcement Learning (SIGMOD 2021)
 ### Approximate Query Processing
 * DBEST: Revisiting approximate query processing engines with machine learning models (SIGMOD 2019)
 * LAQP: Learning-based Approximate Query Processing (2020)
