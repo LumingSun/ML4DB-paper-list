@@ -61,6 +61,8 @@ Table of Contents
 * AI Meets Database: AI4DB and DB4AI (SIGMOD 2021)
 * Expand your Training Limits! Generating Training Data for ML-based Data Management (SIGMOD 2021)
 * MB2: Decomposed Behavior Modeling for Self-Driving Database Management Systems (SIGMOD 2021)
+* Towards instance-optimized data systems (VLDB 2021 from Tim Kraska)
+* Make Your Database System Dream of Electric Sheep: Towards Self-Driving Operation (VLDB 2021 from Andy Pavlo)
 ## Data Access
 ### Configuration Tuning
 * SARD: A statistical approach for ranking database tuning parameters (ICDEW, 2008)
@@ -112,6 +114,7 @@ Table of Contents
 * Spatial Interpolation-based Learned Index for Range and kNN Queries (arXiv 2021)
 * APEX: A High-Performance Learned Index on Persistent Memory (arXiv 2021)
 * RUSLI: Real-time Updatable Spline Learned Index (aiDM 2021)
+* PLEX: Towards Practical Learned Indexing (arXiv 2021)
 
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
@@ -152,6 +155,7 @@ Table of Contents
 * Automated Demand-driven Resource Scaling in Relational Database-as-a-Service (SIGMOD 2016)
 * Database Workload Capacity Planning using Time Series Analysis and Machine Learning (SIGMOD 2020)
 * Seagull: An Infrastructure for Load Prediction and Optimized Resource Allocation (VLDB 2020)
+* Optimal Resource Allocation for Serverless Queries (arXiv 2021)
 
 ### Performance Diagnosis and Modeling
 
@@ -188,6 +192,7 @@ Table of Contents
 * Are We Ready For Learned Cardinality Estimation? (arXiv 2020)
 * A Unified Deep Model of Learning from both Data and Queries for Cardinality Estimation (SIGMOD 2021)
 * LATEST: Learning-Assisted Selectivity Estimation Over Spatio-Textual Streams (ICDE 2021)
+* Fauce: Fast and Accurate Deep Ensembles with Uncertainty for Cardinality Estimation (VLDB 2021)
 #### Data-based
 (kernal density model)
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
@@ -229,9 +234,10 @@ Table of Contents
 * NN-based Transformation of Any SQL Cardinality Estimator for Handling DISTINCT, AND, OR and NOT (2020)
 * QuickSel: Quick Selectivity Learning with Mixture Models (SIGMOD 2020)
 * Efficiently Approximating Selectivity Functions using Low Overhead Regression Models (VLDB 2020)
-* Flow-Loss: Learning Cardinality Estimates That Matter (arXiv 2020)
 * Learned Cardinality Estimation for Similarity Queries (SIGMOD 2021)
 * Uncertainty-aware Cardinality Estimation by Neural Network Gaussian Process (arXiv 2021)
+* * Flow-Loss: Learning Cardinality Estimates That Matter (VLDB 2021)
+
 ### Cost Estimation
 #### Single Query
 * Statistical learning techniques for costing XML queries (VLDB 2005)
@@ -253,6 +259,7 @@ Table of Contents
 * Towards predicting query execution time for concurrent and dynamic database workloads (not machine learning) （VLDB 2014）
 * Contender: A Resource Modeling Approach for Concurrent Query Performance Prediction （EDBT 2014）
 * Query Performance Prediction for Concurrent Queries using Graph Embedding (VLDB 2020)
+* Efficient Deep Learning Pipelines for Accurate Cost Estimations Over Large Scale Query Workload (SIGMOD 2021)
 ### Join Optimization
 * Adaptive Optimization of Very Large Join Queries (SIGMOD 2018) (Not machine learning
 * Deep Reinforcement Learning for Join Order Enumeration (aiDM@SIGMOD 2018)
