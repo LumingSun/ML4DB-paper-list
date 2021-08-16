@@ -103,6 +103,7 @@ Table of Contents
 * Stable Learned Bloom Filters for Data Streams (VLDB 2020)
 * START — Self-Tuning Adaptive Radix Tree (ICDEW 2020)
 * Learned Data Structures (2020)
+* RadixSpline: a single-pass learned index (aiDM2020)
 * The ML-Index: A Multidimensional, Learned Index for Point, Range, and Nearest-Neighbor Queries (EDBT 2020)
 * The PGM-index: a fully-dynamic compressed learned index with provable worst-case bounds (VLDB 2020)
 * A Tutorial on Learned Multi-dimensional Indexes (SIGSPATIAL 2020)
