@@ -63,6 +63,7 @@ Table of Contents
 * MB2: Decomposed Behavior Modeling for Self-Driving Database Management Systems (SIGMOD 2021)
 * Towards instance-optimized data systems (VLDB 2021 from Tim Kraska)
 * Make Your Database System Dream of Electric Sheep: Towards Self-Driving Operation (VLDB 2021 from Andy Pavlo)
+* openGauss: An Autonomous Database System (VLDB 2021 from Guoliang Li)
 ## Data Access
 ### Configuration Tuning
 * SARD: A statistical approach for ranking database tuning parameters (ICDEW, 2008)
