@@ -117,7 +117,7 @@ Table of Contents
 * APEX: A High-Performance Learned Index on Persistent Memory (arXiv 2021)
 * RUSLI: Real-time Updatable Spline Learned Index (aiDM 2021)
 * PLEX: Towards Practical Learned Indexing (arXiv 2021)
-
+* SPRIG: A Learned Spatial Index for Range and kNN Queries (SSTD 2021)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -252,7 +252,6 @@ Table of Contents
 * Cost Models for Big Data Query Processing: Learning, Retrofitting, and Our Findings (2020)
 * DBMS Fitting: Why should we learn what we already know? (CIDR 2020)
 * A Note On Operator-Level Query Execution Cost Modeling (2020)
-* Efficient Deep Learning Pipelines for Accurate Cost Estimations Over Large Scale Query Workload (arXiv 2021)
 #### Concurrent
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
 * Performance Prediction for Concurrent Database Workloads (SIGMOD 2011)
