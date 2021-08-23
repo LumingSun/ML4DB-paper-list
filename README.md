@@ -238,7 +238,7 @@ Table of Contents
 * Efficiently Approximating Selectivity Functions using Low Overhead Regression Models (VLDB 2020)
 * Learned Cardinality Estimation for Similarity Queries (SIGMOD 2021)
 * Uncertainty-aware Cardinality Estimation by Neural Network Gaussian Process (arXiv 2021)
-* * Flow-Loss: Learning Cardinality Estimates That Matter (VLDB 2021)
+* Flow-Loss: Learning Cardinality Estimates That Matter (VLDB 2021)
 
 ### Cost Estimation
 #### Single Query
