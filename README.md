@@ -81,6 +81,8 @@ Table of Contents
 * Dynamic Configuration Tuning of Working Database Management Systems (LifeTech 2020)
 * Adaptive Multi-Model Reinforcement Learning for Online Database Tuning (EDBT 2021)
 * An inquiry into machine learning-based automatic configuration tuning services on real-world database management systems (VLDB 2021)
+* The Case for NLP-Enhanced Database Tuning: Towards Tuning Tools that "Read the Manual" (VLDB 2021)
+* CGPTuner: a Contextual Gaussian Process Bandit Approach for the Automatic Tuning of IT Configurations Under Varying Workload Conditions (VLDB 2021)
 ### Physical Design
 #### Learned structure
 * Stacked Filters: Learning to Filter by Structure (VLDB 2021)
@@ -107,17 +109,17 @@ Table of Contents
 * The ML-Index: A Multidimensional, Learned Index for Point, Range, and Nearest-Neighbor Queries (EDBT 2020)
 * The PGM-index: a fully-dynamic compressed learned index with provable worst-case bounds (VLDB 2020)
 * A Tutorial on Learned Multi-dimensional Indexes (SIGSPATIAL 2020)
-* Benchmarking Learned Indexes (VLDB 2020)
 * Why Are Learned Indexes So Effective? (ICML 2020)
-* Tsunami: A Learned Multi-dimensional Index for Correlated Data and Skewed Workloads (VLDB 2020)
+* Tsunami: A Learned Multi-dimensional Index for Correlated Data and Skewed Workloads (VLDB 2021)
 * A Lazy Approach for Efficient Index Learning (2021)
-* Updatable Learned Index with Precise Positions (ArXiv 2021)
 * The RLR-Tree: A Reinforcement Learning Based R-Tree for Spatial Data (arXiv 2021)
 * Spatial Interpolation-based Learned Index for Range and kNN Queries (arXiv 2021)
 * APEX: A High-Performance Learned Index on Persistent Memory (arXiv 2021)
 * RUSLI: Real-time Updatable Spline Learned Index (aiDM 2021)
 * PLEX: Towards Practical Learned Indexing (arXiv 2021)
 * SPRIG: A Learned Spatial Index for Range and kNN Queries (SSTD 2021)
+* Benchmarking Learned Indexes (VLDB 2021)
+* Updatable Learned Index with Precise Positions (VLDB 2021)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -186,12 +188,13 @@ Table of Contents
 * Workload characterization and prediction in the cloud: A multiple time series approach (APNOMS 2012）
 * Query-based Workload Forecasting for Self-Driving Database Management Systems (SIGMOD 2018）
 * Database Workload Characterization with Query Plan Encoders (arXiv 2021)
+* Explaining Inference Queries with Bayesian Optimization (VLDB 2021)
 
 ## Query Optimization
 ### Query Rewrite
 * Sia: Optimizing Queries using Learned Predicates (SIGMOD 2021)
 ### Cardinality Estimation
-* Are We Ready For Learned Cardinality Estimation? (arXiv 2020)
+* Are We Ready For Learned Cardinality Estimation? (VLDB 2021)
 * A Unified Deep Model of Learning from both Data and Queries for Cardinality Estimation (SIGMOD 2021)
 * LATEST: Learning-Assisted Selectivity Estimation Over Spatio-Textual Streams (ICDE 2021)
 * Fauce: Fast and Accurate Deep Ensembles with Uncertainty for Cardinality Estimation (VLDB 2021)
@@ -212,12 +215,12 @@ Table of Contents
 * Lightweight graphical models for selectivity estimation without independence assumptions (VLDB 2011)
 * Efficiently adapting graphical models for selectivity estimation (VLDB 2013)
 * An Approach Based on Bayesian Networks for Query Selectivity Estimation (DASFAA 2019)
-* FLAT: Fast, Lightweight and Accurate Method for Cardinality Estimation (2020 arXiv)
-* Astrid: Accurate Selectivity Estimation for String Predicates using Deep Learning (VLDB 2021)
-* BayesCard: A Unified Bayesian Framework for Cardinality Estimation (2020)
-* Online Sketch-based Query Optimization (2021)
-* LMKG: Learned Models for Cardinality Estimation in Knowledge Graphs (2021)
+* BayesCard: A Unified Bayesian Framework for Cardinality Estimation (arXiv 2020)
+* Online Sketch-based Query Optimization (arXiv 2021)
+* LMKG: Learned Models for Cardinality Estimation in Knowledge Graphs (arXiv 2021)
 * LHist: Towards Learning Multi-dimensional Histogram for Massive Spatial Data (ICDE 2021)
+* FLAT: Fast, Lightweight and Accurate Method for Cardinality Estimation (VLDB 2021)
+* Astrid: Accurate Selectivity Estimation for String Predicates using Deep Learning (VLDB 2021)
 #### Query-based
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
 * Selectivity Estimation in Extensible Databases -A Neural Network Approach （VLDB 1998）
