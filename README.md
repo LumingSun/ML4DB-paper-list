@@ -4,7 +4,7 @@ Paper list for database systems with artificial intelligence (machine learning, 
 
 有关机器学习、神经网络、强化学习、自调优技术等在数据库系统中的应用的文章列表
 
-Welcome to PR! 
+Welcome to PR!
 
 欢迎大家补充！
 
@@ -194,32 +194,33 @@ Table of Contents
 ### Query Rewrite
 * Sia: Optimizing Queries using Learned Predicates (SIGMOD 2021)
 ### Cardinality Estimation
-* Are We Ready For Learned Cardinality Estimation? (VLDB 2021)
+* Are We Ready For Learned Cardinality Estimation? (VLDB 2021) [GitHub Link](https://github.com/sfu-db/AreCELearnedYet)
 * A Unified Deep Model of Learning from both Data and Queries for Cardinality Estimation (SIGMOD 2021)
 * LATEST: Learning-Assisted Selectivity Estimation Over Spatio-Textual Streams (ICDE 2021)
 * Fauce: Fast and Accurate Deep Ensembles with Uncertainty for Cardinality Estimation (VLDB 2021)
+* Cardinality Estimation in DBMS: A Comprehensive Benchmark Evaluation (arXiv 2021) [GitHub Link](https://github.com/Nathaniel-Han/End-to-End-CardEst-Benchmark)
 #### Data-based
 (kernal density model)
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
 * Estimating Join Selectivities using Bandwidth-Optimized Kernel Density Models (VLDB 2017)
 (sum-product network)
-* DeepDB: Learn from Data, not from Queries! (VLDB 2020)
+* DeepDB: Learn from Data, not from Queries! (VLDB 2020) [GitHub Link](https://github.com/DataManagementLab/deepdb-public)
 (autoregressive model)
 * Deep Unsupervised Cardinality Estimation (VLDB 2019) 
 * Multi-Attribute Selectivity Estimation Using Deep Learning (arXiv 2019)
 * Deep Learning Models for Selectivity Estimation of Multi-Attribute Queries (SIGMOD 2020)
-* NeuroCard: One Cardinality Estimator for All Tables (VLDB 2020)
+* NeuroCard: One Cardinality Estimator for All Tables (VLDB 2020) [GitHub Link](https://github.com/neurocard/neurocard)
 * Learning to Sample: Counting with Complex Queries (VLDB 2020)
 (graphical models)
 * Selectivity estimation using probabilistic models (SIGMOD 2001)
 * Lightweight graphical models for selectivity estimation without independence assumptions (VLDB 2011)
 * Efficiently adapting graphical models for selectivity estimation (VLDB 2013)
 * An Approach Based on Bayesian Networks for Query Selectivity Estimation (DASFAA 2019)
-* BayesCard: A Unified Bayesian Framework for Cardinality Estimation (arXiv 2020)
+* BayesCard: A Unified Bayesian Framework for Cardinality Estimation (arXiv 2020) [GitHub Link](https://github.com/wuziniu/BayesCard)
 * Online Sketch-based Query Optimization (arXiv 2021)
 * LMKG: Learned Models for Cardinality Estimation in Knowledge Graphs (arXiv 2021)
 * LHist: Towards Learning Multi-dimensional Histogram for Massive Spatial Data (ICDE 2021)
-* FLAT: Fast, Lightweight and Accurate Method for Cardinality Estimation (VLDB 2021)
+* FLAT: Fast, Lightweight and Accurate Method for Cardinality Estimation (VLDB 2021) [GitHub Link](https://github.com/wuziniu/FSPN)
 * Astrid: Accurate Selectivity Estimation for String Predicates using Deep Learning (VLDB 2021)
 #### Query-based
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
@@ -230,8 +231,8 @@ Table of Contents
 * Cardinality Estimation Using Neural Networks (2015)
 * Towards a learning optimizer for shared clouds (VLDB 2018)
 * Learning State Representations for Query Optimization with Deep Reinforcement Learning  (DEEM@SIGMOD2018)
-* Learned Cardinalities: Estimating Correlated Joins with Deep Learning （CIDR2019）
-* Estimating Cardinalities with Deep Sketches (SIGMOD 2019)
+* Learned Cardinalities: Estimating Correlated Joins with Deep Learning （CIDR2019）[GitHub Link](https://github.com/andreaskipf/learnedcardinalities)
+* Estimating Cardinalities with Deep Sketches (SIGMOD 2019) [GitHub Link](https://github.com/andreaskipf/learnedcardinalities)
 * Selectivity estimation for range predicates using lightweight models (VLDB 2019)
 * (Review) An Empirical Analysis of Deep Learning for Cardinality Estimation (arXiv 2019)
 * Flexible Operator Embeddings via Deep Learning (arXiv 2019)
