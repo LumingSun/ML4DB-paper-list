@@ -205,6 +205,7 @@ Table of Contents
 * Estimating Join Selectivities using Bandwidth-Optimized Kernel Density Models (VLDB 2017)
 (sum-product network)
 * DeepDB: Learn from Data, not from Queries! (VLDB 2020) [GitHub Link](https://github.com/DataManagementLab/deepdb-public)
+
 (autoregressive model)
 * Deep Unsupervised Cardinality Estimation (VLDB 2019) 
 * Multi-Attribute Selectivity Estimation Using Deep Learning (arXiv 2019)
