@@ -101,7 +101,7 @@ Table of Contents
 * Learning Multi-dimensional Indexes (2019)
 * ALEX: An Updatable Adaptive Learned Index (SIGMOD 2020)
 * The ML-Index: A Multidimensional, Learned Index for Point, Range, and Nearest-Neighbor Queries (EDBT 2020)
-* Effectively Learning Spatial Indices (VLDB 2020)
+* Effectively Learning Spatial Indices (VLDB 2020) [GitHub Link](https://github.com/Liuguanli/RSMI)
 * Stable Learned Bloom Filters for Data Streams (VLDB 2020)
 * START — Self-Tuning Adaptive Radix Tree (ICDEW 2020)
 * Learned Data Structures (2020)
