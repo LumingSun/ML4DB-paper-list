@@ -83,6 +83,7 @@ Table of Contents
 * An inquiry into machine learning-based automatic configuration tuning services on real-world database management systems (VLDB 2021)
 * The Case for NLP-Enhanced Database Tuning: Towards Tuning Tools that "Read the Manual" (VLDB 2021)
 * CGPTuner: a Contextual Gaussian Process Bandit Approach for the Automatic Tuning of IT Configurations Under Varying Workload Conditions (VLDB 2021)
+* ResTune: Resource Oriented Tuning Boosted by Meta-Learning for Cloud Databases (SIGMOD 2021)
 ### Physical Design
 #### Learned structure
 * Stacked Filters: Learning to Filter by Structure (VLDB 2021)
@@ -100,7 +101,6 @@ Table of Contents
 * SOSD: A Benchmark for Learned Indexes (2019)
 * Learning Multi-dimensional Indexes (2019)
 * ALEX: An Updatable Adaptive Learned Index (SIGMOD 2020)
-* The ML-Index: A Multidimensional, Learned Index for Point, Range, and Nearest-Neighbor Queries (EDBT 2020)
 * Effectively Learning Spatial Indices (VLDB 2020) [GitHub Link](https://github.com/Liuguanli/RSMI)
 * Stable Learned Bloom Filters for Data Streams (VLDB 2020)
 * START — Self-Tuning Adaptive Radix Tree (ICDEW 2020)
