@@ -193,12 +193,14 @@ Table of Contents
 ## Query Optimization
 ### Query Rewrite
 * Sia: Optimizing Queries using Learned Predicates (SIGMOD 2021)
+* A Learned Query Rewrite System using Monte Carlo Tree Search (VLDB 2022)
 ### Cardinality Estimation
 * Are We Ready For Learned Cardinality Estimation? (VLDB 2021) [GitHub Link](https://github.com/sfu-db/AreCELearnedYet)
 * A Unified Deep Model of Learning from both Data and Queries for Cardinality Estimation (SIGMOD 2021)
 * LATEST: Learning-Assisted Selectivity Estimation Over Spatio-Textual Streams (ICDE 2021)
 * Fauce: Fast and Accurate Deep Ensembles with Uncertainty for Cardinality Estimation (VLDB 2021)
 * Cardinality Estimation in DBMS: A Comprehensive Benchmark Evaluation (arXiv 2021) [GitHub Link](https://github.com/Nathaniel-Han/End-to-End-CardEst-Benchmark)
+* Learned Cardinality Estimation: A Design Space Exploration and A Comparative Evaluation (VLDB 2022)
 #### Data-based
 (kernal density model)
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
@@ -223,6 +225,7 @@ Table of Contents
 * LHist: Towards Learning Multi-dimensional Histogram for Massive Spatial Data (ICDE 2021)
 * FLAT: Fast, Lightweight and Accurate Method for Cardinality Estimation (VLDB 2021) [GitHub Link](https://github.com/wuziniu/FSPN)
 * Astrid: Accurate Selectivity Estimation for String Predicates using Deep Learning (VLDB 2021)
+* FACE: A Normalizing Flow based Cardinality Estimator (VLDB 2022)
 #### Query-based
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
 * Selectivity Estimation in Extensible Databases -A Neural Network Approach （VLDB 1998）
