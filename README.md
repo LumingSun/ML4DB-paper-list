@@ -288,7 +288,7 @@ Table of Contents
 * Bao: Learning to Steer Query Optimizers (2020)
 * ML-based Cross-Platform Query Optimization (ICDE 2020)
 * Learning-based Declarative Query Optimization (2021)
-* Bao: Making Learned Query Optimization Practical (SIGMOD 2021)
+* **Bao: Making Learned Query Optimization Practical** (SIGMOD 2021 **Best Paper**!) [Doc](https://rmarcus.info/bao_docs/introduction.html) [GitHub Link](https://github.com/learnedsystems/BaoForPostgreSQL)
 * Microlearner: A fine-grained Learning Optimizer for Big Data Workloads at Microsoft (2021)
 * Steering Query Optimizers: A Practical Take on Big Data Workloads (SIGMOD 2021)
 ## Query Execution
