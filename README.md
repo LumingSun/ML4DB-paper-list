@@ -64,6 +64,7 @@ Table of Contents
 * Towards instance-optimized data systems (VLDB 2021 from Tim Kraska)
 * Make Your Database System Dream of Electric Sheep: Towards Self-Driving Operation (VLDB 2021 from Andy Pavlo)
 * openGauss: An Autonomous Database System (VLDB 2021 from Guoliang Li)
+* Experience-Enhanced Learning: One Size Still does not Fit All in Automatic Database Management (arXiv 2021)
 ## Data Access
 ### Configuration Tuning
 * SARD: A statistical approach for ranking database tuning parameters (ICDEW, 2008)
@@ -84,6 +85,7 @@ Table of Contents
 * The Case for NLP-Enhanced Database Tuning: Towards Tuning Tools that "Read the Manual" (VLDB 2021)
 * CGPTuner: a Contextual Gaussian Process Bandit Approach for the Automatic Tuning of IT Configurations Under Varying Workload Conditions (VLDB 2021)
 * ResTune: Resource Oriented Tuning Boosted by Meta-Learning for Cloud Databases (SIGMOD 2021)
+* KML: Using Machine Learning to Improve Storage Systems (arXiv 2021)
 ### Physical Design
 #### Learned structure
 * Stacked Filters: Learning to Filter by Structure (VLDB 2021)
@@ -120,6 +122,7 @@ Table of Contents
 * SPRIG: A Learned Spatial Index for Range and kNN Queries (SSTD 2021)
 * Benchmarking Learned Indexes (VLDB 2021)
 * Updatable Learned Index with Precise Positions (VLDB 2021)
+* The Case for Learned In-Memory Joins (arXiv 2021)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -294,6 +297,7 @@ Table of Contents
 * Defeating duplicates: A re-design of the LearnedSort algorithm (aiXiv 2021)
 ### Join
 * SkinnerDB : Regret-Bounded Query Evaluation via Reinforcement Learning (VLDB 2018)
+* The Case for Learned In-Memory Joins (arXiv 2021)
 ### Adaptive Query Processing
 * Eddies: Continuously adaptive query processing. (SIGMOD 2000)
 * Micro adaptivity in Vectorwise (SIGMOD 2013)
