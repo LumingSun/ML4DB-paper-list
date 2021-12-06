@@ -86,6 +86,7 @@ Table of Contents
 * CGPTuner: a Contextual Gaussian Process Bandit Approach for the Automatic Tuning of IT Configurations Under Varying Workload Conditions (VLDB 2021)
 * ResTune: Resource Oriented Tuning Boosted by Meta-Learning for Cloud Databases (SIGMOD 2021)
 * KML: Using Machine Learning to Improve Storage Systems (arXiv 2021)
+* Database Tuning using Natural Language Processing (SIGMOD Record 2021)
 ### Physical Design
 #### Learned structure
 * Stacked Filters: Learning to Filter by Structure (VLDB 2021)
@@ -123,6 +124,7 @@ Table of Contents
 * Benchmarking Learned Indexes (VLDB 2021)
 * Updatable Learned Index with Precise Positions (VLDB 2021)
 * The Case for Learned In-Memory Joins (arXiv 2021)
+* Bounding the Last Mile: Efficient Learned String Indexing (arXiv 2021)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
