@@ -206,6 +206,7 @@ Table of Contents
 * Fauce: Fast and Accurate Deep Ensembles with Uncertainty for Cardinality Estimation (VLDB 2021)
 * Cardinality Estimation in DBMS: A Comprehensive Benchmark Evaluation (arXiv 2021) [GitHub Link](https://github.com/Nathaniel-Han/End-to-End-CardEst-Benchmark)
 * Learned Cardinality Estimation: A Design Space Exploration and A Comparative Evaluation (VLDB 2022)
+* Glue: Adaptively Merging Single Table Cardinality to Estimate Join Query Size (aiXiv 2021)
 #### Data-based
 (kernal density model)
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
