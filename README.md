@@ -65,6 +65,8 @@ Table of Contents
 * Make Your Database System Dream of Electric Sheep: Towards Self-Driving Operation (VLDB 2021 from Andy Pavlo)
 * openGauss: An Autonomous Database System (VLDB 2021 from Guoliang Li)
 * Experience-Enhanced Learning: One Size Still does not Fit All in Automatic Database Management (arXiv 2021)
+* Baihe: SysML Framework for AI-driven Databases (arXiv 2022)
+* Survey on Learnable Databases: A Machine Learning Perspective (Big Data Research 2021)
 ## Data Access
 ### Configuration Tuning
 * SARD: A statistical approach for ranking database tuning parameters (ICDEW, 2008)
@@ -266,6 +268,7 @@ Table of Contents
 * Cost Models for Big Data Query Processing: Learning, Retrofitting, and Our Findings (2020)
 * DBMS Fitting: Why should we learn what we already know? (CIDR 2020)
 * A Note On Operator-Level Query Execution Cost Modeling (2020)
+* Zero-Shot Cost Models for Out-of-the-box Learned Cost Prediction (arXiv 2022)
 #### Concurrent
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
 * Performance Prediction for Concurrent Database Workloads (SIGMOD 2011)
@@ -275,6 +278,7 @@ Table of Contents
 * Contender: A Resource Modeling Approach for Concurrent Query Performance Prediction （EDBT 2014）
 * Query Performance Prediction for Concurrent Queries using Graph Embedding (VLDB 2020)
 * Efficient Deep Learning Pipelines for Accurate Cost Estimations Over Large Scale Query Workload (SIGMOD 2021)
+* 
 ### Join Optimization
 * Adaptive Optimization of Very Large Join Queries (SIGMOD 2018) (Not machine learning
 * Deep Reinforcement Learning for Join Order Enumeration (aiDM@SIGMOD 2018)
@@ -294,6 +298,7 @@ Table of Contents
 * **Bao: Making Learned Query Optimization Practical** (SIGMOD 2021 **Best Paper**!) [Doc](https://rmarcus.info/bao_docs/introduction.html) [GitHub Link](https://github.com/learnedsystems/BaoForPostgreSQL)
 * Microlearner: A fine-grained Learning Optimizer for Big Data Workloads at Microsoft (2021)
 * Steering Query Optimizers: A Practical Take on Big Data Workloads (SIGMOD 2021)
+* Balsa: Learning a Query Optimizer Without Expert Demonstrations (arXiv 2022)
 ## Query Execution
 ### Sort
 * The Case for a Learned Sorting Algorithm (SIGMOD 2020)
