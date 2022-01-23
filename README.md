@@ -234,6 +234,7 @@ Table of Contents
 * FLAT: Fast, Lightweight and Accurate Method for Cardinality Estimation (VLDB 2021) [GitHub Link](https://github.com/wuziniu/FSPN)
 * Astrid: Accurate Selectivity Estimation for String Predicates using Deep Learning (VLDB 2021)
 * FACE: A Normalizing Flow based Cardinality Estimator (VLDB 2022)
+* Pre-training Summarization Models of Structured Datasets for Cardinality Estimation (VLDB 2022)
 #### Query-based
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
 * Selectivity Estimation in Extensible Databases -A Neural Network Approach （VLDB 1998）
