@@ -115,6 +115,7 @@ Table of Contents
 * The PGM-index: a fully-dynamic compressed learned index with provable worst-case bounds (VLDB 2020)
 * A Tutorial on Learned Multi-dimensional Indexes (SIGSPATIAL 2020)
 * Why Are Learned Indexes So Effective? (ICML 2020)
+* Learned Indexes for a Google-scale Disk-based Database (arXiv 2020)
 * Tsunami: A Learned Multi-dimensional Index for Correlated Data and Skewed Workloads (VLDB 2021)
 * A Lazy Approach for Efficient Index Learning (2021)
 * The RLR-Tree: A Reinforcement Learning Based R-Tree for Spatial Data (arXiv 2021)
@@ -127,6 +128,10 @@ Table of Contents
 * Updatable Learned Index with Precise Positions (VLDB 2021)
 * The Case for Learned In-Memory Joins (arXiv 2021)
 * Bounding the Last Mile: Efficient Learned String Indexing (arXiv 2021)
+* FINEdex: A Fine-grained Learned Index Scheme for Scalable and Concurrent Memory Systems (VLDB 2022)
+* The next 50 Years in Database Indexing or: The Case for Automatically Generated Index Structures (VLDB 2022)
+* The Concurrent Learned Indexes for Multicore Data Storage (Transactions on Storage 2022)
+
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -300,6 +305,7 @@ Table of Contents
 * Microlearner: A fine-grained Learning Optimizer for Big Data Workloads at Microsoft (2021)
 * Steering Query Optimizers: A Practical Take on Big Data Workloads (SIGMOD 2021)
 * Balsa: Learning a Query Optimizer Without Expert Demonstrations (arXiv 2022)
+* Leveraging Query Logs and Machine Learning for Parametric Query Optimization (VLDB 2022)
 ## Query Execution
 ### Sort
 * The Case for a Learned Sorting Algorithm (SIGMOD 2020)
