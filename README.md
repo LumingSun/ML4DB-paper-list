@@ -8,6 +8,11 @@ Welcome to PR!
 
 欢迎大家补充！
 
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/LumingSun/ML4DB-paper-list.svg)](https://starchart.cc/LumingSun/ML4DB-paper-list)
+
 Table of Contents
 =================
 * [System & Tutorial](#system-and-tutorial)
