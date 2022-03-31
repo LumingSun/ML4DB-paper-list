@@ -147,6 +147,7 @@ Table of Contents
 * Magic mirror in my hand, which is the best in the land? An Experimental Evaluation of Index Selection Algorithms (VLDB 2020)
 * An Index Advisor Using Deep Reinforcement Learning (CIKM 2020)
 * DBA bandits: Self-driving index tuning under ad-hoc, analytical workloads with safety guarantees (ICDE 2021)
+* AutoIndex: An Incremental Index Management System for Dynamic Workloads (ICDE 2022)
 #### Schema & Partition
 
 ##### Offline
@@ -171,12 +172,14 @@ Table of Contents
 
 ## Workload
 
-### Resource Estimation and Auto-scaling
+### Resource Management and Auto-scaling
 
 * Automated Demand-driven Resource Scaling in Relational Database-as-a-Service (SIGMOD 2016)
 * Database Workload Capacity Planning using Time Series Analysis and Machine Learning (SIGMOD 2020)
 * Seagull: An Infrastructure for Load Prediction and Optimized Resource Allocation (VLDB 2020)
+* FIRM: An Intelligent Fine-grained Resource Management Framework for SLO-Oriented Microservices (OSDI 2020)
 * Optimal Resource Allocation for Serverless Queries (arXiv 2021)
+* sinan: ml-based and qos-aware resource management for cloud microservices (ASPLOS 2021)
 
 ### Performance Diagnosis and Modeling
 
@@ -185,6 +188,7 @@ Table of Contents
 - A Top-Down Approach to Achieving Performance Predictability in Database Systems (SIGMOD 2017)
 - Diagnosing Root Causes of Intermittent Slow Queries in Cloud Databases (VLDB 2020)
 - Workload-Aware Performance Tuning for Autonomous DBMSs (ICDE 2021)
+- Sage: Practical and Scalable ML-Driven Performance Debugging in Microservices (ASPLOS 2021)
 
 ### Workload Shift Detection
 
