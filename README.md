@@ -94,6 +94,7 @@ Table of Contents
 * ResTune: Resource Oriented Tuning Boosted by Meta-Learning for Cloud Databases (SIGMOD 2021)
 * KML: Using Machine Learning to Improve Storage Systems (arXiv 2021)
 * Database Tuning using Natural Language Processing (SIGMOD Record 2021)
+* Towards Dynamic and Safe Configuration Tuning for Cloud Databases (SIGMOD 2022)
 ### Physical Design
 #### Learned structure
 * Stacked Filters: Learning to Filter by Structure (VLDB 2021)
@@ -148,6 +149,7 @@ Table of Contents
 * An Index Advisor Using Deep Reinforcement Learning (CIKM 2020)
 * DBA bandits: Self-driving index tuning under ad-hoc, analytical workloads with safety guarantees (ICDE 2021)
 * AutoIndex: An Incremental Index Management System for Dynamic Workloads (ICDE 2022)
+* SWIRL: Selection of Workload-aware Indexes using Reinforcement Learning (EDBT 2022)
 #### Schema & Partition
 
 ##### Offline
@@ -223,6 +225,7 @@ Table of Contents
 * Cardinality Estimation in DBMS: A Comprehensive Benchmark Evaluation (arXiv 2021) [GitHub Link](https://github.com/Nathaniel-Han/End-to-End-CardEst-Benchmark)
 * Learned Cardinality Estimation: A Design Space Exploration and A Comparative Evaluation (VLDB 2022)
 * Glue: Adaptively Merging Single Table Cardinality to Estimate Join Query Size (aiXiv 2021)
+* Unsupervised Selectivity Estimation by Integrating Gaussian Mixture Models and an Autoregressive Model (EDBT 2022)
 #### Data-based
 (kernal density model)
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
