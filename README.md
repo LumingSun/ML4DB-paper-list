@@ -137,6 +137,7 @@ Table of Contents
 * FINEdex: A Fine-grained Learned Index Scheme for Scalable and Concurrent Memory Systems (VLDB 2022)
 * The next 50 Years in Database Indexing or: The Case for Automatically Generated Index Structures (VLDB 2022)
 * The Concurrent Learned Indexes for Multicore Data Storage (Transactions on Storage 2022)
+* TONE: cutting tail-latency in learned indexes (CHEOPS 22)
 
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
@@ -182,6 +183,7 @@ Table of Contents
 * FIRM: An Intelligent Fine-grained Resource Management Framework for SLO-Oriented Microservices (OSDI 2020)
 * Optimal Resource Allocation for Serverless Queries (arXiv 2021)
 * sinan: ml-based and qos-aware resource management for cloud microservices (ASPLOS 2021)
+* Towards Optimal Resource Allocation for Big Data Analytics (EDBT 2022)
 
 ### Performance Diagnosis and Modeling
 
