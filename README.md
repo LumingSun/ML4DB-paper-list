@@ -138,6 +138,7 @@ Table of Contents
 * The next 50 Years in Database Indexing or: The Case for Automatically Generated Index Structures (VLDB 2022)
 * The Concurrent Learned Indexes for Multicore Data Storage (Transactions on Storage 2022)
 * TONE: cutting tail-latency in learned indexes (CHEOPS 22)
+* A Learned Index for Exact Similarity Search in Metric Spaces (ArXiv 2022)
 
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
@@ -228,6 +229,7 @@ Table of Contents
 * Learned Cardinality Estimation: A Design Space Exploration and A Comparative Evaluation (VLDB 2022)
 * Glue: Adaptively Merging Single Table Cardinality to Estimate Join Query Size (aiXiv 2021)
 * Unsupervised Selectivity Estimation by Integrating Gaussian Mixture Models and an Autoregressive Model (EDBT 2022)
+* Selectivity Functions of Range Queries are Learnable (SIGMOD 2022)
 #### Data-based
 (kernal density model)
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
@@ -359,4 +361,5 @@ Table of Contents
 * Natural language to SQL: Where are we today? (VLDB 2020）
 * From Natural Language Processing to Neural Databases (VLDB 2021)
 * BERT Meets Relational DB: Contextual Representations of Relational Databases
+* CodexDB: Generating Code for Processing SQL Queries using GPT-3 Codex (ArXiv 2022)
 * Natural language to SQL [Resource repo](https://github.com/yechens/NL2SQL)
