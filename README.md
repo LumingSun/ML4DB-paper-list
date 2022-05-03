@@ -152,6 +152,8 @@ Table of Contents
 * DBA bandits: Self-driving index tuning under ad-hoc, analytical workloads with safety guarantees (ICDE 2021)
 * AutoIndex: An Incremental Index Management System for Dynamic Workloads (ICDE 2022)
 * SWIRL: Selection of Workload-aware Indexes using Reinforcement Learning (EDBT 2022)
+* MANTIS: Multiple Type and Attribute Index Selection using Deep Reinforcement Learning (IDEAS 2021)
+
 #### Schema & Partition
 
 ##### Offline
