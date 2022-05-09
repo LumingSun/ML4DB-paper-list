@@ -153,6 +153,7 @@ Table of Contents
 * AutoIndex: An Incremental Index Management System for Dynamic Workloads (ICDE 2022)
 * SWIRL: Selection of Workload-aware Indexes using Reinforcement Learning (EDBT 2022)
 * MANTIS: Multiple Type and Attribute Index Selection using Deep Reinforcement Learning (IDEAS 2021)
+* Indexer++: workload-aware online index tuning with transformers and reinforcement learning (ACM SIGAPP SAC, 2022)
 
 #### Schema & Partition
 
