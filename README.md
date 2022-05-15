@@ -72,6 +72,8 @@ Table of Contents
 * Experience-Enhanced Learning: One Size Still does not Fit All in Automatic Database Management (arXiv 2021)
 * Baihe: SysML Framework for AI-driven Databases (arXiv 2022)
 * Survey on Learnable Databases: A Machine Learning Perspective (Big Data Research 2021)
+* Database Optimizers in the Era of Learning (ICDE 2022)
+* Machine Learning for Data Management: A System View (ICDE 2022)
 ## Data Access
 ### Configuration Tuning
 * SARD: A statistical approach for ranking database tuning parameters (ICDEW, 2008)
@@ -95,6 +97,8 @@ Table of Contents
 * KML: Using Machine Learning to Improve Storage Systems (arXiv 2021)
 * Database Tuning using Natural Language Processing (SIGMOD Record 2021)
 * Towards Dynamic and Safe Configuration Tuning for Cloud Databases (SIGMOD 2022)
+* Automatic Performance Tuning for Distributed Data Stream Processing Systems (ICDE 2022)
+* Adaptive Code Learning for Spark Configuration Tuning (ICDE 2022)
 ### Physical Design
 #### Learned structure
 * Stacked Filters: Learning to Filter by Structure (VLDB 2021)
@@ -140,6 +144,7 @@ Table of Contents
 * The Concurrent Learned Indexes for Multicore Data Storage (Transactions on Storage 2022)
 * TONE: cutting tail-latency in learned indexes (CHEOPS 22)
 * A Learned Index for Exact Similarity Search in Metric Spaces (ArXiv 2022)
+* RW-tree: A Learned Workload-aware Framework for R-tree Construction (ICDE 2022)
 
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
@@ -235,6 +240,7 @@ Table of Contents
 * Glue: Adaptively Merging Single Table Cardinality to Estimate Join Query Size (aiXiv 2021)
 * Unsupervised Selectivity Estimation by Integrating Gaussian Mixture Models and an Autoregressive Model (EDBT 2022)
 * Selectivity Functions of Range Queries are Learnable (SIGMOD 2022)
+* Prediction Intervals for Learned Cardinality Estimation: An Experimental Evaluation (ICDE 2022)
 #### Data-based
 (kernal density model)
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
@@ -307,7 +313,7 @@ Table of Contents
 * Contender: A Resource Modeling Approach for Concurrent Query Performance Prediction （EDBT 2014）
 * Query Performance Prediction for Concurrent Queries using Graph Embedding (VLDB 2020)
 * Efficient Deep Learning Pipelines for Accurate Cost Estimations Over Large Scale Query Workload (SIGMOD 2021)
-* 
+* A Resource-Aware Deep Cost Model for Big Data Query Processing (ICDE 2022)
 ### Join Optimization
 * Adaptive Optimization of Very Large Join Queries (SIGMOD 2018) (Not machine learning
 * Deep Reinforcement Learning for Join Order Enumeration (aiDM@SIGMOD 2018)
