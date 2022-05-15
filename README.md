@@ -102,6 +102,7 @@ Table of Contents
 #### LSM-tree related
 * Leaper: A Learned Prefetcher for Cache Invalidation in LSM-tree based Storage Engines （VLDB 2020）
 * From WiscKey to Bourbon: A Learned Index for Log-Structured Merge Trees (OSDI 2020)
+* TridentKV: A Read-Optimized LSM-Tree Based KV Store via Adaptive Indexing and Space-Efficient Partitioning (TPDS 2022)
 #### Index
 ##### Index Structure
 * Learning to hash for indexing big data - A survey (2016)
@@ -222,6 +223,7 @@ Table of Contents
 ### Query Rewrite
 * Sia: Optimizing Queries using Learned Predicates (SIGMOD 2021)
 * A Learned Query Rewrite System using Monte Carlo Tree Search (VLDB 2022)
+* WeTune: Automatic Discovery and Verification of Query Rewrite Rules (SIGMOD 2022)
 ### Cardinality Estimation
 * Are We Ready For Learned Cardinality Estimation? (VLDB 2021) [GitHub Link](https://github.com/sfu-db/AreCELearnedYet)
 * A Unified Deep Model of Learning from both Data and Queries for Cardinality Estimation (SIGMOD 2021)
@@ -279,6 +281,8 @@ Table of Contents
 * Learned Cardinality Estimation for Similarity Queries (SIGMOD 2021)
 * Uncertainty-aware Cardinality Estimation by Neural Network Gaussian Process (arXiv 2021)
 * Flow-Loss: Learning Cardinality Estimates That Matter (VLDB 2021)
+* LSched: A Workload-Aware Learned Query Scheduler for Analytical Database Systems (SIGMOD 2022)
+* Balsa: Learning a Query Optimizer Without Expert Demonstrations (SIGMOD 2022)
 
 ### Cost Estimation
 #### Single Query
