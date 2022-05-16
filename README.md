@@ -356,9 +356,11 @@ Table of Contents
 * Workload management for cloud databases via machine learning (ICDE 2016 WiseDB)
 * A learning-based service for cost and performance management of cloud databases （ICDEW 2017）(short version for WiSeDB)
 * WiSeDB: A Learning-based Workload Management Advisor for Cloud Databases (2016 VLDB)
+* Learning Scheduling Algorithms for Data Processing Clusters (SIGCOMM 2019)
 * CrocodileDB: Efficient Database Execution through Intelligent Deferment (CIDT 2020)
 * Buffer Pool Aware Query Scheduling via Deep Reinforcement Learning (2020)
 * Polyjuice: High-Performance Transactions via Learned Concurrency Control (arXiv 2021)
+* Self-Tuning Query Scheduling for Analytical Workloads (SIGMOD 2021)
 * LSched: A Workload-Aware Learned Query Scheduler for Analytical Database Systems (SIGMOD 2022)
 
 (transaction 👇)
