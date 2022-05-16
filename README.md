@@ -288,8 +288,6 @@ Table of Contents
 * Learned Cardinality Estimation for Similarity Queries (SIGMOD 2021)
 * Uncertainty-aware Cardinality Estimation by Neural Network Gaussian Process (arXiv 2021)
 * Flow-Loss: Learning Cardinality Estimates That Matter (VLDB 2021)
-* LSched: A Workload-Aware Learned Query Scheduler for Analytical Database Systems (SIGMOD 2022)
-* Balsa: Learning a Query Optimizer Without Expert Demonstrations (SIGMOD 2022)
 
 ### Cost Estimation
 #### Single Query
@@ -333,7 +331,7 @@ Table of Contents
 * **Bao: Making Learned Query Optimization Practical** (SIGMOD 2021 **Best Paper**!) [Doc](https://rmarcus.info/bao_docs/introduction.html) [GitHub Link](https://github.com/learnedsystems/BaoForPostgreSQL)
 * Microlearner: A fine-grained Learning Optimizer for Big Data Workloads at Microsoft (2021)
 * Steering Query Optimizers: A Practical Take on Big Data Workloads (SIGMOD 2021)
-* Balsa: Learning a Query Optimizer Without Expert Demonstrations (arXiv 2022)
+* Balsa: Learning a Query Optimizer Without Expert Demonstrations (SIGMOD 2022)
 * Leveraging Query Logs and Machine Learning for Parametric Query Optimization (VLDB 2022)
 ## Query Execution
 ### Sort
@@ -361,6 +359,7 @@ Table of Contents
 * CrocodileDB: Efficient Database Execution through Intelligent Deferment (CIDT 2020)
 * Buffer Pool Aware Query Scheduling via Deep Reinforcement Learning (2020)
 * Polyjuice: High-Performance Transactions via Learned Concurrency Control (arXiv 2021)
+* LSched: A Workload-Aware Learned Query Scheduler for Analytical Database Systems (SIGMOD 2022)
 
 (transaction 👇)
 
