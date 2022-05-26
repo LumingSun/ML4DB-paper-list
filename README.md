@@ -241,9 +241,7 @@ Table of Contents
 * Unsupervised Selectivity Estimation by Integrating Gaussian Mixture Models and an Autoregressive Model (EDBT 2022)
 * Selectivity Functions of Range Queries are Learnable (SIGMOD 2022)
 * Prediction Intervals for Learned Cardinality Estimation: An Experimental Evaluation (ICDE 2022)
-* Learned Cardinality Estimation: An In-depth Study (SIGMOD 2022)
-* Warper: Efficiently Adapting Learned Cardinality Estimators to Data and Workload Drifts (SIGMOD 2022)
-* Lightweight and Accurate Cardinality Estimation by Neural Network Gaussian Process for Approximate Complex Event Processing (SIGMOD 2022)
+
 
 #### Data-based
 (kernal density model)
@@ -292,6 +290,9 @@ Table of Contents
 * Learned Cardinality Estimation for Similarity Queries (SIGMOD 2021)
 * Uncertainty-aware Cardinality Estimation by Neural Network Gaussian Process (arXiv 2021)
 * Flow-Loss: Learning Cardinality Estimates That Matter (VLDB 2021)
+* Learned Cardinality Estimation: An In-depth Study (SIGMOD 2022)
+* Warper: Efficiently Adapting Learned Cardinality Estimators to Data and Workload Drifts (SIGMOD 2022)
+* Lightweight and Accurate Cardinality Estimation by Neural Network Gaussian Process for Approximate Complex Event Processing (SIGMOD 2022)
 
 ### Cost Estimation
 #### Single Query
