@@ -156,10 +156,12 @@ Table of Contents
 * Magic mirror in my hand, which is the best in the land? An Experimental Evaluation of Index Selection Algorithms (VLDB 2020)
 * An Index Advisor Using Deep Reinforcement Learning (CIKM 2020)
 * DBA bandits: Self-driving index tuning under ad-hoc, analytical workloads with safety guarantees (ICDE 2021)
+* MANTIS: Multiple Type and Attribute Index Selection using Deep Reinforcement Learning (IDEAS 2021)
 * AutoIndex: An Incremental Index Management System for Dynamic Workloads (ICDE 2022)
 * SWIRL: Selection of Workload-aware Indexes using Reinforcement Learning (EDBT 2022)
-* MANTIS: Multiple Type and Attribute Index Selection using Deep Reinforcement Learning (IDEAS 2021)
 * Indexer++: workload-aware online index tuning with transformers and reinforcement learning (ACM SIGAPP SAC, 2022)
+Budget-aware Index Tuning with Reinforcement Learning (SIGMOD 2022)
+ISUM: Efficiently Compressing Large and Complex Workloads for Scalable Index Tuning (SIGMOD 2022)
 
 #### Schema & Partition
 
