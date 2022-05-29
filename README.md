@@ -160,8 +160,8 @@ Table of Contents
 * AutoIndex: An Incremental Index Management System for Dynamic Workloads (ICDE 2022)
 * SWIRL: Selection of Workload-aware Indexes using Reinforcement Learning (EDBT 2022)
 * Indexer++: workload-aware online index tuning with transformers and reinforcement learning (ACM SIGAPP SAC, 2022)
-Budget-aware Index Tuning with Reinforcement Learning (SIGMOD 2022)
-ISUM: Efficiently Compressing Large and Complex Workloads for Scalable Index Tuning (SIGMOD 2022)
+* Budget-aware Index Tuning with Reinforcement Learning (SIGMOD 2022)
+* ISUM: Efficiently Compressing Large and Complex Workloads for Scalable Index Tuning (SIGMOD 2022)
 
 #### Schema & Partition
 
