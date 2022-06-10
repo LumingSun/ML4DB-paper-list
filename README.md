@@ -145,6 +145,7 @@ Table of Contents
 * TONE: cutting tail-latency in learned indexes (CHEOPS 22)
 * A Learned Index for Exact Similarity Search in Metric Spaces (ArXiv 2022)
 * RW-tree: A Learned Workload-aware Framework for R-tree Construction (ICDE 2022)
+* The "AI+R"-tree: An Instance-optimized R-tree (MDM 2022)
 
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
