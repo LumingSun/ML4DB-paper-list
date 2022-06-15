@@ -74,6 +74,8 @@ Table of Contents
 * Survey on Learnable Databases: A Machine Learning Perspective (Big Data Research 2021)
 * Database Optimizers in the Era of Learning (ICDE 2022)
 * Machine Learning for Data Management: A System View (ICDE 2022)
+* Tastes Great! Less Filling! High Performance and Accurate Training Data Collection for Self-Driving Database Management Systems (SIGMOD 2022)
+* SAM: Database Generation from Query Workload with Supervised Autoregressive Model (SIGMOD 2022)
 ## Data Access
 ### Configuration Tuning
 * SARD: A statistical approach for ranking database tuning parameters (ICDEW, 2008)
@@ -99,6 +101,10 @@ Table of Contents
 * Towards Dynamic and Safe Configuration Tuning for Cloud Databases (SIGMOD 2022)
 * Automatic Performance Tuning for Distributed Data Stream Processing Systems (ICDE 2022)
 * Adaptive Code Learning for Spark Configuration Tuning (ICDE 2022)
+* DB-BERT: A Database Tuning Tool that "Reads the Manual" (SIGMOD 2022)
+* Towards Dynamic and Safe Configuration Tuning for Cloud Databases (SIGMOD 2022)
+* HUNTER: An Online Cloud Database Hybrid Tuning System for Personalized Requirements (SIGMOD 2022)
+* LOCAT: Low-Overhead Online Configuration Auto-Tuning of Spark SQL Applications (SIGMOD 2022)
 ### Physical Design
 #### Learned structure
 * Stacked Filters: Learning to Filter by Structure (VLDB 2021)
@@ -146,6 +152,8 @@ Table of Contents
 * A Learned Index for Exact Similarity Search in Metric Spaces (ArXiv 2022)
 * RW-tree: A Learned Workload-aware Framework for R-tree Construction (ICDE 2022)
 * The "AI+R"-tree: An Instance-optimized R-tree (MDM 2022)
+* LHI: A Learned Hamming Space Index Framework for Efficient Similarity Search (SIGMOD 2022)
+* Entropy Learned Hashing: 10X Faster Hashing with Controllable Uniformity (SIGMOD 2022)
 
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
@@ -163,6 +171,7 @@ Table of Contents
 * Indexer++: workload-aware online index tuning with transformers and reinforcement learning (ACM SIGAPP SAC, 2022)
 * Budget-aware Index Tuning with Reinforcement Learning (SIGMOD 2022)
 * ISUM: Efficiently Compressing Large and Complex Workloads for Scalable Index Tuning (SIGMOD 2022)
+
 
 #### Schema & Partition
 
@@ -227,6 +236,8 @@ Table of Contents
 * Query-based Workload Forecasting for Self-Driving Database Management Systems (SIGMOD 2018）
 * Database Workload Characterization with Query Plan Encoders (arXiv 2021)
 * Explaining Inference Queries with Bayesian Optimization (VLDB 2021)
+* Statistical Schema Learning with Occam's Razor (SIGMOD 2022)
+* Intelligent Automated Workload Analysis for Database Replatforming (SIGMOD 2022)
 
 ## Query Optimization
 ### Query Rewrite
@@ -244,7 +255,7 @@ Table of Contents
 * Unsupervised Selectivity Estimation by Integrating Gaussian Mixture Models and an Autoregressive Model (EDBT 2022)
 * Selectivity Functions of Range Queries are Learnable (SIGMOD 2022)
 * Prediction Intervals for Learned Cardinality Estimation: An Experimental Evaluation (ICDE 2022)
-
+* Learned Cardinality Estimation: An In-depth Study (SIGMOD 2022)
 
 #### Data-based
 (kernal density model)
@@ -293,7 +304,6 @@ Table of Contents
 * Learned Cardinality Estimation for Similarity Queries (SIGMOD 2021)
 * Uncertainty-aware Cardinality Estimation by Neural Network Gaussian Process (arXiv 2021)
 * Flow-Loss: Learning Cardinality Estimates That Matter (VLDB 2021)
-* Learned Cardinality Estimation: An In-depth Study (SIGMOD 2022)
 * Warper: Efficiently Adapting Learned Cardinality Estimators to Data and Workload Drifts (SIGMOD 2022)
 * Lightweight and Accurate Cardinality Estimation by Neural Network Gaussian Process for Approximate Complex Event Processing (SIGMOD 2022)
 
@@ -342,6 +352,7 @@ Table of Contents
 * A Unified Transferable Model for ML-Enhanced DBMS (CIDR 2021)
 * Balsa: Learning a Query Optimizer Without Expert Demonstrations (SIGMOD 2022)
 * Leveraging Query Logs and Machine Learning for Parametric Query Optimization (VLDB 2022)
+* Deploying a Steered Query Optimizer in Production at Microsoft (SIGMOD 2022)
 ## Query Execution
 ### Sort
 * The Case for a Learned Sorting Algorithm (SIGMOD 2020)
@@ -386,3 +397,4 @@ Table of Contents
 * BERT Meets Relational DB: Contextual Representations of Relational Databases
 * CodexDB: Generating Code for Processing SQL Queries using GPT-3 Codex (ArXiv 2022)
 * Natural language to SQL [Resource repo](https://github.com/yechens/NL2SQL)
+* LearnedSQLGen: Constraint-aware SQL Generation using Reinforcement Learning (SIGMOD 2022)
