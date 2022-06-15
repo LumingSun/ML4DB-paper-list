@@ -154,6 +154,7 @@ Table of Contents
 * The "AI+R"-tree: An Instance-optimized R-tree (MDM 2022)
 * LHI: A Learned Hamming Space Index Framework for Efficient Similarity Search (SIGMOD 2022)
 * Entropy Learned Hashing: 10X Faster Hashing with Controllable Uniformity (SIGMOD 2022)
+* Tuning Hierarchical Learned Indexes on Disk and Beyond (SIGMOD 2022)
 
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
@@ -398,3 +399,4 @@ Table of Contents
 * CodexDB: Generating Code for Processing SQL Queries using GPT-3 Codex (ArXiv 2022)
 * Natural language to SQL [Resource repo](https://github.com/yechens/NL2SQL)
 * LearnedSQLGen: Constraint-aware SQL Generation using Reinforcement Learning (SIGMOD 2022)
+* PreQR: Pre-training Representation for SQL Understanding (SIGMDO 2022)
