@@ -172,7 +172,7 @@ Table of Contents
 * Indexer++: workload-aware online index tuning with transformers and reinforcement learning (ACM SIGAPP SAC, 2022)
 * Budget-aware Index Tuning with Reinforcement Learning (SIGMOD 2022)
 * ISUM: Efficiently Compressing Large and Complex Workloads for Scalable Index Tuning (SIGMOD 2022)
-
+* DISTILL: Low-Overhead Data-Driven Techniques for Filtering and Costing Indexes for Scalable Index Tuning (2022)
 
 #### Schema & Partition
 
