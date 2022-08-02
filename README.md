@@ -1,5 +1,5 @@
 
-# [Paper List] AIDB / ML4DB / Autonomous Database / 智能数据库 / Self-driving Database
+# [Paper List] AI4DB / ML4DB / Autonomous Database / 智能数据库 / Self-driving Database
 Paper list for database systems with artificial intelligence (machine learning, deep learning, reinforcement learning)
 
 有关机器学习、神经网络、强化学习、自调优技术等在数据库系统中的应用的文章列表
@@ -8,10 +8,6 @@ Welcome to PR!
 
 欢迎大家补充！
 
-
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/LumingSun/ML4DB-paper-list.svg)](https://starchart.cc/LumingSun/ML4DB-paper-list)
 
 Table of Contents
 =================
@@ -400,3 +396,8 @@ Table of Contents
 * Natural language to SQL [Resource repo](https://github.com/yechens/NL2SQL)
 * LearnedSQLGen: Constraint-aware SQL Generation using Reinforcement Learning (SIGMOD 2022)
 * PreQR: Pre-training Representation for SQL Understanding (SIGMDO 2022)
+
+=================
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/LumingSun/ML4DB-paper-list.svg)](https://starchart.cc/LumingSun/ML4DB-paper-list)
