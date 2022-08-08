@@ -151,6 +151,8 @@ Table of Contents
 * LHI: A Learned Hamming Space Index Framework for Efficient Similarity Search (SIGMOD 2022)
 * Entropy Learned Hashing: 10X Faster Hashing with Controllable Uniformity (SIGMOD 2022)
 * Tuning Hierarchical Learned Indexes on Disk and Beyond (SIGMOD 2022)
+* FLIRT: A Fast Learned Index for Rolling Time frames (EDBT 2022)
+* Testing the Robustness of Learned Index Structures (arXiv 2022)
 
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
