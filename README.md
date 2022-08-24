@@ -335,6 +335,7 @@ Table of Contents
 * Learning to Optimize Join Queries With Deep Reinforcement Learning (ArXiv)
 * Reinforcement Learning with Tree-LSTM for Join Order Selection (ICDE 2020)
 * Research Challenges in Deep Reinforcement Learning-based Join Query Optimization (aiDM 2020)
+* Efficient Join Order Selection Learning with Graph-based Representation (KDD 2022)
 ### Query Plan
 * Plan Selection Based on Query Clustering （VLDB 2002)
 * Cost-Based Query Optimization via AI Planning (AAAI 2014)
@@ -352,10 +353,12 @@ Table of Contents
 * Balsa: Learning a Query Optimizer Without Expert Demonstrations (SIGMOD 2022)
 * Leveraging Query Logs and Machine Learning for Parametric Query Optimization (VLDB 2022)
 * Deploying a Steered Query Optimizer in Production at Microsoft (SIGMOD 2022)
+* Building Learned Federated Query Optimizers (VLDB 2022 PhD Workshop)
 ## Query Execution
 ### Sort
 * The Case for a Learned Sorting Algorithm (SIGMOD 2020)
 * Defeating duplicates: A re-design of the LearnedSort algorithm (aiXiv 2021)
+* Towards Parallel Learned Sorting (arXiv 2022)
 ### Join
 * SkinnerDB : Regret-Bounded Query Evaluation via Reinforcement Learning (VLDB 2018)
 * The Case for Learned In-Memory Joins (arXiv 2021)
