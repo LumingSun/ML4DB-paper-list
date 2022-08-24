@@ -319,7 +319,7 @@ Table of Contents
 * Cost Models for Big Data Query Processing: Learning, Retrofitting, and Our Findings (2020)
 * DBMS Fitting: Why should we learn what we already know? (CIDR 2020)
 * A Note On Operator-Level Query Execution Cost Modeling (2020)
-* Zero-Shot Cost Models for Out-of-the-box Learned Cost Prediction (arXiv 2022)
+* Zero-Shot Cost Models for Out-of-the-box Learned Cost Prediction (VLDB 2022)
 #### Concurrent
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
 * Performance Prediction for Concurrent Database Workloads (SIGMOD 2011)
