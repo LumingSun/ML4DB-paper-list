@@ -102,7 +102,9 @@ Table of Contents
 * Towards Dynamic and Safe Configuration Tuning for Cloud Databases (SIGMOD 2022)
 * HUNTER: An Online Cloud Database Hybrid Tuning System for Personalized Requirements (SIGMOD 2022)
 * LOCAT: Low-Overhead Online Configuration Auto-Tuning of Spark SQL Applications (SIGMOD 2022)
+* LlamaTune: Sample-Efficient DBMS Configuration Tuning (VLDB 2022)
 ### Physical Design
+* Tiresias: Enabling Predictive Autonomous Storage and Indexing (VLDB 2022)
 #### Learned structure
 * Stacked Filters: Learning to Filter by Structure (VLDB 2021)
 * LEA: A Learned Encoding Advisor for Column Stores (aiDM 2021)
@@ -154,7 +156,7 @@ Table of Contents
 * Tuning Hierarchical Learned Indexes on Disk and Beyond (SIGMOD 2022)
 * FLIRT: A Fast Learned Index for Rolling Time frames (EDBT 2022)
 * Testing the Robustness of Learned Index Structures (arXiv 2022)
-
+* The Case for ML-Enhanced High-Dimensional Indexes (2022)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -206,6 +208,8 @@ Table of Contents
 * Optimal Resource Allocation for Serverless Queries (arXiv 2021)
 * sinan: ml-based and qos-aware resource management for cloud microservices (ASPLOS 2021)
 * Towards Optimal Resource Allocation for Big Data Analytics (EDBT 2022)
+* Tenant Placement in Over-subscribed Database-as-a-Service Clusters (VLDB 2022)
+* Fine-Grained Modeling and Optimization for Intelligent Resource Management in Big Data Processing (arXiv 2022)
 
 ### Performance Diagnosis and Modeling
 
@@ -283,6 +287,7 @@ Table of Contents
 * Astrid: Accurate Selectivity Estimation for String Predicates using Deep Learning (VLDB 2021)
 * FACE: A Normalizing Flow based Cardinality Estimator (VLDB 2022)
 * Pre-training Summarization Models of Structured Datasets for Cardinality Estimation (VLDB 2022)
+* Cardinality Estimation of Approximate Substring Queries using Deep Learning (VLDB 2022)
 #### Query-based
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
 * Selectivity Estimation in Extensible Databases -A Neural Network Approach （VLDB 1998）
@@ -402,6 +407,7 @@ Table of Contents
 * Natural language to SQL [Resource repo](https://github.com/yechens/NL2SQL)
 * LearnedSQLGen: Constraint-aware SQL Generation using Reinforcement Learning (SIGMOD 2022)
 * PreQR: Pre-training Representation for SQL Understanding (SIGMDO 2022)
+* From BERT to GPT-3 Codex: Harnessing the Potential of Very Large Language Models for Data Management (VLDB 2022)
 
 =================
 ## Stargazers over time
