@@ -342,6 +342,7 @@ Table of Contents
 * Reinforcement Learning with Tree-LSTM for Join Order Selection (ICDE 2020)
 * Research Challenges in Deep Reinforcement Learning-based Join Query Optimization (aiDM 2020)
 * Efficient Join Order Selection Learning with Graph-based Representation (KDD 2022)
+* SOAR:A Learned Join Order Selector with Graph Attention Mechanism （IJCNN 2022）
 ### Query Plan
 * Plan Selection Based on Query Clustering （VLDB 2002)
 * Cost-Based Query Optimization via AI Planning (AAAI 2014)
