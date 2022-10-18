@@ -100,10 +100,10 @@ Table of Contents
 * Automatic Performance Tuning for Distributed Data Stream Processing Systems (ICDE 2022)
 * Adaptive Code Learning for Spark Configuration Tuning (ICDE 2022)
 * DB-BERT: A Database Tuning Tool that "Reads the Manual" (SIGMOD 2022)
-* Towards Dynamic and Safe Configuration Tuning for Cloud Databases (SIGMOD 2022)
 * HUNTER: An Online Cloud Database Hybrid Tuning System for Personalized Requirements (SIGMOD 2022)
 * LOCAT: Low-Overhead Online Configuration Auto-Tuning of Spark SQL Applications (SIGMOD 2022)
 * LlamaTune: Sample-Efficient DBMS Configuration Tuning (VLDB 2022)
+* BLUTune: Query-informed Multi-stage IBM Db2 Tuning via ML (CIKM 2022)
 ### Physical Design
 * Tiresias: Enabling Predictive Autonomous Storage and Indexing (VLDB 2022)
 #### Learned structure
@@ -175,7 +175,7 @@ Table of Contents
 * Budget-aware Index Tuning with Reinforcement Learning (SIGMOD 2022)
 * ISUM: Efficiently Compressing Large and Complex Workloads for Scalable Index Tuning (SIGMOD 2022)
 * DISTILL: Low-Overhead Data-Driven Techniques for Filtering and Costing Indexes for Scalable Index Tuning (VLDB 2022)
-
+* SmartIndex: An Index Advisor with Learned Cost Estimator (CIKM 2022)
 #### Schema & Partition
 
 ##### Offline
@@ -327,6 +327,7 @@ Table of Contents
 * A Note On Operator-Level Query Execution Cost Modeling (2020)
 * Zero-Shot Cost Models for Out-of-the-box Learned Cost Prediction (VLDB 2022)
 * Efficient Learning with Pseudo Labels for Query Cost Estimation (CIKM 2022)
+* gCBO: A Cost-based Optimizer for Graph Databases (CIKM 2022)
 #### Concurrent
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
 * Performance Prediction for Concurrent Database Workloads (SIGMOD 2011)
