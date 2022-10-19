@@ -133,6 +133,8 @@ Table of Contents
 * A Tutorial on Learned Multi-dimensional Indexes (SIGSPATIAL 2020)
 * Why Are Learned Indexes So Effective? (ICML 2020)
 * Learned Indexes for a Google-scale Disk-based Database (arXiv 2020)
+* SIndex: A Scalable Learned Index for String Keys （APSys 2020)
+* XIndex: A Scalable Learned Index for Multicore Data Storage （PPoPP 2020)
 * Tsunami: A Learned Multi-dimensional Index for Correlated Data and Skewed Workloads (VLDB 2021)
 * A Lazy Approach for Efficient Index Learning (2021)
 * The RLR-Tree: A Reinforcement Learning Based R-Tree for Spatial Data (arXiv 2021)
@@ -391,7 +393,6 @@ Table of Contents
 * Learning Scheduling Algorithms for Data Processing Clusters (SIGCOMM 2019)
 * CrocodileDB: Efficient Database Execution through Intelligent Deferment (CIDT 2020)
 * Buffer Pool Aware Query Scheduling via Deep Reinforcement Learning (2020)
-* Polyjuice: High-Performance Transactions via Learned Concurrency Control (arXiv 2021)
 * Self-Tuning Query Scheduling for Analytical Workloads (SIGMOD 2021)
 * LSched: A Workload-Aware Learned Query Scheduler for Analytical Database Systems (SIGMOD 2022)
 
@@ -399,6 +400,7 @@ Table of Contents
 
 * Scheduling OLTP transactions via learned abort prediction (aiDM@SIGMOD 2019)
 * Scheduling OLTP Transactions via Machine Learning （2019）
+* Polyjuice: High-Performance Transactions via Learned Concurrency Control (OSDI 2021)
 ## SQL Related
 * Query2Vec (ArXiv)
 * An End-to-end Neural Natural Language Interface for Databases
