@@ -330,6 +330,8 @@ Table of Contents
 * Zero-Shot Cost Models for Out-of-the-box Learned Cost Prediction (VLDB 2022)
 * Efficient Learning with Pseudo Labels for Query Cost Estimation (CIKM 2022)
 * gCBO: A Cost-based Optimizer for Graph Databases (CIKM 2022)
+* QueryFormer: A Tree Transformer Model for Query Plan Representation (VLDB 2022)
+
 #### Concurrent
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
 * Performance Prediction for Concurrent Database Workloads (SIGMOD 2011)
