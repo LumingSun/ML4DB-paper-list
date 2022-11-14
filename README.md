@@ -39,6 +39,7 @@ Table of Contents
     * [Concurrent](#Concurrent)
   * [Join Optimization](#join-optimization)
   * [Query Plan](#query-plan)
+  * [Materialized View](#materialized-view)
 * [Query Execution](#query-execution)
   * [Sort](#sort)
   * [Join](#join)
@@ -213,6 +214,7 @@ Table of Contents
 * Towards Optimal Resource Allocation for Big Data Analytics (EDBT 2022)
 * Tenant Placement in Over-subscribed Database-as-a-Service Clusters (VLDB 2022)
 * Fine-Grained Modeling and Optimization for Intelligent Resource Management in Big Data Processing (arXiv 2022)
+* SIMPPO: a scalable and incremental online learning framework for serverless resource management (SoCC 2022)
 
 ### Performance Diagnosis and Modeling
 
@@ -245,6 +247,7 @@ Table of Contents
 * Explaining Inference Queries with Bayesian Optimization (VLDB 2021)
 * Statistical Schema Learning with Occam's Razor (SIGMOD 2022)
 * Intelligent Automated Workload Analysis for Database Replatforming (SIGMOD 2022)
+* Stitcher: Learned Workload Synthesis from Historical Performance Footprints (EDBT 2022)
 
 ## Query Optimization
 ### Query Rewrite
@@ -314,7 +317,7 @@ Table of Contents
 * Flow-Loss: Learning Cardinality Estimates That Matter (VLDB 2021)
 * Warper: Efficiently Adapting Learned Cardinality Estimators to Data and Workload Drifts (SIGMOD 2022)
 * Lightweight and Accurate Cardinality Estimation by Neural Network Gaussian Process for Approximate Complex Event Processing (SIGMOD 2022)
-
+* Enhanced Featurization of Queries with Mixed Combinations of Predicates for ML-based Cardinality Estimation (EDBT 2023)
 ### Cost Estimation
 #### Single Query
 * Statistical learning techniques for costing XML queries (VLDB 2005)
@@ -368,6 +371,12 @@ Table of Contents
 * Leveraging Query Logs and Machine Learning for Parametric Query Optimization (VLDB 2022)
 * Deploying a Steered Query Optimizer in Production at Microsoft (SIGMOD 2022)
 * Building Learned Federated Query Optimizers (VLDB 2022 PhD Workshop)
+* Cost-based or Learning-based? A Hybrid Query Optimizer for Query Plan Selection (VLDB 2022)
+### Materialized View
+* Automatic View Generation with Deep Learning and Reinforcement Learning (ICDE 2020)
+* An Autonomous Materialized View Management System with Deep Reinforcement Learning (ICDE 2021)
+* A Technical Report on Dynamic Materialized View Management using Graph Neural Network
+* Dynamic Materialized View Management using Graph Neural Network (ICDE 2023)
 ## Query Execution
 ### Sort
 * The Case for a Learned Sorting Algorithm (SIGMOD 2020)
