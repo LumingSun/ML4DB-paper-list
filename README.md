@@ -5,7 +5,7 @@ Paper list for database systems with artificial intelligence (machine learning, 
 
 New papers keep coming, remember to **Watch** this repo if you are interested in this topic.
 
-有关机器学习、神经网络、强化学习、自调优技术等在数据库系统中的应用的文章列表，列表持续更新中，记得按赞、分享打开小铃铛（watch）！
+有关机器学习、神经网络、强化学习、自调优技术等在数据库系统中的应用的文章列表，列表持续更新中，记得按赞、分享、打开小铃铛！
 
 Welcome to PR!
 
