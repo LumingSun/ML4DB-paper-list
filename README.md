@@ -33,6 +33,7 @@ Table of Contents
     * [Metrics Prediction for Queries](#metrics-prediction-for-queries)
     * [Workload Characterization](#workload-characterization)
 * [Query Optimization](#query-optimization)
+    * [Query Rewrite](#query-write)
     * [Cardinality Estimation](#cardinality-estimation)
       * [Data-based](#data-based)
       * [Query-based](#query-based)
