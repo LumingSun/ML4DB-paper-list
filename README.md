@@ -31,7 +31,7 @@ Table of Contents
     * [Performance Diagnosis and Modeling](#performance-diagnosis-and-modeling)
     * [Workload Shift Detection](#workload-shift-detection)
     * [Metrics Prediction for Queries](#metrics-prediction-for-queries)
-    * [Workload Characterization](#workload-characterization)
+    * [Workload Characterization & Forecasting](#workload-characterization-&-forecasting)
 * [Query Optimization](#query-optimization)
     * [Query Rewrite](#query-write)
     * [Cardinality Estimation](#cardinality-estimation)
@@ -164,6 +164,7 @@ Table of Contents
 * FLIRT: A Fast Learned Index for Rolling Time frames (EDBT 2022)
 * Testing the Robustness of Learned Index Structures (arXiv 2022)
 * The Case for ML-Enhanced High-Dimensional Indexes (2022)
+* PLIN: A Persistent Learned Index for Non-Volatile Memory with High Performance and Instant Recovery (VLDB 2023)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -240,7 +241,7 @@ Table of Contents
 * Predicting multiple metrics for queries: Better decisions enabled by machine learning (ICDE 2009)
 * Learning-based SPARQL query performance modeling and prediction (WWW 2017)
 
-### Workload Characterization
+### Workload Characterization & Forecasting
 
 * On Workload Characterization of Relational Database Environments (TSE 1992)
 * Workload Models for Autonomic Database Management Systems (International Conference on Autonomic and Autonomous Systems 2006)
@@ -251,6 +252,7 @@ Table of Contents
 * Statistical Schema Learning with Occam's Razor (SIGMOD 2022)
 * Intelligent Automated Workload Analysis for Database Replatforming (SIGMOD 2022)
 * Stitcher: Learned Workload Synthesis from Historical Performance Footprints (EDBT 2022)
+* DBAugur: An Adversarial-based Trend Forecasting System for Diversified Workloads (ICDE 2023)
 
 ## Query Optimization
 ### Query Rewrite
