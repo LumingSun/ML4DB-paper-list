@@ -23,6 +23,7 @@ Table of Contents
     * [Index](#index)
       * [Index Structure](#index-structure)
       * [Index Recommendation](#index-recommendation)
+    * [Materialized View](#materialized-view)
     * [Schema &amp; Partition](#schema--partition)
       * [Offline](#offline)
       * [Online](#online)
@@ -33,16 +34,15 @@ Table of Contents
     * [Metrics Prediction for Queries](#metrics-prediction-for-queries)
     * [Workload Characterization & Forecasting](#workload-characterization-&-forecasting)
 * [Query Optimization](#query-optimization)
-    * [Query Rewrite](#query-write)
-    * [Cardinality Estimation](#cardinality-estimation)
-      * [Data-based](#data-based)
-      * [Query-based](#query-based)
+   * [Query Rewrite](#query-write)
+   * [Cardinality Estimation](#cardinality-estimation)
+     * [Data-based](#data-based)
+     * [Query-based](#query-based)
   * [Cost Estimation](#cost-estimation)
     * [Single Query](#single-query)
     * [Concurrent](#Concurrent)
   * [Join Optimization](#join-optimization)
   * [Query Plan](#query-plan)
-  * [Materialized View](#materialized-view)
 * [Query Execution](#query-execution)
   * [Sort](#sort)
   * [Join](#join)
@@ -183,8 +183,14 @@ Table of Contents
 * ISUM: Efficiently Compressing Large and Complex Workloads for Scalable Index Tuning (SIGMOD 2022)
 * DISTILL: Low-Overhead Data-Driven Techniques for Filtering and Costing Indexes for Scalable Index Tuning (VLDB 2022)
 * SmartIndex: An Index Advisor with Learned Cost Estimator (CIKM 2022)
+* HMAB: self-driving hierarchy of bandits for integrated physical database design tuning (VLDB 2022)
+### Materialized View
+* Automatic View Generation with Deep Learning and Reinforcement Learning (ICDE 2020)
+* An Autonomous Materialized View Management System with Deep Reinforcement Learning (ICDE 2021)
+* A Technical Report on Dynamic Materialized View Management using Graph Neural Network
+* Dynamic Materialized View Management using Graph Neural Network (ICDE 2023)
+* HMAB: self-driving hierarchy of bandits for integrated physical database design tuning (VLDB 2022)
 #### Schema & Partition
-
 ##### Offline
 
 * Schism: a Workload-Driven Approach to Database Replication and Partitioning (VLDB 2010)
@@ -377,11 +383,7 @@ Table of Contents
 * Deploying a Steered Query Optimizer in Production at Microsoft (SIGMOD 2022)
 * Building Learned Federated Query Optimizers (VLDB 2022 PhD Workshop)
 * Cost-based or Learning-based? A Hybrid Query Optimizer for Query Plan Selection (VLDB 2022)
-### Materialized View
-* Automatic View Generation with Deep Learning and Reinforcement Learning (ICDE 2020)
-* An Autonomous Materialized View Management System with Deep Reinforcement Learning (ICDE 2021)
-* A Technical Report on Dynamic Materialized View Management using Graph Neural Network
-* Dynamic Materialized View Management using Graph Neural Network (ICDE 2023)
+
 ## Query Execution
 ### Sort
 * The Case for a Learned Sorting Algorithm (SIGMOD 2020)
@@ -402,6 +404,7 @@ Table of Contents
 * ML-AQP: Query-Driven Approximate Query Processing based on Machine Learning (2020)
 * Approximate Query Processing for Group-By Queries based on Conditional Generative Models (2021)
 * Learned Approximate Query Processing: Make it Light, Accurate and Fast (CIDR 2021)
+* NeuroSketch: Fast and Approximate Evaluation of Range Aggregate Queries with Neural Networks (arXiv 2022)
 ### Sheduling
 * Workload management for cloud databases via machine learning (ICDE 2016 WiseDB)
 * A learning-based service for cost and performance management of cloud databases （ICDEW 2017）(short version for WiSeDB)
