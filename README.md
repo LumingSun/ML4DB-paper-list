@@ -78,6 +78,7 @@ Table of Contents
 * Tastes Great! Less Filling! High Performance and Accurate Training Data Collection for Self-Driving Database Management Systems (SIGMOD 2022)
 * SAM: Database Generation from Query Workload with Supervised Autoregressive Model (SIGMOD 2022)
 * Detect, Distill and Update: Learned DB Systems Facing Out of Distribution Data (SIGMOD 2023)
+* SageDB: An Instance-Optimized Data Analytics System (VLDB 2023)
 ## Data Access
 ### Configuration Tuning
 * SARD: A statistical approach for ranking database tuning parameters (ICDEW, 2008)
