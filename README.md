@@ -165,6 +165,7 @@ Table of Contents
 * FLIRT: A Fast Learned Index for Rolling Time frames (EDBT 2022)
 * Testing the Robustness of Learned Index Structures (arXiv 2022)
 * The Case for ML-Enhanced High-Dimensional Indexes (2022)
+* A Learned Index for Exact Similarity Search in Metric Spaces (arxiv 2022)
 * PLIN: A Persistent Learned Index for Non-Volatile Memory with High Performance and Instant Recovery (VLDB 2023)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
