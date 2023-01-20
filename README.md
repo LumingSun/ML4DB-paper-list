@@ -167,6 +167,8 @@ Table of Contents
 * The Case for ML-Enhanced High-Dimensional Indexes (2022)
 * A Learned Index for Exact Similarity Search in Metric Spaces (arxiv 2022)
 * PLIN: A Persistent Learned Index for Non-Volatile Memory with High Performance and Instant Recovery (VLDB 2023)
+* A Data-aware Learned Index Scheme for Efficient Writes (ICPP 2022)
+* Frequency Estimation in Data Streams: Learning the Optimal Hashing Scheme (TKDE)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
