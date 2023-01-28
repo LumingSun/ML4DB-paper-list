@@ -207,7 +207,7 @@ Table of Contents
 * Lachesis: Automated Partitioning for UDF-Centric Analytics (VLDB 2021)
 * Instance-Optimized Data Layouts for Cloud Analytics Workloads (SIGMOD 2021)
 * Jigsaw: A Data Storage and Query Processing Engine for Irregular Table Partitioning (SIGMOD 2021)
-
+* Dalton: Learned Partitioning for Distributed Data Streams (VLDB 2023)
 ##### Online
 
 - Relax and Let the Database Do the Partitioning Online (BIRTE 2011)
