@@ -27,6 +27,7 @@ Table of Contents
     * [Schema &amp; Partition](#schema--partition)
       * [Offline](#offline)
       * [Online](#online)
+  * [Cache related](#cache-related)
 * [Workload](#workload)
     * [Resource Estimation and Auto-scaling](#resource-estimation-and-auto-scaling)
     * [Performance Diagnosis and Modeling](#performance-diagnosis-and-modeling)
@@ -169,6 +170,7 @@ Table of Contents
 * PLIN: A Persistent Learned Index for Non-Volatile Memory with High Performance and Instant Recovery (VLDB 2023)
 * A Data-aware Learned Index Scheme for Efficient Writes (ICPP 2022)
 * Frequency Estimation in Data Streams: Learning the Optimal Hashing Scheme (TKDE)
+* FILM: A Fully Learned Index for Larger-Than-Memory Databases (VLDB 2023)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -188,6 +190,7 @@ Table of Contents
 * DISTILL: Low-Overhead Data-Driven Techniques for Filtering and Costing Indexes for Scalable Index Tuning (VLDB 2022)
 * SmartIndex: An Index Advisor with Learned Cost Estimator (CIKM 2022)
 * HMAB: self-driving hierarchy of bandits for integrated physical database design tuning (VLDB 2022)
+* Learned Index Benefits: Machine Learning Based Index Performance Estimation (VLDB 2023)
 ### Materialized View
 * Automatic View Generation with Deep Learning and Reinforcement Learning (ICDE 2020)
 * An Autonomous Materialized View Management System with Deep Reinforcement Learning (ICDE 2021)
@@ -214,6 +217,9 @@ Table of Contents
 - SWORD: Scalable Workload-Aware Data Placement for Transactional Workloads (EDBT 2013)
 - Online Data Partitioning in Distributed Database Systems (EDBT 2015)
 - A Robust Partitioning Scheme for Ad-Hoc Query Workloads (SOCC 2017)
+
+### Cache related
+* A Learned Cache Eviction Framework with Minimal Overhead (arXiv 2023)
 
 ## Workload
 
@@ -437,7 +443,7 @@ Table of Contents
 * LearnedSQLGen: Constraint-aware SQL Generation using Reinforcement Learning (SIGMOD 2022)
 * PreQR: Pre-training Representation for SQL Understanding (SIGMDO 2022)
 * From BERT to GPT-3 Codex: Harnessing the Potential of Very Large Language Models for Data Management (VLDB 2022)
-
+* A survey on deep learning approaches for text-to-SQL (VLDBJ)
 =================
 ## Stargazers over time
 
