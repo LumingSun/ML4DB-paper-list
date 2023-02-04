@@ -415,6 +415,7 @@ Table of Contents
 * Approximate Query Processing for Group-By Queries based on Conditional Generative Models (2021)
 * Learned Approximate Query Processing: Make it Light, Accurate and Fast (CIDR 2021)
 * NeuroSketch: Fast and Approximate Evaluation of Range Aggregate Queries with Neural Networks (arXiv 2022)
+* Exploiting Machine Learning Models for Approximate Query Processing (Big Data 2022)
 ### Sheduling
 * Workload management for cloud databases via machine learning (ICDE 2016 WiseDB)
 * A learning-based service for cost and performance management of cloud databases （ICDEW 2017）(short version for WiSeDB)
