@@ -445,6 +445,7 @@ Table of Contents
 * PreQR: Pre-training Representation for SQL Understanding (SIGMDO 2022)
 * From BERT to GPT-3 Codex: Harnessing the Potential of Very Large Language Models for Data Management (VLDB 2022)
 * A survey on deep learning approaches for text-to-SQL (VLDBJ)
+
 =================
 ## Stargazers over time
 
