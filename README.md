@@ -108,6 +108,7 @@ Table of Contents
 * DB-BERT: A Database Tuning Tool that "Reads the Manual" (SIGMOD 2022)
 * HUNTER: An Online Cloud Database Hybrid Tuning System for Personalized Requirements (SIGMOD 2022)
 * LOCAT: Low-Overhead Online Configuration Auto-Tuning of Spark SQL Applications (SIGMOD 2022)
+* Facilitating Database Tuning with Hyper-Parameter Optimization: A Comprehensive Experimental Evaluation (VLDB 2022)
 * LlamaTune: Sample-Efficient DBMS Configuration Tuning (VLDB 2022)
 * BLUTune: Query-informed Multi-stage IBM Db2 Tuning via ML (CIKM 2022)
 ### Physical Design
