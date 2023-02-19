@@ -394,6 +394,7 @@ Table of Contents
 * Deploying a Steered Query Optimizer in Production at Microsoft (SIGMOD 2022)
 * Building Learned Federated Query Optimizers (VLDB 2022 PhD Workshop)
 * Cost-based or Learning-based? A Hybrid Query Optimizer for Query Plan Selection (VLDB 2022)
+* Lero: A Learning-to-Rank Query Optimizer (VLDB 2023)
 
 ## Query Execution
 ### Sort
