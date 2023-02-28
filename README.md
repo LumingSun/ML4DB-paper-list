@@ -191,7 +191,7 @@ Table of Contents
 * DISTILL: Low-Overhead Data-Driven Techniques for Filtering and Costing Indexes for Scalable Index Tuning (VLDB 2022)
 * SmartIndex: An Index Advisor with Learned Cost Estimator (CIKM 2022)
 * HMAB: self-driving hierarchy of bandits for integrated physical database design tuning (VLDB 2022)
-* Learned Index Benefits: Machine Learning Based Index Performance Estimation (VLDB 2023)
+* Learned Index Benefits: Machine Learning Based Index Performance Estimation (VLDB 2023) [GitHub Link](https://github.com/JC-Shi/Learned-Index-Benefits)
 ### Materialized View
 * Automatic View Generation with Deep Learning and Reinforcement Learning (ICDE 2020)
 * An Autonomous Materialized View Management System with Deep Reinforcement Learning (ICDE 2021)
@@ -264,6 +264,7 @@ Table of Contents
 * Workload Models for Autonomic Database Management Systems (International Conference on Autonomic and Autonomous Systems 2006)
 * Workload characterization and prediction in the cloud: A multiple time series approach (APNOMS 2012）
 * Query-based Workload Forecasting for Self-Driving Database Management Systems (SIGMOD 2018）
+* Query2Vec: An Evaluation of NLP Techniques for Generalized Workload Analytics (Arxiv 2018)
 * Database Workload Characterization with Query Plan Encoders (arXiv 2021)
 * Explaining Inference Queries with Bayesian Optimization (VLDB 2021)
 * Statistical Schema Learning with Occam's Razor (SIGMOD 2022)
@@ -396,7 +397,7 @@ Table of Contents
 * Deploying a Steered Query Optimizer in Production at Microsoft (SIGMOD 2022)
 * Building Learned Federated Query Optimizers (VLDB 2022 PhD Workshop)
 * Cost-based or Learning-based? A Hybrid Query Optimizer for Query Plan Selection (VLDB 2022)
-* Lero: A Learning-to-Rank Query Optimizer (VLDB 2023)
+* Lero: A Learning-to-Rank Query Optimizer (VLDB 2023) [GitHub Link](https://github.com/AlibabaIncubator/Lero-on-PostgreSQL)
 
 ## Query Execution
 ### Sort
