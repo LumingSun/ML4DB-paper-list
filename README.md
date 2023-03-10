@@ -173,6 +173,7 @@ Table of Contents
 * Frequency Estimation in Data Streams: Learning the Optimal Hashing Scheme (TKDE)
 * FILM: A Fully Learned Index for Larger-Than-Memory Databases (VLDB 2023)
 * WISK: A Workload-aware Learned Index for Spatial Keyword Queries (arXiv 2023)
+* Efficiently Learning Spatial Indices (ICDE 2023)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -199,6 +200,7 @@ Table of Contents
 * A Technical Report on Dynamic Materialized View Management using Graph Neural Network
 * Dynamic Materialized View Management using Graph Neural Network (ICDE 2023)
 * HMAB: self-driving hierarchy of bandits for integrated physical database design tuning (VLDB 2022)
+* Dynamic Materialized View Management using Graph Neural Network (ICDE 2023)
 #### Schema & Partition
 ##### Offline
 
@@ -291,7 +293,7 @@ Table of Contents
 * Prediction Intervals for Learned Cardinality Estimation: An Experimental Evaluation (ICDE 2022)
 * Learned Cardinality Estimation: An In-depth Study (SIGMOD 2022)
 * FactorJoin: A New Cardinality Estimation Framework for Join Queries (SIGMOD 2023)
-
+* AutoCE: An Accurate and Efficient Model Advisor for Learned Cardinality Estimation (ICDE 2023)
 #### Data-based
 (kernal density model)
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
@@ -451,7 +453,7 @@ Table of Contents
 * PreQR: Pre-training Representation for SQL Understanding (SIGMDO 2022)
 * From BERT to GPT-3 Codex: Harnessing the Potential of Very Large Language Models for Data Management (VLDB 2022)
 * A survey on deep learning approaches for text-to-SQL (VLDBJ)
-
+* GAR: A Generate-and-Rank Approach for Natural Language to SQL Translation (ICDE 2023)
 =================
 ## Stargazers over time
 
