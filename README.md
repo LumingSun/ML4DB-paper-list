@@ -174,6 +174,7 @@ Table of Contents
 * FILM: A Fully Learned Index for Larger-Than-Memory Databases (VLDB 2023)
 * WISK: A Workload-aware Learned Index for Spatial Keyword Queries (arXiv 2023)
 * Efficiently Learning Spatial Indices (ICDE 2023)
+* Cutting Learned Index into Pieces: An In-depth Inquiry into Updatable Learned Indexes (ICDE 2023)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
