@@ -172,6 +172,7 @@ Table of Contents
 * A Data-aware Learned Index Scheme for Efficient Writes (ICPP 2022)
 * Frequency Estimation in Data Streams: Learning the Optimal Hashing Scheme (TKDE)
 * FILM: A Fully Learned Index for Larger-Than-Memory Databases (VLDB 2023)
+* WISK: A Workload-aware Learned Index for Spatial Keyword Queries (arXiv 2023)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
