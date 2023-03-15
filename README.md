@@ -111,6 +111,7 @@ Table of Contents
 * Facilitating Database Tuning with Hyper-Parameter Optimization: A Comprehensive Experimental Evaluation (VLDB 2022)
 * LlamaTune: Sample-Efficient DBMS Configuration Tuning (VLDB 2022)
 * BLUTune: Query-informed Multi-stage IBM Db2 Tuning via ML (CIKM 2022)
+* A Unified and Efficient Coordinating Framework for Autonomous DBMS Tuning (arXiv 2023)
 ### Physical Design
 * Tiresias: Enabling Predictive Autonomous Storage and Indexing (VLDB 2022)
 #### Learned structure
