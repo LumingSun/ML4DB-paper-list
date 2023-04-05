@@ -257,12 +257,6 @@ Table of Contents
 - Consistent on-line classification of dbs workload events (CIKM 2009)
 - On predictive modeling for optimizing transaction execution in parallel OLTP systems (VLDB 2011)
 
-### Metrics Prediction for Queries
-
-* PQR: Predicting Query Execution Times for Autonomous Workload Management (ICAC 2008)
-* Predicting multiple metrics for queries: Better decisions enabled by machine learning (ICDE 2009)
-* Learning-based SPARQL query performance modeling and prediction (WWW 2017)
-
 ### Workload Characterization & Forecasting
 
 * On Workload Characterization of Relational Database Environments (TSE 1992)
@@ -276,6 +270,8 @@ Table of Contents
 * Intelligent Automated Workload Analysis for Database Replatforming (SIGMOD 2022)
 * Stitcher: Learned Workload Synthesis from Historical Performance Footprints (EDBT 2022)
 * DBAugur: An Adversarial-based Trend Forecasting System for Diversified Workloads (ICDE 2023)
+* An Efficient Online Prediction of Host Workloads Using Pruned GRU Neural Nets (arXiv 2023)
+* Uncertainty-Aware Workload Prediction in Cloud Computing (arXiv 2023)
 
 ## Query Optimization
 ### Query Rewrite
@@ -355,6 +351,7 @@ Table of Contents
 * The Case for Predictive Database Systems : Opportunities and Challenges （CIDR 2011)
 * Learning-based query performance modeling and prediction (ICDE 2012)
 * Robust estimation of resource consumption for SQL queries using statistical techniques (VLDB 2012)
+* Learning-based SPARQL query performance modeling and prediction (WWW 2017)
 * Plan-Structured Deep Neural Network Models for Query Performance Prediction (arXiv 2019)
 * An End-to-End Learning-based Cost Estimator (arXiv 2019)(VLDB 2019)
 * Cost Models for Big Data Query Processing: Learning, Retrofitting, and Our Findings (2020)
@@ -383,6 +380,7 @@ Table of Contents
 * Research Challenges in Deep Reinforcement Learning-based Join Query Optimization (aiDM 2020)
 * Efficient Join Order Selection Learning with Graph-based Representation (KDD 2022)
 * SOAR:A Learned Join Order Selector with Graph Attention Mechanism （IJCNN 2022）
+* Query Join Order Optimization Method Based on Dynamic Double Deep Q-Network (Electronics 2023)
 ### Query Plan
 * Plan Selection Based on Query Clustering （VLDB 2002)
 * Cost-Based Query Optimization via AI Planning (AAAI 2014)
@@ -403,6 +401,7 @@ Table of Contents
 * Building Learned Federated Query Optimizers (VLDB 2022 PhD Workshop)
 * Cost-based or Learning-based? A Hybrid Query Optimizer for Query Plan Selection (VLDB 2022)
 * Lero: A Learning-to-Rank Query Optimizer (VLDB 2023) [GitHub Link](https://github.com/AlibabaIncubator/Lero-on-PostgreSQL)
+* Learned Query Superoptimization (arXiv 2023)
 
 ## Query Execution
 ### Sort
@@ -456,6 +455,7 @@ Table of Contents
 * From BERT to GPT-3 Codex: Harnessing the Potential of Very Large Language Models for Data Management (VLDB 2022)
 * A survey on deep learning approaches for text-to-SQL (VLDBJ)
 * GAR: A Generate-and-Rank Approach for Natural Language to SQL Translation (ICDE 2023)
+* Query Generation based on Generative Adversarial Networks (arXiv 2023)
 =================
 ## Stargazers over time
 
