@@ -402,6 +402,8 @@ Table of Contents
 * Cost-based or Learning-based? A Hybrid Query Optimizer for Query Plan Selection (VLDB 2022)
 * Lero: A Learning-to-Rank Query Optimizer (VLDB 2023) [GitHub Link](https://github.com/AlibabaIncubator/Lero-on-PostgreSQL)
 * Learned Query Superoptimization (arXiv 2023)
+* Kepler: Robust Learning for Faster Parametric Query Optimization (SIGMOD 2023)
+
 
 ## Query Execution
 ### Sort
