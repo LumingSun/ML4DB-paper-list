@@ -176,6 +176,7 @@ Table of Contents
 * WISK: A Workload-aware Learned Index for Spatial Keyword Queries (arXiv 2023)
 * Efficiently Learning Spatial Indices (ICDE 2023)
 * Cutting Learned Index into Pieces: An In-depth Inquiry into Updatable Learned Indexes (ICDE 2023)
+* DILI: A Distribution-Driven Learned Index (arXiv 2023)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -196,11 +197,11 @@ Table of Contents
 * SmartIndex: An Index Advisor with Learned Cost Estimator (CIKM 2022)
 * HMAB: self-driving hierarchy of bandits for integrated physical database design tuning (VLDB 2022)
 * Learned Index Benefits: Machine Learning Based Index Performance Estimation (VLDB 2023) [GitHub Link](https://github.com/JC-Shi/Learned-Index-Benefits)
+* AIM: A practical approach to automated index management for SQL databases (ICDE 2023)
 ### Materialized View
 * Automatic View Generation with Deep Learning and Reinforcement Learning (ICDE 2020)
 * An Autonomous Materialized View Management System with Deep Reinforcement Learning (ICDE 2021)
 * A Technical Report on Dynamic Materialized View Management using Graph Neural Network
-* Dynamic Materialized View Management using Graph Neural Network (ICDE 2023)
 * HMAB: self-driving hierarchy of bandits for integrated physical database design tuning (VLDB 2022)
 * Dynamic Materialized View Management using Graph Neural Network (ICDE 2023)
 #### Schema & Partition
@@ -241,6 +242,7 @@ Table of Contents
 * Tenant Placement in Over-subscribed Database-as-a-Service Clusters (VLDB 2022)
 * Fine-Grained Modeling and Optimization for Intelligent Resource Management in Big Data Processing (arXiv 2022)
 * SIMPPO: a scalable and incremental online learning framework for serverless resource management (SoCC 2022)
+* SUFS: A Generic Storage Usage Forecasting Service Through Adaptive Ensemble Learning (ICDE 2023)
 
 ### Performance Diagnosis and Modeling
 
@@ -292,6 +294,7 @@ Table of Contents
 * Learned Cardinality Estimation: An In-depth Study (SIGMOD 2022)
 * FactorJoin: A New Cardinality Estimation Framework for Join Queries (SIGMOD 2023)
 * AutoCE: An Accurate and Efficient Model Advisor for Learned Cardinality Estimation (ICDE 2023)
+* Couper: Memory-Efficient Cardinality Estimation under Unbalanced Distribution (ICDE 2023)
 #### Data-based
 (kernal density model)
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
@@ -403,6 +406,7 @@ Table of Contents
 * Lero: A Learning-to-Rank Query Optimizer (VLDB 2023) [GitHub Link](https://github.com/AlibabaIncubator/Lero-on-PostgreSQL)
 * Learned Query Superoptimization (arXiv 2023)
 * Kepler: Robust Learning for Faster Parametric Query Optimization (SIGMOD 2023)
+* LOGER: A Learned Optimizer towards Generating Efficient and Robust Query Execution Plans (VLDB 2023)
 
 
 ## Query Execution
@@ -458,6 +462,7 @@ Table of Contents
 * A survey on deep learning approaches for text-to-SQL (VLDBJ)
 * GAR: A Generate-and-Rank Approach for Natural Language to SQL Translation (ICDE 2023)
 * Query Generation based on Generative Adversarial Networks (arXiv 2023)
+* GAR: A Generate-and-Rank Approach for Natural Language to SQL Translation (ICDE 2023)
 =================
 ## Stargazers over time
 
