@@ -112,6 +112,7 @@ Table of Contents
 * LlamaTune: Sample-Efficient DBMS Configuration Tuning (VLDB 2022)
 * BLUTune: Query-informed Multi-stage IBM Db2 Tuning via ML (CIKM 2022)
 * A Unified and Efficient Coordinating Framework for Autonomous DBMS Tuning (arXiv 2023)
+* Automatic Database Knob Tuning: A Survey (TKDE)
 ### Physical Design
 * Tiresias: Enabling Predictive Autonomous Storage and Indexing (VLDB 2022)
 #### Learned structure
@@ -177,6 +178,7 @@ Table of Contents
 * Efficiently Learning Spatial Indices (ICDE 2023)
 * Cutting Learned Index into Pieces: An In-depth Inquiry into Updatable Learned Indexes (ICDE 2023)
 * DILI: A Distribution-Driven Learned Index (arXiv 2023)
+* Learned Index: A Comprehensive Experimental Evaluation (VLDB 202?)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
