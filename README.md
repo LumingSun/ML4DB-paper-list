@@ -178,7 +178,7 @@ Table of Contents
 * Efficiently Learning Spatial Indices (ICDE 2023)
 * Cutting Learned Index into Pieces: An In-depth Inquiry into Updatable Learned Indexes (ICDE 2023)
 * DILI: A Distribution-Driven Learned Index (arXiv 2023)
-* Learned Index: A Comprehensive Experimental Evaluation (VLDB 202?)
+* Learned Index: A Comprehensive Experimental Evaluation (VLDB 2023)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -220,6 +220,7 @@ Table of Contents
 * Instance-Optimized Data Layouts for Cloud Analytics Workloads (SIGMOD 2021)
 * Jigsaw: A Data Storage and Query Processing Engine for Irregular Table Partitioning (SIGMOD 2021)
 * Dalton: Learned Partitioning for Distributed Data Streams (VLDB 2023)
+* Grep: A Graph Learning Based Database Partitioning System (SIGMOD 2023)
 ##### Online
 
 - Relax and Let the Database Do the Partitioning Online (BIRTE 2011)
