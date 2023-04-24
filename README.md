@@ -350,6 +350,7 @@ Table of Contents
 * Lightweight and Accurate Cardinality Estimation by Neural Network Gaussian Process for Approximate Complex Event Processing (SIGMOD 2022)
 * Enhanced Featurization of Queries with Mixed Combinations of Predicates for ML-based Cardinality Estimation (EDBT 2023)
 * Speeding Up End-to-end Query Execution via Learning-based Progressive Cardinality Estimation (SIGMOD 2023)
+* Robust Query Driven Cardinality Estimation under Changing Workloads (VLDB 2023)
 ### Cost Estimation
 #### Single Query
 * Statistical learning techniques for costing XML queries (VLDB 2005)
