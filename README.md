@@ -179,6 +179,7 @@ Table of Contents
 * Cutting Learned Index into Pieces: An In-depth Inquiry into Updatable Learned Indexes (ICDE 2023)
 * DILI: A Distribution-Driven Learned Index (arXiv 2023)
 * Learned Index: A Comprehensive Experimental Evaluation (VLDB 2023)
+* LMSFC: A Novel Multidimensional Index based on Learned Monotonic Space Filling Curves (Extended Version) (arXiv 2023)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -205,6 +206,7 @@ Table of Contents
 * An Autonomous Materialized View Management System with Deep Reinforcement Learning (ICDE 2021)
 * A Technical Report on Dynamic Materialized View Management using Graph Neural Network
 * HMAB: self-driving hierarchy of bandits for integrated physical database design tuning (VLDB 2022)
+* AutoView: An Autonomous Materialized View Management System with Encoder-Reducer (TKDE 2022)
 * Dynamic Materialized View Management using Graph Neural Network (ICDE 2023)
 #### Schema & Partition
 ##### Offline
