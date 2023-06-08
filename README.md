@@ -180,6 +180,7 @@ Table of Contents
 * DILI: A Distribution-Driven Learned Index (arXiv 2023)
 * Learned Index: A Comprehensive Experimental Evaluation (VLDB 2023)
 * LMSFC: A Novel Multidimensional Index based on Learned Monotonic Space Filling Curves (Extended Version) (arXiv 2023)
+* One stone, two birds: A lightweight multidimensional learned index with cardinality support (arXiv 2023)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -248,6 +249,7 @@ Table of Contents
 * Fine-Grained Modeling and Optimization for Intelligent Resource Management in Big Data Processing (arXiv 2022)
 * SIMPPO: a scalable and incremental online learning framework for serverless resource management (SoCC 2022)
 * SUFS: A Generic Storage Usage Forecasting Service Through Adaptive Ensemble Learning (ICDE 2023)
+* Auto-WLM: Machine Learning Enhanced Workload Management in Amazon Redshift (SIGMOD-Companion ’23)
 
 ### Performance Diagnosis and Modeling
 
@@ -327,6 +329,7 @@ Table of Contents
 * FACE: A Normalizing Flow based Cardinality Estimator (VLDB 2022)
 * Pre-training Summarization Models of Structured Datasets for Cardinality Estimation (VLDB 2022)
 * Cardinality Estimation of Approximate Substring Queries using Deep Learning (VLDB 2022)
+* Speeding Up End-to-end Query Execution via Learning-based Progressive Cardinality Estimation (Proceedings of the ACM on Management of Data)
 #### Query-based
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
 * Selectivity Estimation in Extensible Databases -A Neural Network Approach （VLDB 1998）
@@ -413,6 +416,8 @@ Table of Contents
 * Learned Query Superoptimization (arXiv 2023)
 * Kepler: Robust Learning for Faster Parametric Query Optimization (SIGMOD 2023)
 * LOGER: A Learned Optimizer towards Generating Efficient and Robust Query Execution Plans (VLDB 2023)
+* BitE : Accelerating Learned Query Optimization in a Mixed-Workload Environment (arXiv 2023)
+* Reinforcement Learning-based SPARQL Join Ordering Optimizer
 
 
 ## Query Execution
