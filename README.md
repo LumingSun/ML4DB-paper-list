@@ -80,6 +80,7 @@ Table of Contents
 * SAM: Database Generation from Query Workload with Supervised Autoregressive Model (SIGMOD 2022)
 * Detect, Distill and Update: Learned DB Systems Facing Out of Distribution Data (SIGMOD 2023)
 * SageDB: An Instance-Optimized Data Analytics System (VLDB 2023)
+* Towards Building Autonomous Data Services on Azure (SIGMOD-Companion ’23)
 ## Data Access
 ### Configuration Tuning
 * SARD: A statistical approach for ranking database tuning parameters (ICDEW, 2008)
@@ -418,7 +419,7 @@ Table of Contents
 * LOGER: A Learned Optimizer towards Generating Efficient and Robust Query Execution Plans (VLDB 2023)
 * BitE : Accelerating Learned Query Optimization in a Mixed-Workload Environment (arXiv 2023)
 * Reinforcement Learning-based SPARQL Join Ordering Optimizer
-
+* LEON: A New Framework for ML-Aided Query Optimization (VLDB 2023)
 
 ## Query Execution
 ### Sort
