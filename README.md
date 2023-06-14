@@ -182,6 +182,8 @@ Table of Contents
 * Learned Index: A Comprehensive Experimental Evaluation (VLDB 2023)
 * LMSFC: A Novel Multidimensional Index based on Learned Monotonic Space Filling Curves (Extended Version) (arXiv 2023)
 * One stone, two birds: A lightweight multidimensional learned index with cardinality support (arXiv 2023)
+* A Simple Yet High-Performing On-disk Learned Index: Can We Have Our Cake and Eat it Too? (aiXiv 2023)
+* Fast Partitioned Learned Bloom Filter (arXiv 2023)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -225,6 +227,7 @@ Table of Contents
 * Jigsaw: A Data Storage and Query Processing Engine for Irregular Table Partitioning (SIGMOD 2021)
 * Dalton: Learned Partitioning for Distributed Data Streams (VLDB 2023)
 * Grep: A Graph Learning Based Database Partitioning System (SIGMOD 2023)
+* Learned spatial data partitioning （arXiv 2023)
 ##### Online
 
 - Relax and Let the Database Do the Partitioning Online (BIRTE 2011)
@@ -475,6 +478,8 @@ Table of Contents
 * GAR: A Generate-and-Rank Approach for Natural Language to SQL Translation (ICDE 2023)
 * Query Generation based on Generative Adversarial Networks (arXiv 2023)
 * GAR: A Generate-and-Rank Approach for Natural Language to SQL Translation (ICDE 2023)
+* Exploring the Compositional Generalization in Context Dependent Text-to-SQL Parsing (arXiv 2023)
+* Improving Generalization in Language Model-Based Text-to-SQL Semantic Parsing: Two Simple Semantic Boundary-Based Techniques (arXiv 2023)
 =================
 ## Stargazers over time
 
