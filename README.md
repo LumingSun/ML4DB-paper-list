@@ -226,7 +226,7 @@ Table of Contents
 * Instance-Optimized Data Layouts for Cloud Analytics Workloads (SIGMOD 2021)
 * Jigsaw: A Data Storage and Query Processing Engine for Irregular Table Partitioning (SIGMOD 2021)
 * Dalton: Learned Partitioning for Distributed Data Streams (VLDB 2023)
-* Grep: A Graph Learning Based Database Partitioning System (SIGMOD 2023)
+* Grep: A Graph Learning Based Database Partitioning System (Management of Data 2023)
 * Learned spatial data partitioning （arXiv 2023)
 ##### Online
 
