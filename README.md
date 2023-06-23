@@ -81,6 +81,7 @@ Table of Contents
 * Detect, Distill and Update: Learned DB Systems Facing Out of Distribution Data (SIGMOD 2023)
 * SageDB: An Instance-Optimized Data Analytics System (VLDB 2023)
 * Towards Building Autonomous Data Services on Azure (SIGMOD-Companion ’23)
+* Database Gyms (CIDR 2023)
 ## Data Access
 ### Configuration Tuning
 * SARD: A statistical approach for ranking database tuning parameters (ICDEW, 2008)
@@ -114,6 +115,7 @@ Table of Contents
 * BLUTune: Query-informed Multi-stage IBM Db2 Tuning via ML (CIKM 2022)
 * A Unified and Efficient Coordinating Framework for Autonomous DBMS Tuning (arXiv 2023)
 * Automatic Database Knob Tuning: A Survey (TKDE)
+* Deep learning based Auto Tuning for Database Management System (arXiv 2023)
 ### Physical Design
 * Tiresias: Enabling Predictive Autonomous Storage and Indexing (VLDB 2022)
 #### Learned structure
@@ -184,6 +186,8 @@ Table of Contents
 * One stone, two birds: A lightweight multidimensional learned index with cardinality support (arXiv 2023)
 * A Simple Yet High-Performing On-disk Learned Index: Can We Have Our Cake and Eat it Too? (aiXiv 2023)
 * Fast Partitioned Learned Bloom Filter (arXiv 2023)
+* Efficient Index Learning via Model Reuse and Fine-tuning (ICDEW 2023)
+* COAX: Correlation-Aware Indexing (ICDEW 2023)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -205,6 +209,7 @@ Table of Contents
 * HMAB: self-driving hierarchy of bandits for integrated physical database design tuning (VLDB 2022)
 * Learned Index Benefits: Machine Learning Based Index Performance Estimation (VLDB 2023) [GitHub Link](https://github.com/JC-Shi/Learned-Index-Benefits)
 * AIM: A practical approach to automated index management for SQL databases (ICDE 2023)
+* Updatable Learned Indexes Meet Disk-Resident DBMS - From Evaluations to Design Choices (SIGMOD 2023)
 ### Materialized View
 * Automatic View Generation with Deep Learning and Reinforcement Learning (ICDE 2020)
 * An Autonomous Materialized View Management System with Deep Reinforcement Learning (ICDE 2021)
@@ -444,8 +449,9 @@ Table of Contents
 * ML-AQP: Query-Driven Approximate Query Processing based on Machine Learning (2020)
 * Approximate Query Processing for Group-By Queries based on Conditional Generative Models (2021)
 * Learned Approximate Query Processing: Make it Light, Accurate and Fast (CIDR 2021)
-* NeuroSketch: Fast and Approximate Evaluation of Range Aggregate Queries with Neural Networks (arXiv 2022)
+* NeuroSketch: Fast and Approximate Evaluation of Range Aggregate Queries with Neural Networks (SIGMOD 2023)
 * Exploiting Machine Learning Models for Approximate Query Processing (Big Data 2022)
+* Tuple Bubbles: Learned Tuple Representations for Tunable Approximate Query Processing (aiDM 2023)
 ### Sheduling
 * Workload management for cloud databases via machine learning (ICDE 2016 WiseDB)
 * A learning-based service for cost and performance management of cloud databases （ICDEW 2017）(short version for WiSeDB)
@@ -480,6 +486,8 @@ Table of Contents
 * GAR: A Generate-and-Rank Approach for Natural Language to SQL Translation (ICDE 2023)
 * Exploring the Compositional Generalization in Context Dependent Text-to-SQL Parsing (arXiv 2023)
 * Improving Generalization in Language Model-Based Text-to-SQL Semantic Parsing: Two Simple Semantic Boundary-Based Techniques (arXiv 2023)
+* Exploring Chain-of-Thought Style Prompting for Text-to-SQL (arXiv 2023)
+* Few-shot Text-to-SQL Translation using Structure and Content Prompt Learning (SIGMOD 2023)
 =================
 ## Stargazers over time
 
