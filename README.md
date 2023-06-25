@@ -488,6 +488,7 @@ Table of Contents
 * Improving Generalization in Language Model-Based Text-to-SQL Semantic Parsing: Two Simple Semantic Boundary-Based Techniques (arXiv 2023)
 * Exploring Chain-of-Thought Style Prompting for Text-to-SQL (arXiv 2023)
 * Few-shot Text-to-SQL Translation using Structure and Content Prompt Learning (SIGMOD 2023)
+* Multitask pretraining with structured knowledge for text-to-SQL generation (ACL 2023)
 =================
 ## Stargazers over time
 
