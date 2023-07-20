@@ -188,6 +188,7 @@ Table of Contents
 * Fast Partitioned Learned Bloom Filter (arXiv 2023)
 * Efficient Index Learning via Model Reuse and Fine-tuning (ICDEW 2023)
 * COAX: Correlation-Aware Indexing (ICDEW 2023)
+* Learned Index with Dynamic e (openreview 2023)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -290,6 +291,7 @@ Table of Contents
 * DBAugur: An Adversarial-based Trend Forecasting System for Diversified Workloads (ICDE 2023)
 * An Efficient Online Prediction of Host Workloads Using Pruned GRU Neural Nets (arXiv 2023)
 * Uncertainty-Aware Workload Prediction in Cloud Computing (arXiv 2023)
+* Real-time Workload Paern Analysis for Large-scale Cloud Databases (arXiv 2023)
 
 ## Query Optimization
 ### Query Rewrite
@@ -402,6 +404,7 @@ Table of Contents
 * Efficient Join Order Selection Learning with Graph-based Representation (KDD 2022)
 * SOAR:A Learned Join Order Selector with Graph Attention Mechanism （IJCNN 2022）
 * Query Join Order Optimization Method Based on Dynamic Double Deep Q-Network (Electronics 2023)
+* Coral: federated query join order optimization based on deep reinforcement learning (WWW 2023)
 ### Query Plan
 * Plan Selection Based on Query Clustering （VLDB 2002)
 * Cost-Based Query Optimization via AI Planning (AAAI 2014)
