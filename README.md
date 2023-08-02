@@ -116,6 +116,7 @@ Table of Contents
 * A Unified and Efficient Coordinating Framework for Autonomous DBMS Tuning (arXiv 2023)
 * Automatic Database Knob Tuning: A Survey (TKDE)
 * Deep learning based Auto Tuning for Database Management System (arXiv 2023)
+* KeenTune: Automated Tuning Tool for Cloud Application Performance Testing and Optimization (ISSTA 2023)
 ### Physical Design
 * Tiresias: Enabling Predictive Autonomous Storage and Indexing (VLDB 2022)
 #### Learned structure
@@ -341,6 +342,7 @@ Table of Contents
 * Pre-training Summarization Models of Structured Datasets for Cardinality Estimation (VLDB 2022)
 * Cardinality Estimation of Approximate Substring Queries using Deep Learning (VLDB 2022)
 * Speeding Up End-to-end Query Execution via Learning-based Progressive Cardinality Estimation (Proceedings of the ACM on Management of Data)
+* Cardinality estimation with smoothing autoregressive models (WWW 2023)
 #### Query-based
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
 * Selectivity Estimation in Extensible Databases -A Neural Network Approach （VLDB 1998）
@@ -367,6 +369,7 @@ Table of Contents
 * Enhanced Featurization of Queries with Mixed Combinations of Predicates for ML-based Cardinality Estimation (EDBT 2023)
 * Speeding Up End-to-end Query Execution via Learning-based Progressive Cardinality Estimation (SIGMOD 2023)
 * Robust Query Driven Cardinality Estimation under Changing Workloads (VLDB 2023)
+* Learned Probing Cardinality Estimation for High-Dimensional Approximate NN Search (ICDE 2023)
 ### Cost Estimation
 #### Single Query
 * Statistical learning techniques for costing XML queries (VLDB 2005)
