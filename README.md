@@ -122,6 +122,7 @@ Table of Contents
 #### Learned structure
 * Stacked Filters: Learning to Filter by Structure (VLDB 2021)
 * LEA: A Learned Encoding Advisor for Column Stores (aiDM 2021)
+* Learning over Sets for Databases (EDBT 2024)
 #### LSM-tree related
 * Leaper: A Learned Prefetcher for Cache Invalidation in LSM-tree based Storage Engines （VLDB 2020）
 * From WiscKey to Bourbon: A Learned Index for Log-Structured Merge Trees (OSDI 2020)
@@ -190,6 +191,7 @@ Table of Contents
 * Efficient Index Learning via Model Reuse and Fine-tuning (ICDEW 2023)
 * COAX: Correlation-Aware Indexing (ICDEW 2023)
 * Learned Index with Dynamic e (openreview 2023)
+* Learning to Optimize LSM-trees: Towards A Reinforcement Learning based Key-Value Store for Dynamic Workloads (arXiv 2023)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
