@@ -82,6 +82,7 @@ Table of Contents
 * SageDB: An Instance-Optimized Data Analytics System (VLDB 2023)
 * Towards Building Autonomous Data Services on Azure (SIGMOD-Companion ’23)
 * Database Gyms (CIDR 2023)
+* Check Out the Big Brain on BRAD: Simplifying Cloud Data Processing with Learned Automated Data Meshes (VLDB 2023)
 ## Data Access
 ### Configuration Tuning
 * SARD: A statistical approach for ranking database tuning parameters (ICDEW, 2008)
@@ -436,6 +437,7 @@ Table of Contents
 * BitE : Accelerating Learned Query Optimization in a Mixed-Workload Environment (arXiv 2023)
 * Reinforcement Learning-based SPARQL Join Ordering Optimizer
 * LEON: A New Framework for ML-Aided Query Optimization (VLDB 2023)
+* AutoSteer: Learned Query Optimization for Any SQL Database (VLDB 2023)
 
 ## Query Execution
 ### Sort
