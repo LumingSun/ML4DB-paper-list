@@ -193,6 +193,9 @@ Table of Contents
 * COAX: Correlation-Aware Indexing (ICDEW 2023)
 * Learned Index with Dynamic e (openreview 2023)
 * Learning to Optimize LSM-trees: Towards A Reinforcement Learning based Key-Value Store for Dynamic Workloads (arXiv 2023)
+* SALI: A Scalable Adaptive Learned Index Framework based on Probability Models (SIGMODE 2024)
+* Sieve: A Learned Data-Skipping Index for Data Analytics (VLDB 2023)
+* Demonstrating Waffle: A Self-driving Grid Index (VLDB Demo 2023)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -215,6 +218,7 @@ Table of Contents
 * Learned Index Benefits: Machine Learning Based Index Performance Estimation (VLDB 2023) [GitHub Link](https://github.com/JC-Shi/Learned-Index-Benefits)
 * AIM: A practical approach to automated index management for SQL databases (ICDE 2023)
 * Updatable Learned Indexes Meet Disk-Resident DBMS - From Evaluations to Design Choices (SIGMOD 2023)
+* Index Tuning with Machine Learning on Quantum Computers for Large-Scale Database Applications (AIDB@VLDB 2023)
 ### Materialized View
 * Automatic View Generation with Deep Learning and Reinforcement Learning (ICDE 2020)
 * An Autonomous Materialized View Management System with Deep Reinforcement Learning (ICDE 2021)
@@ -346,6 +350,7 @@ Table of Contents
 * Cardinality Estimation of Approximate Substring Queries using Deep Learning (VLDB 2022)
 * Speeding Up End-to-end Query Execution via Learning-based Progressive Cardinality Estimation (Proceedings of the ACM on Management of Data)
 * Cardinality estimation with smoothing autoregressive models (WWW 2023)
+* Cardinality estimation using normalizing flow (VLDBJ 2023)
 #### Query-based
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
 * Selectivity Estimation in Extensible Databases -A Neural Network Approach （VLDB 1998）
@@ -438,6 +443,9 @@ Table of Contents
 * Reinforcement Learning-based SPARQL Join Ordering Optimizer
 * LEON: A New Framework for ML-Aided Query Optimization (VLDB 2023)
 * AutoSteer: Learned Query Optimization for Any SQL Database (VLDB 2023)
+* FASTgres: Making Learned Query Optimizer Hinting Effective (VLDB 2023)
+* Simple Adaptive Query Processing vs. Learned Query Optimizers: Observations and Analysis (VLDB 2023)
+* QO-Insight: Inspecting Steered Query Optimizer (VLDB Demo 2023)
 
 ## Query Execution
 ### Sort
@@ -471,6 +479,7 @@ Table of Contents
 * Buffer Pool Aware Query Scheduling via Deep Reinforcement Learning (2020)
 * Self-Tuning Query Scheduling for Analytical Workloads (SIGMOD 2021)
 * LSched: A Workload-Aware Learned Query Scheduler for Analytical Database Systems (SIGMOD 2022)
+* DBMLSched: Scheduling In-database Machine Learning Jobs (AIDB@VLDB 2023)
 
 (transaction 👇)
 
@@ -499,6 +508,7 @@ Table of Contents
 * Exploring Chain-of-Thought Style Prompting for Text-to-SQL (arXiv 2023)
 * Few-shot Text-to-SQL Translation using Structure and Content Prompt Learning (SIGMOD 2023)
 * Multitask pretraining with structured knowledge for text-to-SQL generation (ACL 2023)
+* Demonstrating GPT-DB: Generating Query-Specific and Customizable Code for SQL Processing with GPT-4 (VLDB Demo 2023)
 =================
 ## Stargazers over time
 
