@@ -119,6 +119,7 @@ Table of Contents
 * Automatic Database Knob Tuning: A Survey (TKDE)
 * Deep learning based Auto Tuning for Database Management System (arXiv 2023)
 * KeenTune: Automated Tuning Tool for Cloud Application Performance Testing and Optimization (ISSTA 2023)
+* ContTune: Continuous Tuning by Conservative Bayesian Optimization for Distributed Stream Data Processing Systems (arXiv 2023)
 ### Physical Design
 * Tiresias: Enabling Predictive Autonomous Storage and Indexing (VLDB 2022)
 #### Learned structure
@@ -307,6 +308,7 @@ Table of Contents
 * Sia: Optimizing Queries using Learned Predicates (SIGMOD 2021)
 * A Learned Query Rewrite System using Monte Carlo Tree Search (VLDB 2022)
 * WeTune: Automatic Discovery and Verification of Query Rewrite Rules (SIGMOD 2022)
+* A Learned Query Rewrite System (VLDB 2023)
 ### Cardinality Estimation
 * Are We Ready For Learned Cardinality Estimation? (VLDB 2021) [GitHub Link](https://github.com/sfu-db/AreCELearnedYet)
 * A Unified Deep Model of Learning from both Data and Queries for Cardinality Estimation (SIGMOD 2021)
@@ -379,6 +381,7 @@ Table of Contents
 * Speeding Up End-to-end Query Execution via Learning-based Progressive Cardinality Estimation (SIGMOD 2023)
 * Robust Query Driven Cardinality Estimation under Changing Workloads (VLDB 2023)
 * Learned Probing Cardinality Estimation for High-Dimensional Approximate NN Search (ICDE 2023)
+* CEDA: Learned Cardinality Estimation with Domain Adaptation (VLDB 2023)
 ### Cost Estimation
 #### Single Query
 * Statistical learning techniques for costing XML queries (VLDB 2005)
