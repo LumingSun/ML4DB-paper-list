@@ -198,6 +198,8 @@ Table of Contents
 * SALI: A Scalable Adaptive Learned Index Framework based on Probability Models (SIGMODE 2024)
 * Sieve: A Learned Data-Skipping Index for Data Analytics (VLDB 2023)
 * Demonstrating Waffle: A Self-driving Grid Index (VLDB Demo 2023)
+* Can LSH (Locality-Sensitive Hashing) Be Replaced by Neural Network? (arXiv 2023)
+* Workload-aware and Learned Z-Indexes (arXiv 2023)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -221,6 +223,7 @@ Table of Contents
 * AIM: A practical approach to automated index management for SQL databases (ICDE 2023)
 * Updatable Learned Indexes Meet Disk-Resident DBMS - From Evaluations to Design Choices (SIGMOD 2023)
 * Index Tuning with Machine Learning on Quantum Computers for Large-Scale Database Applications (AIDB@VLDB 2023)
+* A Data-Driven Index Recommendation System for Slow Queries (CIKM 2023)
 ### Materialized View
 * Automatic View Generation with Deep Learning and Reinforcement Learning (ICDE 2020)
 * An Autonomous Materialized View Management System with Deep Reinforcement Learning (ICDE 2021)
@@ -324,6 +327,7 @@ Table of Contents
 * FactorJoin: A New Cardinality Estimation Framework for Join Queries (SIGMOD 2023)
 * AutoCE: An Accurate and Efficient Model Advisor for Learned Cardinality Estimation (ICDE 2023)
 * Couper: Memory-Efficient Cardinality Estimation under Unbalanced Distribution (ICDE 2023)
+* ALECE: An Attention-based Learned Cardinality Estimator for SPJ Queries on Dynamic Workloads (arXiv 2023)
 #### Data-based
 (kernal density model)
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
@@ -382,6 +386,7 @@ Table of Contents
 * Robust Query Driven Cardinality Estimation under Changing Workloads (VLDB 2023)
 * Learned Probing Cardinality Estimation for High-Dimensional Approximate NN Search (ICDE 2023)
 * CEDA: Learned Cardinality Estimation with Domain Adaptation (VLDB 2023)
+* Efficient Cardinality and Cost Estimation with Bidirectional Compressor-based Ensemble Learning (arXiv 2023)
 ### Cost Estimation
 #### Single Query
 * Statistical learning techniques for costing XML queries (VLDB 2005)
@@ -420,6 +425,7 @@ Table of Contents
 * SOAR:A Learned Join Order Selector with Graph Attention Mechanism （IJCNN 2022）
 * Query Join Order Optimization Method Based on Dynamic Double Deep Q-Network (Electronics 2023)
 * Coral: federated query join order optimization based on deep reinforcement learning (WWW 2023)
+* JoinGym: An Efficient Query Optimization Environment for Reinforcement Learning (arXiv 2023)
 ### Query Plan
 * Plan Selection Based on Query Clustering （VLDB 2002)
 * Cost-Based Query Optimization via AI Planning (AAAI 2014)
