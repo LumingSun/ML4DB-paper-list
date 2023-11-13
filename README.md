@@ -304,7 +304,7 @@ Table of Contents
 * DBAugur: An Adversarial-based Trend Forecasting System for Diversified Workloads (ICDE 2023)
 * An Efficient Online Prediction of Host Workloads Using Pruned GRU Neural Nets (arXiv 2023)
 * Uncertainty-Aware Workload Prediction in Cloud Computing (arXiv 2023)
-* Real-time Workload Paern Analysis for Large-scale Cloud Databases (arXiv 2023)
+* Real-Time Workload Pattern Analysis for Large-Scale Cloud Databases (VLDB 2023)
 
 ## Query Optimization
 ### Query Rewrite
