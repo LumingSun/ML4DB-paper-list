@@ -11,6 +11,8 @@ Welcome to PR!
 
 欢迎大家补充！
 
+There are so many papers emerging about Text-To-SQL! Sadly I'm not an expert with the topic and can not tell the quality of the papers.  
+Looking forward to contributions (PR, comment, discussion) about Text-To-SQL！🫶
 
 Table of Contents
 =================
@@ -200,6 +202,8 @@ Table of Contents
 * Demonstrating Waffle: A Self-driving Grid Index (VLDB Demo 2023)
 * Can LSH (Locality-Sensitive Hashing) Be Replaced by Neural Network? (arXiv 2023)
 * Workload-aware and Learned Z-Indexes (arXiv 2023)
+* AirIndex: Versatile Index Tuning Through Data and Storage (SIGMOD 2024)
+* A Fast Learned Key-Value Store for Concurrent and Distributed Systems (TKDE 2023)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -273,6 +277,7 @@ Table of Contents
 * SIMPPO: a scalable and incremental online learning framework for serverless resource management (SoCC 2022)
 * SUFS: A Generic Storage Usage Forecasting Service Through Adaptive Ensemble Learning (ICDE 2023)
 * Auto-WLM: Machine Learning Enhanced Workload Management in Amazon Redshift (SIGMOD-Companion ’23)
+* SeLeP: Learning Based Semantic Prefetching for Exploratory Database Workloads (arXiv 2023)
 
 ### Performance Diagnosis and Modeling
 
@@ -404,7 +409,7 @@ Table of Contents
 * Efficient Learning with Pseudo Labels for Query Cost Estimation (CIKM 2022)
 * gCBO: A Cost-based Optimizer for Graph Databases (CIKM 2022)
 * QueryFormer: A Tree Transformer Model for Query Plan Representation (VLDB 2022)
-
+* BASE: Bridging the Gap between Cost and Latency for Query Optimization (VLDB 2023)
 #### Concurrent
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
 * Performance Prediction for Concurrent Database Workloads (SIGMOD 2011)
