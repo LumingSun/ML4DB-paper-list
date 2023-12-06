@@ -86,6 +86,7 @@ Table of Contents
 * Towards Building Autonomous Data Services on Azure (SIGMOD-Companion ’23)
 * Database Gyms (CIDR 2023)
 * Check Out the Big Brain on BRAD: Simplifying Cloud Data Processing with Learned Automated Data Meshes (VLDB 2023)
+* Machine Unlearning in Learned Databases: An Experimental Analysis (SIGMOD 2024)
 ## Data Access
 ### Configuration Tuning
 * SARD: A statistical approach for ranking database tuning parameters (ICDEW, 2008)
@@ -228,6 +229,7 @@ Table of Contents
 * Updatable Learned Indexes Meet Disk-Resident DBMS - From Evaluations to Design Choices (SIGMOD 2023)
 * Index Tuning with Machine Learning on Quantum Computers for Large-Scale Database Applications (AIDB@VLDB 2023)
 * A Data-Driven Index Recommendation System for Slow Queries (CIKM 2023)
+* ML-Powered Index Tuning: An Overview of Recent Progress and Open Challenges (arXiv 2023)
 ### Materialized View
 * Automatic View Generation with Deep Learning and Reinforcement Learning (ICDE 2020)
 * An Autonomous Materialized View Management System with Deep Reinforcement Learning (ICDE 2021)
@@ -431,6 +433,7 @@ Table of Contents
 * Query Join Order Optimization Method Based on Dynamic Double Deep Q-Network (Electronics 2023)
 * Coral: federated query join order optimization based on deep reinforcement learning (WWW 2023)
 * JoinGym: An Efficient Query Optimization Environment for Reinforcement Learning (arXiv 2023)
+* Join Order Selection with Deep Reinforcement Learning: Fundamentals, Techniques, and Challenges (VLDB 2023)
 ### Query Plan
 * Plan Selection Based on Query Clustering （VLDB 2002)
 * Cost-Based Query Optimization via AI Planning (AAAI 2014)
@@ -461,6 +464,7 @@ Table of Contents
 * FASTgres: Making Learned Query Optimizer Hinting Effective (VLDB 2023)
 * Simple Adaptive Query Processing vs. Learned Query Optimizers: Observations and Analysis (VLDB 2023)
 * QO-Insight: Inspecting Steered Query Optimizer (VLDB Demo 2023)
+* QPSeeker: An Efficient Neural Planner combining both data and queries through Variational Inference (EDBT 2024)
 
 ## Query Execution
 ### Sort
