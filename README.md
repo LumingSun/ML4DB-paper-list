@@ -123,6 +123,7 @@ Table of Contents
 * Deep learning based Auto Tuning for Database Management System (arXiv 2023)
 * KeenTune: Automated Tuning Tool for Cloud Application Performance Testing and Optimization (ISSTA 2023)
 * ContTune: Continuous Tuning by Conservative Bayesian Optimization for Distributed Stream Data Processing Systems (arXiv 2023)
+* An Eficient Transfer Learning Based Configuration Adviser for Database Tuning (VLDB 2024)
 ### Physical Design
 * Tiresias: Enabling Predictive Autonomous Storage and Indexing (VLDB 2022)
 #### Learned structure
@@ -205,6 +206,10 @@ Table of Contents
 * Workload-aware and Learned Z-Indexes (arXiv 2023)
 * AirIndex: Versatile Index Tuning Through Data and Storage (SIGMOD 2024)
 * A Fast Learned Key-Value Store for Concurrent and Distributed Systems (TKDE 2023)
+* When Learned Indexes Meet Persistent Memory: The Analysis and the Optimization (TKDE 2023)
+* PLATON: Top-down R-tree Packing with Learned Partition Policy (PACMMOD 2023)
+* A Learned Cuckoo Filter for Approximate Membership Queries over Variable-sized Sliding Windows on Data Streams (PACMMOD 2023)
+* WIPE: a Write-Optimized Learned Index for Persistent Memory (TACO 2023)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -230,6 +235,7 @@ Table of Contents
 * Index Tuning with Machine Learning on Quantum Computers for Large-Scale Database Applications (AIDB@VLDB 2023)
 * A Data-Driven Index Recommendation System for Slow Queries (CIKM 2023)
 * ML-Powered Index Tuning: An Overview of Recent Progress and Open Challenges (arXiv 2023)
+
 ### Materialized View
 * Automatic View Generation with Deep Learning and Reinforcement Learning (ICDE 2020)
 * An Autonomous Materialized View Management System with Deep Reinforcement Learning (ICDE 2021)
@@ -289,6 +295,7 @@ Table of Contents
 - Diagnosing Root Causes of Intermittent Slow Queries in Cloud Databases (VLDB 2020)
 - Workload-Aware Performance Tuning for Autonomous DBMSs (ICDE 2021)
 - Sage: Practical and Scalable ML-Driven Performance Debugging in Microservices (ASPLOS 2021)
+- D-Bot: Database Diagnosis System using Large Language Models (arXiv 2023)
 
 ### Workload Shift Detection
 
@@ -334,7 +341,8 @@ Table of Contents
 * FactorJoin: A New Cardinality Estimation Framework for Join Queries (SIGMOD 2023)
 * AutoCE: An Accurate and Efficient Model Advisor for Learned Cardinality Estimation (ICDE 2023)
 * Couper: Memory-Efficient Cardinality Estimation under Unbalanced Distribution (ICDE 2023)
-* ALECE: An Attention-based Learned Cardinality Estimator for SPJ Queries on Dynamic Workloads (arXiv 2023)
+* ALECE: An Attention-based Learned Cardinality Estimator for SPJ Queries on Dynamic Workloads (VLDB 2023)
+* Advanced Dataset Discovery: When Multi-Query-Dataset Cardinality Estimation Matters (aiXiv 2024)
 #### Data-based
 (kernal density model)
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
@@ -394,6 +402,7 @@ Table of Contents
 * Learned Probing Cardinality Estimation for High-Dimensional Approximate NN Search (ICDE 2023)
 * CEDA: Learned Cardinality Estimation with Domain Adaptation (VLDB 2023)
 * Efficient Cardinality and Cost Estimation with Bidirectional Compressor-based Ensemble Learning (arXiv 2023)
+* Adding Domain Knowledge to Query-Driven Learned Databases (arXiv 2023)
 ### Cost Estimation
 #### Single Query
 * Statistical learning techniques for costing XML queries (VLDB 2005)
@@ -412,6 +421,7 @@ Table of Contents
 * gCBO: A Cost-based Optimizer for Graph Databases (CIKM 2022)
 * QueryFormer: A Tree Transformer Model for Query Plan Representation (VLDB 2022)
 * BASE: Bridging the Gap between Cost and Latency for Query Optimization (VLDB 2023)
+* Rethinking Learned Cost Models: Why Start from Scratch? (PACMMOD 2023)
 #### Concurrent
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
 * Performance Prediction for Concurrent Database Workloads (SIGMOD 2011)
@@ -465,6 +475,8 @@ Table of Contents
 * Simple Adaptive Query Processing vs. Learned Query Optimizers: Observations and Analysis (VLDB 2023)
 * QO-Insight: Inspecting Steered Query Optimizer (VLDB Demo 2023)
 * QPSeeker: An Efficient Neural Planner combining both data and queries through Variational Inference (EDBT 2024)
+* FOSS: A Self-Learned Doctor for Query Optimizer (arXiv 2023)
+* Lemo: A Cache-Enhanced Learned Optimizer for Concurrent Queries (PACMMOD 2023)
 
 ## Query Execution
 ### Sort
