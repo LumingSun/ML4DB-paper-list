@@ -587,7 +587,7 @@ Table of Contents
 * PreQR: Pre-training Representation for SQL Understanding (SIGMDO 2022)
 * From BERT to GPT-3 Codex: Harnessing the Potential of Very Large Language Models for Data Management (VLDB 2022)
 * Query Generation based on Generative Adversarial Networks (arXiv 2023)
-=================
+
 ## Stargazers over time
 
 [![Stargazers over time](https://starchart.cc/LumingSun/ML4DB-paper-list.svg)](https://starchart.cc/LumingSun/ML4DB-paper-list)
