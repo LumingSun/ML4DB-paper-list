@@ -123,7 +123,10 @@ Table of Contents
 * Deep learning based Auto Tuning for Database Management System (arXiv 2023)
 * KeenTune: Automated Tuning Tool for Cloud Application Performance Testing and Optimization (ISSTA 2023)
 * ContTune: Continuous Tuning by Conservative Bayesian Optimization for Distributed Stream Data Processing Systems (arXiv 2023)
+* GPTuner: A Manual-Reading Database Tuning System via GPT-Guided Bayesian Optimization (arXiv 2023)
 * An Eficient Transfer Learning Based Configuration Adviser for Database Tuning (VLDB 2024)
+* DB‑GPT: Large Language Model Meets Database (DSE 2024)
+
 ### Physical Design
 * Tiresias: Enabling Predictive Autonomous Storage and Indexing (VLDB 2022)
 #### Learned structure
