@@ -220,6 +220,7 @@ Table of Contents
 * Algorithmic Complexity Attacks on Dynamic Learned Indexes (VLDB 2024)
 * A Fully On-disk Updatable Learned Index (ICDE 2024)
 * Limousine: Blending Learned and Classical Indexes to Self-Design Larger-than-Memory Cloud Storage Engines (SIGMOD 2024)
+* AStore: Uniformed Adaptive Learned Index and Cache for RDMA-enabled Key-Value Store (TKDE 2024)
   
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
