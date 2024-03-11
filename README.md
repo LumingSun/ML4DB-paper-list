@@ -87,6 +87,8 @@ Table of Contents
 * Database Gyms (CIDR 2023)
 * Check Out the Big Brain on BRAD: Simplifying Cloud Data Processing with Learned Automated Data Meshes (VLDB 2023)
 * Machine Unlearning in Learned Databases: An Experimental Analysis (SIGMOD 2024)
+* PilotScope: Steering Databases with Machine Learning Drivers (VLDB 2024)
+  
 ## Data Access
 ### Configuration Tuning
 * SARD: A statistical approach for ranking database tuning parameters (ICDEW, 2008)
@@ -126,6 +128,8 @@ Table of Contents
 * GPTuner: A Manual-Reading Database Tuning System via GPT-Guided Bayesian Optimization (arXiv 2023)
 * An Eficient Transfer Learning Based Configuration Adviser for Database Tuning (VLDB 2024)
 * DB‑GPT: Large Language Model Meets Database (DSE 2024)
+* A Spark Optimizer for Adaptive, Fine-Grained Parameter Tuning (arXiv 2024)
+* TIE: Fast Experiment-driven ML-based Configuration Tuning for In-memory Data Analytics (IEEE Transactions on Computers)
 
 ### Physical Design
 * Tiresias: Enabling Predictive Autonomous Storage and Indexing (VLDB 2022)
@@ -213,6 +217,10 @@ Table of Contents
 * PLATON: Top-down R-tree Packing with Learned Partition Policy (PACMMOD 2023)
 * A Learned Cuckoo Filter for Approximate Membership Queries over Variable-sized Sliding Windows on Data Streams (PACMMOD 2023)
 * WIPE: a Write-Optimized Learned Index for Persistent Memory (TACO 2023)
+* Algorithmic Complexity Attacks on Dynamic Learned Indexes (VLDB 2024)
+* A Fully On-disk Updatable Learned Index (ICDE 2024)
+* Limousine: Blending Learned and Classical Indexes to Self-Design Larger-than-Memory Cloud Storage Engines (SIGMOD 2024)
+  
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -346,6 +354,7 @@ Table of Contents
 * Couper: Memory-Efficient Cardinality Estimation under Unbalanced Distribution (ICDE 2023)
 * ALECE: An Attention-based Learned Cardinality Estimator for SPJ Queries on Dynamic Workloads (VLDB 2023)
 * Advanced Dataset Discovery: When Multi-Query-Dataset Cardinality Estimation Matters (aiXiv 2024)
+* Sample-Efficient Cardinality Estimation Using Geometric Deep Learning (VLDB 2024)
 #### Data-based
 (kernal density model)
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
@@ -435,6 +444,7 @@ Table of Contents
 * Query Performance Prediction for Concurrent Queries using Graph Embedding (VLDB 2020)
 * Efficient Deep Learning Pipelines for Accurate Cost Estimations Over Large Scale Query Workload (SIGMOD 2021)
 * A Resource-Aware Deep Cost Model for Big Data Query Processing (ICDE 2022)
+* Stage: Query Execution Time Prediction in Amazon Redshif (SIGMOD 2024)
 ### Join Optimization
 * Adaptive Optimization of Very Large Join Queries (SIGMOD 2018) (Not machine learning
 * Deep Reinforcement Learning for Join Order Enumeration (aiDM@SIGMOD 2018)
@@ -480,7 +490,11 @@ Table of Contents
 * QPSeeker: An Efficient Neural Planner combining both data and queries through Variational Inference (EDBT 2024)
 * FOSS: A Self-Learned Doctor for Query Optimizer (arXiv 2023)
 * Lemo: A Cache-Enhanced Learned Optimizer for Concurrent Queries (PACMMOD 2023)
-
+* A Comparative Study and Component Analysis of Query Plan Representation Techniques in ML4DB Studies (VLDB 2024)
+* Learned Optimizer for Online Approximate Query Processing in Data Exploration (TKDE 2024)
+* A learning-based framework for spatial join processing: estimation, optimization and tuning (VLDB 2024)
+* Roq: Robust Query Optimization Based on a Risk-aware Learned Cost Model (arXiv 2024)
+  
 ## Query Execution
 ### Sort
 * The Case for a Learned Sorting Algorithm (SIGMOD 2020)
