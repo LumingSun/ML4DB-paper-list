@@ -221,6 +221,10 @@ Table of Contents
 * A Fully On-disk Updatable Learned Index (ICDE 2024)
 * Limousine: Blending Learned and Classical Indexes to Self-Design Larger-than-Memory Cloud Storage Engines (SIGMOD 2024)
 * AStore: Uniformed Adaptive Learned Index and Cache for RDMA-enabled Key-Value Store (TKDE 2024)
+* Cabin: A Compressed Adaptive Binned Scan Index (SIGMOD 2024)
+* SWIX: A Memory-efficient Sliding Window Learned Index (SIGMOD 2024)
+* Limousine: Blending Learned and Classical Indexes to Self-Design Larger-than-Memory Cloud Storage Engines (SIGMOD 2024)
+* A Survey of Learned Indexes for the Multi-dimensional Space (arXiv 2024)
   
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
@@ -247,6 +251,7 @@ Table of Contents
 * Index Tuning with Machine Learning on Quantum Computers for Large-Scale Database Applications (AIDB@VLDB 2023)
 * A Data-Driven Index Recommendation System for Slow Queries (CIKM 2023)
 * ML-Powered Index Tuning: An Overview of Recent Progress and Open Challenges (arXiv 2023)
+* Robustness of Updatable Learning-based Index Advisors against Poisoning Attack (SIGMOD 2024)
 
 ### Materialized View
 * Automatic View Generation with Deep Learning and Reinforcement Learning (ICDE 2020)
@@ -308,6 +313,7 @@ Table of Contents
 - Workload-Aware Performance Tuning for Autonomous DBMSs (ICDE 2021)
 - Sage: Practical and Scalable ML-Driven Performance Debugging in Microservices (ASPLOS 2021)
 - D-Bot: Database Diagnosis System using Large Language Models (arXiv 2023)
+- Modeling Shifting Workloads for Learned Database Systems (SIGMOD 2024)
 
 ### Workload Shift Detection
 
@@ -357,19 +363,14 @@ Table of Contents
 * Advanced Dataset Discovery: When Multi-Query-Dataset Cardinality Estimation Matters (aiXiv 2024)
 * Sample-Efficient Cardinality Estimation Using Geometric Deep Learning (VLDB 2024)
 #### Data-based
-(kernal density model)
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
 * Estimating Join Selectivities using Bandwidth-Optimized Kernel Density Models (VLDB 2017)
-(sum-product network)
 * DeepDB: Learn from Data, not from Queries! (VLDB 2020) [GitHub Link](https://github.com/DataManagementLab/deepdb-public)
-
-(autoregressive model)
 * Deep Unsupervised Cardinality Estimation (VLDB 2019) 
 * Multi-Attribute Selectivity Estimation Using Deep Learning (arXiv 2019)
 * Deep Learning Models for Selectivity Estimation of Multi-Attribute Queries (SIGMOD 2020)
 * NeuroCard: One Cardinality Estimator for All Tables (VLDB 2020) [GitHub Link](https://github.com/neurocard/neurocard)
 * Learning to Sample: Counting with Complex Queries (VLDB 2020)
-(graphical models)
 * Selectivity estimation using probabilistic models (SIGMOD 2001)
 * Lightweight graphical models for selectivity estimation without independence assumptions (VLDB 2011)
 * Efficiently adapting graphical models for selectivity estimation (VLDB 2013)
@@ -386,6 +387,8 @@ Table of Contents
 * Speeding Up End-to-end Query Execution via Learning-based Progressive Cardinality Estimation (Proceedings of the ACM on Management of Data)
 * Cardinality estimation with smoothing autoregressive models (WWW 2023)
 * Cardinality estimation using normalizing flow (VLDBJ 2023)
+* LPLM: A Neural Language Model for Cardinality Estimation of LIKE-Queries (SIGMOD 2024)
+* ASM: Harmonizing Autoregressive Model, Sampling, and Multi-dimensional Statistics Merging for Cardinality Estimation (SIGMOD 2024)
 #### Query-based
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
 * Selectivity Estimation in Extensible Databases -A Neural Network Approach （VLDB 1998）
@@ -416,6 +419,8 @@ Table of Contents
 * CEDA: Learned Cardinality Estimation with Domain Adaptation (VLDB 2023)
 * Efficient Cardinality and Cost Estimation with Bidirectional Compressor-based Ensemble Learning (arXiv 2023)
 * Adding Domain Knowledge to Query-Driven Learned Databases (arXiv 2023)
+* PACE: Poisoning Attacks on Learned Cardinality Estimation (SIGMOD 2024)
+* Sample-Efficient Cardinality Estimation Using Geometric Deep Learning (VLDB 2024)
 ### Cost Estimation
 #### Single Query
 * Statistical learning techniques for costing XML queries (VLDB 2005)
@@ -435,6 +440,7 @@ Table of Contents
 * QueryFormer: A Tree Transformer Model for Query Plan Representation (VLDB 2022)
 * BASE: Bridging the Gap between Cost and Latency for Query Optimization (VLDB 2023)
 * Rethinking Learned Cost Models: Why Start from Scratch? (PACMMOD 2023)
+* Budget-aware Query Tuning: An AutoML Perspective (arXiv 2024)
 #### Concurrent
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
 * Performance Prediction for Concurrent Database Workloads (SIGMOD 2011)
@@ -458,6 +464,7 @@ Table of Contents
 * Coral: federated query join order optimization based on deep reinforcement learning (WWW 2023)
 * JoinGym: An Efficient Query Optimization Environment for Reinforcement Learning (arXiv 2023)
 * Join Order Selection with Deep Reinforcement Learning: Fundamentals, Techniques, and Challenges (VLDB 2023)
+* Sub-optimal Join Order Identification with L1-error (SIGMOD 2024)
 ### Query Plan
 * Plan Selection Based on Query Clustering （VLDB 2002)
 * Cost-Based Query Optimization via AI Planning (AAAI 2014)
@@ -495,6 +502,8 @@ Table of Contents
 * Learned Optimizer for Online Approximate Query Processing in Data Exploration (TKDE 2024)
 * A learning-based framework for spatial join processing: estimation, optimization and tuning (VLDB 2024)
 * Roq: Robust Query Optimization Based on a Risk-aware Learned Cost Model (arXiv 2024)
+* PLAQUE: Automated Predicate Learning at Query Time (SIGMOD 2024)
+* Eraser: Eliminating Performance Regression on Learned Query Optimizer (VLDB 2024)
   
 ## Query Execution
 ### Sort
