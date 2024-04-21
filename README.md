@@ -130,6 +130,7 @@ Table of Contents
 * DB‑GPT: Large Language Model Meets Database (DSE 2024)
 * A Spark Optimizer for Adaptive, Fine-Grained Parameter Tuning (arXiv 2024)
 * TIE: Fast Experiment-driven ML-based Configuration Tuning for In-memory Data Analytics (IEEE Transactions on Computers)
+* VDTuner: Automated Performance Tuning for Vector Data Management Systems (ICDE 2024) [Source code](https://github.com/tiannuo-yang/VDTuner)
 
 ### Physical Design
 * Tiresias: Enabling Predictive Autonomous Storage and Indexing (VLDB 2022)
