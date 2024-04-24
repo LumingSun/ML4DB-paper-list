@@ -65,7 +65,7 @@ Table of Contents
 * Database Meets Artificial Intelligence: A Survey (TKDE 2020)
 * Self-driving database systems: a conceptual approach (Distributed and Parallel Databases 2020)
 * One Model to Rule them All: Towards Zero-Shot Learning for Databases (arXiv 2021)
-* UDO: Universal Database Optimization using Reinforcement Learning (arXiv 2021)
+* UDO: Universal Database Optimization using Reinforcement Learning (arXiv 2021) [Source Code](https://github.com/jxiw/UDO)
 * Towards a Benchmark for Learned Systems (SMDB workshop 2021)
 * A Unified Transferable Model for ML-Enhanced DBMS [Vision] (arXiv 2021)
 * AI Meets Database: AI4DB and DB4AI (SIGMOD 2021)
@@ -80,14 +80,14 @@ Table of Contents
 * Database Optimizers in the Era of Learning (ICDE 2022)
 * Machine Learning for Data Management: A System View (ICDE 2022)
 * Tastes Great! Less Filling! High Performance and Accurate Training Data Collection for Self-Driving Database Management Systems (SIGMOD 2022)
-* SAM: Database Generation from Query Workload with Supervised Autoregressive Model (SIGMOD 2022)
-* Detect, Distill and Update: Learned DB Systems Facing Out of Distribution Data (SIGMOD 2023)
+* SAM: Database Generation from Query Workload with Supervised Autoregressive Model (SIGMOD 2022) [Source code](https://github.com/Jamesyang2333/SAM)
+* Detect, Distill and Update: Learned DB Systems Facing Out of Distribution Data (SIGMOD 2023) [Source code](https://github.com/meghdadk/DDUp)
 * SageDB: An Instance-Optimized Data Analytics System (VLDB 2023)
 * Towards Building Autonomous Data Services on Azure (SIGMOD-Companion ’23)
 * Database Gyms (CIDR 2023)
 * Check Out the Big Brain on BRAD: Simplifying Cloud Data Processing with Learned Automated Data Meshes (VLDB 2023)
-* Machine Unlearning in Learned Databases: An Experimental Analysis (SIGMOD 2024)
-* PilotScope: Steering Databases with Machine Learning Drivers (VLDB 2024)
+* Machine Unlearning in Learned Databases: An Experimental Analysis (SIGMOD 2024) [Source code](https://github.com/meghdadk/DB_unlearning)
+* PilotScope: Steering Databases with Machine Learning Drivers (VLDB 2024) [Source code](https://github.com/alibaba/pilotscope)
   
 ## Data Access
 ### Configuration Tuning
