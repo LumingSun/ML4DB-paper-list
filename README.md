@@ -88,6 +88,9 @@ Table of Contents
 * Check Out the Big Brain on BRAD: Simplifying Cloud Data Processing with Learned Automated Data Meshes (VLDB 2023)
 * Machine Unlearning in Learned Databases: An Experimental Analysis (SIGMOD 2024) [Source code](https://github.com/meghdadk/DB_unlearning)
 * PilotScope: Steering Databases with Machine Learning Drivers (VLDB 2024) [Source code](https://github.com/alibaba/pilotscope)
+* Machine Learning for Databases: Foundations, Paradigms, and Open problems (SIGMOD 2024)
+* NeurDB: An AI-powered Autonomous Data System (arXiv 2024)
+* GaussML: An End-to-End In-Database Machine Learning System (ICDE 2024)
   
 ## Data Access
 ### Configuration Tuning
@@ -131,6 +134,7 @@ Table of Contents
 * A Spark Optimizer for Adaptive, Fine-Grained Parameter Tuning (arXiv 2024)
 * TIE: Fast Experiment-driven ML-based Configuration Tuning for In-memory Data Analytics (IEEE Transactions on Computers)
 * VDTuner: Automated Performance Tuning for Vector Data Management Systems (ICDE 2024) [Source code](https://github.com/tiannuo-yang/VDTuner)
+* Nautilus: A Benchmarking Platform for DBMS Knob Tuning (DEEM 2024) [Source code](https://github.com/uw-mad-dash/nautilus)
 
 ### Physical Design
 * Tiresias: Enabling Predictive Autonomous Storage and Indexing (VLDB 2022)
@@ -226,6 +230,12 @@ Table of Contents
 * SWIX: A Memory-efficient Sliding Window Learned Index (SIGMOD 2024)
 * Limousine: Blending Learned and Classical Indexes to Self-Design Larger-than-Memory Cloud Storage Engines (SIGMOD 2024)
 * A Survey of Learned Indexes for the Multi-dimensional Space (arXiv 2024)
+* Hyper: A High-Performance and Memory-Efficient Learned Index via Hybrid Construction (Proceedings of the ACM on Management of Data 2024)
+* TRAP: Tailored Robustness Assessment for Index Advisors via Adversarial Perturbation (NAACL 2024)
+* Predicate caching: Query-driven secondary indexing for cloud data warehouses (SIGMOD 2024)
+* AStore: Uniformed Adaptive Learned Index and Cache for RDMA-Enabled Key-Value Store (TKDE 2024)
+* Can Learned Indexes be Built Efficiently? A Deep Dive into Sampling Trade-offs (SIGMOD 2024)
+* Making In-Memory Learned Indexes Efficient on Disk (SIGMOD 2024)
   
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
@@ -253,6 +263,8 @@ Table of Contents
 * A Data-Driven Index Recommendation System for Slow Queries (CIKM 2023)
 * ML-Powered Index Tuning: An Overview of Recent Progress and Open Challenges (arXiv 2023)
 * Robustness of Updatable Learning-based Index Advisors against Poisoning Attack (SIGMOD 2024)
+* Refactoring Index Tuning Process with Benefit Estimation (VLDB 2024) [GitHub Link](https://github.com/HIT-DB-Group/RIBE)
+* Leveraging Dynamic and Heterogeneous Workload Knowledge to Boost the Performance of Index Advisors (VLDB 2024) [GitHub Link](https://github.com/XMUDM/BALANCE)
 
 ### Materialized View
 * Automatic View Generation with Deep Learning and Reinforcement Learning (ICDE 2020)
@@ -262,8 +274,6 @@ Table of Contents
 * AutoView: An Autonomous Materialized View Management System with Encoder-Reducer (TKDE 2022)
 * Dynamic Materialized View Management using Graph Neural Network (ICDE 2023)
 #### Schema & Partition
-##### Offline
-
 * Schism: a Workload-Driven Approach to Database Replication and Partitioning (VLDB 2010)
 * Skew-Aware Automatic Database Partitioning in Shared-Nothing, Parallel OLTP Systems (SIGMOD 2012)
 * Automated Data Partitioning for Highly Scalable and Strongly Consistent Transactions (2016 Transactions on Parallel and distributed systems)
@@ -277,12 +287,12 @@ Table of Contents
 * Dalton: Learned Partitioning for Distributed Data Streams (VLDB 2023)
 * Grep: A Graph Learning Based Database Partitioning System (Management of Data 2023)
 * Learned spatial data partitioning （arXiv 2023)
-##### Online
-
-- Relax and Let the Database Do the Partitioning Online (BIRTE 2011)
-- SWORD: Scalable Workload-Aware Data Placement for Transactional Workloads (EDBT 2013)
-- Online Data Partitioning in Distributed Database Systems (EDBT 2015)
-- A Robust Partitioning Scheme for Ad-Hoc Query Workloads (SOCC 2017)
+* Relax and Let the Database Do the Partitioning Online (BIRTE 2011)
+* SWORD: Scalable Workload-Aware Data Placement for Transactional Workloads (EDBT 2013)
+* Online Data Partitioning in Distributed Database Systems (EDBT 2015)
+* A Robust Partitioning Scheme for Ad-Hoc Query Workloads (SOCC 2017)
+* Automated multidimensional data layouts in Amazon Redshift (SIGMOD 2024)
+* Oasis: An Optimal Disjoint Segmented Learned Range Filter (VLDB 2024)
 
 ### Cache related
 * A Learned Cache Eviction Framework with Minimal Overhead (arXiv 2023)
@@ -304,6 +314,7 @@ Table of Contents
 * SUFS: A Generic Storage Usage Forecasting Service Through Adaptive Ensemble Learning (ICDE 2023)
 * Auto-WLM: Machine Learning Enhanced Workload Management in Amazon Redshift (SIGMOD-Companion ’23)
 * SeLeP: Learning Based Semantic Prefetching for Exploratory Database Workloads (arXiv 2023)
+* Intelligent scaling in Amazon Redshift (SIGMOD 2024)
 
 ### Performance Diagnosis and Modeling
 
@@ -340,6 +351,7 @@ Table of Contents
 * Real-Time Workload Pattern Analysis for Large-Scale Cloud Databases (VLDB 2023)
 
 ## Query Optimization
+* Learned Query Optimizer: What is New and What is Next (SIGMOD 2024)
 ### Query Rewrite
 * Sia: Optimizing Queries using Learned Predicates (SIGMOD 2021)
 * A Learned Query Rewrite System using Monte Carlo Tree Search (VLDB 2022)
@@ -363,6 +375,9 @@ Table of Contents
 * ALECE: An Attention-based Learned Cardinality Estimator for SPJ Queries on Dynamic Workloads (VLDB 2023)
 * Advanced Dataset Discovery: When Multi-Query-Dataset Cardinality Estimation Matters (aiXiv 2024)
 * Sample-Efficient Cardinality Estimation Using Geometric Deep Learning (VLDB 2024)
+* PRICE: A Pretrained Model for Cross-Database Cardinality Estimation (arXiv 2024) [GitHub Lint](https://github.com/StCarmen/PRICE)
+* ByteCard: Enhancing ByteDance's Data Warehouse with Learned Cardinality Estimation (SIGMOD 2024)
+* ASM in Action: Fast and Practical Learned Cardinality Estimation (SIGMOD 2024)
 #### Data-based
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
 * Estimating Join Selectivities using Bandwidth-Optimized Kernel Density Models (VLDB 2017)
@@ -390,6 +405,7 @@ Table of Contents
 * Cardinality estimation using normalizing flow (VLDBJ 2023)
 * LPLM: A Neural Language Model for Cardinality Estimation of LIKE-Queries (SIGMOD 2024)
 * ASM: Harmonizing Autoregressive Model, Sampling, and Multi-dimensional Statistics Merging for Cardinality Estimation (SIGMOD 2024)
+* ASM in Action: Fast and Practical Learned Cardinality Estimation (SIGMOD 2024)
 #### Query-based
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
 * Selectivity Estimation in Extensible Databases -A Neural Network Approach （VLDB 1998）
@@ -442,6 +458,7 @@ Table of Contents
 * BASE: Bridging the Gap between Cost and Latency for Query Optimization (VLDB 2023)
 * Rethinking Learned Cost Models: Why Start from Scratch? (PACMMOD 2023)
 * Budget-aware Query Tuning: An AutoML Perspective (arXiv 2024)
+* OS Pre-trained Transformer: Predicting Query Latencies across Changing System Contexts [GitHub Link](https://github.com/parimarjan/LatencyPredictor)
 #### Concurrent
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
 * Performance Prediction for Concurrent Database Workloads (SIGMOD 2011)
@@ -505,6 +522,9 @@ Table of Contents
 * Roq: Robust Query Optimization Based on a Risk-aware Learned Cost Model (arXiv 2024)
 * PLAQUE: Automated Predicate Learning at Query Time (SIGMOD 2024)
 * Eraser: Eliminating Performance Regression on Learned Query Optimizer (VLDB 2024)
+* Low Rank Approximation for Learned Query Optimization (aiDM 2024)
+* Lero: applying learning-to-rank in query optimizer (VLDB 2024)
+* RobOpt: A Tool for Robust Workload Optimization Based on Uncertainty-Aware Machine Learning (SIGMOD 2024)
   
 ## Query Execution
 ### Sort
@@ -539,6 +559,7 @@ Table of Contents
 * Self-Tuning Query Scheduling for Analytical Workloads (SIGMOD 2021)
 * LSched: A Workload-Aware Learned Query Scheduler for Analytical Database Systems (SIGMOD 2022)
 * DBMLSched: Scheduling In-database Machine Learning Jobs (AIDB@VLDB 2023)
+* Learning Interpretable Scheduling Algorithms for Data Processing Clusters (arXiv 2024)
 
 (transaction 👇)
 
@@ -604,6 +625,7 @@ Table of Contents
 * C3: Zero-shot Text-to-SQL with ChatGPT (arXiv 2023)
 * RESDSQL: Decoupling Schema Linking and Skeleton Parsing for Text-to-SQL (AAAI 2023)
 * Dr.spider: A Diagnostic Evaluation Benchmark Towards Text-To-Sql Robustness (ICLR 2023)
+* Next-Generation Database Interfaces: A Survey of LLM-based Text-to-SQL (arXiv 2024)
 * Natural language to SQL [Resource repo](https://github.com/yechens/NL2SQL)
 
 ## SQL Related
