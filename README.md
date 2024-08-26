@@ -46,6 +46,7 @@ Table of Contents
     * [Concurrent](#Concurrent)
   * [Join Optimization](#join-optimization)
   * [Query Plan](#query-plan)
+  * [Training data](#training-data)
 * [Query Execution](#query-execution)
   * [Sort](#sort)
   * [Join](#join)
@@ -526,7 +527,10 @@ Table of Contents
 * Low Rank Approximation for Learned Query Optimization (aiDM 2024)
 * Lero: applying learning-to-rank in query optimizer (VLDB 2024)
 * RobOpt: A Tool for Robust Workload Optimization Based on Uncertainty-Aware Machine Learning (SIGMOD 2024)
-  
+### Training Data
+* Expand your Training Limits! Generating Training Data for ML-based Data Management (SIGMOD 2021)
+* DataFarm: Farm Your ML-based Query Optimizer's Food! - Human-Guided Training Data Generation -. (CIDR 2022)
+* Farming Your ML-based Query Optimizer's Food. (ICDE 2022, **best demo award**)
 ## Query Execution
 ### Sort
 * The Case for a Learned Sorting Algorithm (SIGMOD 2020)
