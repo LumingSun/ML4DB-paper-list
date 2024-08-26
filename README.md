@@ -451,6 +451,7 @@ Table of Contents
 * Cost Models for Big Data Query Processing: Learning, Retrofitting, and Our Findings (2020)
 * DBMS Fitting: Why should we learn what we already know? (CIDR 2020)
 * A Note On Operator-Level Query Execution Cost Modeling (2020)
+* ML-based Cross-Platform Query Optimization (ICDE 2020)
 * Zero-Shot Cost Models for Out-of-the-box Learned Cost Prediction (VLDB 2022)
 * Efficient Learning with Pseudo Labels for Query Cost Estimation (CIKM 2022)
 * gCBO: A Cost-based Optimizer for Graph Databases (CIKM 2022)
