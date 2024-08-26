@@ -502,6 +502,7 @@ Table of Contents
 * Deploying a Steered Query Optimizer in Production at Microsoft (SIGMOD 2022)
 * Building Learned Federated Query Optimizers (VLDB 2022 PhD Workshop)
 * Cost-based or Learning-based? A Hybrid Query Optimizer for Query Plan Selection (VLDB 2022)
+* Learn What Really Matters: A Learning-to-Rank Approach for ML-based Query Optimization (BTW 2023)
 * Lero: A Learning-to-Rank Query Optimizer (VLDB 2023) [GitHub Link](https://github.com/AlibabaIncubator/Lero-on-PostgreSQL)
 * Learned Query Superoptimization (arXiv 2023)
 * Kepler: Robust Learning for Faster Parametric Query Optimization (SIGMOD 2023)
