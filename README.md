@@ -92,6 +92,8 @@ Table of Contents
 * Machine Learning for Databases: Foundations, Paradigms, and Open problems (SIGMOD 2024)
 * NeurDB: An AI-powered Autonomous Data System (arXiv 2024)
 * GaussML: An End-to-End In-Database Machine Learning System (ICDE 2024)
+* NeurDB: On the Design and Implementation of an AI-powered Autonomous Database (arXiv 2024)
+* LLM for Data Management (VLDB 2024)
   
 ## Data Access
 ### Configuration Tuning
@@ -136,6 +138,10 @@ Table of Contents
 * TIE: Fast Experiment-driven ML-based Configuration Tuning for In-memory Data Analytics (IEEE Transactions on Computers)
 * VDTuner: Automated Performance Tuning for Vector Data Management Systems (ICDE 2024) [Source code](https://github.com/tiannuo-yang/VDTuner)
 * Nautilus: A Benchmarking Platform for DBMS Knob Tuning (DEEM 2024) [Source code](https://github.com/uw-mad-dash/nautilus)
+* Is Large Language Model Good at Database Knob Tuning? A Comprehensive Experimental Evaluation (arXiv 2024)
+* CTuner: Automatic NoSQL Database Tuning with Causal Reinforcement Learning (Internetware 2024)
+* KnobTree: Intelligent Database Parameter Configuration via Explainable Reinforcement Learning (arXiv 2024)
+* KnobCF: Uncertainty-aware Knob Tuning (arXiv 2024)
 
 ### Physical Design
 * Tiresias: Enabling Predictive Autonomous Storage and Indexing (VLDB 2022)
@@ -232,11 +238,18 @@ Table of Contents
 * Limousine: Blending Learned and Classical Indexes to Self-Design Larger-than-Memory Cloud Storage Engines (SIGMOD 2024)
 * A Survey of Learned Indexes for the Multi-dimensional Space (arXiv 2024)
 * Hyper: A High-Performance and Memory-Efficient Learned Index via Hybrid Construction (Proceedings of the ACM on Management of Data 2024)
-* TRAP: Tailored Robustness Assessment for Index Advisors via Adversarial Perturbation (NAACL 2024)
 * Predicate caching: Query-driven secondary indexing for cloud data warehouses (SIGMOD 2024)
 * AStore: Uniformed Adaptive Learned Index and Cache for RDMA-Enabled Key-Value Store (TKDE 2024)
 * Can Learned Indexes be Built Efficiently? A Deep Dive into Sampling Trade-offs (SIGMOD 2024)
 * Making In-Memory Learned Indexes Efficient on Disk (SIGMOD 2024)
+* LeaderKV: Improving Read Performance of KV Stores via Learned Index and Decoupled KV Table (ICDE 2024)
+* Chameleon: Towards Update-Efficient Learned Indexing for Locally Skewed Data (ICDE 2024)
+* Revisiting Learned Index with Byte-addressable Persistent Storage (ICPP 2024)
+* UpLIF: An Updatable Self-Tuning Learned Index Framework (arXiv 2024)
+* LITS: An Optimized Learned Index for Strings (arxiv 2024)
+* Evaluating Learned Indexes for External-Memory Joins (arXiv 2024)
+* LearnedKV: Integrating LSM and Learned Index for Superior Performance on SSD (arXiv 2024)
+* Learned Indexes with Distribution Smoothing via Virtual Points (arXiv 2024)
   
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
@@ -266,6 +279,11 @@ Table of Contents
 * Robustness of Updatable Learning-based Index Advisors against Poisoning Attack (SIGMOD 2024)
 * Refactoring Index Tuning Process with Benefit Estimation (VLDB 2024) [GitHub Link](https://github.com/HIT-DB-Group/RIBE)
 * Leveraging Dynamic and Heterogeneous Workload Knowledge to Boost the Performance of Index Advisors (VLDB 2024) [GitHub Link](https://github.com/XMUDM/BALANCE)
+* MFIX: An Efficient and Reliable Index Advisor via Multi-Fidelity Bayesian Optimization (ICDE 2024)
+* TRAP: Tailored Robustness Assessment for Index Advisors via Adversarial Perturbation (ICDE 2024)
+* Online Index Recommendation for Slow Queries (ICDE 2024)
+* Automatic Index Tuning: A Survey (TKDE)
+* Breaking It Down: An In-Depth Study of Index Advisors(VLDB 2024)
 
 ### Materialized View
 * Automatic View Generation with Deep Learning and Reinforcement Learning (ICDE 2020)
@@ -350,9 +368,13 @@ Table of Contents
 * An Efficient Online Prediction of Host Workloads Using Pruned GRU Neural Nets (arXiv 2023)
 * Uncertainty-Aware Workload Prediction in Cloud Computing (arXiv 2023)
 * Real-Time Workload Pattern Analysis for Large-Scale Cloud Databases (VLDB 2023)
+* Robust Auto-Scaling with Probabilistic Workload Forecasting for Cloud Databases (ICDE 2024)
+* QPSEncoder: A Database Workload Encoder with Deep Learning (DEXA 2024)
 
 ## Query Optimization
 * Learned Query Optimizer: What is New and What is Next (SIGMOD 2024)
+* GLO: Towards Generalized Learned Query Optimization (ICDE 2024)
+* Robust Query Optimization in the Era of Machine Learning: State-of-the-Art and Future Directions (ICDE 2024)
 ### Query Rewrite
 * Sia: Optimizing Queries using Learned Predicates (SIGMOD 2021)
 * A Learned Query Rewrite System using Monte Carlo Tree Search (VLDB 2022)
@@ -407,6 +429,7 @@ Table of Contents
 * LPLM: A Neural Language Model for Cardinality Estimation of LIKE-Queries (SIGMOD 2024)
 * ASM: Harmonizing Autoregressive Model, Sampling, and Multi-dimensional Statistics Merging for Cardinality Estimation (SIGMOD 2024)
 * ASM in Action: Fast and Practical Learned Cardinality Estimation (SIGMOD 2024)
+* SAFE: Sampling-Assisted Fast Learned Cardinality Estimation for Dynamic Spatial Data (DEXA 2024)
 #### Query-based
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
 * Selectivity Estimation in Extensible Databases -A Neural Network Approach （VLDB 1998）
@@ -439,6 +462,7 @@ Table of Contents
 * Adding Domain Knowledge to Query-Driven Learned Databases (arXiv 2023)
 * PACE: Poisoning Attacks on Learned Cardinality Estimation (SIGMOD 2024)
 * Sample-Efficient Cardinality Estimation Using Geometric Deep Learning (VLDB 2024)
+* Automating localized learning for cardinality estimation based on XGBoost (Knowledge and Information Systems)
 ### Cost Estimation
 #### Single Query
 * Statistical learning techniques for costing XML queries (VLDB 2005)
@@ -528,6 +552,11 @@ Table of Contents
 * Low Rank Approximation for Learned Query Optimization (aiDM 2024)
 * Lero: applying learning-to-rank in query optimizer (VLDB 2024)
 * RobOpt: A Tool for Robust Workload Optimization Based on Uncertainty-Aware Machine Learning (SIGMOD 2024)
+* A Novel Technique for Query Plan Representation Based on Graph Neural (Big Data Analytics and Knowledge Discovery)
+* An Exploratory Case Study of Query Plan Representations (aiXiv 2024)
+* JAPO: learning join and pushdown order for cloud-native join optimization (Frontiers of Computer Science 2024)
+* Steering the PostgreSQL query optimizer using hinting: State-Of-The-Art and open challenges (35th GI-Workshop on Foundations of Databases)
+* PARQO: Penalty-Aware Robust Plan Selection in Query Optimization (arXiv 2024)
 ### Training Data
 * Expand your Training Limits! Generating Training Data for ML-based Data Management (SIGMOD 2021)
 * DataFarm: Farm Your ML-based Query Optimizer's Food! - Human-Guided Training Data Generation -. (CIDR 2022)
