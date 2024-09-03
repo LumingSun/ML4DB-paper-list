@@ -94,6 +94,7 @@ Table of Contents
 * GaussML: An End-to-End In-Database Machine Learning System (ICDE 2024)
 * NeurDB: On the Design and Implementation of an AI-powered Autonomous Database (arXiv 2024)
 * LLM for Data Management (VLDB 2024)
+* Blueprinting the Cloud: Unifying and Automatically Optimizing Cloud Data Infrastructures with BRAD (VLDB 2024)
   
 ## Data Access
 ### Configuration Tuning
@@ -664,6 +665,7 @@ Table of Contents
 * Dr.spider: A Diagnostic Evaluation Benchmark Towards Text-To-Sql Robustness (ICLR 2023)
 * Next-Generation Database Interfaces: A Survey of LLM-based Text-to-SQL (arXiv 2024)
 * Natural language to SQL [Resource repo](https://github.com/yechens/NL2SQL)
+* Combining Small Language Models and Large Language Models for Zero-Shot NL2SQL (VLDB 2024)
 
 ## SQL Related
 * Query2Vec (ArXiv)
