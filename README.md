@@ -143,6 +143,7 @@ Table of Contents
 * CTuner: Automatic NoSQL Database Tuning with Causal Reinforcement Learning (Internetware 2024)
 * KnobTree: Intelligent Database Parameter Configuration via Explainable Reinforcement Learning (arXiv 2024)
 * KnobCF: Uncertainty-aware Knob Tuning (arXiv 2024)
+* Db2une: Tuning Under Pressure via Deep Learning (VLDB 2024)
 
 ### Physical Design
 * Tiresias: Enabling Predictive Autonomous Storage and Indexing (VLDB 2022)
