@@ -402,6 +402,7 @@ Table of Contents
 * ByteCard: Enhancing ByteDance's Data Warehouse with Learned Cardinality Estimation (SIGMOD 2024)
 * ASM in Action: Fast and Practical Learned Cardinality Estimation (SIGMOD 2024)
 * CardBench: A Benchmark for Learned Cardinality Estimation in Relational Database (arXiv 2024)
+* Duet: efficient and scalable hybriD neUral rElation undersTanding. (ICDE 2024)
 #### Data-based
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
 * Estimating Join Selectivities using Bandwidth-Optimized Kernel Density Models (VLDB 2017)
