@@ -434,6 +434,7 @@ Table of Contents
 * ASM: Harmonizing Autoregressive Model, Sampling, and Multi-dimensional Statistics Merging for Cardinality Estimation (SIGMOD 2024)
 * ASM in Action: Fast and Practical Learned Cardinality Estimation (SIGMOD 2024)
 * SAFE: Sampling-Assisted Fast Learned Cardinality Estimation for Dynamic Spatial Data (DEXA 2024)
+* Updateable Data-Driven Cardinality Estimator with Bounded Q-error (arXiv 2024)
 #### Query-based
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
 * Selectivity Estimation in Extensible Databases -A Neural Network Approach （VLDB 1998）
