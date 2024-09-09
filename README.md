@@ -17,6 +17,7 @@ Looking forward to contributions (PR, comment, discussion) about Text-To-SQL！�
 Table of Contents
 =================
 * [System & Tutorial](#system-and-tutorial)
+  * [Training data](#training-data)
 * [Data Access](#data-access)
   * [Configuration Tuning](#configuration-tuning)
   * [Physical Design](#physical-design)
@@ -46,7 +47,6 @@ Table of Contents
     * [Concurrent](#Concurrent)
   * [Join Optimization](#join-optimization)
   * [Query Plan](#query-plan)
-  * [Training data](#training-data)
 * [Query Execution](#query-execution)
   * [Sort](#sort)
   * [Join](#join)
@@ -95,7 +95,13 @@ Table of Contents
 * NeurDB: On the Design and Implementation of an AI-powered Autonomous Database (arXiv 2024)
 * LLM for Data Management (VLDB 2024)
 * Blueprinting the Cloud: Unifying and Automatically Optimizing Cloud Data Infrastructures with BRAD (VLDB 2024)
-  
+* The Holon Approach for Simultaneously Tuning Multiple Components in a Self-Driving Database Management System with Machine Learning via Synthesized Proto-Actions (VLDB 2024)
+### Training Data Collection
+* Expand your Training Limits! Generating Training Data for ML-based Data Management (SIGMOD 2021)
+* DataFarm: Farm Your ML-based Query Optimizer's Food! - Human-Guided Training Data Generation -. (CIDR 2022)
+* Farming Your ML-based Query Optimizer's Food. (ICDE 2022, **best demo award**)
+* Hit the Gym: Accelerating Query Execution to Efficiently Bootstrap Behavior Models for Self-Driving Database Management Systems (VLDB 2024)
+
 ## Data Access
 ### Configuration Tuning
 * SARD: A statistical approach for ranking database tuning parameters (ICDEW, 2008)
@@ -248,7 +254,7 @@ Table of Contents
 * Chameleon: Towards Update-Efficient Learned Indexing for Locally Skewed Data (ICDE 2024)
 * Revisiting Learned Index with Byte-addressable Persistent Storage (ICPP 2024)
 * UpLIF: An Updatable Self-Tuning Learned Index Framework (arXiv 2024)
-* LITS: An Optimized Learned Index for Strings (arxiv 2024)
+* LITS: An Optimized Learned Index for Strings (VLDB 2024)
 * Evaluating Learned Indexes for External-Memory Joins (arXiv 2024)
 * LearnedKV: Integrating LSM and Learned Index for Superior Performance on SSD (arXiv 2024)
 * Learned Indexes with Distribution Smoothing via Virtual Points (arXiv 2024)
@@ -377,6 +383,7 @@ Table of Contents
 * Learned Query Optimizer: What is New and What is Next (SIGMOD 2024)
 * GLO: Towards Generalized Learned Query Optimization (ICDE 2024)
 * Robust Query Optimization in the Era of Machine Learning: State-of-the-Art and Future Directions (ICDE 2024)
+* Presto’s History-based Query Optimizer (VLDB 2024)
 ### Query Rewrite
 * Sia: Optimizing Queries using Learned Predicates (SIGMOD 2021)
 * A Learned Query Rewrite System using Monte Carlo Tree Search (VLDB 2022)
@@ -562,10 +569,7 @@ Table of Contents
 * JAPO: learning join and pushdown order for cloud-native join optimization (Frontiers of Computer Science 2024)
 * Steering the PostgreSQL query optimizer using hinting: State-Of-The-Art and open challenges (35th GI-Workshop on Foundations of Databases)
 * PARQO: Penalty-Aware Robust Plan Selection in Query Optimization (arXiv 2024)
-### Training Data
-* Expand your Training Limits! Generating Training Data for ML-based Data Management (SIGMOD 2021)
-* DataFarm: Farm Your ML-based Query Optimizer's Food! - Human-Guided Training Data Generation -. (CIDR 2022)
-* Farming Your ML-based Query Optimizer's Food. (ICDE 2022, **best demo award**)
+
 ## Query Execution
 ### Sort
 * The Case for a Learned Sorting Algorithm (SIGMOD 2020)
