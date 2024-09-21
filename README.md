@@ -161,6 +161,7 @@ Table of Contents
 * Leaper: A Learned Prefetcher for Cache Invalidation in LSM-tree based Storage Engines （VLDB 2020）
 * From WiscKey to Bourbon: A Learned Index for Log-Structured Merge Trees (OSDI 2020)
 * TridentKV: A Read-Optimized LSM-Tree Based KV Store via Adaptive Indexing and Space-Efficient Partitioning (TPDS 2022)
+* LearnedKV: Integrating LSM and Learned Index for Superior Performance on SSD (arXiv 2024)
 #### Index
 ##### Index Structure
 * Learning to hash for indexing big data - A survey (2016)
