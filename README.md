@@ -22,9 +22,9 @@ Table of Contents
   * [Configuration Tuning](#configuration-tuning)
   * [Physical Design](#physical-design)
     * [Learned structure](#learned-structure)
-    * [LSM-tree related](#lsm-tree-related)
     * [Index](#index)
       * [Index Structure](#index-structure)
+      * [LSM-tree related](#lsm-tree-related)
       * [Index Recommendation](#index-recommendation)
     * [Materialized View](#materialized-view)
     * [Schema &amp; Partition](#schema--partition)
@@ -157,10 +157,6 @@ Table of Contents
 * Stacked Filters: Learning to Filter by Structure (VLDB 2021)
 * LEA: A Learned Encoding Advisor for Column Stores (aiDM 2021)
 * Learning over Sets for Databases (EDBT 2024)
-#### LSM-tree related
-* Leaper: A Learned Prefetcher for Cache Invalidation in LSM-tree based Storage Engines （VLDB 2020）
-* From WiscKey to Bourbon: A Learned Index for Log-Structured Merge Trees (OSDI 2020)
-* TridentKV: A Read-Optimized LSM-Tree Based KV Store via Adaptive Indexing and Space-Efficient Partitioning (TPDS 2022)
 #### Index
 ##### Index Structure
 * Learning to hash for indexing big data - A survey (2016)
@@ -256,9 +252,12 @@ Table of Contents
 * UpLIF: An Updatable Self-Tuning Learned Index Framework (arXiv 2024)
 * LITS: An Optimized Learned Index for Strings (VLDB 2024)
 * Evaluating Learned Indexes for External-Memory Joins (arXiv 2024)
-* LearnedKV: Integrating LSM and Learned Index for Superior Performance on SSD (arXiv 2024)
 * Learned Indexes with Distribution Smoothing via Virtual Points (arXiv 2024)
-  
+##### LSM-tree related
+* Leaper: A Learned Prefetcher for Cache Invalidation in LSM-tree based Storage Engines （VLDB 2020）
+* From WiscKey to Bourbon: A Learned Index for Log-Structured Merge Trees (OSDI 2020)
+* TridentKV: A Read-Optimized LSM-Tree Based KV Store via Adaptive Indexing and Space-Efficient Partitioning (TPDS 2022)
+* LearnedKV: Integrating LSM and Learned Index for Superior Performance on SSD (arXiv 2024)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
