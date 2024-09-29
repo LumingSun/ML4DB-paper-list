@@ -258,6 +258,7 @@ Table of Contents
 * From WiscKey to Bourbon: A Learned Index for Log-Structured Merge Trees (OSDI 2020)
 * TridentKV: A Read-Optimized LSM-Tree Based KV Store via Adaptive Indexing and Space-Efficient Partitioning (TPDS 2022)
 * LearnedKV: Integrating LSM and Learned Index for Superior Performance on SSD (arXiv 2024)
+* CAMAL: Optimizing LSM-trees via Active Learning (arXiv 2024)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
