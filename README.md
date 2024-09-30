@@ -11,7 +11,7 @@ Welcome to PR!
 
 欢迎大家补充！
 
-There are so many papers emerging about Text-To-SQL! Sadly I'm not an expert with the topic and can not tell the quality of the papers.  
+There are so many papers emerging about [Text-To-SQL](https://github.com/eosphoros-ai/Awesome-Text2SQL)! Sadly I'm not an expert with the topic and can not tell the quality of the papers.  
 Looking forward to contributions (PR, comment, discussion) about Text-To-SQL！🫶
 
 Table of Contents
@@ -672,6 +672,7 @@ Table of Contents
 * Next-Generation Database Interfaces: A Survey of LLM-based Text-to-SQL (arXiv 2024)
 * Natural language to SQL [Resource repo](https://github.com/yechens/NL2SQL)
 * Combining Small Language Models and Large Language Models for Zero-Shot NL2SQL (VLDB 2024)
+* Awesome-Text2SQL [Resource repo](https://github.com/eosphoros-ai/Awesome-Text2SQL)
 
 ## SQL Related
 * Query2Vec (ArXiv)
