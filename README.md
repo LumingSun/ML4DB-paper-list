@@ -442,6 +442,7 @@ Table of Contents
 * ASM in Action: Fast and Practical Learned Cardinality Estimation (SIGMOD 2024)
 * SAFE: Sampling-Assisted Fast Learned Cardinality Estimation for Dynamic Spatial Data (DEXA 2024)
 * Updateable Data-Driven Cardinality Estimator with Bounded Q-error (arXiv 2024)
+* Grid-AR: A Grid–based Booster for Learned Cardinality Estimation and Range Joins (arXiv 2024)
 #### Query-based
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
 * Selectivity Estimation in Extensible Databases -A Neural Network Approach （VLDB 1998）
@@ -593,6 +594,7 @@ Table of Contents
 * NeuroSketch: Fast and Approximate Evaluation of Range Aggregate Queries with Neural Networks (SIGMOD 2023)
 * Exploiting Machine Learning Models for Approximate Query Processing (Big Data 2022)
 * Tuple Bubbles: Learned Tuple Representations for Tunable Approximate Query Processing (aiDM 2023)
+* Learning-Based Sample Tuning for Approximate Query Processing in Interactive Data Exploration (TKDE 2024)
 ### Sheduling
 * Workload management for cloud databases via machine learning (ICDE 2016 WiseDB)
 * A learning-based service for cost and performance management of cloud databases （ICDEW 2017）(short version for WiSeDB)
