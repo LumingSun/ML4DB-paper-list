@@ -291,7 +291,8 @@ Table of Contents
 * TRAP: Tailored Robustness Assessment for Index Advisors via Adversarial Perturbation (ICDE 2024)
 * Online Index Recommendation for Slow Queries (ICDE 2024)
 * Automatic Index Tuning: A Survey (TKDE)
-* Breaking It Down: An In-Depth Study of Index Advisors(VLDB 2024)
+* Breaking It Down: An In-Depth Study of Index Advisors (VLDB 2024)
+* Can Uncertainty Quantification Enable Better Learning-based Index Tuning? (arXiv 2024)
 
 ### Materialized View
 * Automatic View Generation with Deep Learning and Reinforcement Learning (ICDE 2020)
@@ -498,6 +499,7 @@ Table of Contents
 * Rethinking Learned Cost Models: Why Start from Scratch? (PACMMOD 2023)
 * Budget-aware Query Tuning: An AutoML Perspective (arXiv 2024)
 * OS Pre-trained Transformer: Predicting Query Latencies across Changing System Contexts [GitHub Link](https://github.com/parimarjan/LatencyPredictor)
+* Precision Meets Resilience: Cross-Database Generalization with Uncertainty Quantification for Robust Cost Estimation (CIKM 2024)
 #### Concurrent
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
 * Performance Prediction for Concurrent Database Workloads (SIGMOD 2011)
@@ -522,6 +524,7 @@ Table of Contents
 * JoinGym: An Efficient Query Optimization Environment for Reinforcement Learning (arXiv 2023)
 * Join Order Selection with Deep Reinforcement Learning: Fundamentals, Techniques, and Challenges (VLDB 2023)
 * Sub-optimal Join Order Identification with L1-error (SIGMOD 2024)
+* TESSM: Tree-based Selective State Space Models for Efficient Join Order Selection Learning (CIKM 2024)
 ### Query Plan
 * Plan Selection Based on Query Clustering （VLDB 2002)
 * Cost-Based Query Optimization via AI Planning (AAAI 2014)
