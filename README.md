@@ -343,6 +343,7 @@ Table of Contents
 * Auto-WLM: Machine Learning Enhanced Workload Management in Amazon Redshift (SIGMOD-Companion ’23)
 * SeLeP: Learning Based Semantic Prefetching for Exploratory Database Workloads (arXiv 2023)
 * Intelligent scaling in Amazon Redshift (SIGMOD 2024)
+* Forecasting Algorithms for Intelligent Resource Scaling: An Experimental Analysis (Socc 2024)
 
 ### Performance Diagnosis and Modeling
 
