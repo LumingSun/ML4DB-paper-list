@@ -393,7 +393,7 @@ Table of Contents
 * WeTune: Automatic Discovery and Verification of Query Rewrite Rules (SIGMOD 2022)
 * A Learned Query Rewrite System (VLDB 2023)
 * Query Rewriting via Large Language Models (arXiv 2024)
-* LLM-R2: A Large Language Model Enhanced Rule-based Rewrite System for Boosting Query Efficiency (arXiv 2024)
+* LLM-R2: A Large Language Model Enhanced Rule-based Rewrite System for Boosting Query Efficiency (arXiv 2024) [GitHub](https://github.com/DAMO-NLP-SG/LLM-R2)
 
 ### Cardinality Estimation
 * Are We Ready For Learned Cardinality Estimation? (VLDB 2021) [GitHub Link](https://github.com/sfu-db/AreCELearnedYet)
