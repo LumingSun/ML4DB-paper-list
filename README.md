@@ -386,11 +386,15 @@ Table of Contents
 * GLO: Towards Generalized Learned Query Optimization (ICDE 2024)
 * Robust Query Optimization in the Era of Machine Learning: State-of-the-Art and Future Directions (ICDE 2024)
 * Presto’s History-based Query Optimizer (VLDB 2024)
+
 ### Query Rewrite
 * Sia: Optimizing Queries using Learned Predicates (SIGMOD 2021)
 * A Learned Query Rewrite System using Monte Carlo Tree Search (VLDB 2022)
 * WeTune: Automatic Discovery and Verification of Query Rewrite Rules (SIGMOD 2022)
 * A Learned Query Rewrite System (VLDB 2023)
+* Query Rewriting via Large Language Models (arXiv 2024)
+* LLM-R2: A Large Language Model Enhanced Rule-based Rewrite System for Boosting Query Efficiency (arXiv 2024)
+
 ### Cardinality Estimation
 * Are We Ready For Learned Cardinality Estimation? (VLDB 2021) [GitHub Link](https://github.com/sfu-db/AreCELearnedYet)
 * A Unified Deep Model of Learning from both Data and Queries for Cardinality Estimation (SIGMOD 2021)
