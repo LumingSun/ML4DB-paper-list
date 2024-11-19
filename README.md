@@ -101,6 +101,7 @@ Table of Contents
 * DataFarm: Farm Your ML-based Query Optimizer's Food! - Human-Guided Training Data Generation -. (CIDR 2022)
 * Farming Your ML-based Query Optimizer's Food. (ICDE 2022, **best demo award**)
 * Hit the Gym: Accelerating Query Execution to Efficiently Bootstrap Behavior Models for Self-Driving Database Management Systems (VLDB 2024)
+* Theoretical Analysis of Learned Database Operations under Distribution Shift through Distribution Learnability (ICML 2024)
 
 ## Data Access
 ### Configuration Tuning
@@ -151,6 +152,7 @@ Table of Contents
 * KnobCF: Uncertainty-aware Knob Tuning (arXiv 2024)
 * Db2une: Tuning Under Pressure via Deep Learning (VLDB 2024)
 * {\lambda}-Tune: Harnessing Large Language Models for Automated Database System Tuning (arXiv 2024)
+* Db2une: Tuning Under Pressure via Deep Learning (VLDB 2024)
 
 ### Physical Design
 * Tiresias: Enabling Predictive Autonomous Storage and Indexing (VLDB 2022)
@@ -387,6 +389,8 @@ Table of Contents
 * GLO: Towards Generalized Learned Query Optimization (ICDE 2024)
 * Robust Query Optimization in the Era of Machine Learning: State-of-the-Art and Future Directions (ICDE 2024)
 * Presto’s History-based Query Optimizer (VLDB 2024)
+* Spatial Query Optimization With Learning (VLDB 2024)
+* Presto's History-based Query Optimizer (VLDB 2024)
 
 ### Query Rewrite
 * Sia: Optimizing Queries using Learned Predicates (SIGMOD 2021)
