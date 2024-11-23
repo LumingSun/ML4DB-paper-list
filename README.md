@@ -688,6 +688,7 @@ Table of Contents
 * Natural language to SQL [Resource repo](https://github.com/yechens/NL2SQL)
 * Combining Small Language Models and Large Language Models for Zero-Shot NL2SQL (VLDB 2024)
 * Awesome-Text2SQL [Resource repo](https://github.com/eosphoros-ai/Awesome-Text2SQL)
+* Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows [Resource repo](https://github.com/xlang-ai/Spider2) (arXiv 2024)
 
 ## SQL Related
 * Query2Vec (ArXiv)
