@@ -296,6 +296,7 @@ Table of Contents
 * Automatic Index Tuning: A Survey (TKDE)
 * Breaking It Down: An In-Depth Study of Index Advisors (VLDB 2024)
 * Can Uncertainty Quantification Enable Better Learning-based Index Tuning? (arXiv 2024)
+* Hybrid Cost Modeling for Reducing Query Performance Regression in Index Tuning (TKDE 2024)
 
 ### Materialized View
 * Automatic View Generation with Deep Learning and Reinforcement Learning (ICDE 2020)
@@ -399,6 +400,7 @@ Table of Contents
 * A Learned Query Rewrite System (VLDB 2023)
 * Query Rewriting via Large Language Models (arXiv 2024)
 * LLM-R2: A Large Language Model Enhanced Rule-based Rewrite System for Boosting Query Efficiency (arXiv 2024) [GitHub](https://github.com/DAMO-NLP-SG/LLM-R2)
+* R-Bot: An LLM-based Query Rewrite System (arXiv 2024)
 
 ### Cardinality Estimation
 * Are We Ready For Learned Cardinality Estimation? (VLDB 2021) [GitHub Link](https://github.com/sfu-db/AreCELearnedYet)
@@ -583,6 +585,7 @@ Table of Contents
 * JAPO: learning join and pushdown order for cloud-native join optimization (Frontiers of Computer Science 2024)
 * Steering the PostgreSQL query optimizer using hinting: State-Of-The-Art and open challenges (35th GI-Workshop on Foundations of Databases)
 * PARQO: Penalty-Aware Robust Plan Selection in Query Optimization (arXiv 2024)
+* HERO: Hint-Based Efficient and Reliable Query Optimizer (arXiv 2024)
 
 ## Query Execution
 ### Sort
