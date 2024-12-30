@@ -392,6 +392,7 @@ Table of Contents
 * Presto’s History-based Query Optimizer (VLDB 2024)
 * Spatial Query Optimization With Learning (VLDB 2024)
 * Presto's History-based Query Optimizer (VLDB 2024)
+* DBG-PT: A Large Language Model Assisted Query Performance Regression Debugger (VLDB 2024)
 
 ### Query Rewrite
 * Sia: Optimizing Queries using Learned Predicates (SIGMOD 2021)
