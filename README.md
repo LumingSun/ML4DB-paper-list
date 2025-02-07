@@ -393,6 +393,7 @@ Table of Contents
 * Spatial Query Optimization With Learning (VLDB 2024)
 * Presto's History-based Query Optimizer (VLDB 2024)
 * DBG-PT: A Large Language Model Assisted Query Performance Regression Debugger (VLDB 2024)
+* How Good are Learned Cost Models, Really? Insights from Query Optimization Tasks (SIGMOD 2025) [GitHub Link](https://github.com/DataManagementLab/lcm-eval)
 
 ### Query Rewrite
 * Sia: Optimizing Queries using Learned Predicates (SIGMOD 2021)
@@ -513,6 +514,8 @@ Table of Contents
 * Budget-aware Query Tuning: An AutoML Perspective (arXiv 2024)
 * OS Pre-trained Transformer: Predicting Query Latencies across Changing System Contexts [GitHub Link](https://github.com/parimarjan/LatencyPredictor)
 * Precision Meets Resilience: Cross-Database Generalization with Uncertainty Quantification for Robust Cost Estimation (CIKM 2024)
+* DACE: A Database-Agnostic Cost Estimator (ICDE 2024)
+
 #### Concurrent
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
 * Performance Prediction for Concurrent Database Workloads (SIGMOD 2011)
