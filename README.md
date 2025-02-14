@@ -262,6 +262,7 @@ Table of Contents
 * TridentKV: A Read-Optimized LSM-Tree Based KV Store via Adaptive Indexing and Space-Efficient Partitioning (TPDS 2022)
 * LearnedKV: Integrating LSM and Learned Index for Superior Performance on SSD (arXiv 2024)
 * CAMAL: Optimizing LSM-trees via Active Learning (arXiv 2024)
+* DobLIX: A Dual-Objective Learned Index for Log-Structured Merge Trees (arXiv 2025)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -297,6 +298,7 @@ Table of Contents
 * Breaking It Down: An In-Depth Study of Index Advisors (VLDB 2024)
 * Can Uncertainty Quantification Enable Better Learning-based Index Tuning? (arXiv 2024)
 * Hybrid Cost Modeling for Reducing Query Performance Regression in Index Tuning (TKDE 2024)
+* A New Paradigm in Tuning Learned Indexes: A Reinforcement Learning Enhanced Approach (arXiv 2025)
 
 ### Materialized View
 * Automatic View Generation with Deep Learning and Reinforcement Learning (ICDE 2020)
@@ -359,6 +361,7 @@ Table of Contents
 - Sage: Practical and Scalable ML-Driven Performance Debugging in Microservices (ASPLOS 2021)
 - D-Bot: Database Diagnosis System using Large Language Models (arXiv 2023)
 - Modeling Shifting Workloads for Learned Database Systems (SIGMOD 2024)
+- T3: Accurate and Fast Performance Prediction for Relational Database Systems With Compiled Decision Trees (arXiv 2025)
 
 ### Workload Shift Detection
 
@@ -590,6 +593,8 @@ Table of Contents
 * Steering the PostgreSQL query optimizer using hinting: State-Of-The-Art and open challenges (35th GI-Workshop on Foundations of Databases)
 * PARQO: Penalty-Aware Robust Plan Selection in Query Optimization (arXiv 2024)
 * HERO: Hint-Based Efficient and Reliable Query Optimizer (arXiv 2024)
+* Can Large Language Models Be Query Optimizer for Relational Databases? (arXiv 2025)
+* Learned Offline Query Planning via Bayesian Optimization (arXiv 2025)
 
 ## Query Execution
 ### Sort
