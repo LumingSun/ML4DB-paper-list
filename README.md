@@ -520,6 +520,7 @@ Table of Contents
 * OS Pre-trained Transformer: Predicting Query Latencies across Changing System Contexts [GitHub Link](https://github.com/parimarjan/LatencyPredictor)
 * Precision Meets Resilience: Cross-Database Generalization with Uncertainty Quantification for Robust Cost Estimation (CIKM 2024)
 * DACE: A Database-Agnostic Cost Estimator (ICDE 2024)
+* QCFE: An Efficient Feature Engineering for Query Cost Estimation(ICDE 2024)
 
 #### Concurrent
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
@@ -578,13 +579,14 @@ Table of Contents
 * Simple Adaptive Query Processing vs. Learned Query Optimizers: Observations and Analysis (VLDB 2023)
 * QO-Insight: Inspecting Steered Query Optimizer (VLDB Demo 2023)
 * QPSeeker: An Efficient Neural Planner combining both data and queries through Variational Inference (EDBT 2024)
-* FOSS: A Self-Learned Doctor for Query Optimizer (arXiv 2023)
+* FOSS: A Self-Learned Doctor for Query Optimizer (ICDE 2024)
 * Lemo: A Cache-Enhanced Learned Optimizer for Concurrent Queries (PACMMOD 2023)
 * A Comparative Study and Component Analysis of Query Plan Representation Techniques in ML4DB Studies (VLDB 2024)
 * Learned Optimizer for Online Approximate Query Processing in Data Exploration (TKDE 2024)
 * A learning-based framework for spatial join processing: estimation, optimization and tuning (VLDB 2024)
 * Roq: Robust Query Optimization Based on a Risk-aware Learned Cost Model (arXiv 2024)
 * PLAQUE: Automated Predicate Learning at Query Time (SIGMOD 2024)
+* GLO: Towards Generalized Learned Query Optimization (ICDE 2024)
 * Eraser: Eliminating Performance Regression on Learned Query Optimizer (VLDB 2024)
 * Low Rank Approximation for Learned Query Optimization (aiDM 2024)
 * Lero: applying learning-to-rank in query optimizer (VLDB 2024)
