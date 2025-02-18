@@ -256,6 +256,7 @@ Table of Contents
 * LITS: An Optimized Learned Index for Strings (VLDB 2024)
 * Evaluating Learned Indexes for External-Memory Joins (arXiv 2024)
 * Learned Indexes with Distribution Smoothing via Virtual Points (arXiv 2024)
+* VEGA: An Active-tuning Learned Index with Group-Wise Learning Granularity (SIGMOD 2025)
 ##### LSM-tree related
 * Leaper: A Learned Prefetcher for Cache Invalidation in LSM-tree based Storage Engines （VLDB 2020）
 * From WiscKey to Bourbon: A Learned Index for Log-Structured Merge Trees (OSDI 2020)
@@ -430,6 +431,7 @@ Table of Contents
 * ASM in Action: Fast and Practical Learned Cardinality Estimation (SIGMOD 2024)
 * CardBench: A Benchmark for Learned Cardinality Estimation in Relational Database (arXiv 2024)
 * Duet: efficient and scalable hybriD neUral rElation undersTanding. (ICDE 2024)
+* Cardinality Estimation of LIKE Predicate Queries using Deep Learning (SIGMOD 2025)
 #### Data-based
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
 * Estimating Join Selectivities using Bandwidth-Optimized Kernel Density Models (VLDB 2017)
