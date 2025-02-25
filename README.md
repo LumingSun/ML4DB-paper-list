@@ -362,7 +362,6 @@ Table of Contents
 - Sage: Practical and Scalable ML-Driven Performance Debugging in Microservices (ASPLOS 2021)
 - D-Bot: Database Diagnosis System using Large Language Models (arXiv 2023)
 - Modeling Shifting Workloads for Learned Database Systems (SIGMOD 2024)
-- T3: Accurate and Fast Performance Prediction for Relational Database Systems With Compiled Decision Trees (arXiv 2025)
 
 ### Workload Shift Detection
 
@@ -395,7 +394,6 @@ Table of Contents
 * Robust Query Optimization in the Era of Machine Learning: State-of-the-Art and Future Directions (ICDE 2024)
 * Presto’s History-based Query Optimizer (VLDB 2024)
 * Spatial Query Optimization With Learning (VLDB 2024)
-* Presto's History-based Query Optimizer (VLDB 2024)
 * DBG-PT: A Large Language Model Assisted Query Performance Regression Debugger (VLDB 2024)
 * How Good are Learned Cost Models, Really? Insights from Query Optimization Tasks (SIGMOD 2025) [GitHub Link](https://github.com/DataManagementLab/lcm-eval)
 
@@ -521,6 +519,8 @@ Table of Contents
 * Precision Meets Resilience: Cross-Database Generalization with Uncertainty Quantification for Robust Cost Estimation (CIKM 2024)
 * DACE: A Database-Agnostic Cost Estimator (ICDE 2024)
 * QCFE: An Efficient Feature Engineering for Query Cost Estimation(ICDE 2024)
+* T3: Accurate and Fast Performance Prediction for Relational Database Systems With Compiled Decision Trees (arXiv 2025)
+
 
 #### Concurrent
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
