@@ -96,6 +96,7 @@ Table of Contents
 * LLM for Data Management (VLDB 2024)
 * Blueprinting the Cloud: Unifying and Automatically Optimizing Cloud Data Infrastructures with BRAD (VLDB 2024)
 * The Holon Approach for Simultaneously Tuning Multiple Components in a Self-Driving Database Management System with Machine Learning via Synthesized Proto-Actions (VLDB 2024)
+* NeurBench: Benchmarking Learned Database Components with Data and Workload Drift Modeling (arXiv 2025)
 ### Training Data Collection
 * Expand your Training Limits! Generating Training Data for ML-based Data Management (SIGMOD 2021)
 * DataFarm: Farm Your ML-based Query Optimizer's Food! - Human-Guided Training Data Generation -. (CIDR 2022)
@@ -153,6 +154,7 @@ Table of Contents
 * Db2une: Tuning Under Pressure via Deep Learning (VLDB 2024)
 * {\lambda}-Tune: Harnessing Large Language Models for Automated Database System Tuning (arXiv 2024)
 * Db2une: Tuning Under Pressure via Deep Learning (VLDB 2024)
+* LOFTune: A Low-Overhead and Flexible Approach for Spark SQL Configuration Tuning (TKDE 2025)
 
 ### Physical Design
 * Tiresias: Enabling Predictive Autonomous Storage and Indexing (VLDB 2022)
@@ -300,6 +302,7 @@ Table of Contents
 * Can Uncertainty Quantification Enable Better Learning-based Index Tuning? (arXiv 2024)
 * Hybrid Cost Modeling for Reducing Query Performance Regression in Index Tuning (TKDE 2024)
 * A New Paradigm in Tuning Learned Indexes: A Reinforcement Learning Enhanced Approach (arXiv 2025)
+* LLMIdxAdvis: Resource-Efficient Index Advisor Utilizing Large Language Model (arXiv 2025)
 
 ### Materialized View
 * Automatic View Generation with Deep Learning and Reinforcement Learning (ICDE 2020)
@@ -387,6 +390,7 @@ Table of Contents
 * Real-Time Workload Pattern Analysis for Large-Scale Cloud Databases (VLDB 2023)
 * Robust Auto-Scaling with Probabilistic Workload Forecasting for Cloud Databases (ICDE 2024)
 * QPSEncoder: A Database Workload Encoder with Deep Learning (DEXA 2024)
+* From Feature Selection to Resource Prediction: An Analysis of Commonly Applied Workflows and Techniques (EDBT 2025)
 
 ## Query Optimization
 * Learned Query Optimizer: What is New and What is Next (SIGMOD 2024)
@@ -599,6 +603,7 @@ Table of Contents
 * HERO: Hint-Based Efficient and Reliable Query Optimizer (arXiv 2024)
 * Can Large Language Models Be Query Optimizer for Relational Databases? (arXiv 2025)
 * Learned Offline Query Planning via Bayesian Optimization (arXiv 2025)
+* A Query Optimization Method Utilizing Large Language Models (arXiv 2025)
 
 ## Query Execution
 ### Sort
@@ -635,6 +640,7 @@ Table of Contents
 * LSched: A Workload-Aware Learned Query Scheduler for Analytical Database Systems (SIGMOD 2022)
 * DBMLSched: Scheduling In-database Machine Learning Jobs (AIDB@VLDB 2023)
 * Learning Interpretable Scheduling Algorithms for Data Processing Clusters (arXiv 2024)
+* CCaaLF: Concurrency Control as a Learnable Function (arXiv 2025)
 
 (transaction 👇)
 
