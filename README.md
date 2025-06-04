@@ -155,6 +155,8 @@ Table of Contents
 * {\lambda}-Tune: Harnessing Large Language Models for Automated Database System Tuning (arXiv 2024)
 * Db2une: Tuning Under Pressure via Deep Learning (VLDB 2024)
 * LOFTune: A Low-Overhead and Flexible Approach for Spark SQL Configuration Tuning (TKDE 2025)
+* EAST: An Interpretable Knob Estimation System for Cloud Database (ICDE 2025)
+* AQETuner: Reliable Query-level Configuration Tuning for Analytical Query Engines (arXiv 2025)
 
 ### Physical Design
 * Tiresias: Enabling Predictive Autonomous Storage and Indexing (VLDB 2022)
@@ -259,6 +261,10 @@ Table of Contents
 * Evaluating Learned Indexes for External-Memory Joins (arXiv 2024)
 * Learned Indexes with Distribution Smoothing via Virtual Points (arXiv 2024)
 * VEGA: An Active-tuning Learned Index with Group-Wise Learning Granularity (SIGMOD 2025)
+* ALT-Index: A Hybrid Learned Index for Concurrent Memory Database Systems (ICDE 2025)
+* BMTree: Designing, Learning, and Updating Piecewise Space-Filling Curves for Multi-Dimensional Data Indexing (arXiv 2025)
+* LIOF: Make the Learned Index Learn Faster With Higher Accuracy (TKDE 2025)
+* TELEX: Two-Level Learned Index for Rich Queries on Enclave-based Blockchain Systems (TKDE 2025)
 ##### LSM-tree related
 * Leaper: A Learned Prefetcher for Cache Invalidation in LSM-tree based Storage Engines （VLDB 2020）
 * From WiscKey to Bourbon: A Learned Index for Log-Structured Merge Trees (OSDI 2020)
@@ -371,6 +377,7 @@ Table of Contents
 - Towards workload shift detection and prediction for autonomic databases (CIKM 2007)
 - Consistent on-line classification of dbs workload events (CIKM 2009)
 - On predictive modeling for optimizing transaction execution in parallel OLTP systems (VLDB 2011)
+- In-Context Adaptation to Concept Drift for Learned Database Operations (arXiv 2025)
 
 ### Workload Characterization & Forecasting
 
@@ -434,6 +441,7 @@ Table of Contents
 * CardBench: A Benchmark for Learned Cardinality Estimation in Relational Database (arXiv 2024)
 * Duet: efficient and scalable hybriD neUral rElation undersTanding. (ICDE 2024)
 * Cardinality Estimation of LIKE Predicate Queries using Deep Learning (SIGMOD 2025)
+* TardySketch: A Framework for Cardinality Estimation Adaptable to Sliding Windows (arXiv 2025)
 #### Data-based
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
 * Estimating Join Selectivities using Bandwidth-Optimized Kernel Density Models (VLDB 2017)
@@ -524,7 +532,10 @@ Table of Contents
 * DACE: A Database-Agnostic Cost Estimator (ICDE 2024)
 * QCFE: An Efficient Feature Engineering for Query Cost Estimation(ICDE 2024)
 * T3: Accurate and Fast Performance Prediction for Relational Database Systems With Compiled Decision Trees (arXiv 2025)
-
+* Evaluating Learned Query Performance Prediction Models at LinkedIn: Challenges, Opportunities, and Findings (arXiv 2025)
+* LEAP: A Low-cost Spark SQL Query Optimizer using Pairwise Comparison (VLDB 2025)
+* CONCERTO: Complex Query Execution Mechanism-Aware Learned Cost Estimation (arXiv 2025)
+* GRACEFUL: A Learned Cost Estimator For UDFs (arXiv 2025)
 
 #### Concurrent
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
@@ -551,6 +562,7 @@ Table of Contents
 * Join Order Selection with Deep Reinforcement Learning: Fundamentals, Techniques, and Challenges (VLDB 2023)
 * Sub-optimal Join Order Identification with L1-error (SIGMOD 2024)
 * TESSM: Tree-based Selective State Space Models for Efficient Join Order Selection Learning (CIKM 2024)
+* SOLAR: Scalable Distributed Spatial Joins through Learning-based Optimization (arXiv 2025)
 ### Query Plan
 * Plan Selection Based on Query Clustering （VLDB 2002)
 * Cost-Based Query Optimization via AI Planning (AAAI 2014)
@@ -604,6 +616,8 @@ Table of Contents
 * Can Large Language Models Be Query Optimizer for Relational Databases? (arXiv 2025)
 * Learned Offline Query Planning via Bayesian Optimization (arXiv 2025)
 * A Query Optimization Method Utilizing Large Language Models (arXiv 2025)
+* RankPQO: Learning-to-Rank for Parametric Query Optimization (VLDB 2025)
+* Low Rank Learning for Offline Query Optimization (arXiv 2025)
 
 ## Query Execution
 ### Sort
@@ -641,6 +655,7 @@ Table of Contents
 * DBMLSched: Scheduling In-database Machine Learning Jobs (AIDB@VLDB 2023)
 * Learning Interpretable Scheduling Algorithms for Data Processing Clusters (arXiv 2024)
 * CCaaLF: Concurrency Control as a Learnable Function (arXiv 2025)
+* Laser: Buffer-Aware Learned Query Scheduling in Master-Standby Databases (VLDB 2025)
 
 (transaction 👇)
 
