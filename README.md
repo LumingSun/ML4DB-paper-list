@@ -32,6 +32,7 @@ Table of Contents
       * [Online](#online)
   * [Cache related](#cache-related)
 * [Workload](#workload)
+    * [Workload generation](#workload-generation)
     * [Resource Estimation and Auto-scaling](#resource-estimation-and-auto-scaling)
     * [Performance Diagnosis and Modeling](#performance-diagnosis-and-modeling)
     * [Workload Shift Detection](#workload-shift-detection)
@@ -97,6 +98,8 @@ Table of Contents
 * Blueprinting the Cloud: Unifying and Automatically Optimizing Cloud Data Infrastructures with BRAD (VLDB 2024)
 * The Holon Approach for Simultaneously Tuning Multiple Components in a Self-Driving Database Management System with Machine Learning via Synthesized Proto-Actions (VLDB 2024)
 * NeurBench: Benchmarking Learned Database Components with Data and Workload Drift Modeling (arXiv 2025)
+* GaussMaster: An LLM-based Database Copilot System (arXiv 2025)
+* D-Bot: An LLM-Powered DBA Copilot (SIGMOD-Companion 2025)
 ### Training Data Collection
 * Expand your Training Limits! Generating Training Data for ML-based Data Management (SIGMOD 2021)
 * DataFarm: Farm Your ML-based Query Optimizer's Food! - Human-Guided Training Data Generation -. (CIDR 2022)
@@ -157,6 +160,7 @@ Table of Contents
 * LOFTune: A Low-Overhead and Flexible Approach for Spark SQL Configuration Tuning (TKDE 2025)
 * EAST: An Interpretable Knob Estimation System for Cloud Database (ICDE 2025)
 * AQETuner: Reliable Query-level Configuration Tuning for Analytical Query Engines (arXiv 2025)
+* Automated Database Tuning vs. Human-Based Tuning in a Simulated Stressful Work Environment: A Demonstration of the Database Gym (SIGMOD 2025)
 
 ### Physical Design
 * Tiresias: Enabling Predictive Autonomous Storage and Indexing (VLDB 2022)
@@ -265,6 +269,9 @@ Table of Contents
 * BMTree: Designing, Learning, and Updating Piecewise Space-Filling Curves for Multi-Dimensional Data Indexing (arXiv 2025)
 * LIOF: Make the Learned Index Learn Faster With Higher Accuracy (TKDE 2025)
 * TELEX: Two-Level Learned Index for Rich Queries on Enclave-based Blockchain Systems (TKDE 2025)
+* Piecewise Linear Approximation in Learned Index Structures: Theoretical and Empirical Analysis (arXiv 2025)
+* Learned Indexes From the One-dimensional to the Multi-dimensional Spaces: Challenges, Techniques, and Opportunities (SIGMOD 2025)
+* Evaluating Learned Indexes in LSM-tree Systems: Benchmarks,Insights and Design Choices (arXiv 2025)
 ##### LSM-tree related
 * Leaper: A Learned Prefetcher for Cache Invalidation in LSM-tree based Storage Engines （VLDB 2020）
 * From WiscKey to Bourbon: A Learned Index for Log-Structured Merge Trees (OSDI 2020)
@@ -342,6 +349,8 @@ Table of Contents
 * A Learned Cache Eviction Framework with Minimal Overhead (arXiv 2023)
 
 ## Workload
+### Workload generation 
+Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized and Realistic SQL Workloads (SIGMOD 2025)
 
 ### Resource Management and Auto-scaling
 
@@ -371,6 +380,7 @@ Table of Contents
 - Sage: Practical and Scalable ML-Driven Performance Debugging in Microservices (ASPLOS 2021)
 - D-Bot: Database Diagnosis System using Large Language Models (arXiv 2023)
 - Modeling Shifting Workloads for Learned Database Systems (SIGMOD 2024)
+- Andromeda: Debugging Database Performance Issues with Retrieval-Augmented Large Language Models (SIGMOD 2025)
 
 ### Workload Shift Detection
 
@@ -407,6 +417,8 @@ Table of Contents
 * Spatial Query Optimization With Learning (VLDB 2024)
 * DBG-PT: A Large Language Model Assisted Query Performance Regression Debugger (VLDB 2024)
 * How Good are Learned Cost Models, Really? Insights from Query Optimization Tasks (SIGMOD 2025) [GitHub Link](https://github.com/DataManagementLab/lcm-eval)
+* SERAG: Self-Evolving RAG System for Query Optimization (arXiv 2025)
+* Logical and Physical Optimizations for SQL Query Execution over Large Language Models (SIGMOD 2025)
 
 ### Query Rewrite
 * Sia: Optimizing Queries using Learned Predicates (SIGMOD 2021)
@@ -416,6 +428,7 @@ Table of Contents
 * Query Rewriting via Large Language Models (arXiv 2024)
 * LLM-R2: A Large Language Model Enhanced Rule-based Rewrite System for Boosting Query Efficiency (arXiv 2024) [GitHub](https://github.com/DAMO-NLP-SG/LLM-R2)
 * R-Bot: An LLM-based Query Rewrite System (arXiv 2024)
+* QUITE: A Query Rewrite System Beyond Rules with LLM Agents (arXiv 2025)
 
 ### Cardinality Estimation
 * Are We Ready For Learned Cardinality Estimation? (VLDB 2021) [GitHub Link](https://github.com/sfu-db/AreCELearnedYet)
@@ -473,6 +486,7 @@ Table of Contents
 * SAFE: Sampling-Assisted Fast Learned Cardinality Estimation for Dynamic Spatial Data (DEXA 2024)
 * Updateable Data-Driven Cardinality Estimator with Bounded Q-error (arXiv 2024)
 * Grid-AR: A Grid–based Booster for Learned Cardinality Estimation and Range Joins (arXiv 2024)
+* SSCard: Substring Cardinality Estimation using Suffix Tree-Guided Learned FM-Index (arXiv 2025)
 #### Query-based
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
 * Selectivity Estimation in Extensible Databases -A Neural Network Approach （VLDB 1998）
@@ -506,6 +520,8 @@ Table of Contents
 * PACE: Poisoning Attacks on Learned Cardinality Estimation (SIGMOD 2024)
 * Sample-Efficient Cardinality Estimation Using Geometric Deep Learning (VLDB 2024)
 * Automating localized learning for cardinality estimation based on XGBoost (Knowledge and Information Systems)
+* Data-Agnostic Cardinality Learning from Imperfect Workloads (arXiv 2025)
+* SPACE: Cardinality Estimation for Path Queries Using Cardinality-Aware Sequence-based Learning (SIGMOD 2025)
 ### Cost Estimation
 #### Single Query
 * Statistical learning techniques for costing XML queries (VLDB 2005)
@@ -536,6 +552,7 @@ Table of Contents
 * LEAP: A Low-cost Spark SQL Query Optimizer using Pairwise Comparison (VLDB 2025)
 * CONCERTO: Complex Query Execution Mechanism-Aware Learned Cost Estimation (arXiv 2025)
 * GRACEFUL: A Learned Cost Estimator For UDFs (arXiv 2025)
+* Cross-Database Query Cost Estimation: A Comparative Study of Classic ML, Transformers, and LLMs
 
 #### Concurrent
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
@@ -548,6 +565,7 @@ Table of Contents
 * Efficient Deep Learning Pipelines for Accurate Cost Estimations Over Large Scale Query Workload (SIGMOD 2021)
 * A Resource-Aware Deep Cost Model for Big Data Query Processing (ICDE 2022)
 * Stage: Query Execution Time Prediction in Amazon Redshif (SIGMOD 2024)
+* PlanRGCN: Predicting SPARQL Query Performance (VLDB 2025)
 ### Join Optimization
 * Adaptive Optimization of Very Large Join Queries (SIGMOD 2018) (Not machine learning
 * Deep Reinforcement Learning for Join Order Enumeration (aiDM@SIGMOD 2018)
@@ -618,6 +636,11 @@ Table of Contents
 * A Query Optimization Method Utilizing Large Language Models (arXiv 2025)
 * RankPQO: Learning-to-Rank for Parametric Query Optimization (VLDB 2025)
 * Low Rank Learning for Offline Query Optimization (arXiv 2025)
+* LIMAO: A Framework for Lifelong Modular Learned Query Optimization (arXiv 2025)
+* Athena: An Effective Learning-based Framework for Query Optimizer Performance Improvement (SIGMOD 2025)
+* Delta: A Learned Mixed Cost-based Query Optimization Framework (arXiv 2025)
+* Training-Free Query Optimization via LLM-Based Plan Similarity (arXiv 2025)
+* A Learned Cost Model-based Cross-engine Optimizer for SQL Workloads (arXiv 2025)
 
 ## Query Execution
 ### Sort
