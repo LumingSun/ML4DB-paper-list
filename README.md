@@ -323,6 +323,7 @@ Table of Contents
 * A New Paradigm in Tuning Learned Indexes: A Reinforcement Learning Enhanced Approach (arXiv 2025)
 * LLMIdxAdvis: Resource-Efficient Index Advisor Utilizing Large Language Model (arXiv 2025)
 * Guiding Index Tuning Exploration with Potential Estimation (ICDE 2025)
+* AutoIndexer: A Reinforcement Learning-Enhanced Index Advisor Towards Scaling Workloads (arXiv 2025)
 
 ### Materialized View
 * Automatic View Generation with Deep Learning and Reinforcement Learning (ICDE 2020)
@@ -428,6 +429,8 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * SERAG: Self-Evolving RAG System for Query Optimization (arXiv 2025)
 * Logical and Physical Optimizations for SQL Query Execution over Large Language Models (SIGMOD 2025)
 * SEFRQO: A Self-Evolving Fine-Tuned RAG-Based Query Optimizer (arXiv 2025)
+* JOB-Complex: A Challenging Benchmark for Traditional&Learned Query Optimization (arXiv 2025)
+* LLM4Hint: Leveraging Large Language Models for Hint Recommendation in Offline Query Optimization (arXiv 2025)
 
 ### Query Rewrite
 * Sia: Optimizing Queries using Learned Predicates (SIGMOD 2021)
@@ -464,6 +467,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Duet: efficient and scalable hybriD neUral rElation undersTanding. (ICDE 2024)
 * Cardinality Estimation of LIKE Predicate Queries using Deep Learning (SIGMOD 2025)
 * TardySketch: A Framework for Cardinality Estimation Adaptable to Sliding Windows (arXiv 2025)
+* Algorithmic Complexity Attacks on All Learned Cardinality Estimators: A Data-centric Approach (arXiv 2025)
 #### Data-based
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
 * Estimating Join Selectivities using Bandwidth-Optimized Kernel Density Models (VLDB 2017)
