@@ -16,46 +16,46 @@ Looking forward to contributions (PR, comment, discussion) about Text-To-SQL！�
 
 Table of Contents
 =================
-* [System & Tutorial](#system-and-tutorial)
-  * [Training data](#training-data)
-* [Data Access](#data-access)
-  * [Configuration Tuning](#configuration-tuning)
-  * [Physical Design](#physical-design)
-    * [Learned structure](#learned-structure)
-    * [Index](#index)
-      * [Index Structure](#index-structure)
-      * [LSM-tree related](#lsm-tree-related)
-      * [Index Recommendation](#index-recommendation)
-    * [Materialized View](#materialized-view)
-    * [Schema &amp; Partition](#schema--partition)
-      * [Offline](#offline)
-      * [Online](#online)
-  * [Cache related](#cache-related)
-* [Workload](#workload)
-    * [Workload generation](#workload-generation)
-    * [Resource Estimation and Auto-scaling](#resource-estimation-and-auto-scaling)
-    * [Performance Diagnosis and Modeling](#performance-diagnosis-and-modeling)
-    * [Workload Shift Detection](#workload-shift-detection)
-    * [Metrics Prediction for Queries](#metrics-prediction-for-queries)
-    * [Workload Characterization & Forecasting](#workload-characterization-&-forecasting)
-* [Query Optimization](#query-optimization)
-   * [Query Rewrite](#query-rewrite)
-   * [Cardinality Estimation](#cardinality-estimation)
-     * [Data-based](#data-based)
-     * [Query-based](#query-based)
-  * [Cost Estimation](#cost-estimation)
-    * [Single Query](#single-query)
-    * [Concurrent](#Concurrent)
-  * [Join Optimization](#join-optimization)
-  * [Query Plan](#query-plan)
-* [Query Execution](#query-execution)
-  * [Sort](#sort)
-  * [Join](#join)
-  * [Adaptive Query Processing](#adaptive-query-processing)
-  * [Approximate Query Processing](#Approximate-query-processing)
-  * [Sheduling](#sheduling)
-* [Text-to-SQL](#text-to-sql)
-* [SQL Related](#sql-related)
+- [\[Paper List\] AI4DB / ML4DB / Autonomous Database / Self-driving Database / 智能数据库 / 自治数据库](#paper-list-ai4db--ml4db--autonomous-database--self-driving-database--智能数据库--自治数据库)
+- [Table of Contents](#table-of-contents)
+  - [System and Tutorial](#system-and-tutorial)
+    - [Training Data Collection](#training-data-collection)
+  - [Data Access](#data-access)
+    - [Configuration Tuning](#configuration-tuning)
+    - [Physical Design](#physical-design)
+      - [Learned structure](#learned-structure)
+      - [Index](#index)
+        - [Index Structure](#index-structure)
+        - [LSM-tree related](#lsm-tree-related)
+        - [Index Recommendation](#index-recommendation)
+    - [Materialized View](#materialized-view)
+      - [Schema \& Partition](#schema--partition)
+    - [Cache related](#cache-related)
+  - [Workload](#workload)
+    - [Workload generation](#workload-generation)
+    - [Resource Management and Auto-scaling](#resource-management-and-auto-scaling)
+    - [Performance Diagnosis and Modeling](#performance-diagnosis-and-modeling)
+    - [Workload Shift Detection](#workload-shift-detection)
+    - [Workload Characterization \& Forecasting](#workload-characterization--forecasting)
+  - [Query Optimization](#query-optimization)
+    - [Query Rewrite](#query-rewrite)
+    - [Cardinality Estimation](#cardinality-estimation)
+      - [Data-based](#data-based)
+      - [Query-based](#query-based)
+    - [Cost Estimation](#cost-estimation)
+      - [Single Query](#single-query)
+      - [Concurrent](#concurrent)
+    - [Join Optimization](#join-optimization)
+    - [Query Plan](#query-plan)
+  - [Query Execution](#query-execution)
+    - [Sort](#sort)
+    - [Join](#join)
+    - [Adaptive Query Processing](#adaptive-query-processing)
+    - [Approximate Query Processing](#approximate-query-processing)
+    - [Sheduling](#sheduling)
+  - [Text-to-SQL](#text-to-sql)
+  - [SQL Related](#sql-related)
+  - [Stargazers over time](#stargazers-over-time)
 
 
 ## System and Tutorial
@@ -161,13 +161,17 @@ Table of Contents
 * EAST: An Interpretable Knob Estimation System for Cloud Database (ICDE 2025)
 * AQETuner: Reliable Query-level Configuration Tuning for Analytical Query Engines (arXiv 2025)
 * Automated Database Tuning vs. Human-Based Tuning in a Simulated Stressful Work Environment: A Demonstration of the Database Gym (SIGMOD 2025)
+* Rabbit: Retrieval-Augmented Generation Enables Better Automatic Database Knob Tuning (ICDE 2025)
+* BitTuner: A Toolbox for Automatically Configuring Learned Data Compressors (ICDE 2025)
 
 ### Physical Design
 * Tiresias: Enabling Predictive Autonomous Storage and Indexing (VLDB 2022)
+* Hyper: Hybrid Physical Design Advisor with Multi-agent Reinforcement Learning (ICDE 2025)
 #### Learned structure
 * Stacked Filters: Learning to Filter by Structure (VLDB 2021)
 * LEA: A Learned Encoding Advisor for Column Stores (aiDM 2021)
 * Learning over Sets for Databases (EDBT 2024)
+* A Distributed Learned Hash Table (arXiv 2025)
 #### Index
 ##### Index Structure
 * Learning to hash for indexing big data - A survey (2016)
@@ -272,6 +276,7 @@ Table of Contents
 * Piecewise Linear Approximation in Learned Index Structures: Theoretical and Empirical Analysis (arXiv 2025)
 * Learned Indexes From the One-dimensional to the Multi-dimensional Spaces: Challenges, Techniques, and Opportunities (SIGMOD 2025)
 * Evaluating Learned Indexes in LSM-tree Systems: Benchmarks,Insights and Design Choices (arXiv 2025)
+* leSAX Index: A Learned SAX Representation Index for Time Series Similarity Search (ICDE 2025)
 ##### LSM-tree related
 * Leaper: A Learned Prefetcher for Cache Invalidation in LSM-tree based Storage Engines （VLDB 2020）
 * From WiscKey to Bourbon: A Learned Index for Log-Structured Merge Trees (OSDI 2020)
@@ -279,6 +284,7 @@ Table of Contents
 * LearnedKV: Integrating LSM and Learned Index for Superior Performance on SSD (arXiv 2024)
 * CAMAL: Optimizing LSM-trees via Active Learning (arXiv 2024)
 * DobLIX: A Dual-Objective Learned Index for Log-Structured Merge Trees (arXiv 2025)
+* Learned LSM-trees: Two Approaches Using Learned Bloom Filters (aiXiv 2025)
 ##### Index Recommendation
 * Index Selection in a Self- Adaptive Data Base Management System （SIGMOD 1976）
 * AutoAdmin 'What-if' Index Analysis Utility (SIGMOD 1998)
@@ -316,6 +322,7 @@ Table of Contents
 * Hybrid Cost Modeling for Reducing Query Performance Regression in Index Tuning (TKDE 2024)
 * A New Paradigm in Tuning Learned Indexes: A Reinforcement Learning Enhanced Approach (arXiv 2025)
 * LLMIdxAdvis: Resource-Efficient Index Advisor Utilizing Large Language Model (arXiv 2025)
+* Guiding Index Tuning Exploration with Potential Estimation (ICDE 2025)
 
 ### Materialized View
 * Automatic View Generation with Deep Learning and Reinforcement Learning (ICDE 2020)
@@ -369,6 +376,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * SeLeP: Learning Based Semantic Prefetching for Exploratory Database Workloads (arXiv 2023)
 * Intelligent scaling in Amazon Redshift (SIGMOD 2024)
 * Forecasting Algorithms for Intelligent Resource Scaling: An Experimental Analysis (Socc 2024)
+* LORE: Learning-Based Resource Recommendation for Big Data Queries (ICDE 2025)
 
 ### Performance Diagnosis and Modeling
 
@@ -419,6 +427,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * How Good are Learned Cost Models, Really? Insights from Query Optimization Tasks (SIGMOD 2025) [GitHub Link](https://github.com/DataManagementLab/lcm-eval)
 * SERAG: Self-Evolving RAG System for Query Optimization (arXiv 2025)
 * Logical and Physical Optimizations for SQL Query Execution over Large Language Models (SIGMOD 2025)
+* SEFRQO: A Self-Evolving Fine-Tuned RAG-Based Query Optimizer (arXiv 2025)
 
 ### Query Rewrite
 * Sia: Optimizing Queries using Learned Predicates (SIGMOD 2021)
@@ -487,6 +496,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Updateable Data-Driven Cardinality Estimator with Bounded Q-error (arXiv 2024)
 * Grid-AR: A Grid–based Booster for Learned Cardinality Estimation and Range Joins (arXiv 2024)
 * SSCard: Substring Cardinality Estimation using Suffix Tree-Guided Learned FM-Index (arXiv 2025)
+* A Lightweight Learned Cardinality Estimation Model (TKDE 2025)
 #### Query-based
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
 * Selectivity Estimation in Extensible Databases -A Neural Network Approach （VLDB 1998）
@@ -553,6 +563,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * CONCERTO: Complex Query Execution Mechanism-Aware Learned Cost Estimation (arXiv 2025)
 * GRACEFUL: A Learned Cost Estimator For UDFs (arXiv 2025)
 * Cross-Database Query Cost Estimation: A Comparative Study of Classic ML, Transformers, and LLMs
+* Bootstrapping Learned Cost Models with Synthetic SQL Queries (arXiv 2025)
 
 #### Concurrent
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
@@ -566,6 +577,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * A Resource-Aware Deep Cost Model for Big Data Query Processing (ICDE 2022)
 * Stage: Query Execution Time Prediction in Amazon Redshif (SIGMOD 2024)
 * PlanRGCN: Predicting SPARQL Query Performance (VLDB 2025)
+* Learned Cost Models for Query Optimization: From Batch to Streaming Systems (VLDB 2025)
 ### Join Optimization
 * Adaptive Optimization of Very Large Join Queries (SIGMOD 2018) (Not machine learning
 * Deep Reinforcement Learning for Join Order Enumeration (aiDM@SIGMOD 2018)
@@ -679,6 +691,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Learning Interpretable Scheduling Algorithms for Data Processing Clusters (arXiv 2024)
 * CCaaLF: Concurrency Control as a Learnable Function (arXiv 2025)
 * Laser: Buffer-Aware Learned Query Scheduling in Master-Standby Databases (VLDB 2025)
+* Improving DBMS Scheduling Decisions with Accurate Performance Prediction on Concurrent Queries (VLDB 2025)
 
 (transaction 👇)
 
