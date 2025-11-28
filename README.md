@@ -55,6 +55,9 @@ Table of Contents
     - [Sheduling](#sheduling)
   - [Text-to-SQL](#text-to-sql)
   - [SQL Related](#sql-related)
+  - [Parametric Query Optimization](#parametric-query-optimization)
+    - [Non Machine Learning]
+    - [Using Machine Leanring]
   - [Stargazers over time](#stargazers-over-time)
 
 
