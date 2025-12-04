@@ -55,12 +55,12 @@ Table of Contents
     - [Sheduling](#sheduling)
   - [Text-to-SQL](#text-to-sql)
   - [SQL Related](#sql-related)
-- [Parametric Query Optimization](#parametric-query-optimization)
-  - [Foundational Theory](#foundational-theory)
-  - [Engineering & Data-driven PQO](#engineering--data-driven-pqo)
-  - [ML-based PQO & Robust Query Optimization](#ml-based-pqo--robust-query-optimization)
+  - [Parametric Query Optimization](#parametric-query-optimization)
+    - [Foundational Theory](#foundational-theory)
+    - [Engineering & Data-driven PQO](#engineering--data-driven-pqo)
+    - [ML-based PQO & Robust Query Optimization](#ml-based-pqo--robust-query-optimization)
   
-- [Stargazers over time](#stargazers-over-time)
+  - [Stargazers over time](#stargazers-over-time)
 
 
 ## System and Tutorial
