@@ -56,8 +56,9 @@ Table of Contents
   - [Text-to-SQL](#text-to-sql)
   - [SQL Related](#sql-related)
   - [Parametric Query Optimization](#parametric-query-optimization)
-    - [Non Machine Learning]
-    - [Using Machine Leanring]
+    - [Foundational Theory]
+    - [Engineering & Data-driven PQO]
+    - [ML-based PQO & Robust Query Optimization]
   - [Stargazers over time](#stargazers-over-time)
 
 
@@ -779,6 +780,34 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * PreQR: Pre-training Representation for SQL Understanding (SIGMDO 2022)
 * From BERT to GPT-3 Codex: Harnessing the Potential of Very Large Language Models for Data Management (VLDB 2022)
 * Query Generation based on Generative Adversarial Networks (arXiv 2023)
+
+## Parametric Query Optimization
+### Foundational Theory
+* Dynamic Query Evaluation Plans
+* Parametric Query Optimization
+* Optimization of Dynamic Query Evaluation Plans
+* Design and Analysis of Parametric Query Optimization Algorithms
+* Least Expected Cost Query Optimization: What Can We Expect?
+* Parametric Query Optimization for Linear and Piecewise Linear Cost Functions
+* AniPQO: Almost Non-intrusive Parametric Query  Optimization for Nonlinear Cost Functions
+### Engineering & Data-driven PQO
+* Analyzing Plan Diagrams of Database Query Optimizers
+* On the Production of Anorexic Plan Diagrams
+* Identifying Robust Plans through Plan Diagram Reduction
+* Efficiently Approximating Query Optimizer Plan Diagrams
+* Closing the Query Processing Loop in Oracle 11g
+* Progressive Parametric Query Optimization
+* Dynamic Plan Generation for Parameterized Queries
+* Variance Aware Optimization of Parameterized Queries
+* On the Stability of Plan Costs and the Costs of Plan Stability
+* Parametric Plan Caching Using Density-Based Clustering
+* Leveraging Re-costing for Online Optimization of Parameterized Queries with Guarantees
+### ML-based PQO & Robust Query Optimization
+* Leveraging Query Logs and Machine Learning for Parametric Query Optimization
+* Kepler: Robust Learning for Faster Parametric Query Optimization
+* RankPQO: Learning-to-Rank for Parametric Query Optimization
+* PARQO: Penalty-Aware Robust Plan Selection in Query Optimization
+* PAR2QO: Parametric Penalty-Aware Robust Query Optimization
 
 ## Stargazers over time
 
