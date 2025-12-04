@@ -784,31 +784,31 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 
 ## Parametric Query Optimization
 ### Foundational Theory
-* Dynamic Query Evaluation Plans
-* Parametric Query Optimization
-* Optimization of Dynamic Query Evaluation Plans
-* Design and Analysis of Parametric Query Optimization Algorithms
-* Least Expected Cost Query Optimization: What Can We Expect?
-* Parametric Query Optimization for Linear and Piecewise Linear Cost Functions
-* AniPQO: Almost Non-intrusive Parametric Query  Optimization for Nonlinear Cost Functions
+* Dynamic Query Evaluation Plans (SIGMOD 1989)
+* Parametric Query Optimization (VLDB 1992)
+* Optimization of Dynamic Query Evaluation Plans (SIGMOD 1994)
+* Design and Analysis of Parametric Query Optimization Algorithms (VLDB 1998)
+* Least Expected Cost Query Optimization: What Can We Expect? (SIGMOD 2002)
+* Parametric Query Optimization for Linear and Piecewise Linear Cost Functions (VLDB 2002)
+* AniPQO: Almost Non-intrusive Parametric Query  Optimization for Nonlinear Cost Functions (VLDB 2003)
 ### Engineering & Data-driven PQO
-* Analyzing Plan Diagrams of Database Query Optimizers
-* On the Production of Anorexic Plan Diagrams
-* Identifying Robust Plans through Plan Diagram Reduction
-* Efficiently Approximating Query Optimizer Plan Diagrams
-* Closing the Query Processing Loop in Oracle 11g
-* Progressive Parametric Query Optimization
-* Dynamic Plan Generation for Parameterized Queries
-* Variance Aware Optimization of Parameterized Queries
-* On the Stability of Plan Costs and the Costs of Plan Stability
-* Parametric Plan Caching Using Density-Based Clustering
-* Leveraging Re-costing for Online Optimization of Parameterized Queries with Guarantees
+* Analyzing Plan Diagrams of Database Query Optimizers (VLDB 2005)
+* On the Production of Anorexic Plan Diagrams (VLDB 2007)
+* Identifying Robust Plans through Plan Diagram Reduction (VLDB 2008)
+* Efficiently Approximating Query Optimizer Plan Diagrams (VLDB 2008)
+* Closing the Query Processing Loop in Oracle 11g (VLDB 2008)
+* Progressive Parametric Query Optimization (TKDE 2009)
+* Dynamic Plan Generation for Parameterized Queries (SIGMOD 2009)
+* Variance Aware Optimization of Parameterized Queries (SIGMOD 2010)
+* On the Stability of Plan Costs and the Costs of Plan Stability (VLDB 2010)
+* Parametric Plan Caching Using Density-Based Clustering (ICDE 2012)
+* Leveraging Re-costing for Online Optimization of Parameterized Queries with Guarantees (SIGMOD 2017)
 ### ML-based PQO & Robust Query Optimization
-* Leveraging Query Logs and Machine Learning for Parametric Query Optimization
-* Kepler: Robust Learning for Faster Parametric Query Optimization
-* RankPQO: Learning-to-Rank for Parametric Query Optimization
-* PARQO: Penalty-Aware Robust Plan Selection in Query Optimization
-* PAR2QO: Parametric Penalty-Aware Robust Query Optimization
+* Leveraging Query Logs and Machine Learning for Parametric Query Optimization (VLDB 2022)
+* Kepler: Robust Learning for Faster Parametric Query Optimization (SIGMOD 2023)
+* RankPQO: Learning-to-Rank for Parametric Query Optimization (VLDB 2024)
+* PARQO: Penalty-Aware Robust Plan Selection in Query Optimization (VLDB 2024)
+* PAR2QO: Parametric Penalty-Aware Robust Query Optimization (VLDB 2024)
 
 ## Stargazers over time
 
