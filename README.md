@@ -473,6 +473,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Cardinality Estimation of LIKE Predicate Queries using Deep Learning (SIGMOD 2025)
 * TardySketch: A Framework for Cardinality Estimation Adaptable to Sliding Windows (arXiv 2025)
 * Algorithmic Complexity Attacks on All Learned Cardinality Estimators: A Data-centric Approach (arXiv 2025)
+* DistJoin: A Decoupled Join Cardinality Estimator based on Adaptive Neural Predicate Modulation (TKDE 2026) [GitHub Lint](https://github.com/GIS-PuppetMaster/DistJoin)
 #### Data-based
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
 * Estimating Join Selectivities using Bandwidth-Optimized Kernel Density Models (VLDB 2017)
