@@ -14,6 +14,8 @@ Welcome to PR!
 There are so many papers emerging about [Text-To-SQL](https://github.com/eosphoros-ai/Awesome-Text2SQL)! Sadly I'm not an expert with the topic and can not tell the quality of the papers.  
 Looking forward to contributions (PR, comment, discussion) about Text-To-SQL！🫶
 
+如果有同学需要稳定访问GitHub的方式，可以试试这个[链接](https://azabudai.org/auth/register?code=Z4oa)
+
 Table of Contents
 =================
 - [\[Paper List\] AI4DB / ML4DB / Autonomous Database / Self-driving Database / 智能数据库 / 自治数据库](#paper-list-ai4db--ml4db--autonomous-database--self-driving-database--智能数据库--自治数据库)
@@ -168,6 +170,8 @@ Table of Contents
 * Automated Database Tuning vs. Human-Based Tuning in a Simulated Stressful Work Environment: A Demonstration of the Database Gym (SIGMOD 2025)
 * Rabbit: Retrieval-Augmented Generation Enables Better Automatic Database Knob Tuning (ICDE 2025)
 * BitTuner: A Toolbox for Automatically Configuring Learned Data Compressors (ICDE 2025)
+* AgentTune: An Agent-Based Large Language Model Framework for Database Knob Tuning (SIGMOD 2025)
+* L2T-Tune:LLM-Guided Hybrid Database Tuning with LHS and TD3 (arXiv 2025)
 
 ### Physical Design
 * Tiresias: Enabling Predictive Autonomous Storage and Indexing (VLDB 2022)
@@ -282,6 +286,9 @@ Table of Contents
 * Learned Indexes From the One-dimensional to the Multi-dimensional Spaces: Challenges, Techniques, and Opportunities (SIGMOD 2025)
 * Evaluating Learned Indexes in LSM-tree Systems: Benchmarks,Insights and Design Choices (arXiv 2025)
 * leSAX Index: A Learned SAX Representation Index for Time Series Similarity Search (ICDE 2025)
+* High Performance or Low Memory? An Updatable Learned Index Framework for Time-Space Tradeoff (SIGMOD 2025)
+* Understanding Robustness Issues of Updatable Learned Indexes: [Experiments & Analysis] (SIGMOD 2025)
+* LETIndex: A Secure Learned Index with TEE (VLDB 2025)
 ##### LSM-tree related
 * Leaper: A Learned Prefetcher for Cache Invalidation in LSM-tree based Storage Engines （VLDB 2020）
 * From WiscKey to Bourbon: A Learned Index for Log-Structured Merge Trees (OSDI 2020)
@@ -329,6 +336,8 @@ Table of Contents
 * LLMIdxAdvis: Resource-Efficient Index Advisor Utilizing Large Language Model (arXiv 2025)
 * Guiding Index Tuning Exploration with Potential Estimation (ICDE 2025)
 * AutoIndexer: A Reinforcement Learning-Enhanced Index Advisor Towards Scaling Workloads (arXiv 2025)
+* Rainbow: Risk-aware Index Benefit Estimation Facing Out Of Distribution Workloads (SIGMOD 2025)
+* Automatic Indexing in Oracle (VLDB 2025)
 
 ### Materialized View
 * Automatic View Generation with Deep Learning and Reinforcement Learning (ICDE 2020)
@@ -436,6 +445,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * SEFRQO: A Self-Evolving Fine-Tuned RAG-Based Query Optimizer (arXiv 2025)
 * JOB-Complex: A Challenging Benchmark for Traditional&Learned Query Optimization (arXiv 2025)
 * LLM4Hint: Leveraging Large Language Models for Hint Recommendation in Offline Query Optimization (arXiv 2025)
+* Graph Transformers for Query Plan Representation: Potentials and Challenges (VLDB 2026)
 
 ### Query Rewrite
 * Sia: Optimizing Queries using Learned Predicates (SIGMOD 2021)
@@ -630,6 +640,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
   * RankPQO: Learning-to-Rank for Parametric Query Optimization (VLDB 2024)
   * PARQO: Penalty-Aware Robust Plan Selection in Query Optimization (VLDB 2024)
   * PAR2QO: Parametric Penalty-Aware Robust Query Optimization (VLDB 2024)
+  * APQO: An Adaptive Framework for Parametric Query Optimization (SIGMOD 2025)
 ### Query Plan
 * Plan Selection Based on Query Clustering （VLDB 2002)
 * Cost-Based Query Optimization via AI Planning (AAAI 2014)
@@ -690,6 +701,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Delta: A Learned Mixed Cost-based Query Optimization Framework (arXiv 2025)
 * Training-Free Query Optimization via LLM-Based Plan Similarity (arXiv 2025)
 * A Learned Cost Model-based Cross-engine Optimizer for SQL Workloads (arXiv 2025)
+* FOSS: A learned doctor for query optimization (VLDBJ)
 
 ## Query Execution
 ### Sort
