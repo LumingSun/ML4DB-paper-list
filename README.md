@@ -289,6 +289,7 @@ Table of Contents
 * High Performance or Low Memory? An Updatable Learned Index Framework for Time-Space Tradeoff (SIGMOD 2025)
 * Understanding Robustness Issues of Updatable Learned Indexes: [Experiments & Analysis] (SIGMOD 2025)
 * LETIndex: A Secure Learned Index with TEE (VLDB 2025)
+* Benchmarking RL-Enhanced Spatial Indices Against Traditional, Advanced, and Learned Counterparts (arxiv 2025)
 ##### LSM-tree related
 * Leaper: A Learned Prefetcher for Cache Invalidation in LSM-tree based Storage Engines （VLDB 2020）
 * From WiscKey to Bourbon: A Learned Index for Log-Structured Merge Trees (OSDI 2020)
@@ -517,6 +518,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Grid-AR: A Grid–based Booster for Learned Cardinality Estimation and Range Joins (arXiv 2024)
 * SSCard: Substring Cardinality Estimation using Suffix Tree-Guided Learned FM-Index (arXiv 2025)
 * A Lightweight Learned Cardinality Estimation Model (TKDE 2025)
+* Downsizing Diffusion Models for Cardinality Estimation (arXiv 2025)
 #### Query-based
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
 * Selectivity Estimation in Extensible Databases -A Neural Network Approach （VLDB 1998）
