@@ -107,6 +107,7 @@ Table of Contents
 * NeurBench: Benchmarking Learned Database Components with Data and Workload Drift Modeling (arXiv 2025)
 * GaussMaster: An LLM-based Database Copilot System (arXiv 2025)
 * D-Bot: An LLM-Powered DBA Copilot (SIGMOD-Companion 2025)
+* Does A Fish Need a Bicycle? The Case for On-Chip NPUs in DBMS (CIDR 2026)
 ### Training Data Collection
 * Expand your Training Limits! Generating Training Data for ML-based Data Management (SIGMOD 2021)
 * DataFarm: Farm Your ML-based Query Optimizer's Food! - Human-Guided Training Data Generation -. (CIDR 2022)
@@ -457,6 +458,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * LLM-R2: A Large Language Model Enhanced Rule-based Rewrite System for Boosting Query Efficiency (arXiv 2024) [GitHub](https://github.com/DAMO-NLP-SG/LLM-R2)
 * R-Bot: An LLM-based Query Rewrite System (arXiv 2024)
 * QUITE: A Query Rewrite System Beyond Rules with LLM Agents (arXiv 2025)
+* Leveraging Query Optimizers to Verify the Soundness of LLM-based Query Rewrites for Real-World Workloads, and More! (CIDR 2026)
 
 ### Cardinality Estimation
 * Are We Ready For Learned Cardinality Estimation? (VLDB 2021) [GitHub Link](https://github.com/sfu-db/AreCELearnedYet)
