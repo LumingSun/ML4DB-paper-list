@@ -435,6 +435,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * From Feature Selection to Resource Prediction: An Analysis of Commonly Applied Workflows and Techniques (EDBT 2025)
 
 ## Query Optimization
+- Hint Based Query Optimization with LLM Agent and Plan Similarity
 * Learned Query Optimizer: What is New and What is Next (SIGMOD 2024)
 * GLO: Towards Generalized Learned Query Optimization (ICDE 2024)
 * Robust Query Optimization in the Era of Machine Learning: State-of-the-Art and Future Directions (ICDE 2024)
@@ -753,6 +754,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Polyjuice: High-Performance Transactions via Learned Concurrency Control (OSDI 2021)
 
 ## Text-to-SQL
+- EvolSQL: Structure-Aware Evolution for Scalable Text-to-SQL Data Synthesis
 * SQLNet: Generating Structured Queries From Natural Language Without Reinforcement Learning (arXiv 2017)
 * An End-to-end Neural Natural Language Interface for Databases (arXiv 2018)
 * SyntaxSQLNet: Syntax Tree Networks for Complex and Cross-Domain Text-to-SQL Task (EMNLP 2018)
