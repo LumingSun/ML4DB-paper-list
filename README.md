@@ -116,6 +116,7 @@ Table of Contents
 * Theoretical Analysis of Learned Database Operations under Distribution Shift through Distribution Learnability (ICML 2024)
 
 ## Data Access
+- DeLog: An Efficient Log Compression Framework with Pattern Signature Synthesis
 ### Configuration Tuning
 * SARD: A statistical approach for ranking database tuning parameters (ICDEW, 2008)
 * Regularized Cost-Model Oblivious Database Tuning with Reinforcement Learning （2016）
@@ -435,6 +436,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * From Feature Selection to Resource Prediction: An Analysis of Commonly Applied Workflows and Techniques (EDBT 2025)
 
 ## Query Optimization
+- xBound: Join Size Lower Bounds
 * Learned Query Optimizer: What is New and What is Next (SIGMOD 2024)
 * GLO: Towards Generalized Learned Query Optimization (ICDE 2024)
 * Robust Query Optimization in the Era of Machine Learning: State-of-the-Art and Future Directions (ICDE 2024)
@@ -753,6 +755,8 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Polyjuice: High-Performance Transactions via Learned Concurrency Control (OSDI 2021)
 
 ## Text-to-SQL
+- Reflective Reasoning for SQL Generation
+- AgentSM: Semantic Memory for Agentic Text-to-SQL
 * SQLNet: Generating Structured Queries From Natural Language Without Reinforcement Learning (arXiv 2017)
 * An End-to-end Neural Natural Language Interface for Databases (arXiv 2018)
 * SyntaxSQLNet: Syntax Tree Networks for Complex and Cross-Domain Text-to-SQL Task (EMNLP 2018)
