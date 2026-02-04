@@ -435,6 +435,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * From Feature Selection to Resource Prediction: An Analysis of Commonly Applied Workflows and Techniques (EDBT 2025)
 
 ## Query Optimization
+- Technical Perspective: Perspective on Cardinality Estimation Graphs
 * Learned Query Optimizer: What is New and What is Next (SIGMOD 2024)
 * GLO: Towards Generalized Learned Query Optimization (ICDE 2024)
 * Robust Query Optimization in the Era of Machine Learning: State-of-the-Art and Future Directions (ICDE 2024)
@@ -817,6 +818,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows [Resource repo](https://github.com/xlang-ai/Spider2) (arXiv 2024)
 
 ## SQL Related
+- LLM-Augmented Knowledge Base Construction For Root Cause Analysis
 * Query2Vec (ArXiv)
 * Facilitating SQL Query Composition and Analysis (ArXiv 2020)
 * From Natural Language Processing to Neural Databases (VLDB 2021)
