@@ -753,6 +753,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Polyjuice: High-Performance Transactions via Learned Concurrency Control (OSDI 2021)
 
 ## Text-to-SQL
+- Think2SQL: Blueprinting Reward Density and Advantage Scaling for Effective Text-to-SQL Reasoning
 * SQLNet: Generating Structured Queries From Natural Language Without Reinforcement Learning (arXiv 2017)
 * An End-to-end Neural Natural Language Interface for Databases (arXiv 2018)
 * SyntaxSQLNet: Syntax Tree Networks for Complex and Cross-Domain Text-to-SQL Task (EMNLP 2018)
