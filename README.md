@@ -115,6 +115,17 @@ Table of Contents
 * Farming Your ML-based Query Optimizer's Food. (ICDE 2022, **best demo award**)
 * Hit the Gym: Accelerating Query Execution to Efficiently Bootstrap Behavior Models for Self-Driving Database Management Systems (VLDB 2024)
 * Theoretical Analysis of Learned Database Operations under Distribution Shift through Distribution Learnability (ICML 2024)
+* Towards Effective Orchestration of AI x DB Workloads (arXiv 2026) [[arXiv]](http://arxiv.org/abs/2603.03772v1)
+* GenDB: The Next Generation of Query Processing -- Synthesized, Not Engineered (arXiv 2026) [[arXiv]](http://arxiv.org/abs/2603.02081v1)
+* PIPE-RDF: An LLM-Assisted Pipeline for Enterprise RDF Benchmarking (arXiv 2026) [[arXiv]](http://arxiv.org/abs/2602.18497v1)
+* APEX-SQL: Talking to the data via Agentic Exploration for Text-to-SQL (arXiv 2026) [[arXiv]](http://arxiv.org/abs/2602.16720v1)
+* GPU-Accelerated Algorithms for Graph Vector Search: Taxonomy, Empirical Study, and Research Directions (arXiv 2026) [[arXiv]](http://arxiv.org/abs/2602.16719v1)
+* BIRDTurk: Adaptation of the BIRD Text-to-SQL Dataset to Turkish (arXiv 2026) [[arXiv]](http://arxiv.org/abs/2602.03633v1)
+* Beyond Single-Modal Analytics: A Framework for Integrating Heterogeneous LLM-Based Query Systems for Multi-Modal Data (arXiv 2026) [[arXiv]](http://arxiv.org/abs/2602.01701v2)
+* AI-Driven autonomous database management: Self-tuning, predictive query optimization, and intelligent indexing in enterprise it environments (World Journal of Advanced Research and Reviews 2025) [[link]](https://www.semanticscholar.org/paper/e9feaf71603cd86835954f7518fa9fd10f98f557)
+* λ-Tune: Harnessing Large Language Models for Automated Database System Tuning (Proc. ACM Manag. Data 2024) [[arXiv]](https://arxiv.org/abs/2411.03500)
+* DB-BERT: making database tuning tools “read” the manual (The VLDB journal 2023) [[link]](https://www.semanticscholar.org/paper/aba80d2362dff1097af6c5f10e4292e410e3cdc9)
+* Demonstrating DB-BERT: A Database Tuning Tool that "Reads" the Manual (SIGMOD Conference 2022) [[link]](https://www.semanticscholar.org/paper/cd3cb3e905f6f584d473c67c463e39cd3b1ea4a4)
 
 ## Data Access
 ### Configuration Tuning
@@ -174,6 +185,7 @@ Table of Contents
 * BitTuner: A Toolbox for Automatically Configuring Learned Data Compressors (ICDE 2025)
 * AgentTune: An Agent-Based Large Language Model Framework for Database Knob Tuning (SIGMOD 2025)
 * L2T-Tune:LLM-Guided Hybrid Database Tuning with LHS and TD3 (arXiv 2025)
+* A Query-Level Distributed Database Tuning System with Machine Learning (Fall Joint Computer Conference 2022) [[link]](https://www.semanticscholar.org/paper/b9254f5cd261bc3313895875d0f9c59c4284c2e2)
 
 ### Physical Design
 * Tiresias: Enabling Predictive Autonomous Storage and Indexing (VLDB 2022)
@@ -838,7 +850,11 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * PreQR: Pre-training Representation for SQL Understanding (SIGMDO 2022)
 * From BERT to GPT-3 Codex: Harnessing the Potential of Very Large Language Models for Data Management (VLDB 2022)
 * Query Generation based on Generative Adversarial Networks (arXiv 2023)
+* Predictive Query Language: A Domain-Specific Language for Predictive Modeling on Relational Databases (arXiv 2026) [[arXiv]](http://arxiv.org/abs/2602.09572v2)
 
 ## Stargazers over time
 
 [![Stargazers over time](https://starchart.cc/LumingSun/ML4DB-paper-list.svg)](https://starchart.cc/LumingSun/ML4DB-paper-list)
+
+
+<!-- last_updated: 2026-03-05 11:05:22 -->
