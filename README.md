@@ -66,6 +66,7 @@ Table of Contents
 
 
 ## System and Tutorial
+- Machine learning in modern database systems: Techniques, architectures, and deployment challenges
 * ***SageDB: A Learned Database System (CIDR 2019)***
 * Database Learning: Toward a Database that Becomes Smarter Every Time (SIGMOD 2017)
 * Self-Driving Database Management Systems (CIDR 2017)
@@ -117,6 +118,11 @@ Table of Contents
 * Theoretical Analysis of Learned Database Operations under Distribution Shift through Distribution Learnability (ICML 2024)
 
 ## Data Access
+- Efficient Management of High-Frequency Sensor Data Streams Using a Read-Optimized Learned Index
+- DeepPrep: An LLM-Powered Agentic System for Autonomous Data Preparation
+- Arbiter: Towards joint and fine-grained index and partition tuning in analytical databases
+- LatentTune: Efficient Tuning of High Dimensional Database Parameters via Latent Representation Learning
+- MoDora: Tree-Based Semi-Structured Document Analysis System
 ### Configuration Tuning
 * SARD: A statistical approach for ranking database tuning parameters (ICDEW, 2008)
 * Regularized Cost-Model Oblivious Database Tuning with Reinforcement Learning （2016）
@@ -374,6 +380,10 @@ Table of Contents
 * A Learned Cache Eviction Framework with Minimal Overhead (arXiv 2023)
 
 ## Workload
+- Predicting a future workload for scaling database processing resources for satisfying a performance objective
+- Encoder–decoder-based workload forecasting framework for database-as-a-service: Y. Cheng et al.
+- Libra: Flexible Request Partitioning and Scheduling for Serving Unbalanced and Dynamic LLM Workloads
+- DEL4CW: Deep Expansion Learning for Cloud Workloads Prediction
 ### Workload generation 
 Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized and Realistic SQL Workloads (SIGMOD 2025)
 
@@ -436,6 +446,18 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * From Feature Selection to Resource Prediction: An Analysis of Commonly Applied Workflows and Techniques (EDBT 2025)
 
 ## Query Optimization
+- iPDB--Optimizing SQL Queries with ML and LLM Predicates
+- HeaPA: Difficulty-Aware Heap Sampling and On-Policy Query Augmentation for LLM Reinforcement Learning
+- Meta Engine: A Unified Semantic Query Engine on Heterogeneous LLM-Based Query Systems
+- Federated AI-Driven Query Optimization for Distributed Cloud Databases
+- Towards a Hybrid Quantum-Classical Computing Framework for Database Optimization Problems in Real Time Setup
+- When temporary results meet intermediate index: An optimization technique of procedural SQL query processing
+- Detecting and Optimizing Flawed Queries in Triplestore-Based Knowledge Systems Using Reinforcement Learning: Reinforcement Learning for Secure SPARQL …
+- Learned Query Optimizer in Alibaba MaxCompute: Challenges, Analysis, and Solutions
+- Semantics and Multi-Query Optimization Algorithms for the Analyze Operator
+- OCACO: an operator-level cardinality and cost joint estimator
+- A universal LLM Framework for General Query Refinements
+- Semantic Caching for OLAP via LLM-Based Query Canonicalization
 * Learned Query Optimizer: What is New and What is Next (SIGMOD 2024)
 * GLO: Towards Generalized Learned Query Optimization (ICDE 2024)
 * Robust Query Optimization in the Era of Machine Learning: State-of-the-Art and Future Directions (ICDE 2024)
@@ -721,6 +743,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * LEON+: towards robust ML-aided query optimization (VLDB 2026)
 
 ## Query Execution
+- Piece of CAKE: Adaptive Execution Engines via Microsecond-Scale Learning
 ### Sort
 * The Case for a Learned Sorting Algorithm (SIGMOD 2020)
 * Defeating duplicates: A re-design of the LearnedSort algorithm (aiXiv 2021)
@@ -766,6 +789,16 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Polyjuice: High-Performance Transactions via Learned Concurrency Control (OSDI 2021)
 
 ## Text-to-SQL
+- Reflective Reasoning for SQL Generation
+- AgentSM: Semantic Memory for Agentic Text-to-SQL
+- ST-Raptor: An Agentic System for Semi-Structured Table QA
+- Disentangling Ambiguity from Instability in Large Language Models: A Clinical Text-to-SQL Case Study
+- Beyond Static Pipelines: Learning Dynamic Workflows for Text-to-SQL
+- The CitizenQuery Benchmark: A Novel Dataset and Evaluation Pipeline for Measuring LLM Performance in Citizen Query Tasks
+- DarijaDB: Unlocking Text-to-SQL for Arabic Dialects
+- A Text-to-SQL strategy based on large language models and knowledge graphs for real-world databases
+- DIVER: A Robust Text-to-SQL System with Dynamic Interactive Value Linking and Evidence Reasoning
+- PromCopilot: Simplifying Prometheus Metric Querying in Cloud Native Online Service Systems via Large Language Models
 * SQLNet: Generating Structured Queries From Natural Language Without Reinforcement Learning (arXiv 2017)
 * An End-to-end Neural Natural Language Interface for Databases (arXiv 2018)
 * SyntaxSQLNet: Syntax Tree Networks for Complex and Cross-Domain Text-to-SQL Task (EMNLP 2018)
