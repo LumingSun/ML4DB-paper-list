@@ -108,6 +108,7 @@ Table of Contents
 * GaussMaster: An LLM-based Database Copilot System (arXiv 2025)
 * D-Bot: An LLM-Powered DBA Copilot (SIGMOD-Companion 2025)
 * Does A Fish Need a Bicycle? The Case for On-Chip NPUs in DBMS (CIDR 2026)
+* Towards Effective Orchestration of AI x DB Workloads (arXiv 2026)
 ### Training Data Collection
 * Expand your Training Limits! Generating Training Data for ML-based Data Management (SIGMOD 2021)
 * DataFarm: Farm Your ML-based Query Optimizer's Food! - Human-Guided Training Data Generation -. (CIDR 2022)
@@ -448,6 +449,8 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * JOB-Complex: A Challenging Benchmark for Traditional&Learned Query Optimization (arXiv 2025)
 * LLM4Hint: Leveraging Large Language Models for Hint Recommendation in Offline Query Optimization (arXiv 2025)
 * Graph Transformers for Query Plan Representation: Potentials and Challenges (VLDB 2026)
+* Learned Query Optimizer in Alibaba MaxCompute: Challenges, Analysis, and Solutions (arXiv 2026)
+* Divo: Learning a Stable and Effective Query Optimizer with a Diverse Workload (SIGMOD 2026)
 
 ### Query Rewrite
 * Sia: Optimizing Queries using Learned Predicates (SIGMOD 2021)
@@ -459,6 +462,8 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * R-Bot: An LLM-based Query Rewrite System (arXiv 2024)
 * QUITE: A Query Rewrite System Beyond Rules with LLM Agents (arXiv 2025)
 * Leveraging Query Optimizers to Verify the Soundness of LLM-based Query Rewrites for Real-World Workloads, and More! (CIDR 2026)
+* OmniTune: A Universal Framework for Query Refinement via LLMs (SIGMOD 2026)
+* Efficient Query Rewrite Rule Discovery via Standardized Enumeration and Learning-to-Rank (arXiv 2026)
 
 ### Cardinality Estimation
 * Are We Ready For Learned Cardinality Estimation? (VLDB 2021) [GitHub Link](https://github.com/sfu-db/AreCELearnedYet)
@@ -487,6 +492,8 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * TardySketch: A Framework for Cardinality Estimation Adaptable to Sliding Windows (arXiv 2025)
 * Algorithmic Complexity Attacks on All Learned Cardinality Estimators: A Data-centric Approach (arXiv 2025)
 * DistJoin: A Decoupled Join Cardinality Estimator based on Adaptive Neural Predicate Modulation (TKDE 2026) [GitHub Lint](https://github.com/GIS-PuppetMaster/DistJoin)
+* Can Large Language Models be a Cardinality Estimator? An Empirical study (arXiv 2026)
+* CorrBound: Cardinality Estimation Accounting for Inter-and Intra-relation Correlations (SIGMOD 2026)
 #### Data-based
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
 * Estimating Join Selectivities using Bandwidth-Optimized Kernel Density Models (VLDB 2017)
@@ -556,6 +563,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Automating localized learning for cardinality estimation based on XGBoost (Knowledge and Information Systems)
 * Data-Agnostic Cardinality Learning from Imperfect Workloads (arXiv 2025)
 * SPACE: Cardinality Estimation for Path Queries Using Cardinality-Aware Sequence-based Learning (SIGMOD 2025)
+* DBSel-CV: Residual-Learned Cardinality Estimation with Control-Variate Correction over SQLite (ICMML 2025)
 ### Cost Estimation
 #### Single Query
 * Statistical learning techniques for costing XML queries (VLDB 2005)
@@ -602,6 +610,8 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Stage: Query Execution Time Prediction in Amazon Redshif (SIGMOD 2024)
 * PlanRGCN: Predicting SPARQL Query Performance (VLDB 2025)
 * Learned Cost Models for Query Optimization: From Batch to Streaming Systems (VLDB 2025)
+* Lamba: A pretrained model for latency prediction over distributed databases (VLDB 2026)
+
 ### Join Optimization
 * Adaptive Optimization of Very Large Join Queries (SIGMOD 2018) (Not machine learning
 * Deep Reinforcement Learning for Join Order Enumeration (aiDM@SIGMOD 2018)
@@ -645,6 +655,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
   * PARQO: Penalty-Aware Robust Plan Selection in Query Optimization (VLDB 2024)
   * PAR2QO: Parametric Penalty-Aware Robust Query Optimization (VLDB 2024)
   * APQO: An Adaptive Framework for Parametric Query Optimization (SIGMOD 2025)
+  * ractical Parameterized Query Optimization via Efficient Plan Reuse and List-wise Ranking (SIGMOD 2026)
 ### Query Plan
 * Plan Selection Based on Query Clustering （VLDB 2002)
 * Cost-Based Query Optimization via AI Planning (AAAI 2014)
@@ -706,6 +717,8 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Training-Free Query Optimization via LLM-Based Plan Similarity (arXiv 2025)
 * A Learned Cost Model-based Cross-engine Optimizer for SQL Workloads (arXiv 2025)
 * FOSS: A learned doctor for query optimization (VLDBJ)
+* TATA: An Efficient Framework for Task Transfer in Query Plan Representation (VLDB 2026)
+* LEON+: towards robust ML-aided query optimization (VLDB 2026)
 
 ## Query Execution
 ### Sort
