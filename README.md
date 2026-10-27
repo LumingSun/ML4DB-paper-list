@@ -107,13 +107,6 @@ Table of Contents
 * NeurBench: Benchmarking Learned Database Components with Data and Workload Drift Modeling (arXiv 2025)
 * Does A Fish Need a Bicycle? The Case for On-Chip NPUs in DBMS (CIDR 2026)
 * Towards Effective Orchestration of AI x DB Workloads (arXiv 2026)
-### Training Data Collection
-* Expand your Training Limits! Generating Training Data for ML-based Data Management (SIGMOD 2021)
-* DataFarm: Farm Your ML-based Query Optimizer's Food! - Human-Guided Training Data Generation -. (CIDR 2022)
-* Farming Your ML-based Query Optimizer's Food. (ICDE 2022, **best demo award**)
-* Hit the Gym: Accelerating Query Execution to Efficiently Bootstrap Behavior Models for Self-Driving Database Management Systems (VLDB 2024)
-* Theoretical Analysis of Learned Database Operations under Distribution Shift through Distribution Learnability (ICML 2024)
-* NeurBench: A Benchmark Suite for Learned Database Components with Drift Modeling: [Experiments & Analysis] (SIGMOD 2026) [DOI](https://doi.org/10.1145/3802091)
 * Unstructured Data Analysis using LLMs: A Comprehensive Benchmark (VLDB 2026) [DOI](https://doi.org/10.14778/3819518.3819559)
 * NeurIDA: Dynamic Modeling for Effective In-Database Analytics (VLDB 2026) [DOI](https://doi.org/10.14778/3819518.3819563)
 * Document-to-Database: Extraction Meets Relational Semantics (VLDB 2026) [DOI](https://doi.org/10.14778/3819518.3819568)
@@ -121,6 +114,13 @@ Table of Contents
 * DBCooker : A Database Kernel-Specialized Coding Agent Harness (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828136)
 * Bridging LLMs and Database Systems: A Deep Dive into Enhanced Relational Operators (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828141)
 * Semantic Data Systems: From Data Management to Data Understanding (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3838712)
+### Training Data Collection
+* Expand your Training Limits! Generating Training Data for ML-based Data Management (SIGMOD 2021)
+* DataFarm: Farm Your ML-based Query Optimizer's Food! - Human-Guided Training Data Generation -. (CIDR 2022)
+* Farming Your ML-based Query Optimizer's Food. (ICDE 2022, **best demo award**)
+* Hit the Gym: Accelerating Query Execution to Efficiently Bootstrap Behavior Models for Self-Driving Database Management Systems (VLDB 2024)
+* Theoretical Analysis of Learned Database Operations under Distribution Shift through Distribution Learnability (ICML 2024)
+* NeurBench: A Benchmark Suite for Learned Database Components with Drift Modeling: [Experiments & Analysis] (SIGMOD 2026) [DOI](https://doi.org/10.1145/3802091)
 
 ## LLM4DB & Agent for DB
 * GaussMaster: An LLM-based Database Copilot System (arXiv 2025)
@@ -376,6 +376,9 @@ Table of Contents
 * A Technical Report on Dynamic Materialized View Management using Graph Neural Network
 * AutoView: An Autonomous Materialized View Management System with Encoder-Reducer (TKDE 2022)
 * Dynamic Materialized View Management using Graph Neural Network (ICDE 2023)
+* OCTOPUS: Towards A Tag Model for Cross-Query Reuse in Semantic Query Processing (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.32586)
+* SemReuse: Certified Reuse of Cached Natural-Language Views for Semantic Operators (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.16035)
+* Semantic Views: Certified Reuse of LLM Labels Across Semantic Queries (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.12768)
 #### Schema & Partition
 * Schism: a Workload-Driven Approach to Database Replication and Partitioning (VLDB 2010)
 * Skew-Aware Automatic Database Partitioning in Shared-Nothing, Parallel OLTP Systems (SIGMOD 2012)
@@ -398,9 +401,6 @@ Table of Contents
 * Oasis: An Optimal Disjoint Segmented Learned Range Filter (VLDB 2024)
 * EcoTable: Cost-Effective Table Integration in Data Lakes for Natural Language Queries (VLDB 2026) [DOI](https://doi.org/10.14778/3836663.3836664)
 * Can LLMs Normalize Databases? A Benchmark and Multi-Agent Framework for Schema Normalization (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2609.11141)
-* OCTOPUS: Towards A Tag Model for Cross-Query Reuse in Semantic Query Processing (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.32586)
-* SemReuse: Certified Reuse of Cached Natural-Language Views for Semantic Operators (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.16035)
-* Semantic Views: Certified Reuse of LLM Labels Across Semantic Queries (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.12768)
 
 ### Cache related
 * A Learned Cache Eviction Framework with Minimal Overhead (arXiv 2023)
@@ -486,6 +486,8 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Graph Transformers for Query Plan Representation: Potentials and Challenges (VLDB 2026)
 * Learned Query Optimizer in Alibaba MaxCompute: Challenges, Analysis, and Solutions (arXiv 2026)
 * Divo: Learning a Stable and Effective Query Optimizer with a Diverse Workload (SIGMOD 2026)
+* E-LQO: A Comprehensive Energy Evaluation Framework for Learned Query Optimization (SIGMOD 2026) [DOI](https://doi.org/10.1145/3837107)
+* Concord: A Video Relational Algebra for Cross-Modal Query Optimization (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2609.05756)
 
 ### Query Rewrite
 * Sia: Optimizing Queries using Learned Predicates (SIGMOD 2021)
@@ -532,6 +534,8 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * DistJoin: A Decoupled Join Cardinality Estimator based on Adaptive Neural Predicate Modulation (TKDE 2026) [GitHub Lint](https://github.com/GIS-PuppetMaster/DistJoin)
 * Can Large Language Models be a Cardinality Estimator? An Empirical study (arXiv 2026)
 * CorrBound: Cardinality Estimation Accounting for Inter-and Intra-relation Correlations (SIGMOD 2026)
+* SWatcher+: A Holistic Approach to Deploying Learned Cardinality Estimators in a Dynamic Setting (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.28270)
+* Bespoke-Card: Why Tune When You Can Generate? Synthesizing Workload-Specific Cardinality Estimators (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2606.09361)
 #### Data-based
 * Self-Tuning, GPU-Accelerated Kernel Density Models for Multidimensional Selectivity Estimation (SIGMOD 2015)
 * Estimating Join Selectivities using Bandwidth-Optimized Kernel Density Models (VLDB 2017)
@@ -601,8 +605,6 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * SPACE: Cardinality Estimation for Path Queries Using Cardinality-Aware Sequence-based Learning (SIGMOD 2025)
 * DBSel-CV: Residual-Learned Cardinality Estimation with Control-Variate Correction over SQLite (ICMML 2025)
 * Fully Inductive Cardinality Estimation (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2607.28311)
-* SWatcher+: A Holistic Approach to Deploying Learned Cardinality Estimators in a Dynamic Setting (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.28270)
-* Bespoke-Card: Why Tune When You Can Generate? Synthesizing Workload-Specific Cardinality Estimators (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2606.09361)
 ### Cost Estimation
 #### Single Query
 * Statistical learning techniques for costing XML queries (VLDB 2005)
@@ -764,8 +766,6 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * When Plans Change Answers: Formalizing Cost-Accuracy Optimization for Semantic Queries (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.08089)
 * WeaveData: A Multimodal Data Analysis System with Self-Critiquing and Self-Evolving LLM Plans (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2609.34764)
 * Cost-Aware Optimization for Agentic Query Execution (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2606.03152)
-* E-LQO: A Comprehensive Energy Evaluation Framework for Learned Query Optimization (SIGMOD 2026) [DOI](https://doi.org/10.1145/3837107)
-* Concord: A Video Relational Algebra for Cross-Modal Query Optimization (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2609.05756)
 
 ## Query Execution
 ### Sort
