@@ -113,3 +113,44 @@ def validate_cleanup(old: str, new: str, expected_removed: list[str]) -> Report:
     if remaining:
         errors.append(f"{len(remaining)} duplicate titles remain after cleanup")
     return Report(ok=not errors, errors=errors, warnings=[])
+
+
+def validate_restructure(old: str, new: str, expected_added: list[str]) -> Report:
+    """A taxonomy change: entries may MOVE, but nothing may change or vanish.
+
+    Accepts deleting entry lines from one section and re-adding the exact
+    same lines elsewhere, plus a known set of new structural lines
+    (headings, table-of-contents entries).  Any edit to an entry's text,
+    any lost entry, or any duplicate is an error.
+    """
+    errors: list[str] = []
+    removed = [l for l in removed_lines(old, new) if l.strip()]
+    added = [l for l in added_lines(old, new) if l.strip()]
+
+    removed_entries = [l for l in removed if l.startswith("* ")]
+    removed_other = [l for l in removed if not l.startswith("* ")]
+    added_entries = [l for l in added if l.startswith("* ")]
+    added_other = [l for l in added if not l.startswith("* ")]
+
+    if removed_other:
+        errors.append(f"unexpected deletions: {removed_other[:2]}")
+    if Counter(removed_entries) != Counter(added_entries):
+        missing = list((Counter(removed_entries) - Counter(added_entries)).elements())
+        extra = list((Counter(added_entries) - Counter(removed_entries)).elements())
+        errors.append(f"entries changed rather than moved; missing={missing[:2]} extra={extra[:2]}")
+    if expected_added:
+        unexpected = [l for l in added_other if l not in expected_added]
+        if unexpected:
+            errors.append(f"unexpected structural lines: {unexpected[:3]}")
+    elif added_other:
+        errors.append(f"unexpected structural lines: {added_other[:3]}")
+
+    # legacy duplicates are tolerated (the cleanup PR removes them); a move
+    # can never add one, so only an *increase* is an error.
+    if len(duplicate_titles(new)) > len(duplicate_titles(old)):
+        errors.append("restructure introduced duplicate titles")
+    before = Counter(normalize_title(e.title) for e in parse_entries(old))
+    after = Counter(normalize_title(e.title) for e in parse_entries(new))
+    if before != after:
+        errors.append("entry multiset changed: some paper was lost or altered")
+    return Report(ok=not errors, errors=errors, warnings=[], added=len(added_entries))

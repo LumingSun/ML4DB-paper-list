@@ -97,3 +97,32 @@ def test_cleanup_validator_rejects_extra_change():
     new = delete_lines(BASE, [idx]).replace("(SIGMOD 2020)", "(SIGMOD 2021)")
     report = validate_cleanup(BASE, new, [lines[idx]])
     assert not report.ok
+
+
+def test_double_bracket_arxiv_link_is_valid():
+    entry = "* X: A Paper (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.00001)"
+    new = insert_entries(BASE, {"Data Access > Configuration Tuning": [entry]})
+    report = validate_additions(BASE, new)
+    assert report.ok, report.errors
+
+
+def test_restructure_allows_pure_moves():
+    from ml4db.validate import validate_restructure
+
+    old = BASE
+    moved = "* Alpha: Tuning with Machine Learning (SIGMOD 2020)"
+    new = BASE.replace(moved + "\n", "")
+    new = new.replace("## Data Access", "## New Section\n" + moved + "\n\n## Data Access")
+    report = validate_restructure(old, new, ["## New Section"])
+    assert report.ok, report.errors
+
+
+def test_restructure_rejects_edited_entry():
+    from ml4db.validate import validate_restructure
+
+    old = BASE
+    moved = "* Alpha: Tuning with Machine Learning (SIGMOD 2020)"
+    new = BASE.replace(moved + "\n", "")
+    new = new.replace("## Data Access", "## New Section\n" + moved.replace("2020", "2021") + "\n\n## Data Access")
+    report = validate_restructure(old, new, ["## New Section"])
+    assert not report.ok

@@ -139,6 +139,7 @@ max_candidates_per_run: 800
 section_hints:
   "System and Tutorial": "Vision papers, systems, tutorials and DB copilots about AI for DBMS as a whole (NeurDB, D-Bot, openGauss)"
   "System and Tutorial > Training Data Collection": "Generating or collecting training data for learned DB components (data farms, workloads, benchmarks)"
+  "LLM4DB & Agent for DB": "LLM/agent systems that operate a DBMS or build DB components: DB copilots, autonomous DBA agents, agentic database engineering and code generation, position papers on data agents"
   "Data Access > Configuration Tuning": "Knob/parameter tuning, auto-tuning, RL or LLM based configuration"
   "Data Access > Physical Design": "General physical design: partitioning, layout, index selection as a whole"
   "Data Access > Physical Design > Learned structure": "Learned index structures, learned filters, learned bloom/cuckoo, compression codecs, learned layouts"
