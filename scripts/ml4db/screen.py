@@ -39,11 +39,14 @@ provided. Never invent a section name. If nothing fits, reject the paper.
 """
 
 
-def _section_block(sections: list[tuple[str, str]]) -> str:
-    return "\n".join(f"- {path}" for path, _ in sections)
+def _section_block(sections: list[tuple[str, str]], hints: dict | None = None) -> str:
+    hints = hints or {}
+    return "\n".join(f"- {path}" + (f" :: {hints[path]}" if path in hints else "")
+                     for path, _ in sections)
 
 
-def build_prompt(batch: list[Candidate], sections: list[tuple[str, str]]) -> str:
+def build_prompt(batch: list[Candidate], sections: list[tuple[str, str]],
+                 hints: dict | None = None) -> str:
     payload = [
         {
             "id": c.uid,
@@ -56,7 +59,7 @@ def build_prompt(batch: list[Candidate], sections: list[tuple[str, str]]) -> str
     return (
         SCOPE
         + "\n\nEXACT SECTION LIST (paths are ' > '-separated heading titles):\n"
-        + _section_block(sections)
+        + _section_block(sections, hints)
         + "\n\nCANDIDATES:\n"
         + json.dumps(payload, ensure_ascii=False, indent=1)
         + '\n\nReturn ONLY JSON: {"results":[{"id":"...","decision":"accept"|"reject",'
@@ -135,7 +138,7 @@ def screen_api(cands: list[Candidate], sections: list[tuple[str, str]], cfg: dic
                         "temperature": 0,
                         "messages": [
                             {"role": "system", "content": "You are a precise paper classifier. Output JSON only."},
-                            {"role": "user", "content": build_prompt(batch, sections)},
+                            {"role": "user", "content": build_prompt(batch, sections, cfg.get("section_hints"))},
                         ],
                     },
                     timeout=120,
@@ -177,7 +180,7 @@ JEV_URL = "https://api.defapi.org/api/v1/decisions"
 JEV_MODEL = "typesafe/jev-1.13"
 
 
-def _jev_questions(sections: list[tuple[str, str]]) -> dict:
+def _jev_questions(sections: list[tuple[str, str]], hints: dict | None = None) -> dict:
     return {
         "in_scope": {
             "type": "noul",
@@ -197,7 +200,7 @@ def _jev_questions(sections: list[tuple[str, str]]) -> dict:
         "section": {
             "type": "choice",
             "instructions": "Which existing section of the paper list does this paper belong to?",
-            "criteria": {path: desc for path, desc in sections},
+            "criteria": {path: (hints or {}).get(path, desc) for path, desc in sections},
         },
         "notable": {
             "type": "noul",
@@ -238,7 +241,8 @@ def _jev_one(session: requests.Session, url: str, key: str, model: str,
             cand.section = section if section in allowed else ""
             cand.notable = notable >= 0.5
             cand.decision = ACCEPT if (in_scope >= 0.5 and cand.section) else REJECT
-            cand.reason = f"p_in={in_scope:.2f} p_notable={notable:.2f} sec_conf={conf:.2f}"
+            cand.reason = (f"p_in={in_scope:.2f} p_notable={notable:.2f} sec_conf={conf:.2f} "
+                           f"cost={body.get('consumed') or 0}")
             return {
                 "id": cand.uid, "decision": cand.decision,
                 "section": cand.section, "notable": cand.notable,
@@ -259,7 +263,7 @@ def screen_jev(cands: list[Candidate], sections: list[tuple[str, str]], cfg: dic
         raise RuntimeError("JEV_API_KEY is not set; refusing to guess paper relevance")
     url = os.environ.get("JEV_URL", JEV_URL)
     model = os.environ.get("JEV_MODEL", JEV_MODEL)
-    questions = _jev_questions(sections)
+    questions = _jev_questions(sections, cfg.get("section_hints"))
     allowed = {p for p, _ in sections}
     kept: list[Candidate] = []
     dropped: list[dict] = []

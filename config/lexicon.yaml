@@ -132,3 +132,35 @@ crossref_lookback_days: 180
 
 # Maximum candidates sent to the model per run (cost guard).
 max_candidates_per_run: 800
+
+# One-line hints shown to the screener for each section.  Section names
+# alone ("Learned structure", "SQL Related") are ambiguous; the hint is
+# what actually moves section-assignment accuracy.
+section_hints:
+  "System and Tutorial": "Vision papers, systems, tutorials and DB copilots about AI for DBMS as a whole (NeurDB, D-Bot, openGauss)"
+  "System and Tutorial > Training Data Collection": "Generating or collecting training data for learned DB components (data farms, workloads, benchmarks)"
+  "Data Access > Configuration Tuning": "Knob/parameter tuning, auto-tuning, RL or LLM based configuration"
+  "Data Access > Physical Design": "General physical design: partitioning, layout, index selection as a whole"
+  "Data Access > Physical Design > Learned structure": "Learned index structures, learned filters, learned bloom/cuckoo, compression codecs, learned layouts"
+  "Data Access > Physical Design > Index": "Index recommendation/advisors, learned R-trees and spatial/string indexes"
+  "Data Access > Materialized View": "Materialized view selection and maintenance, view reuse"
+  "Data Access > Materialized View > Schema & Partition": "Schema design, partitioning, data layout for ML"
+  "Data Access > Cache related": "Buffer pool, cache replacement, query/result caching learned with ML"
+  "Workload > Resource Management and Auto-scaling": "Resource allocation, auto-scaling, scheduling of DB or AI×DB workloads, LLM serving from a data systems view"
+  "Workload > Workload Characterization & Forecasting": "Workload modeling, prediction, drift detection, shift detection"
+  "Query Optimization": "Learned query optimization at the system level when no more specific subsection applies"
+  "Query Optimization > Query Rewrite": "Learned or LLM-assisted query rewriting, SQL rewrite rules, SQL equivalence"
+  "Query Optimization > Cardinality Estimation": "Learned cardinality/selectivity estimation when neither Data-based nor Query-based fits"
+  "Query Optimization > Cardinality Estimation > Data-based": "Data-driven cardinality estimators (models over the data distribution)"
+  "Query Optimization > Cardinality Estimation > Query-based": "Query-driven cardinality estimators (models over query features)"
+  "Query Optimization > Cost Estimation > Single Query": "Learned cost models for a single query, cost prediction, plan costing"
+  "Query Optimization > Cost Estimation > Concurrent": "Cost estimation for concurrent / multi-query workloads"
+  "Query Optimization > Join Optimization": "Learned join order selection and join optimization"
+  "Query Optimization > Query Plan": "Plan selection, plan representation, plan search, adaptive plan choice, NL interface to query plans"
+  "Query Execution > Sort": "Learned sorting"
+  "Query Execution > Join": "Learned/semantic join execution, join algorithms using ML, approximate join processing"
+  "Query Execution > Adaptive Query Processing": "Adaptive execution, learned scheduling of operators, semantic operator execution"
+  "Query Execution > Approximate Query Processing": "Approximate query processing, sampling, learned approximate answers, result variance of semantic operators"
+  "Query Execution > Sheduling": "Query/transaction scheduling using ML"
+  "Text-to-SQL": "Natural language to SQL/NoSQL generation, schema linking, text-to-SQL benchmarks, evaluation and verification"
+  "SQL Related": "Other SQL-centric ML work: SQL generation, SQL understanding, neural databases, provenance for ML, multimodal query languages"

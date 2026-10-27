@@ -77,3 +77,17 @@ def test_config_venue_map_covers_sources():
     assert cfg["duplicate_threshold"] == 92
     venues = {c["venue"] for c in cfg["crossref_containers"]}
     assert {"VLDB", "SIGMOD", "ICDE", "TKDE"} <= venues
+
+
+def test_every_section_has_a_hint():
+    """Section names alone are ambiguous; the screener relies on the hint.
+
+    Guards against adding a section to the README without teaching the
+    screener what belongs in it.
+    """
+    from ml4db.readme import section_choices
+
+    cfg = load_config()
+    hints = cfg.get("section_hints") or {}
+    missing = [p for p, _ in section_choices(readme_text()) if p not in hints]
+    assert not missing, f"sections without a screener hint: {missing}"
