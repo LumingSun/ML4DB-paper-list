@@ -6,6 +6,7 @@ dedupe layer trusts these functions, so they carry the burden of
 """
 from __future__ import annotations
 
+import html
 import re
 import unicodedata
 from difflib import SequenceMatcher
@@ -79,3 +80,34 @@ def normalize_venue(venue: str) -> str:
 def fold_for_compare(s: str) -> str:
     """Aggressive fold used only for duplicate detection."""
     return normalize_title(s)
+
+
+_TAG = re.compile(r"<[^>]+>")
+
+
+def clean_title(title: str) -> str:
+    """Undo publisher markup: HTML entities and inline tags from Crossref.
+
+    "Read &amp; Write" and "<i>DBCooker</i>" both show up verbatim in
+    Crossref metadata; neither belongs in the README.
+    """
+    text = html.unescape(title or "")
+    text = _TAG.sub(" ", text)
+    text = " ".join(text.split())
+    return re.sub(r"\s+([:;,.!?)])", r"\1", text)
+
+
+_VARIANT = re.compile(
+    r"\s*[\[(](?:full|extended|technical|tech|long|short|preprint)[^\])\n]*[\])]\s*$",
+    re.IGNORECASE,
+)
+
+
+def title_variant_key(title: str) -> str:
+    """Normalised title with trailing qualifiers removed.
+
+    Publishers ship the same paper as "X [Full Version]" (arXiv) and plain
+    "X" (VLDB); comparing only the raw title lets both into the list.
+    """
+    stripped = _VARIANT.sub("", title or "")
+    return normalize_title(stripped)

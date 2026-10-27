@@ -17,9 +17,11 @@ from dataclasses import dataclass
 from .normalize import normalize_title
 from .readme import parse_entries
 
+# "[label](url)" and the repository's own "[[arXiv]](url)" are both fine;
+# a bare "(venue year)" is not.
 NEW_ENTRY_RE = re.compile(
     r"^\* (?P<title>.+?) \((?P<venue>[^()]+?) (?P<year>(?:19|20)\d{2})\) "
-    r"\[[^\]]+\]\(https?://[^)]+\)$"
+    r"(?P<link>\[.+?\]\(https?://[^)]+\))$"
 )
 EXTERNAL_ID_RE = re.compile(r"arxiv\.org/abs/(?P<arxiv>[\w.\-]+)|doi\.org/(?P<doi>10\.[^)\s]+)")
 

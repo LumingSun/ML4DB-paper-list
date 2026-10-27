@@ -22,8 +22,15 @@
 
 - `llm`（默认）：OpenAI 兼容 chat 接口，需要 Secret `LLM_API_KEY`；批量送 prompt，一次判 8–12 条。
 - `jev`：TypeSafe Jev-1.13 decision 模型（`/api/v1/decisions`），需要 Secret `JEV_API_KEY`；
-  每条论文一个请求，`in_scope`/`notable` 用 noul 概率，`section` 用 choice，返回置信度。
-  更便宜、更快，适合量大的补课；低置信度可以人工复核。
+  每条论文一个请求，`in_scope` / `ai_core` / `notable` 用 noul 概率，`section` 用 choice，返回置信度。
+  更便宜更快，但会多收增量式论文。
+- `double`（双层确认，需同时配 `LLM_API_KEY` 和 `JEV_API_KEY`）：两个后端独立判断，
+  **收录要求两者都收**；"ML 是不是本文贡献"这一项以准确率更高的 DeepSeek 为准
+  （可用 `combine --ai-core-policy both|llm|any` 调整）。分歧条目全部丢弃。
+
+两个后端共用的硬约束：模型只能从枚举小节里选；另外必须判定 `ai_core`——论文的 AI 成分是
+"贡献"还是"动机"。只把 AI 当动机的论文（例如一篇 LSM 写暂停优化里提到 "AI serving"）
+会被剔除，这是"标题看不出和 AI4DB 有什么关系"这类条目的主要来源。
 
 ## 本机跑
 
@@ -41,6 +48,8 @@ python -m ml4db filter --in /tmp/cands.json --out /tmp/pending.json --dropped /t
 LLM_API_KEY=sk-... python -m ml4db screen --in /tmp/pending.json --out /tmp/accepted.json
 # 或 Jev 决策模型
 JEV_API_KEY=dk-... python -m ml4db screen --screener jev --in /tmp/pending.json --out /tmp/accepted.json
+# 或双层确认（两个都配）
+LLM_API_KEY=... JEV_API_KEY=... python -m ml4db screen --screener double --in /tmp/pending.json --out /tmp/accepted.json
 
 # 补课用：按小节给 arXiv 条目设上限（已发表的不受限制）
 python -m ml4db select --in /tmp/accepted.json --out /tmp/selected.json --arxiv-per-section 6

@@ -95,3 +95,55 @@ def test_parse_tolerates_code_fences():
     text = '```json\n{"results":[{"id":"a","decision":"accept","reason":"x"}]}\n```'
     out = _parse(text)
     assert out and out[0]["id"] == "a"
+
+
+def _verdict(uid, decision="accept", section="Text-to-SQL", ai_core=True, notable=True):
+    return {"id": uid, "decision": decision, "section": section,
+            "ai_core": ai_core, "notable": notable}
+
+
+def test_combine_requires_unanimous_accept():
+    from ml4db.screen import combine
+
+    cands = [cand("A"), cand("B"), cand("C"), cand("D")]
+    for i, c in enumerate(cands):
+        c.uid = f"id{i}"
+    allowed = {"Text-to-SQL"}
+    llm = [_verdict("id0"), _verdict("id1"), _verdict("id2", decision="reject"), _verdict("id3")]
+    jev = [_verdict("id0"), _verdict("id1", decision="reject"), _verdict("id2"), _verdict("id3")]
+    kept, dropped, stats = combine(llm, jev, cands, allowed)
+    assert [c.uid for c in kept] == ["id0", "id3"]
+    assert stats["only_llm"] == 1 and stats["only_jev"] == 1
+
+
+def test_combine_drops_when_ml_only_motivation():
+    from ml4db.screen import combine
+
+    c = cand("How Much Can RocksDB Chew?")
+    c.uid = "rocks"
+    kept, dropped, stats = combine(
+        [_verdict("rocks", section="Text-to-SQL", ai_core=False)],
+        [_verdict("rocks", section="Text-to-SQL", ai_core=False)], [c], {"Text-to-SQL"})
+    assert kept == [] and stats["ai_core_conflict"] == 1
+
+
+def test_combine_rejects_invented_section():
+    from ml4db.screen import combine
+
+    c = cand("X")
+    c.uid = "x"
+    kept, _, _ = combine([_verdict("x", section="Nowhere")], [_verdict("x", section="Nowhere")],
+                         [c], {"Text-to-SQL"})
+    assert kept == []
+
+
+def test_ai_core_policy_both_vs_llm():
+    from ml4db.screen import combine
+
+    c = cand("Learned Index Under Concurrent Inserts")
+    c.uid = "li"
+    llm_v = [_verdict("li", ai_core=True)]
+    jev_v = [_verdict("li", ai_core=False)]
+    kept_llm, _, _ = combine(llm_v, jev_v, [c], {"Text-to-SQL"}, ai_core_policy="llm")
+    kept_both, _, _ = combine(llm_v, jev_v, [c], {"Text-to-SQL"}, ai_core_policy="both")
+    assert len(kept_llm) == 1 and kept_both == []

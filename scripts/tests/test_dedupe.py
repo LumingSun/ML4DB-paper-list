@@ -86,3 +86,13 @@ def test_short_ai_term_does_not_match_inside_words():
              abstract="We detail the available domain options.")
     ok, why = relevance(c, cfg())
     assert not ok and why == "no AI term"
+
+
+def test_full_version_variant_is_duplicate():
+    """Publishers ship the same paper as "X" and "X [Full Version]"."""
+    from ml4db.normalize import title_variant_key
+    assert title_variant_key("BaCon: Counting Queries [Full Version]") == \
+           title_variant_key("BaCon: Counting Queries")
+    corpus = "## Query Optimization\n* BaCon: Counting Queries (VLDB 2026)\n"
+    entries = parse_entries(corpus)
+    assert find_duplicate(cand("BaCon: Counting Queries [Full Version]"), entries, cfg()) is not None

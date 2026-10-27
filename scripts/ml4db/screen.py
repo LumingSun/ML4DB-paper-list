@@ -36,6 +36,10 @@ are acceptable only if directly about the above topics.
 
 Pick the single best section for each accepted paper from the EXACT section list
 provided. Never invent a section name. If nothing fits, reject the paper.
+
+AI CORE: also decide whether machine learning / LLMs are the paper's *contribution*
+(the method that does the work) rather than mere motivation or a passing mention.
+A storage paper that says "realtime AI serving" in its motivation is NOT AI-core.
 """
 
 
@@ -63,7 +67,8 @@ def build_prompt(batch: list[Candidate], sections: list[tuple[str, str]],
         + "\n\nCANDIDATES:\n"
         + json.dumps(payload, ensure_ascii=False, indent=1)
         + '\n\nReturn ONLY JSON: {"results":[{"id":"...","decision":"accept"|"reject",'
-          '"section":"<exact path, accept only>","reason":"<max 20 words>"}]}'
+          '"section":"<exact path, accept only>","ai_core":true|false,"notable":true|false,'
+          '"reason":"<max 20 words>"}]}'
     )
 
 
@@ -79,6 +84,7 @@ def _apply(verdicts: list[dict], batch: list[Candidate],
         if v.get("decision") == ACCEPT and v.get("section") in allowed:
             c.decision, c.section = ACCEPT, v["section"]
             c.notable = bool(v.get("notable"))
+            c.ai_core = bool(v.get("ai_core"))
             c.reason = str(v.get("reason", ""))[:200]
             kept.append(c)
         else:
@@ -202,6 +208,17 @@ def _jev_questions(sections: list[tuple[str, str]], hints: dict | None = None) -
             "instructions": "Which existing section of the paper list does this paper belong to?",
             "criteria": {path: (hints or {}).get(path, desc) for path, desc in sections},
         },
+        "ai_core": {
+            "type": "noul",
+            "instructions": (
+                "Are machine learning or LLMs the paper's contribution (the method that does the "
+                "work), rather than just motivation or a passing mention?"
+            ),
+            "criteria": {
+                "true": "The ML/LLM component is the contribution (learned model, LLM agent, semantic operator).",
+                "false": "ML appears only as motivation, background, or a downstream user.",
+            },
+        },
         "notable": {
             "type": "noul",
             "instructions": (
@@ -236,16 +253,18 @@ def _jev_one(session: requests.Session, url: str, key: str, model: str,
             answers = body.get("answers", {})
             in_scope = float(answers.get("in_scope", {}).get("noul", 0.0))
             notable = float(answers.get("notable", {}).get("noul", 0.0))
+            ai_core = float(answers.get("ai_core", {}).get("noul", 0.0))
             section = answers.get("section", {}).get("choice", "")
             conf = float(answers.get("section", {}).get("confidence", 0.0))
             cand.section = section if section in allowed else ""
             cand.notable = notable >= 0.5
+            cand.ai_core = ai_core >= 0.5
             cand.decision = ACCEPT if (in_scope >= 0.5 and cand.section) else REJECT
-            cand.reason = (f"p_in={in_scope:.2f} p_notable={notable:.2f} sec_conf={conf:.2f} "
+            cand.reason = (f"p_in={in_scope:.2f} p_notable={notable:.2f} p_ai_core={ai_core:.2f} sec_conf={conf:.2f} "
                            f"cost={body.get('consumed') or 0}")
             return {
                 "id": cand.uid, "decision": cand.decision,
-                "section": cand.section, "notable": cand.notable,
+                "section": cand.section, "notable": cand.notable, "ai_core": cand.ai_core,
                 "reason": cand.reason, "cost": body.get("consumed"),
             }
         except Exception:  # noqa: BLE001 - retried, then dropped
@@ -281,3 +300,64 @@ def screen_jev(cands: list[Candidate], sections: list[tuple[str, str]], cfg: dic
             else:
                 dropped.append({"title": c.title, "reason": f"jev rejected: {c.reason}"})
     return kept, dropped
+
+
+# --------------------------------------------------------------------------
+# Two-layer confirmation: DeepSeek (or agent) + Jev must both accept, and
+# both must find the ML component central.  Precision is what this list
+# needs: a wrong entry costs the maintainer a manual deletion, a missed
+# one is recoverable next week.
+# --------------------------------------------------------------------------
+
+def _as_map(verdicts: list[dict]) -> dict[str, dict]:
+    return {v["id"]: v for v in verdicts if isinstance(v, dict) and v.get("id")}
+
+
+def combine(llm: list[dict], jev: list[dict], cands: list[Candidate],
+            allowed: set[str], ai_core_policy: str = "llm"
+            ) -> tuple[list[Candidate], list[dict], dict]:
+    lmap, jmap = _as_map(llm), _as_map(jev)
+    kept: list[Candidate] = []
+    dropped: list[dict] = []
+    stats = {"both_accept": 0, "only_llm": 0, "only_jev": 0, "neither": 0,
+             "ai_core_conflict": 0, "section_conflict": 0}
+    for c in cands:
+        l, j = lmap.get(c.uid), jmap.get(c.uid)
+        l_ok = bool(l) and l.get("decision") == ACCEPT and l.get("section") in allowed
+        j_ok = bool(j) and j.get("decision") == ACCEPT and j.get("section") in allowed
+        if l_ok and j_ok:
+            stats["both_accept"] += 1
+            if ai_core_policy == "both":
+                core_ok = bool(l.get("ai_core")) and bool(j.get("ai_core"))
+            elif ai_core_policy == "any":
+                core_ok = bool(l.get("ai_core")) or bool(j.get("ai_core"))
+            else:  # "llm": the more accurate judge decides the ML-core question
+                core_ok = bool(l.get("ai_core"))
+            if not core_ok:
+                stats["ai_core_conflict"] += 1
+                dropped.append({"title": c.title, "reason": "ML component not central (two-layer)"})
+                continue
+            c.decision, c.ai_core = ACCEPT, True
+            c.section = l["section"]
+            if j["section"] != l["section"]:
+                stats["section_conflict"] += 1
+            c.notable = bool(l.get("notable"))
+            kept.append(c)
+        else:
+            stats["only_llm" if l_ok else "only_jev" if j_ok else "neither"] += 1
+            dropped.append({"title": c.title,
+                            "reason": "two-layer: " + ("llm accepted only" if l_ok else
+                                                       "jev accepted only" if j_ok else "both rejected")})
+    return kept, dropped, stats
+
+
+def screen_double(cands: list[Candidate], sections: list[tuple[str, str]], cfg: dict):
+    """Run both backends; require unanimity on acceptance and on AI-coredness."""
+    allowed = {p for p, _ in sections}
+    jev_kept, _ = screen_jev(cands, sections, cfg)
+    llm_kept, _ = screen_api(cands, sections, cfg)
+    jev_verdicts = [{"id": c.uid, "decision": c.decision, "section": c.section,
+                     "ai_core": c.ai_core, "notable": c.notable} for c in jev_kept]
+    llm_verdicts = [{"id": c.uid, "decision": c.decision, "section": c.section,
+                     "ai_core": c.ai_core, "notable": c.notable} for c in llm_kept]
+    return combine(llm_verdicts, jev_verdicts, cands, allowed)

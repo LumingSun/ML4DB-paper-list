@@ -31,6 +31,7 @@ class Candidate:
     section: str = ""  # filled in by the screener
     decision: str = ""  # "accept" | "reject" | ""
     notable: bool = False  # system / benchmark / paradigm, not an incremental variant
+    ai_core: bool = False  # ML/LLM is the contribution, not just motivation
     reason: str = ""
     uid: str = ""  # stable id for verdict matching
 

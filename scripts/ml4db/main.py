@@ -83,12 +83,15 @@ def cmd_batches(args) -> None:
 
 
 def cmd_screen(args) -> None:
-    from .screen import screen_api, screen_jev
+    from .screen import screen_api, screen_double, screen_jev
     cfg = cfgmod.load_config()
     cands = _load(args.in_)
     sections = section_choices(cfgmod.README.read_text(encoding="utf-8"))
     if args.screener == "jev":
         kept, dropped = screen_jev(cands, sections, cfg)
+    elif args.screener == "double":
+        kept, dropped, stats = screen_double(cands, sections, cfg)
+        print("two-layer:", stats)
     else:
         kept, dropped = screen_api(cands, sections, cfg)
     _dump(args.out, [c.to_dict() for c in kept])
@@ -108,6 +111,26 @@ def cmd_verdicts(args) -> None:
     _dump(args.out, [c.to_dict() for c in kept])
     _dump(args.dropped, dropped)
     print(f"{len(cands)} candidates, {len(verdicts)} verdicts -> accepted {len(kept)}, rejected {len(dropped)}")
+
+
+def cmd_combine(args) -> None:
+    """Two-layer confirmation from pre-computed verdict files (offline runs)."""
+    from .screen import combine
+    cands = _load(args.in_)
+    sections = section_choices(cfgmod.README.read_text(encoding="utf-8"))
+    allowed = {p for p, _ in sections}
+    def load(paths):
+        out = []
+        for path in paths:
+            data = json.loads(Path(path).read_text(encoding="utf-8"))
+            out += data.get("results", data) if isinstance(data, dict) else data
+        return out
+    kept, dropped, stats = combine(load(args.llm), load(args.jev), cands, allowed,
+                                   ai_core_policy=args.ai_core_policy)
+    _dump(args.out, [c.to_dict() for c in kept])
+    _dump(args.dropped, dropped)
+    print(f"two-layer: {stats}")
+    print(f"kept {len(kept)} / {len(cands)}")
 
 
 def cmd_select(args) -> None:
@@ -275,7 +298,7 @@ def main(argv: list[str] | None = None) -> None:
     s.add_argument("--in", dest="in_", required=True)
     s.add_argument("--out", required=True)
     s.add_argument("--dropped", default=str(data_dir() / "screen_dropped.json"))
-    s.add_argument("--screener", choices=["llm", "jev"], default="llm")
+    s.add_argument("--screener", choices=["llm", "jev", "double"], default="llm")
     s.set_defaults(func=cmd_screen)
 
     v = sub.add_parser("verdicts")
@@ -284,6 +307,15 @@ def main(argv: list[str] | None = None) -> None:
     v.add_argument("--out", required=True)
     v.add_argument("--dropped", default=str(data_dir() / "screen_dropped.json"))
     v.set_defaults(func=cmd_verdicts)
+
+    cb = sub.add_parser("combine")
+    cb.add_argument("--in", dest="in_", required=True)
+    cb.add_argument("--llm", nargs="+", required=True)
+    cb.add_argument("--jev", nargs="+", required=True)
+    cb.add_argument("--out", required=True)
+    cb.add_argument("--dropped", default=str(data_dir() / "combine_dropped.json"))
+    cb.add_argument("--ai-core-policy", choices=["llm", "both", "any"], default="llm")
+    cb.set_defaults(func=cmd_combine)
 
     sel = sub.add_parser("select")
     sel.add_argument("--in", dest="in_", required=True)

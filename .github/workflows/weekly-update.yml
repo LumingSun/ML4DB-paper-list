@@ -73,6 +73,7 @@ jobs:
           LLM_BASE_URL: ${{ vars.LLM_BASE_URL || 'https://api.deepseek.com/v1' }}
           LLM_MODEL: ${{ vars.LLM_MODEL || 'deepseek-chat' }}
           JEV_API_KEY: ${{ secrets.JEV_API_KEY }}
+          # llm | jev | double (double needs both secrets)
           SCREENER: ${{ vars.SCREENER || 'llm' }}
         run: |
           cd scripts

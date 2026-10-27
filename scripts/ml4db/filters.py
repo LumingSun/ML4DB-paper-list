@@ -8,7 +8,7 @@ from functools import lru_cache
 
 from .config import Candidate
 from .readme import Entry
-from .normalize import normalize_title, title_tokens, token_set_ratio
+from .normalize import normalize_title, title_tokens, title_variant_key, token_set_ratio
 
 
 @lru_cache(maxsize=512)
@@ -71,6 +71,7 @@ class DupeIndex:
         self.tokens: list[set[str]] = []
         for i, e in enumerate(entries):
             self.by_key.setdefault(e.norm_title, e)
+            self.by_key.setdefault(title_variant_key(e.title), e)
             toks = set(title_tokens(e.title))
             self.tokens.append(toks)
             for t in toks:
@@ -85,7 +86,8 @@ class DupeIndex:
             for e in self.entries:
                 if c.doi in e.raw:
                     return e
-        return self.by_key.get(normalize_title(c.title))
+        return (self.by_key.get(normalize_title(c.title))
+                or self.by_key.get(title_variant_key(c.title)))
 
     def match(self, c: Candidate) -> Entry | None:
         hit = self.exact(c)
@@ -126,7 +128,7 @@ def dedupe(cands: list[Candidate], entries: list[Entry], cfg: dict) -> tuple[lis
         if hit is not None:
             dropped.append({"title": c.title, "reason": f"duplicate of existing: {hit.title}"})
             continue
-        key = normalize_title(c.title)
+        key = title_variant_key(c.title)
         if key in kept_keys:
             dropped.append({"title": c.title, "reason": "duplicate within batch (exact)"})
             continue
