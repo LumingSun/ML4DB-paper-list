@@ -1,0 +1,96 @@
+name: weekly-paper-update
+
+on:
+  schedule:
+    # 01:00 UTC Monday == 09:00 Asia/Shanghai Monday
+    - cron: "0 1 * * 1"
+  workflow_dispatch:
+    inputs:
+      since:
+        description: "Harvest window start (YYYY-MM-DD). Empty = 160 days back."
+        required: false
+      dry_run:
+        description: "Validate and print, do not open a PR"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: weekly-paper-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Refuse to stack PRs
+        id: guard
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          existing=$(gh pr list --repo "$GITHUB_REPOSITORY" --label auto-update \
+                     --state open --json number,title --jq '.[0].number // empty')
+          if [ -n "$existing" ]; then
+            echo "Open auto-update PR #$existing exists; not stacking another one."
+            gh pr comment "$existing" --repo "$GITHUB_REPOSITORY" \
+              --body "Re-ran the pipeline on $(date -u +%F); a fresh run is queued behind this PR."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Harvest
+        if: steps.guard.outputs.skip != 'true'
+        run: |
+          cd scripts
+          SINCE="${{ github.event.inputs.since }}"
+          if [ -z "$SINCE" ]; then SINCE=$(date -u -d '160 days ago' +%F); fi
+          python -m ml4db harvest --since "$SINCE" --out "$RUNNER_TEMP/cands.json"
+
+      - name: Lexical prefilter + dedupe
+        if: steps.guard.outputs.skip != 'true'
+        run: |
+          cd scripts
+          python -m ml4db filter --in "$RUNNER_TEMP/cands.json" \
+            --out "$RUNNER_TEMP/pending.json" --dropped "$RUNNER_TEMP/dropped.json"
+
+      - name: Model screening
+        if: steps.guard.outputs.skip != 'true'
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL || 'https://api.deepseek.com/v1' }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'deepseek-chat' }}
+          JEV_API_KEY: ${{ secrets.JEV_API_KEY }}
+          SCREENER: ${{ vars.SCREENER || 'llm' }}
+        run: |
+          cd scripts
+          python -m ml4db screen --screener "$SCREENER" --in "$RUNNER_TEMP/pending.json" \
+            --out "$RUNNER_TEMP/accepted.json" --dropped "$RUNNER_TEMP/screen_dropped.json"
+
+      - name: Validate and open PR
+        if: steps.guard.outputs.skip != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd scripts
+          git config user.name "ml4db-bot"
+          git config user.email "actions@users.noreply.github.com"
+          SLUG=$(date -u +%Y%m%d)
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            python -m ml4db apply --in "$RUNNER_TEMP/accepted.json" --dry-run
+          else
+            python -m ml4db apply --in "$RUNNER_TEMP/accepted.json" --pr \
+              --slug "$SLUG" --title "[Auto] 新增 AI4DB 论文（$SLUG）"
+          fi
