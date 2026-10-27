@@ -73,3 +73,33 @@ def test_section_choices_excludes_empty_sections():
     choices = dict(section_choices(FIXTURE))
     assert "Data Access > Configuration Tuning" in choices
     assert not any(p.startswith("Table of Contents") for p in choices)
+
+
+def test_insert_into_parent_does_not_leak_into_child_section():
+    """Regression: appending to a section with subsections used to land in the last child."""
+    fixture = """## Data Access
+### Materialized View
+* Alpha (VLDB 2020)
+
+#### Schema & Partition
+* Beta (SIGMOD 2021)
+"""
+    new = insert_entries(fixture, {"Data Access > Materialized View": ["* Gamma (ICDE 2026)"]})
+    lines = new.split("\n")
+    gamma = next(i for i, l in enumerate(lines) if "Gamma" in l)
+    child = next(i for i, l in enumerate(lines) if l.startswith("#### Schema & Partition"))
+    assert gamma < child, lines
+
+
+def test_insert_into_empty_parent_goes_right_after_heading():
+    fixture = """## Data Access
+### Materialized View
+
+#### Schema & Partition
+* Beta (SIGMOD 2021)
+"""
+    new = insert_entries(fixture, {"Data Access > Materialized View": ["* Gamma (ICDE 2026)"]})
+    lines = new.split("\n")
+    gamma = next(i for i, l in enumerate(lines) if "Gamma" in l)
+    child = next(i for i, l in enumerate(lines) if l.startswith("#### Schema & Partition"))
+    assert gamma < child

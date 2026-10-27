@@ -159,12 +159,22 @@ def insert_entries(text: str, by_section: dict[str, list[str]]) -> str:
         sec = sections.get(path)
         if sec is None:
             raise KeyError(f"unknown section: {path!r}")
-        last_entry = None
+        # Stop at the first child heading: appending to the end of the whole
+        # subtree drops the entry into the last subsection ("Data Access >
+        # Materialized View" entries were landing under "Schema & Partition").
+        body_end = sec.end_idx
         for i in range(sec.line_idx + 1, sec.end_idx):
+            m = HEADING_RE.match(lines[i])
+            if m and len(m.group(1)) > sec.level:
+                body_end = i
+                break
+        last_entry = None
+        for i in range(sec.line_idx + 1, body_end):
             if _is_entry(lines[i]):
                 last_entry = i
         if last_entry is None:
-            raise ValueError(f"section has no entries to append to: {path!r}")
+            inserts.append((sec.line_idx + 1, new_lines))
+            continue
         inserts.append((last_entry + 1, new_lines))
     for idx, new_lines in sorted(inserts, key=lambda t: t[0], reverse=True):
         lines[idx:idx] = new_lines
