@@ -22,6 +22,7 @@ Table of Contents
 - [Table of Contents](#table-of-contents)
   - [System and Tutorial](#system-and-tutorial)
     - [Training Data Collection](#training-data-collection)
+  - [LLM4DB & Agent for DB](#llm4db--agent-for-db)
   - [Data Access](#data-access)
     - [Configuration Tuning](#configuration-tuning)
     - [Physical Design](#physical-design)
@@ -104,8 +105,6 @@ Table of Contents
 * Blueprinting the Cloud: Unifying and Automatically Optimizing Cloud Data Infrastructures with BRAD (VLDB 2024)
 * The Holon Approach for Simultaneously Tuning Multiple Components in a Self-Driving Database Management System with Machine Learning via Synthesized Proto-Actions (VLDB 2024)
 * NeurBench: Benchmarking Learned Database Components with Data and Workload Drift Modeling (arXiv 2025)
-* GaussMaster: An LLM-based Database Copilot System (arXiv 2025)
-* D-Bot: An LLM-Powered DBA Copilot (SIGMOD-Companion 2025)
 * Does A Fish Need a Bicycle? The Case for On-Chip NPUs in DBMS (CIDR 2026)
 * Towards Effective Orchestration of AI x DB Workloads (arXiv 2026)
 ### Training Data Collection
@@ -114,6 +113,30 @@ Table of Contents
 * Farming Your ML-based Query Optimizer's Food. (ICDE 2022, **best demo award**)
 * Hit the Gym: Accelerating Query Execution to Efficiently Bootstrap Behavior Models for Self-Driving Database Management Systems (VLDB 2024)
 * Theoretical Analysis of Learned Database Operations under Distribution Shift through Distribution Learnability (ICML 2024)
+* NeurBench: A Benchmark Suite for Learned Database Components with Drift Modeling: [Experiments & Analysis] (SIGMOD 2026) [DOI](https://doi.org/10.1145/3802091)
+* Unstructured Data Analysis using LLMs: A Comprehensive Benchmark (VLDB 2026) [DOI](https://doi.org/10.14778/3819518.3819559)
+* NeurIDA: Dynamic Modeling for Effective In-Database Analytics (VLDB 2026) [DOI](https://doi.org/10.14778/3819518.3819563)
+* Document-to-Database: Extraction Meets Relational Semantics (VLDB 2026) [DOI](https://doi.org/10.14778/3819518.3819568)
+* Bespoke OLAP: Synthesizing Workload-Specific One-Size-Fits-One Database Engines (VLDB 2026) [DOI](https://doi.org/10.14778/3836663.3836723)
+* DBCooker : A Database Kernel-Specialized Coding Agent Harness (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828136)
+* Bridging LLMs and Database Systems: A Deep Dive into Enhanced Relational Operators (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828141)
+* Semantic Data Systems: From Data Management to Data Understanding (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3838712)
+
+## LLM4DB & Agent for DB
+* GaussMaster: An LLM-based Database Copilot System (arXiv 2025)
+* D-Bot: An LLM-Powered DBA Copilot (SIGMOD-Companion 2025)
+* DB‑GPT: Large Language Model Meets Database (DSE 2024)
+* Agentic Evolution of SQL Test Generators (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.14161)
+* DBAgent: An RL-Based Agent for Autonomous Database Operations and Maintenance (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828006)
+* Demonstrating GenDB: Instance-Optimized and Customized Query Processing Code Generation via LLM Agents (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828076)
+* SuperDRI: Graph-Guided Autonomous Troubleshooting for Cloud Databases (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828095)
+* Data Agents: Rethinking Data Systems in the AI Agent Era (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3838708)
+* JetStream: Generating Verified Query Accelerators for Existing Database Systems (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.20527)
+* No Trace, No Claim: Two Contracts for Database Agents (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.09286)
+* HakiCC: LLM-Driven Multi-Agent Design and Optimization of Concurrency Control Protocols (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.00889)
+* Data Agents: Agentic Data Systems (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2609.24137)
+* What Stops a Small Language Model From Driving a Database Agent (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2609.21341)
+* BI-Agent and BI-Bench: Towards Automating End-to-End Business Intelligence (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2609.20886)
 
 ## Data Access
 ### Configuration Tuning
@@ -153,7 +176,6 @@ Table of Contents
 * ContTune: Continuous Tuning by Conservative Bayesian Optimization for Distributed Stream Data Processing Systems (arXiv 2023)
 * GPTuner: A Manual-Reading Database Tuning System via GPT-Guided Bayesian Optimization (arXiv 2023)
 * An Eficient Transfer Learning Based Configuration Adviser for Database Tuning (VLDB 2024)
-* DB‑GPT: Large Language Model Meets Database (DSE 2024)
 * A Spark Optimizer for Adaptive, Fine-Grained Parameter Tuning (arXiv 2024)
 * TIE: Fast Experiment-driven ML-based Configuration Tuning for In-memory Data Analytics (IEEE Transactions on Computers)
 * VDTuner: Automated Performance Tuning for Vector Data Management Systems (ICDE 2024) [Source code](https://github.com/tiannuo-yang/VDTuner)
@@ -172,6 +194,8 @@ Table of Contents
 * BitTuner: A Toolbox for Automatically Configuring Learned Data Compressors (ICDE 2025)
 * AgentTune: An Agent-Based Large Language Model Framework for Database Knob Tuning (SIGMOD 2025)
 * L2T-Tune:LLM-Guided Hybrid Database Tuning with LHS and TD3 (arXiv 2025)
+* MFTune: An Efficient Multi-Fidelity Framework for Spark SQL Configuration Tuning (VLDB 2026) [DOI](https://doi.org/10.14778/3836663.3836715)
+* IDSTune: A Multi-Agent Collaborative Framework for Integrated Database System Tuning (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2607.22031)
 
 ### Physical Design
 * Tiresias: Enabling Predictive Autonomous Storage and Indexing (VLDB 2022)
@@ -181,6 +205,14 @@ Table of Contents
 * LEA: A Learned Encoding Advisor for Column Stores (aiDM 2021)
 * Learning over Sets for Databases (EDBT 2024)
 * A Distributed Learned Hash Table (arXiv 2025)
+* Kirin: Efficient In-Storage Learned Compaction for LSM-Trees via System-Algorithm Co-Design (VLDB 2026) [DOI](https://doi.org/10.14778/3819518.3819529)
+* Rethinking Learned Index and LSM-Tree Integration (VLDB 2026) [DOI](https://doi.org/10.14778/3836663.3836671)
+* LICO: An SIMD-Aware High-Performance Learned Inverted Index Compression Framework (SIGMOD 2026) [DOI](https://doi.org/10.1145/3802079)
+* LINE: A Learned Index with Group-Enhanced Leaves and Cache-Optimized Inner Tree (SIGMOD 2026) [DOI](https://doi.org/10.1145/3802080)
+* Mathematical Foundations of Poisoning Attacks on Linear Regression over Cumulative Distribution Functions (SIGMOD 2026) [DOI](https://doi.org/10.1145/3802085)
+* On Self-Designing Learned Indexes (SIGMOD 2026) [DOI](https://doi.org/10.1145/3802096)
+* LMG index: a robust and efficient learned index framework for balancing multiple performance dimensions (VLDBJ 2026) [DOI](https://doi.org/10.1007/s00778-026-01014-1)
+* Synchronized Rebuilds:The Hidden Cost of Concurrent Inserts in Learned Indexes (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.33770)
 #### Index
 ##### Index Structure
 * Learning to hash for indexing big data - A survey (2016)
@@ -335,6 +367,8 @@ Table of Contents
 * AutoIndexer: A Reinforcement Learning-Enhanced Index Advisor Towards Scaling Workloads (arXiv 2025)
 * Rainbow: Risk-aware Index Benefit Estimation Facing Out Of Distribution Workloads (SIGMOD 2025)
 * Automatic Indexing in Oracle (VLDB 2025)
+* Evaluating the Practical Effectiveness of LLM-Driven Index Tuning on Microsoft SQL Server (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828015)
+* STUBRIN: A Spatio-Temporal Prediction Enhanced Learned Index for Spatial Data (TKDE 2026) [DOI](https://doi.org/10.1109/tkde.2026.3682010)
 
 ### Materialized View
 * Automatic View Generation with Deep Learning and Reinforcement Learning (ICDE 2020)
@@ -362,9 +396,16 @@ Table of Contents
 * A Robust Partitioning Scheme for Ad-Hoc Query Workloads (SOCC 2017)
 * Automated multidimensional data layouts in Amazon Redshift (SIGMOD 2024)
 * Oasis: An Optimal Disjoint Segmented Learned Range Filter (VLDB 2024)
+* EcoTable: Cost-Effective Table Integration in Data Lakes for Natural Language Queries (VLDB 2026) [DOI](https://doi.org/10.14778/3836663.3836664)
+* Can LLMs Normalize Databases? A Benchmark and Multi-Agent Framework for Schema Normalization (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2609.11141)
+* OCTOPUS: Towards A Tag Model for Cross-Query Reuse in Semantic Query Processing (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.32586)
+* SemReuse: Certified Reuse of Cached Natural-Language Views for Semantic Operators (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.16035)
+* Semantic Views: Certified Reuse of LLM Labels Across Semantic Queries (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.12768)
 
 ### Cache related
 * A Learned Cache Eviction Framework with Minimal Overhead (arXiv 2023)
+* ReStore-in-Action: Adaptive Multi-Tier Storage Management via Intelligent Data Migration Policy (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828101)
+* ReStore: A Reinforcement Learning Approach for Data Migration in Multi-Tiered Storage (SIGMOD 2026) [DOI](https://doi.org/10.1145/3802104)
 
 ## Workload
 ### Workload generation 
@@ -388,6 +429,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Intelligent scaling in Amazon Redshift (SIGMOD 2024)
 * Forecasting Algorithms for Intelligent Resource Scaling: An Experimental Analysis (Socc 2024)
 * LORE: Learning-Based Resource Recommendation for Big Data Queries (ICDE 2025)
+* ScaleSense: Cost-Intelligent Scaling Framework via Learned Resource Estimation in Alibaba AnalyticDB (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828016)
 
 ### Performance Diagnosis and Modeling
 
@@ -427,6 +469,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Robust Auto-Scaling with Probabilistic Workload Forecasting for Cloud Databases (ICDE 2024)
 * QPSEncoder: A Database Workload Encoder with Deep Learning (DEXA 2024)
 * From Feature Selection to Resource Prediction: An Analysis of Commonly Applied Workflows and Techniques (EDBT 2025)
+* Are Learned DBMS Components Robust to Workload Drift?: [Experiments & Analysis] (SIGMOD 2026) [DOI](https://doi.org/10.1145/3802014)
 
 ## Query Optimization
 * Learned Query Optimizer: What is New and What is Next (SIGMOD 2024)
@@ -456,6 +499,10 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Leveraging Query Optimizers to Verify the Soundness of LLM-based Query Rewrites for Real-World Workloads, and More! (CIDR 2026)
 * OmniTune: A Universal Framework for Query Refinement via LLMs (SIGMOD 2026)
 * Efficient Query Rewrite Rule Discovery via Standardized Enumeration and Learning-to-Rank (arXiv 2026)
+* ReSequel: Robust LLM-Assisted Query Rewriting and Optimization using Templatization and Sampling (VLDB 2026) [DOI](https://doi.org/10.14778/3828612.3828639)
+* Multi-Objective Agentic Rewrites for Unstructured Data Processing (VLDB 2026) [DOI](https://doi.org/10.14778/3836663.3836673)
+* Verified LLM-Based Query Rewriting for Microsoft SQL Server (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828074)
+* Dialect-Agnostic SQL Parsing via LLM-Based Segmentation (SIGMOD 2026) [DOI](https://doi.org/10.1145/3802038)
 
 ### Cardinality Estimation
 * Are We Ready For Learned Cardinality Estimation? (VLDB 2021) [GitHub Link](https://github.com/sfu-db/AreCELearnedYet)
@@ -518,6 +565,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * SSCard: Substring Cardinality Estimation using Suffix Tree-Guided Learned FM-Index (arXiv 2025)
 * A Lightweight Learned Cardinality Estimation Model (TKDE 2025)
 * Downsizing Diffusion Models for Cardinality Estimation (arXiv 2025)
+* Bridging the Gap: Cardinality Estimation for Semantic Queries on Unstructured Data (SIGMOD 2026) [DOI](https://doi.org/10.1145/3802024)
 #### Query-based
 * Adaptive selectivity estimation using query feedback (SIGMOD 1994)
 * Selectivity Estimation in Extensible Databases -A Neural Network Approach （VLDB 1998）
@@ -552,6 +600,9 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Data-Agnostic Cardinality Learning from Imperfect Workloads (arXiv 2025)
 * SPACE: Cardinality Estimation for Path Queries Using Cardinality-Aware Sequence-based Learning (SIGMOD 2025)
 * DBSel-CV: Residual-Learned Cardinality Estimation with Control-Variate Correction over SQLite (ICMML 2025)
+* Fully Inductive Cardinality Estimation (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2607.28311)
+* SWatcher+: A Holistic Approach to Deploying Learned Cardinality Estimators in a Dynamic Setting (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.28270)
+* Bespoke-Card: Why Tune When You Can Generate? Synthesizing Workload-Specific Cardinality Estimators (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2606.09361)
 ### Cost Estimation
 #### Single Query
 * Statistical learning techniques for costing XML queries (VLDB 2005)
@@ -706,6 +757,15 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * FOSS: A learned doctor for query optimization (VLDBJ)
 * TATA: An Efficient Framework for Task Transfer in Query Plan Representation (VLDB 2026)
 * LEON+: towards robust ML-aided query optimization (VLDB 2026)
+* CADENZA in Action: Breaking the Monolith with Intent-Dependent Plan Spaces for Semantic Queries (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828084)
+* Demonstrating Saṃsāra: A Super-Optimizer for Multimodal Stream Processing (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828092)
+* ChatQPT: Towards Conversing with Relational Query Engines (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828115)
+* Sublime: Selecting Subgraph Matching Algorithms via Machine Learning (SIGMOD 2026) [DOI](https://doi.org/10.1145/3802115)
+* When Plans Change Answers: Formalizing Cost-Accuracy Optimization for Semantic Queries (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.08089)
+* WeaveData: A Multimodal Data Analysis System with Self-Critiquing and Self-Evolving LLM Plans (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2609.34764)
+* Cost-Aware Optimization for Agentic Query Execution (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2606.03152)
+* E-LQO: A Comprehensive Energy Evaluation Framework for Learned Query Optimization (SIGMOD 2026) [DOI](https://doi.org/10.1145/3837107)
+* Concord: A Video Relational Algebra for Cross-Modal Query Optimization (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2609.05756)
 
 ## Query Execution
 ### Sort
@@ -715,11 +775,22 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 ### Join
 * SkinnerDB : Regret-Bounded Query Evaluation via Reinforcement Learning (VLDB 2018)
 * The Case for Learned In-Memory Joins (arXiv 2021)
+* Featurized-Decomposition Join: Low-Cost Semantic Joins with Guarantees (VLDB 2026) [DOI](https://doi.org/10.14778/3836663.3836672)
+* Accelerating Approximate Analytical Join Queries over Unstructured Data with Statistical Guarantees (SIGMOD 2026) [DOI](https://doi.org/10.1145/3802004)
+* Uber-Join: Unifying Diverse Table Joins using LLMs with Precision and Cost Guarantees (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.25178)
 ### Adaptive Query Processing
 * Eddies: Continuously adaptive query processing. (SIGMOD 2000)
 * Micro adaptivity in Vectorwise (SIGMOD 2013)
 * Cuttlefish: A Lightweight Primitive for Adaptive Query Processing (2018)
 * Scalable Multi-Query Execution using Reinforcement Learning (SIGMOD 2021)
+* Sema: A High-Performance System for LLM-Based Semantic Query Processing (VLDB 2026) [DOI](https://doi.org/10.14778/3836663.3836685)
+* Carnot: Interpretable, Interactive, and Optimized Execution of Deep Research Queries (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828086)
+* ScaleDoc: Scaling LLM-based Predicates over Large Document Collections (SIGMOD 2026) [DOI](https://doi.org/10.1145/3802106)
+* NousDB - A Fast Query Engine for Semantic Analytics (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.28551)
+* Prune First, Decide Fast: Scalable Semantic Query Processing with JEVDB (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.02046)
+* SEMA-SQL: Beyond Traditional Relational Querying with Large Language Models (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2604.23477)
+* From Interpretation to Compilation: Compilation-Based Execution of Semantic Operators [Vision] (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2607.13407)
+* Larch: Learned Query Optimization for Semantic Predicates (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2606.07923)
 ### Approximate Query Processing
 * DBEST: Revisiting approximate query processing engines with machine learning models (SIGMOD 2019)
 * LAQP: Learning-based Approximate Query Processing (2020)
@@ -731,6 +802,9 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Exploiting Machine Learning Models for Approximate Query Processing (Big Data 2022)
 * Tuple Bubbles: Learned Tuple Representations for Tunable Approximate Query Processing (aiDM 2023)
 * Learning-Based Sample Tuning for Approximate Query Processing in Interactive Data Exploration (TKDE 2024)
+* Demonstrating TACT: Tunable Accuracy-Cost Trade-offs for Semantic Image Filtering (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828106)
+* 100x Cost & Latency Reduction: Performance Analysis of AI Query Approximation using Lightweight Proxy Models: [Experiments & Analysis] (SIGMOD 2026) [DOI](https://doi.org/10.1145/3802002)
+* Same Query, Different Answer: Run-to-Run Variance in Semantic Query Processing (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.13823)
 ### Sheduling
 * Workload management for cloud databases via machine learning (ICDE 2016 WiseDB)
 * A learning-based service for cost and performance management of cloud databases （ICDEW 2017）(short version for WiSeDB)
@@ -751,6 +825,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Scheduling OLTP transactions via learned abort prediction (aiDM@SIGMOD 2019)
 * Scheduling OLTP Transactions via Machine Learning （2019）
 * Polyjuice: High-Performance Transactions via Learned Concurrency Control (OSDI 2021)
+* Modeling Concurrency Control as a Learnable Function (SIGMOD 2026) [DOI](https://doi.org/10.1145/3802088)
 
 ## Text-to-SQL
 * SQLNet: Generating Structured Queries From Natural Language Without Reinforcement Learning (arXiv 2017)
@@ -815,6 +890,24 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Combining Small Language Models and Large Language Models for Zero-Shot NL2SQL (VLDB 2024)
 * Awesome-Text2SQL [Resource repo](https://github.com/eosphoros-ai/Awesome-Text2SQL)
 * Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows [Resource repo](https://github.com/xlang-ai/Spider2) (arXiv 2024)
+* SafeQL: Search-based Refinement for Safe and Efficient LLM-based Text-to-SQL (VLDB 2026) [DOI](https://doi.org/10.14778/3819518.3819545)
+* Benchmarking Text-to-SQL under Role-Based Access Control (SIGMOD 2026) [DOI](https://doi.org/10.1145/3837098)
+* A Comparative Evaluation of Schema Subsetting for LLM-based NL-to-SQL over Large-Schema Databases (VLDB 2026) [DOI](https://doi.org/10.14778/3819518.3819531)
+* Dial: A Knowledge-Grounded Dialect-Specific NL2SQL System (VLDB 2026) [DOI](https://doi.org/10.14778/3836663.3836720)
+* Developing and Benchmarking Verification Algorithms to Improve Text-to-SQL Generation (VLDB 2026) [DOI](https://doi.org/10.14778/3836663.3836721)
+* CoeusBI: A Comprehensive Interactive Business Intelligence System Powered by LLMs at Baidu (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828017)
+* Bridging NL2SQL for CAN Signal Analytics at NIO: From Externalized Schemas to CTE Pipelines (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828036)
+* SpatialSQL: A Multi-Agent System for Interactive and Observable Spatial Text-to-SQL (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828055)
+* QueryCraft: A Natural Language-Driven NoSQL Database Querying System Powered by Large Language Models (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828114)
+* Tursio for Credit Unions: Structured Data Search with Automated Context Graphs (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828122)
+* ATLAS: Adaptive Text-to-SQL with Lifecycle-Aware Self-Maintaining Context (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828135)
+* DeepEye-SQL: A Software-Engineering-Inspired Text-to-SQL Framework (SIGMOD 2026) [DOI](https://doi.org/10.1145/3802035)
+* MatQuery: Execution-Grounded Natural-Language Querying over Heterogeneous Materials Databases (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.13573)
+* SALUS: Automated Auditing of NL-to-SQL Benchmarks through Weak Supervision of Multi-Agent Output (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.05540)
+* From Benchmarks to Production: A Text-to-SQL System for Complex Financial Data (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.03524)
+* AptMQL-Bench: From Text-to-SQL to Text-to-MQL via Access-Pattern Schema Design and Data-Preserving Migration (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.02770)
+* Argo-Bench: Evaluating Data Agents on Enterprise-Scale Workflows (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.02122)
+* The Stochastic Shift: A New Evaluation Paradigm for Text-to-SQL with AI Operators (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2609.21133)
 
 ## SQL Related
 * Query2Vec (ArXiv)
@@ -825,6 +918,14 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * PreQR: Pre-training Representation for SQL Understanding (SIGMDO 2022)
 * From BERT to GPT-3 Codex: Harnessing the Potential of Very Large Language Models for Data Management (VLDB 2022)
 * Query Generation based on Generative Adversarial Networks (arXiv 2023)
+* Replacing Multi-Step Assembly of Data Preparation Pipelines with One-Step LLM Pipeline Generation for Table QA (VLDB 2026) [DOI](https://doi.org/10.14778/3819518.3819557)
+* ConRAD: Conformal Risk-Aware Neural Databases (VLDB 2026) [DOI](https://doi.org/10.14778/3836663.3836705)
+* FilterPilot: An Interactive Assistant for Adapting Filtering Predicate to Table Content (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828082)
+* iPDB: SQL with ML and LLM Predicates (Towards a Database Engine for AI) (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828121)
+* DialectEvo: Bridging SQL Dialects with Execution-Guided Knowledge Refinement (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828138)
+* Automated Discovery of Test Oracles for Database Management Systems Using LLMs (SIGMOD 2026) [DOI](https://doi.org/10.1145/3802017)
+* Automated Database Testing via LLM-Synthesized SQL Features (SIGMOD 2026) [DOI](https://doi.org/10.1145/3837097)
+* Structural Inference in Undocumented Mobile Databases: A Reproducible Benchmark for Evaluating Agentic Reasoning in Digital Forensics (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2608.21470)
 
 ## Stargazers over time
 
