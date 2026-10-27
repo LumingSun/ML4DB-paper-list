@@ -1,0 +1,167 @@
+# Lexicon and mapping tables for the AI4DB paper pipeline.
+# Everything here is data, not code: tune freely, the tests only depend on
+# the *shape* of the file.  See docs/superpowers/specs/ for the design.
+
+# Candidate must match at least one DB term AND one AI term (case
+# insensitive substring on title + abstract) to reach the model.
+db_terms:
+  - database
+  - dbms
+  - query
+  - sql
+  - index
+  - join
+  - cardinality
+  - optimizer
+  - query plan
+  - schema
+  - workload
+  - transaction
+  - storage engine
+  - knob
+  - tuning
+  - partition
+  - materialized view
+  - buffer pool
+  - data warehouse
+  - oltp
+  - olap
+  - tuple
+  - relation
+  - tables
+  - oltp
+  - data management
+  - data analytics
+  - columnar
+  - lsm
+  - b-tree
+  - key-value
+
+ai_terms:
+  - machine learning
+  - learned
+  - learning
+  - neural
+  - deep learning
+  - transformer
+  - llm
+  - large language model
+  - language model
+  - gpt
+  - agent
+  - reinforcement
+  - ml
+  - embedding
+  - bert
+  - fine-tun
+  - prompt
+  - foundation model
+  - ai
+
+# Hard exclusions: topics the list deliberately does not collect.
+exclude_terms:
+  - vector database
+  - vector search
+  - approximate nearest neighbor
+  - ann search
+  - retrieval-augmented
+  - retrieval augmented
+  - graphrag
+  - graph rag
+  - knowledge graph completion
+  - recommender system
+  - recommendation system
+
+# Crossref container title -> the venue spelling used in the README.
+# Matching is case-insensitive substring; first hit wins.
+venue_map:
+  - match: "Proceedings of the VLDB Endowment"
+    venue: VLDB
+  - match: "Proceedings of the ACM on Management of Data"
+    venue: SIGMOD
+  - match: "ACM SIGMOD International Conference on Management of Data"
+    venue: SIGMOD
+  - match: "Companion of the ACM SIGMOD"
+    venue: SIGMOD-Companion
+  - match: "International Conference on Data Engineering"
+    venue: ICDE
+  - match: "IEEE Transactions on Knowledge and Data Engineering"
+    venue: TKDE
+  - match: "VLDB Journal"
+    venue: VLDBJ
+  - match: "Transactions on Database Systems"
+    venue: TODS
+  - match: "SIGMOD Record"
+    venue: SIGMOD Record
+  - match: "Conference on Innovative Data Systems Research"
+    venue: CIDR
+
+# Crossref containers to pull.  `match` is the exact container-title we
+# filter on; `venue` is what the entry will say.
+crossref_containers:
+  - match: "Proceedings of the VLDB Endowment"
+    venue: VLDB
+  - match: "Proceedings of the ACM on Management of Data"
+    venue: SIGMOD
+  - match: "IEEE Transactions on Knowledge and Data Engineering"
+    venue: TKDE
+  - match: "The VLDB Journal"
+    venue: VLDBJ
+  - match: "International Conference on Data Engineering"
+    venue: ICDE
+
+# arXiv queries.  cs.DB catches the bulk; Text-to-SQL largely lives in
+# cs.CL/cs.LG, hence the explicit keyword queries.
+arxiv_queries:
+  - 'cat:cs.DB'
+  - 'all:"text-to-sql"'
+  - 'all:"nl2sql"'
+  - 'all:"database" AND (all:"large language model" OR all:"LLM")'
+  - 'all:"learned" AND (all:"query optimizer" OR all:"cardinality estimation")'
+
+# Fuzzy duplicate threshold (0-100) on normalised tokens.  92 means
+# "same paper, different casing/punctuation"; lower catches paraphrases
+# but starts colliding distinct papers.
+duplicate_threshold: 92
+
+# Look-back windows (days).  Fixed windows instead of a watermark: ACM /
+# IEEE indexing lags publication by months, and a strict watermark would
+# silently skip late-indexed papers forever.
+arxiv_lookback_days: 120
+crossref_lookback_days: 180
+
+# Maximum candidates sent to the model per run (cost guard).
+max_candidates_per_run: 800
+
+# One-line hints shown to the screener for each section.  Section names
+# alone ("Learned structure", "SQL Related") are ambiguous; the hint is
+# what actually moves section-assignment accuracy.
+section_hints:
+  "System and Tutorial": "Vision papers, systems, tutorials and DB copilots about AI for DBMS as a whole (NeurDB, D-Bot, openGauss)"
+  "System and Tutorial > Training Data Collection": "Generating or collecting training data for learned DB components (data farms, workloads, benchmarks)"
+  "LLM4DB & Agent for DB": "LLM/agent systems that operate a DBMS or build DB components: DB copilots, autonomous DBA agents, agentic database engineering and code generation, position papers on data agents"
+  "Data Access > Configuration Tuning": "Knob/parameter tuning, auto-tuning, RL or LLM based configuration"
+  "Data Access > Physical Design": "General physical design: partitioning, layout, index selection as a whole"
+  "Data Access > Physical Design > Learned structure": "Learned index structures, learned filters, learned bloom/cuckoo, compression codecs, learned layouts"
+  "Data Access > Physical Design > Index": "Index recommendation/advisors, learned R-trees and spatial/string indexes"
+  "Data Access > Materialized View": "Materialized view selection and maintenance, view reuse"
+  "Data Access > Materialized View > Schema & Partition": "Schema design, partitioning, data layout for ML"
+  "Data Access > Cache related": "Buffer pool, cache replacement, query/result caching learned with ML"
+  "Workload > Resource Management and Auto-scaling": "Resource allocation, auto-scaling, scheduling of DB or AI×DB workloads, LLM serving from a data systems view"
+  "Workload > Workload Characterization & Forecasting": "Workload modeling, prediction, drift detection, shift detection"
+  "Query Optimization": "Learned query optimization at the system level when no more specific subsection applies"
+  "Query Optimization > Query Rewrite": "Learned or LLM-assisted query rewriting, SQL rewrite rules, SQL equivalence"
+  "Query Optimization > Cardinality Estimation": "Learned cardinality/selectivity estimation when neither Data-based nor Query-based fits"
+  "Query Optimization > Cardinality Estimation > Data-based": "Data-driven cardinality estimators (models over the data distribution)"
+  "Query Optimization > Cardinality Estimation > Query-based": "Query-driven cardinality estimators (models over query features)"
+  "Query Optimization > Cost Estimation > Single Query": "Learned cost models for a single query, cost prediction, plan costing"
+  "Query Optimization > Cost Estimation > Concurrent": "Cost estimation for concurrent / multi-query workloads"
+  "Query Optimization > Join Optimization": "Learned join order selection and join optimization"
+  "Query Optimization > Query Plan": "Plan selection, plan representation, plan search, adaptive plan choice, NL interface to query plans"
+  "Query Execution > Sort": "Learned sorting"
+  "Query Execution > Join": "Learned/semantic join execution, join algorithms using ML, approximate join processing"
+  "Query Execution > Adaptive Query Processing": "Adaptive execution, learned scheduling of operators, semantic operator execution"
+  "Query Execution > Approximate Query Processing": "Approximate query processing, sampling, learned approximate answers, result variance of semantic operators"
+  "Query Execution > Sheduling": "Query/transaction scheduling using ML"
+  "Text-to-SQL": "Natural language to SQL/NoSQL generation, schema linking, text-to-SQL benchmarks, evaluation and verification"
+  "SQL Related": "Other SQL-centric ML work: SQL generation, SQL understanding, neural databases, provenance for ML, multimodal query languages"
