@@ -25,6 +25,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
         with:
@@ -36,6 +37,14 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
+
+      - name: Connectivity check
+        run: |
+          for u in "https://export.arxiv.org/api/query?search_query=all:database&max_results=1" \
+                   "https://api.crossref.org/works?rows=1"; do
+            code=$(curl -s -o /dev/null -m 30 -w '%{http_code}' "$u" || echo ERR)
+            echo "connectivity: $code $u"
+          done
 
       - name: Refuse to stack PRs
         id: guard

@@ -44,9 +44,12 @@ def cmd_harvest(args) -> None:
     since = cfgmod.parse_iso(args.since)
     until = cfgmod.parse_iso(args.until) if args.until else date.today()
     sources = tuple(args.source.split(",")) if args.source else ("arxiv", "crossref")
-    items = harvest(cfg, since, until, sources)
+    errors: list[str] = []
+    items = harvest(cfg, since, until, sources, errors)
     _dump(args.out, items)
     print(f"harvested {len(items)} candidates ({since} .. {until}) -> {args.out}")
+    for err in errors:
+        print(f"warning: {err}")
 
 
 def cmd_filter(args) -> None:
