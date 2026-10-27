@@ -133,6 +133,11 @@ crossref_lookback_days: 180
 # Maximum candidates sent to the model per run (cost guard).
 max_candidates_per_run: 800
 
+# Wall-clock budgets per source.  A weekly bot must finish; partial results
+# are acceptable because the look-back window re-covers them next week.
+arxiv_time_budget_seconds: 240
+crossref_time_budget_seconds: 150
+
 # One-line hints shown to the screener for each section.  Section names
 # alone ("Learned structure", "SQL Related") are ambiguous; the hint is
 # what actually moves section-assignment accuracy.

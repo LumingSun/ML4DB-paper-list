@@ -24,28 +24,43 @@ def _session() -> requests.Session:
 
 
 def _clean(text: str) -> str:
-    return " ".join((text or "").split())
+    from .normalize import clean_title
+    return clean_title(text)
 
 
-def _get(session: requests.Session, url: str, params: dict, tries: int = 6) -> requests.Response:
-    """GET with backoff.  arXiv rate-limits aggressively (429) and both APIs
-    occasionally return 5xx; a run that gives up would silently lose a week."""
-    delay = 10.0
+def _get(session: requests.Session, url: str, params: dict, tries: int = 3,
+         deadline: float | None = None) -> requests.Response:
+    """GET with bounded retries and an optional wall-clock deadline.
+
+    A weekly bot must never hang: arXiv rate-limits, and six 90-second
+    backoffs per page turned one dry run into a 20-minute stall.
+    """
+    import sys
+
+    delay = 5.0
     last_exc: Exception | None = None
     for attempt in range(tries):
+        timeout = 45
+        if deadline is not None:
+            remaining = deadline - time.monotonic()
+            if remaining <= 2:
+                raise TimeoutError("time budget exhausted")
+            timeout = max(5, min(45, remaining))
         try:
-            r = session.get(url, params=params, timeout=180)
-        except requests.RequestException as exc:  # timeouts, proxy hiccups
+            r = session.get(url, params=params, timeout=timeout)
+        except requests.RequestException as exc:
             last_exc = exc
-            time.sleep(delay)
-            delay = min(delay * 1.8, 90)
+            print(f"[http] {type(exc).__name__} on {url.split('/')[2]}", file=sys.stderr)
+            time.sleep(min(delay, 15))
+            delay = min(delay * 1.7, 30)
             continue
         if r.status_code == 200:
             return r
         if r.status_code in (429, 500, 502, 503, 504):
-            wait = float(r.headers.get("Retry-After") or delay)
-            time.sleep(min(wait, 90))
-            delay = min(delay * 1.8, 90)
+            wait = min(float(r.headers.get("Retry-After") or delay), 30)
+            print(f"[http] {r.status_code} on {url.split('/')[2]}, retry in {wait:.0f}s", file=sys.stderr)
+            time.sleep(wait)
+            delay = min(delay * 1.7, 30)
             continue
         r.raise_for_status()
     if last_exc is not None:
@@ -54,11 +69,18 @@ def _get(session: requests.Session, url: str, params: dict, tries: int = 6) -> r
 
 
 def harvest_arxiv(queries: list[str], since: date, until: date, cfg: dict,
-                  max_per_query: int = 300) -> list[Candidate]:
+                  max_per_query: int = 300,
+                  time_budget: float = 240) -> list[Candidate]:
+    import sys
+
     window = f"submittedDate:[{since:%Y%m%d}0000 TO {until:%Y%m%d}2359]"
     session = _session()
     out: list[Candidate] = []
+    deadline = time.monotonic() + time_budget
     for q in queries:
+        if time.monotonic() > deadline:
+            print("[arxiv] time budget exhausted; keeping partial results", file=sys.stderr)
+            break
         start = 0
         while start < max_per_query:
             params = {
@@ -68,7 +90,7 @@ def harvest_arxiv(queries: list[str], since: date, until: date, cfg: dict,
                 "sortBy": "submittedDate",
                 "sortOrder": "descending",
             }
-            r = _get(session, ARXIV_API, params)
+            r = _get(session, ARXIV_API, params, deadline=deadline)
             if r.status_code != 200:
                 break
             root = ET.fromstring(r.text)
@@ -121,10 +143,17 @@ def _strip_jats(abstract: str) -> str:
 
 
 def harvest_crossref(containers: list[dict], since: date, cfg: dict,
-                     rows_per_page: int = 200, max_total: int = 2000) -> list[Candidate]:
+                     rows_per_page: int = 200, max_total: int = 2000,
+                     time_budget: float = 150) -> list[Candidate]:
+    import sys
+
     session = _session()
     out: list[Candidate] = []
+    deadline = time.monotonic() + time_budget
     for spec in containers:
+        if time.monotonic() > deadline:
+            print("[crossref] time budget exhausted; keeping partial results", file=sys.stderr)
+            break
         cursor = "*"
         seen = 0
         while seen < max_total:
@@ -135,7 +164,7 @@ def harvest_crossref(containers: list[dict], since: date, cfg: dict,
                 "select": "title,container-title,published-print,published-online,issued,DOI,abstract,type",
                 "mailto": "noreply@example.com",
             }
-            r = _get(session, CROSSREF_API, params)
+            r = _get(session, CROSSREF_API, params, deadline=deadline)
             if r.status_code != 200:
                 break
             msg = r.json()["message"]
@@ -169,12 +198,35 @@ def harvest_crossref(containers: list[dict], since: date, cfg: dict,
 
 
 def harvest(cfg: dict, since: date, until: date,
-            sources: tuple[str, ...] = ("arxiv", "crossref")) -> list[Candidate]:
+            sources: tuple[str, ...] = ("arxiv", "crossref"),
+            errors: list[str] | None = None) -> list[Candidate]:
+    """Harvest every requested source; one failing source must not kill the run.
+
+    A missed week is recovered by the look-back window, so degrading to the
+    surviving source beats failing closed here (the gate is the screener and
+    the validator, not the harvester).
+    """
+    import sys
+
     items: list[Candidate] = []
     if "arxiv" in sources:
-        items += harvest_arxiv(cfg["arxiv_queries"], since, until, cfg)
+        try:
+            items += harvest_arxiv(cfg["arxiv_queries"], since, until, cfg,
+                                   time_budget=cfg.get("arxiv_time_budget_seconds", 240))
+        except Exception as exc:  # noqa: BLE001 - reported, other source continues
+            print(f"[warn] arxiv harvest failed: {exc}", file=sys.stderr)
+            if errors is not None:
+                errors.append(f"arxiv: {exc}")
     if "crossref" in sources:
-        items += harvest_crossref(cfg["crossref_containers"], since, cfg)
+        try:
+            items += harvest_crossref(cfg["crossref_containers"], since, cfg,
+                                      time_budget=cfg.get("crossref_time_budget_seconds", 150))
+        except Exception as exc:  # noqa: BLE001
+            print(f"[warn] crossref harvest failed: {exc}", file=sys.stderr)
+            if errors is not None:
+                errors.append(f"crossref: {exc}")
+    if not items:
+        raise RuntimeError(f"all sources failed: {errors}")
     # one paper may arrive as both preprint and published version: keep the
     # published one (it carries a venue and a DOI), drop the arXiv duplicate.
     by_title: dict[str, Candidate] = {}
