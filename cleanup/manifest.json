@@ -1,0 +1,83 @@
+{
+ "note": "每组保留一条、删除其余；行号为 README.md 当前 master 上的 1-based 行号",
+ "removals": [
+  {
+   "line": 81,
+   "keep_line": 113,
+   "title": "Expand your Training Limits! Generating Training Data for ML-based Data Management",
+   "reason": "保留 Training Data Collection 小节（更贴合主题），删除 System and Tutorial 下那条"
+  },
+  {
+   "line": 168,
+   "keep_line": 166,
+   "title": "Db2une: Tuning Under Pressure via Deep Learning",
+   "reason": "同一小节内相邻重复，保留靠前一条"
+  },
+  {
+   "line": 218,
+   "keep_line": 730,
+   "title": "The Case for Learned In-Memory Joins",
+   "reason": "论文主题是 join，保留 Query Execution > Join，删除 Physical Design > Index 下那条"
+  },
+  {
+   "line": 233,
+   "keep_line": 224,
+   "title": "A Learned Index for Exact Similarity Search in Metric Spaces",
+   "reason": "同一小节重复（ArXiv/arxiv 写法差异），保留靠前一条"
+  },
+  {
+   "line": 268,
+   "keep_line": 264,
+   "title": "Limousine: Blending Learned and Classical Indexes to Self-Design Larger-than-Memory Cloud Storage Engines",
+   "reason": "同一小节重复，保留靠前一条"
+  },
+  {
+   "line": 272,
+   "keep_line": 265,
+   "title": "AStore: Uniformed Adaptive Learned Index and Cache for RDMA-enabled Key-Value Store",
+   "reason": "同一小节重复（RDMA-enabled/Enabled 写法差异），保留靠前一条"
+  },
+  {
+   "line": 349,
+   "keep_line": 321,
+   "title": "HMAB: self-driving hierarchy of bandits for integrated physical database design tuning",
+   "reason": "论文是集成式物理设计调优（含索引），保留 Index Recommendation，删除 Materialized View 下那条"
+  },
+  {
+   "line": 440,
+   "keep_line": 698,
+   "title": "GLO: Towards Generalized Learned Query Optimization",
+   "reason": "保留 Query Plan 小节（更具体），删除 Query Optimization 顶层那条"
+  },
+  {
+   "line": 562,
+   "keep_line": 485,
+   "title": "Sample-Efficient Cardinality Estimation Using Geometric Deep Learning",
+   "reason": "归属相当，保留靠前一条"
+  },
+  {
+   "line": 488,
+   "keep_line": 524,
+   "title": "ASM in Action: Fast and Practical Learned Cardinality Estimation",
+   "reason": "保留 Data-based 小节（与 ASM 主体论文相邻），删除 Cardinality Estimation 顶层那条"
+  },
+  {
+   "line": 519,
+   "keep_line": 555,
+   "title": "Speeding Up End-to-end Query Execution via Learning-based Progressive Cardinality Estimation",
+   "reason": "保留带 (SIGMOD 2023) 年份与正确会议名的一条，删除缺年份的 PACMMOD 写法"
+  },
+  {
+   "line": 539,
+   "keep_line": 663,
+   "title": "Learning State Representations for Query Optimization with Deep Reinforcement Learning",
+   "reason": "论文是查询优化/计划选择，保留 Query Plan，删除错放在 Cardinality Estimation 下那条"
+  },
+  {
+   "line": 667,
+   "keep_line": 580,
+   "title": "ML-based Cross-Platform Query Optimization",
+   "reason": "论文是学习型代价模型，保留 Cost Estimation > Single Query，删除 Query Plan 下那条"
+  }
+ ]
+}
