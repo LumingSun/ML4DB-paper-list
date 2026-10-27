@@ -22,6 +22,7 @@ Table of Contents
 - [Table of Contents](#table-of-contents)
   - [System and Tutorial](#system-and-tutorial)
     - [Training Data Collection](#training-data-collection)
+  - [LLM4DB & Agent for DB](#llm4db--agent-for-db)
   - [Data Access](#data-access)
     - [Configuration Tuning](#configuration-tuning)
     - [Physical Design](#physical-design)
@@ -104,8 +105,6 @@ Table of Contents
 * Blueprinting the Cloud: Unifying and Automatically Optimizing Cloud Data Infrastructures with BRAD (VLDB 2024)
 * The Holon Approach for Simultaneously Tuning Multiple Components in a Self-Driving Database Management System with Machine Learning via Synthesized Proto-Actions (VLDB 2024)
 * NeurBench: Benchmarking Learned Database Components with Data and Workload Drift Modeling (arXiv 2025)
-* GaussMaster: An LLM-based Database Copilot System (arXiv 2025)
-* D-Bot: An LLM-Powered DBA Copilot (SIGMOD-Companion 2025)
 * Does A Fish Need a Bicycle? The Case for On-Chip NPUs in DBMS (CIDR 2026)
 * Towards Effective Orchestration of AI x DB Workloads (arXiv 2026)
 ### Training Data Collection
@@ -114,6 +113,11 @@ Table of Contents
 * Farming Your ML-based Query Optimizer's Food. (ICDE 2022, **best demo award**)
 * Hit the Gym: Accelerating Query Execution to Efficiently Bootstrap Behavior Models for Self-Driving Database Management Systems (VLDB 2024)
 * Theoretical Analysis of Learned Database Operations under Distribution Shift through Distribution Learnability (ICML 2024)
+
+## LLM4DB & Agent for DB
+* GaussMaster: An LLM-based Database Copilot System (arXiv 2025)
+* D-Bot: An LLM-Powered DBA Copilot (SIGMOD-Companion 2025)
+* DB‑GPT: Large Language Model Meets Database (DSE 2024)
 
 ## Data Access
 ### Configuration Tuning
@@ -153,7 +157,6 @@ Table of Contents
 * ContTune: Continuous Tuning by Conservative Bayesian Optimization for Distributed Stream Data Processing Systems (arXiv 2023)
 * GPTuner: A Manual-Reading Database Tuning System via GPT-Guided Bayesian Optimization (arXiv 2023)
 * An Eficient Transfer Learning Based Configuration Adviser for Database Tuning (VLDB 2024)
-* DB‑GPT: Large Language Model Meets Database (DSE 2024)
 * A Spark Optimizer for Adaptive, Fine-Grained Parameter Tuning (arXiv 2024)
 * TIE: Fast Experiment-driven ML-based Configuration Tuning for In-memory Data Analytics (IEEE Transactions on Computers)
 * VDTuner: Automated Performance Tuning for Vector Data Management Systems (ICDE 2024) [Source code](https://github.com/tiannuo-yang/VDTuner)
