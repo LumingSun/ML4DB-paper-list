@@ -80,3 +80,58 @@ python -m pytest scripts/tests -q
 
 单测覆盖：标题归一与模糊匹配、小节解析与插入、去重三层、校验器（含 PR #36 的残缺条目
 用例、PR #37 的删改用例、存量重复的祖父条款、幂等性）。
+
+## 收录范围：以「DBMS 是否为研究对象」判定
+
+流水线运行两周后暴露了一个判据问题，不是阈值问题。一批 **LLM × data** 论文进了列表：
+表关系文档化、本体层、看板生成、表/列标注、数据准备、数据发现。它们读写关系型数据、
+生成 SQL、发在 VLDB/SIGMOD，词表全中，连"ML 应用于数据库"这条判据也能对上——但它们
+真正做的是分析结论、元数据或数据产品，DBMS 本身没有被改动。
+
+现在的判据是：**只有 DBMS 是论文改动、操作、构建或度量的对象才算在范围内。**
+"用了表"、"写了 SQL"、"数据在库里"都不构成在范围内。提示词里给了两条自检：
+
+1. 把数据换成 CSV，贡献还成立吗？成立 → 数据库是偶然的。
+2. 数据库系统研究者会不会认为这是对数据库系统的贡献？
+
+显式拒绝类：BI/看板、chat-with-your-data、语义层与指标层、数据目录与数据发现、
+数据准备与清洗、表/列标注与文档化、ETL、本体与知识图谱构建、文档/表格分析。
+
+### 本地精查脚本
+
+流水线要无人值守，所以快、便宜、失败即停。需要更准确的结论时用本地脚本——它慢、
+花几分钱、并且刁钻：
+
+```bash
+cp config/audit.env.example ~/.config/ml4db/audit.env && chmod 600 ~/.config/ml4db/audit.env
+# 填入 LLM_API_KEY（必填）、JEV_API_KEY（可选，独立复核）
+
+python3 scripts/audit_scope.py --recent-commits 2   # 最近两个自动 PR 加了什么
+python3 scripts/audit_scope.py --git-since d1f0578  # 某次提交之后新增的
+python3 scripts/audit_scope.py --section "LLM4DB & Agent for DB"
+python3 scripts/audit_scope.py --all                # 全量复查
+```
+
+- **摘要解析**：arXiv 批量 `id_list` → Crossref 批量 DOI → 标题检索回退
+  （Crossref→OpenAlex）。老条目即使没有链接也能拿到摘要。摘要与判定都缓存。
+- **判定**：DeepSeek 多轮（默认 3 遍）+ Jev 独立复核。
+- **定向原则**：证据只能让结论变软（keep→review），不能变硬。删错一条比漏一条更伤信任。
+- **自洽性**：对象在范围内却给 drop（或反之）判为模型自相矛盾，降为 review；
+  多轮不一致同样降为 review；无摘要时禁止 drop。
+- 结果写到 `.ml4db/audit/report.md`（表格）与 `report.json`（可复算）。
+
+`--no-llm` 只跑 Jev（省事，但精度低）；`--no-jev` 只跑 DeepSeek。
+
+### 改提示词前先量
+
+`docs/scope-calibration.md` 手工标注了 40 篇（拒绝 19 / 保留 17 / 边界 4）。
+改 `screen.py` 的 `SCOPE` 或 `docs/scope-calibration.md` 后，直接量：
+
+```bash
+python3 scripts/calibrate_prompt.py              # 测当前提示词
+python3 scripts/calibrate_prompt.py --prompt-file /tmp/new_scope.txt   # 测候选提示词
+python3 scripts/calibrate_prompt.py --repeats 3  # 顺带看判定是否稳定
+```
+
+输出拒绝精确率、召回率、该拒却收（泄漏）与该收却拒（误杀）的清单。
+不稳定比不准确更糟：同一段文本判两次结果不同，说明这条目是判断题，应该落到 review。
