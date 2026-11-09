@@ -311,3 +311,105 @@ def test_report_escapes_pipes_so_tables_stay_valid(tmp_path):
                   "reason": "a | b", "notes": [], "has_abstract": True}}
     text = audit.write_report(rows, [], "o", tmp_path / "r.md", tmp_path / "r.json", "n")
     assert "a \\| b" in text
+
+
+# --- rubric: the text-to-SQL exception ------------------------------------
+
+def test_rubric_exempts_query_generation_from_the_counterfactual():
+    """Without this exception the rubric rejects the list's largest section.
+
+    "Would it survive on CSVs?" is always yes for text-to-SQL, because with no
+    database there is no query to generate; 42 papers were wrongly dropped
+    before the exception was written down.
+    """
+    text = audit.RUBRIC
+    assert "STEP 2 EXCEPTION" in text
+    assert "do not apply" in text.lower() or "does not apply" in text.lower()
+    assert "Do NOT classify these as ml_method" in text or "NOT classify" in text
+
+
+def test_rubric_separates_query_correctness_from_answer_correctness():
+    """The line between in-scope text-to-SQL and out-of-scope data products."""
+    assert "correctness of the generated query" in audit.RUBRIC
+    assert "business or analytical answer" in audit.RUBRIC
+
+
+# --- aggregation: exclusion classes --------------------------------------
+
+def test_topical_exclusion_drops():
+    row = audit.aggregate([vote(KEEP, exclusion="vector")] * 3, None, True, 0.6)
+    assert row["verdict"] == DROP
+
+
+def test_incidental_exclusion_only_softens():
+    """incidental_db/incidental_ml restate the artifact call, so they cannot
+    overrule an in-scope artifact on their own."""
+    row = audit.aggregate([vote(KEEP, artifact="dbms_interface", exclusion="incidental_db")] * 3,
+                          None, True, 0.6)
+    assert row["verdict"] == REVIEW
+
+
+def test_jev_essential_doubt_alone_does_not_soften_a_confident_keep():
+    """Measured on 193 papers: Jev doubts dbms_essential for 89 of 99
+    text-to-SQL papers, so that signal is not evidence of being out of scope."""
+    row = audit.aggregate([vote(KEEP, artifact="dbms_interface")] * 3,
+                          jev(artifact="dbms_interface", p=0.2), True, 0.6)
+    assert row["verdict"] == KEEP
+
+
+def test_jev_essential_collapse_does_soften_a_keep():
+    row = audit.aggregate([vote(KEEP, artifact="dbms_interface")] * 3,
+                          jev(artifact="dbms_interface", p=0.05), True, 0.6)
+    assert row["verdict"] == REVIEW
+
+
+def test_jev_disagreeing_on_the_object_still_softens_a_keep():
+    row = audit.aggregate([vote(KEEP, artifact="dbms_interface")] * 3,
+                          jev(artifact="data_product", p=0.5), True, 0.6)
+    assert row["verdict"] == REVIEW
+
+
+# --- calibration: abbreviation matching -----------------------------------
+
+def test_title_matches_accepts_a_truncated_title():
+    """The calibration file truncates titles; an exact-key lookup lost the
+    abstract and three in-scope papers were measured as false negatives."""
+    import importlib.util
+    from pathlib import Path
+    repo = Path(__file__).resolve().parents[2]
+    spec = importlib.util.spec_from_file_location(
+        "calibrate_prompt", repo / "scripts" / "calibrate_prompt.py")
+    cal = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(cal)
+    assert cal.title_matches(
+        "Logos: Certified Order-Sensitive SQL Rewrites",
+        "Logos: Certified Order-Sensitive SQL Rewrites with Mechanized Semantics "
+        "and LLM Guidance")
+
+
+def test_title_matches_accepts_an_elided_middle():
+    import importlib.util
+    from pathlib import Path
+    repo = Path(__file__).resolve().parents[2]
+    spec = importlib.util.spec_from_file_location(
+        "calibrate_prompt", repo / "scripts" / "calibrate_prompt.py")
+    cal = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(cal)
+    assert cal.title_matches(
+        "Same Context, Different Agents: ... Memory Compaction in Data Agents",
+        "Same Context, Different Agents: A Behavioral Study of Semantic Layers, "
+        "Multi-Agent Orchestration and Memory Compaction in Data Agents")
+
+
+def test_title_matches_rejects_unrelated_titles():
+    import importlib.util
+    from pathlib import Path
+    repo = Path(__file__).resolve().parents[2]
+    spec = importlib.util.spec_from_file_location(
+        "calibrate_prompt", repo / "scripts" / "calibrate_prompt.py")
+    cal = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(cal)
+    assert not cal.title_matches("Learned Index Structures",
+                                "A Survey of Cardinality Estimation")
+    assert not cal.title_matches("A Survey of Cardinality Estimation",
+                                "Learned Index Structures")

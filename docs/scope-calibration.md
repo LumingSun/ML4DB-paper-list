@@ -58,3 +58,34 @@
 | Conversational Query Engine for Mixed-Modality Heterogeneous Enterprise Data Sources | 有点像查询引擎，又有点像企业数据问答 |
 | Evaluating Enterprise Analytics Agents | 评测方法，对象是企业分析 agent |
 | Leakage-Resistant Evaluation of AI-Generated Database Specifications | 对象是数据库规格，但与迁移评估相关 |
+
+## 实测结果
+
+`scripts/calibrate_prompt.py` 在 40 篇标注样本上的 A/B（同一模型、同一判据、只换提示词）：
+
+| | 旧提示词 | 新提示词 ×1 | 新提示词 ×3（多数票） |
+| --- | --- | --- | --- |
+| 准确率 | 67% | 89% | **94%** |
+| 该拒的拒掉（召回） | 58% | 95% | **95%** |
+| 该收的收进（召回） | 100% | 82% | **94%** |
+| 该拒却收（泄漏） | 8 篇 | 1 篇 | **1 篇** |
+
+旧提示词把那 8 篇 LLM × data 全收了（表关系文档化、本体层、看板生成、列描述生成、
+语义层构建、概念模式推断、表描述生成、表标注），正好就是列表里混进去的那一类。
+
+新提示词剩下的 1 篇泄漏是 `Policy-Aware Federated Query Orchestration Across Energy
+Data Spaces`（边界项，判哪边都说得过去），1 篇误杀是 `Rethinking Query Optimization for
+Multi-Agent Systems`（"多智能体系统"的查询优化，模型读成了 agent 编排）。
+
+### 两个反直觉的发现
+
+1. **title-only 判定很不准。** 校准文件里的标题是缩写的（`Logos: Certified
+   Order-Sensitive SQL Rewrites` 少了后半截），第一版按精确键匹配取摘要，40 篇里
+   22 篇拿不到摘要，于是凭空出现 3 篇误杀。改成"缩写匹配"（把标题切成 token 序列，
+   允许校准标题是真实标题的有序子序列）后降到 4 篇。
+2. **多跑几遍再取多数票，收益比换提示词还大。** 单遍 89% → 三遍 94%，
+   因为剩下的误差大多来自模型在个别论文上首鼠两端，而不是判据不对。
+   流水线仍然单遍（成本敏感），本地脚本默认三遍。
+
+不稳定清单（三遍结果不一致的 4 篇）比错误清单更有用：判两次翻脸说明这是判断题，
+不该让任何一个模型替人拍板——所以本地脚本把它们一律降为 `review`。

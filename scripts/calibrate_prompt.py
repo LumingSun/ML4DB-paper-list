@@ -79,6 +79,52 @@ def make_candidate(row: dict) -> Candidate:
                      uid=row["title"])
 
 
+def title_matches(short: str, full: str) -> bool:
+    """True when `short` is an abbreviation of `full`.
+
+    The calibration file abbreviates titles, either by truncating them
+    ("Logos: Certified Order-Sensitive SQL Rewrites") or by eliding a middle
+    part with "...".  Comparing tokens as an ordered subsequence handles both,
+    and is far safer than a similarity threshold: an abbreviated title scores
+    67-80 while an unrelated paper scores 31, so any cut-off wide enough to
+    catch abbreviations also starts matching genuinely different papers.
+    """
+    import re as _re
+
+    from ml4db.normalize import normalize_title
+
+    def toks(text: str) -> list[str]:
+        return normalize_title(text).split()
+
+    parts = [toks(p) for p in _re.split(r"\.\.\.", short) if toks(p)]
+    if not parts:
+        return False
+    full_toks = toks(full)
+    pos = 0
+    for part in parts:
+        # find `part` as a contiguous run inside full_toks, at or after pos
+        n = len(part)
+        found = -1
+        for i in range(pos, len(full_toks) - n + 1):
+            if full_toks[i:i + n] == part:
+                found = i
+                break
+        if found < 0:
+            return False
+        pos = found + n
+    return True
+
+
+def _fuzzy_lookup(key: str, table: dict, full_titles: dict | None = None) -> dict | None:
+    """Exact key first, then abbreviation matching."""
+    if key in table:
+        return table[key]
+    for cand_key, rec in table.items():
+        if title_matches(key, cand_key) or title_matches(cand_key, key):
+            return rec
+    return None
+
+
 def strip_abstract_fetch(rows: list[dict], cache_dir: Path) -> None:
     """Attach cached abstracts when available; the prompt still works without."""
     path = cache_dir / "abstracts.json"
@@ -90,7 +136,7 @@ def strip_abstract_fetch(rows: list[dict], cache_dir: Path) -> None:
         return
     from ml4db.normalize import normalize_title
     for row in rows:
-        rec = data.get(normalize_title(row["title"]))
+        rec = _fuzzy_lookup(normalize_title(row["title"]), data)
         if rec:
             row["abstract"] = rec.get("abstract", "")
 
@@ -116,6 +162,11 @@ def attach_abstracts(rows: list[dict], cache_dir: Path, verbose: bool = True) ->
     entries = []
     for row in missing:
         e = by_title.get(row["title"]) or by_norm.get(normalize_title(row["title"]))
+        if e is None:
+            for cand in by_norm.values():
+                if title_matches(row["title"], cand.title):
+                    e = cand
+                    break
         if e is not None:
             entries.append(e)
     if entries:
@@ -162,7 +213,7 @@ def summarise(rows: list[dict]) -> dict:
     correct = [r for r in decidable if _matches(expected_decision(r["label"]), r["decision"])]
 
     reject_rows = [r for r in rows if expected_decision(r["label"]) == "reject"]
-    keep_rows = [r for r in rows if expected_decision(r["label"]) == "keep"]
+    keep_rows = [r for r in rows if expected_decision(r["label"]) == "accept"]
     refused = [r for r in reject_rows if r["decision"] == "reject"]
     admitted = [r for r in keep_rows if r["decision"] == "accept"]
     leaked = [r for r in reject_rows if r["decision"] == "accept"]

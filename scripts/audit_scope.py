@@ -58,7 +58,7 @@ from ml4db.readme import Entry, parse_entries  # noqa: E402
 
 # Bump when the rubric or the prompt changes: it invalidates the verdict cache,
 # so an old judgement is never silently reused against a new definition.
-RUBRIC_VERSION = "scope-3"
+RUBRIC_VERSION = "scope-5"
 
 ARXIV_ID_RE = re.compile(r"arxiv\.org/abs/(?P<id>[\w.\-]+)")
 DOI_RE = re.compile(r"doi\.org/(?P<doi>10\.[^)\s]+)")
@@ -92,7 +92,7 @@ STEP 1 - ARTIFACT. What does this paper build, change, operate or measure? Pick 
                   cardinality estimation, storage or index structures, buffer pool,
                   transactions, catalog/schema, knobs, physical design, partitioning,
                   materialized views, workload management, learned DB components.
-  dbms_interface  The layer turning a user request into DBMS operations: text-to-SQL /
+  dbms_interface  The layer turning a request into DBMS operations: text-to-SQL /
                   NL2SQL / NL2Cypher / text2query, schema linking, SQL generation or
                   repair, query verification, database copilots, autonomous DBA agents
                   that diagnose / tune / migrate / repair a DBMS.
@@ -110,9 +110,21 @@ STEP 1 - ARTIFACT. What does this paper build, change, operate or measure? Pick 
 STEP 2 - COUNTERFACTUAL. Would the contribution survive unchanged if the data were a
 pile of CSV files or a managed warehouse? If yes, the DBMS is incidental.
 
+STEP 2 EXCEPTION - TEXT-TO-SQL AND OTHER QUERY GENERATION. For work whose artifact is
+translating a natural-language request into a database query (SQL, Cypher, or another
+query language), STEP 2 does not apply: remove the database and there is no query to
+generate, so the task IS the database work. Such a paper is dbms_interface or dbms_eval
+even when its method is generic ML (instruction tuning, distillation, active learning,
+decoding, prompting, fine-tuning a small model) and would transfer to other tasks, and
+even when its contribution is a new benchmark on an existing dataset. Do NOT classify
+these as ml_method. The question that separates them from data_product is what is
+EVALUATED: correctness of the generated query against a schema (in scope) versus
+correctness of a business or analytical answer (out of scope).
+
 STEP 3 - VENUE. Would this paper be equally at home at a BI, data-science, NLP,
 knowledge-graph or software-engineering venue, with no change to its contribution? If
-yes, the database is incidental.
+yes, the database is incidental - except for the STEP 2 exception, whose papers do
+legitimately live at NLP venues.
 
 STEP 4 - VERDICT.
   keep    ARTIFACT is dbms_core / dbms_interface / dbms_eval, the DBMS is essential, and
@@ -129,16 +141,17 @@ HARD EXCLUSIONS (drop regardless of venue):
   mentions AI as motivation; an AI paper that merely mentions databases as a data source.
 
 Calibration notes:
-  - "Agent that answers questions over enterprise tables" is data_product unless the
-    paper's contribution is on the DBMS side (query planning, execution, schema, storage,
-    correctness of the database interaction).
+  - "Agent that answers business questions over enterprise tables" is data_product unless
+    the paper's contribution is on the DBMS side (query generation, planning, execution,
+    schema, storage, correctness of the database interaction).
   - "LLM writes/repairs/optimises SQL, schema or engine code" is dbms_interface.
-  - "Benchmark of LLMs/agents on database operations" is dbms_eval, even when the
-    benchmark harness is generic.
+  - "Benchmark of LLMs/agents on database operations or on text-to-SQL" is dbms_eval.
   - Table annotation, column description, schema documentation for LLM consumption is
     data_product - the DBMS is unchanged and the work is metadata for a model.
   - An ontology or semantic layer is data_product even if stored in and queried from a
     database.
+  - A method evaluated on a text-to-SQL benchmark is in scope (see STEP 2 EXCEPTION);
+    do not reject it merely because the same method could be applied elsewhere.
 """
 
 VERDICT_SCHEMA = (
@@ -202,13 +215,20 @@ def jev_questions() -> dict:
         "dbms_essential": {
             "type": "noul",
             "instructions": (
-                "Would the contribution survive unchanged if the data were a pile of CSV "
-                "files or a managed warehouse? Answer true only if the contribution "
-                "depends on the database system itself, so that a database-systems "
-                "reading list on AI4DB / LLM4DB should collect this paper."
+                "Does the contribution depend on the database system itself, so that a "
+                "database-systems reading list on AI4DB / LLM4DB should collect it? For "
+                "work that translates a natural-language request into a database query "
+                "(text-to-SQL, NL2SQL, text2query, schema linking), the answer is true: "
+                "without a database there is no query to generate, so that task IS the "
+                "database work even when the method is generic ML. For a benchmark or "
+                "empirical study of such query generation, the answer is true as well. "
+                "Answer false when the database is merely where the data happened to be "
+                "stored: an LLM/data-science/BI paper that answers business questions or "
+                "produces metadata, dashboards or pipelines over relational tables."
             ),
             "criteria": {
-                "true": "The contribution depends on DBMS internals or on operating a DBMS.",
+                "true": "Depends on DBMS internals, on operating a DBMS, or on translating "
+                        "a request into a database query.",
                 "false": "The database is incidental: an LLM/data-science/BI paper that "
                          "happens to use SQL or relational tables.",
             },
@@ -669,6 +689,9 @@ def ask_jev(session: requests.Session, entry: Entry, abstract: str) -> dict | No
 
 
 IN_SCOPE_ARTIFACTS = {"dbms_core", "dbms_interface", "dbms_eval"}
+# Exclusions that are about the topic itself, as opposed to restating the
+# artifact judgement (incidental_db / incidental_ml).
+TOPICAL_EXCLUSIONS = {"vector", "rag", "kg_only", "recsys"}
 
 
 def aggregate(votes: list[dict], jev: dict | None, has_abstract: bool,
@@ -710,22 +733,42 @@ def aggregate(votes: list[dict], jev: dict | None, has_abstract: bool,
         notes.append(f"判定自相矛盾：对象={artifact} 却给了 keep")
         verdict = REVIEW
 
+    # Topical exclusions are decisive; the "incidental_*" ones merely restate
+    # the artifact decision, and the model applies them loosely (one text-to-SQL
+    # paper was tagged both incidental_db and incidental_ml while being judged
+    # dbms_interface). So an exclusion counts as a reason to drop only when the
+    # artifact already points out of scope; otherwise it is audited as a
+    # consistency problem and can only soften a keep.
     exclusions = {v.get("hard_exclusion") for v in votes} - {"", "none", None}
-    if exclusions:
-        notes.append("命中硬性排除：" + "、".join(sorted(exclusions)))
+    topical = exclusions & TOPICAL_EXCLUSIONS
+    if topical:
+        notes.append("命中硬性排除：" + "、".join(sorted(topical)))
         if verdict == KEEP:
             verdict = DROP
+    incidental = exclusions - TOPICAL_EXCLUSIONS
+    if incidental:
+        notes.append("模型另标：" + "、".join(sorted(incidental)))
+        if verdict == KEEP:
+            verdict = REVIEW
 
     if jev:
         p = jev.get("dbms_essential", 0.0)
         j_artifact = jev.get("artifact", "")
-        if p < 0.35:
-            notes.append(f"Jev 反对：DBMS 非关键（{p:.2f}），对象={j_artifact}")
-            if verdict == KEEP:
-                verdict = REVIEW
-        elif j_artifact and j_artifact not in IN_SCOPE_ARTIFACTS and artifact in IN_SCOPE_ARTIFACTS:
+        j_out_of_scope = j_artifact and j_artifact not in IN_SCOPE_ARTIFACTS
+        if j_out_of_scope and artifact in IN_SCOPE_ARTIFACTS:
+            # Jev names a different object of study: that is a real dissent.
             notes.append(f"Jev 对研究对象有异议（它判 {j_artifact}，DeepSeek 判 {artifact}）")
             if verdict == KEEP:
+                verdict = REVIEW
+        elif j_out_of_scope:
+            notes.append(f"Jev 也判为范围外：{j_artifact}")
+        elif p < 0.35:
+            # Same object, but Jev doubts the DBMS is load-bearing. Measured on
+            # 193 papers, this fires on 121 of them and on 89 of 99 text-to-SQL
+            # papers: "does it depend on DBMS internals" is genuinely "no" for
+            # query generation, so it is not evidence of being out of scope.
+            notes.append(f"Jev 认为 DBMS 非关键（{p:.2f}），但认同研究对象")
+            if verdict == KEEP and p < 0.15:
                 verdict = REVIEW
 
     if not has_abstract:
