@@ -114,6 +114,7 @@ Table of Contents
 * DBCooker : A Database Kernel-Specialized Coding Agent Harness (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828136)
 * Bridging LLMs and Database Systems: A Deep Dive into Enhanced Relational Operators (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828141)
 * Semantic Data Systems: From Data Management to Data Understanding (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3838712)
+* VLDB S.I.: harnessing the power of foundation models for data management (VLDBJ 2026) [DOI](https://doi.org/10.1007/s00778-026-01009-y)
 ### Training Data Collection
 * Expand your Training Limits! Generating Training Data for ML-based Data Management (SIGMOD 2021)
 * DataFarm: Farm Your ML-based Query Optimizer's Food! - Human-Guided Training Data Generation -. (CIDR 2022)
@@ -122,6 +123,7 @@ Table of Contents
 * Theoretical Analysis of Learned Database Operations under Distribution Shift through Distribution Learnability (ICML 2024)
 * NeurBench: A Benchmark Suite for Learned Database Components with Drift Modeling: [Experiments & Analysis] (SIGMOD 2026) [DOI](https://doi.org/10.1145/3802091)
 * Hollywood: Towards a Large Movie Dataset for Database Benchmarking (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2607.19666)
+* Synthesis Through Simulation: Generating Coherent Enterprise Data via Scalable Agent-System Interaction (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.10549)
 
 ## LLM4DB & Agent for DB
 * GaussMaster: An LLM-based Database Copilot System (arXiv 2025)
@@ -163,6 +165,16 @@ Table of Contents
 * Exploring the Semantic Gap in Agentic Data Systems: A Formative Study of Operationalization Failures in Analytical Workflows (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2607.00828)
 * DeepPrep: An LLM-Powered Agentic System for Autonomous Data Preparation (VLDB 2026) [DOI](https://doi.org/10.14778/3836663.3836695)
 * DataMosaic: An Interactive Demonstration of Constraint-Driven Document-to-Database Construction (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828068)
+* MongoBench: Do LLMs Know What a MongoDB Query Will Do? (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.09065)
+* DiagDBench: Evaluating Agentic LLMs on Interactive Database Diagnosis and Anomaly Remediation (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.07339)
+* Correctness Firewalls for Synthesized Database Components (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.05173)
+* Stop Handcrafting Your Engine! GenDB-V: Towards AI-Generated and Formally Verified Database Systems (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.02779)
+* Can LLM Agents Be Forward-Deployed Engineers? Requirement Discovery and Delivery for Enterprise Text-to-SQL (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.03551)
+* Conversational Query Engine for Mixed-Modality Heterogeneous Enterprise Data Sources (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2606.28370)
+* AI Data Analysis: A New Approach - Multi-engine Joint State Data Analysis (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.00807)
+* No Task Fails Every Time: Why One-Shot Audits Are Structurally Blind to Agent Damage (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2608.15286)
+* Policy-Aware Federated Query Orchestration Across Energy Data Spaces and Edge AI Services (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828089)
+* SemDistill: Bootstrapping a Low-Latency, Low-Cost Semantic Table Annotator from Noisy LLM (SIGMOD 2026) [DOI](https://doi.org/10.1145/3837124)
 
 ## Data Access
 ### Configuration Tuning
@@ -240,6 +252,7 @@ Table of Contents
 * On Self-Designing Learned Indexes (SIGMOD 2026) [DOI](https://doi.org/10.1145/3802096)
 * LMG index: a robust and efficient learned index framework for balancing multiple performance dimensions (VLDBJ 2026) [DOI](https://doi.org/10.1007/s00778-026-01014-1)
 * Synchronized Rebuilds:The Hidden Cost of Concurrent Inserts in Learned Indexes (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.33770)
+* Replace or Augment: Rethinking the Role of Learned Indexes in Relational Databases (VLDB 2026) [DOI](https://doi.org/10.14778/3845598.3845599)
 #### Index
 ##### Index Structure
 * Learning to hash for indexing big data - A survey (2016)
@@ -518,6 +531,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Divo: Learning a Stable and Effective Query Optimizer with a Diverse Workload (SIGMOD 2026)
 * E-LQO: A Comprehensive Energy Evaluation Framework for Learned Query Optimization (SIGMOD 2026) [DOI](https://doi.org/10.1145/3837107)
 * Concord: A Video Relational Algebra for Cross-Modal Query Optimization (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2609.05756)
+* Rethinking Query Optimization for Multi-Agent Systems (VLDB 2026) [DOI](https://doi.org/10.14778/3845598.3845602)
 
 ### Query Rewrite
 * Sia: Optimizing Queries using Learned Predicates (SIGMOD 2021)
@@ -671,6 +685,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * GRACEFUL: A Learned Cost Estimator For UDFs (arXiv 2025)
 * Cross-Database Query Cost Estimation: A Comparative Study of Classic ML, Transformers, and LLMs
 * Bootstrapping Learned Cost Models with Synthetic SQL Queries (arXiv 2025)
+* When Is One Query per Template Enough? Adapting Learned Cost Models to New Hardware (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.05892)
 
 #### Concurrent
 * PQR: Predicting query execution times for autonomous workload management （ICAC 2008）
@@ -828,6 +843,9 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * From Interpretation to Compilation: Compilation-Based Execution of Semantic Operators [Vision] (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2607.13407)
 * Larch: Learned Query Optimization for Semantic Predicates (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2606.07923)
 * QCATS: Query Context-Aware Transformer Slicing for Efficient Predictive Query Processing (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.09894)
+* Navigating Runtime Dynamism in Semantic Query Serving (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.04248)
+* KathDB-FAO: Optimizing Multimodal Queries through Operator Grouping and Code Reuse (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2609.28761)
+* Evergreen: Efficient Claim Verification for Semantic Aggregates (VLDB 2026) [DOI](https://doi.org/10.14778/3845598.3845600)
 ### Approximate Query Processing
 * DBEST: Revisiting approximate query processing engines with machine learning models (SIGMOD 2019)
 * LAQP: Learning-based Approximate Query Processing (2020)
@@ -1051,6 +1069,19 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * CityLLM: A framework for natural-language querying of semantic 3D city models (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2607.14542)
 * NOAH: A System For Analyzing Non-relational Tables With Natural Language (SIGMOD 2026) [DOI](https://doi.org/10.1145/3837120)
 * TACO: Token-Aware Context Optimization for Structured OpenStreetMap Query Generation (SIGMOD 2026) [DOI](https://doi.org/10.1145/3837126)
+* Enabling Privacy-Preserving Natural Language Access to Industrial Smart Meter Data (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.09372)
+* Text-to-SQL Models Make Choices Without Saying So (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.04318)
+* SQLoom: Set-Contrastive Learning of Syntactic, Semantic, and Logical Dependencies for Text-to-SQL (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.03298)
+* TSSDA: An Autonomous Agent for Constructing a Time-Series Text-to-SQL Benchmark (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.02132)
+* Self-Refining Prompt Induction for Streaming Text-to-SQL (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.00960)
+* GRIPS: An Empirical Study of Pre-SQL Grounding Information for SQL Generation (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.02314)
+* VCoT-SQL: Enhancing Text-to-SQL Generation through Dual Chain-of-Thought Validation Training (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.00815)
+* Conversational Interaction for LLM-Based Clinical Text-to-SQL: A User Study with Healthcare Professionals (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.00605)
+* HERO: Harnessing Evidence for Test-time Refinement and Prompt Optimization in Program Generation (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.19184)
+* Does a Governed Confidence Score Know When a Text-to-SQL Answer Is Right? An Exploratory Study on BIRD and a Pre-registered Confirmation on Spider (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.17256)
+* Never the Number: Structural Abstention for AI Systems Whose Answers Are Consumed as Fact (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2608.13926)
+* DRL: A Deterministic Relational Middleware Layer for Transaction-Safe Enterprise NL2SQL Under Schema-Graph Scaling (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2608.26172)
+* Text-to-SQL Evaluation Toolkit (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828071)
 
 ## SQL Related
 * Query2Vec (ArXiv)
@@ -1073,6 +1104,9 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Structure then Query: Enabling Precise Analytical Queries over Unstructured Documents (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2608.13384)
 * Beyond Tables: Doc2DB-Bench for Relationally Faithful Document-to-Database Construction (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2608.08459)
 * Prompt as a Data Type: In-Database LLM Prompt Management and Rewriting (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2607.21756)
+* From Research Questions to Columns: Operationalization-Aware Data Discovery (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2608.04536)
+* Bolt-on, Verifiable Provenance for LLM-Powered Data Processing (VLDB 2026) [DOI](https://doi.org/10.14778/3836663.3836668)
+* Qr-Hint: Formally Verified and AI-Explained SQL Tutoring (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828067)
 
 ## Stargazers over time
 
