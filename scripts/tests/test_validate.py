@@ -126,3 +126,56 @@ def test_restructure_rejects_edited_entry():
     new = new.replace("## Data Access", "## New Section\n" + moved.replace("2020", "2021") + "\n\n## Data Access")
     report = validate_restructure(old, new, ["## New Section"])
     assert not report.ok
+
+
+# --- validate_removal: deleting out-of-scope entries ----------------------
+
+def test_removal_of_planned_lines_is_ok():
+    from ml4db.validate import validate_removal
+    old = ("## A\n"
+           "* Keep Me (VLDB 2020) [DOI](https://doi.org/10.1/a)\n"
+           "* Drop Me (VLDB 2021) [DOI](https://doi.org/10.1/b)\n")
+    new = ("## A\n"
+           "* Keep Me (VLDB 2020) [DOI](https://doi.org/10.1/a)\n")
+    report = validate_removal(old, new, ["* Drop Me (VLDB 2021) [DOI](https://doi.org/10.1/b)"])
+    assert report.ok, report.errors
+    assert report.added == 1
+
+
+def test_removal_rejects_an_unplanned_deletion():
+    from ml4db.validate import validate_removal
+    old = ("## A\n"
+           "* Keep Me (VLDB 2020) [DOI](https://doi.org/10.1/a)\n"
+           "* Also Keep (VLDB 2021) [DOI](https://doi.org/10.1/b)\n")
+    new = "## A\n* Keep Me (VLDB 2020) [DOI](https://doi.org/10.1/a)\n"
+    report = validate_removal(old, new, [])  # plan says remove nothing
+    assert not report.ok
+
+
+def test_removal_rejects_added_lines():
+    from ml4db.validate import validate_removal
+    old = "## A\n* A Paper (VLDB 2020) [DOI](https://doi.org/10.1/a)\n"
+    new = ("## A\n* A Paper (VLDB 2020) [DOI](https://doi.org/10.1/a)\n"
+           "* Sneaky (VLDB 2021) [DOI](https://doi.org/10.1/b)\n")
+    report = validate_removal(old, new, [])
+    assert not report.ok
+    assert any("must not add" in e for e in report.errors)
+
+
+def test_removal_rejects_heading_changes():
+    from ml4db.validate import validate_removal
+    old = "## A\n* A Paper (VLDB 2020) [DOI](https://doi.org/10.1/a)\n"
+    new = "## A Renamed\n* A Paper (VLDB 2020) [DOI](https://doi.org/10.1/a)\n"
+    report = validate_removal(old, new, [])
+    assert not report.ok
+    assert any("heading" in e for e in report.errors)
+
+
+def test_removal_rejects_an_edited_entry():
+    from ml4db.validate import validate_removal
+    old = ("## A\n* A Paper (VLDB 2020) [DOI](https://doi.org/10.1/a)\n"
+           "* Other (VLDB 2021) [DOI](https://doi.org/10.1/b)\n")
+    # the surviving entry was silently reworded
+    new = "## A\n* A Paper (VLDB 2099) [DOI](https://doi.org/10.1/a)\n"
+    report = validate_removal(old, new, ["* Other (VLDB 2021) [DOI](https://doi.org/10.1/b)"])
+    assert not report.ok
