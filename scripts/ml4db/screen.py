@@ -17,22 +17,49 @@ from .config import Candidate
 
 ACCEPT, REJECT = "accept", "reject"
 
-SCOPE = """You are curating a paper list for AI4DB / ML4DB research — the intersection of
-machine learning and database systems.
+SCOPE = """You are curating a paper list for AI4DB / ML4DB: machine learning applied to
+database systems, and LLM/agent systems that operate or build database systems.
 
-IN SCOPE: learned query optimization, learned cardinality/cost estimation, learned
-indexes, knob/configuration tuning with ML, learned query execution and scheduling,
-workload forecasting and diagnosis, text-to-SQL, LLM/agent-for-DB (database copilots,
-LLM-assisted tuning, LLM4DB), learned storage/partitioning/materialized views.
+DECIDE BY THE OBJECT OF STUDY, NOT BY THE DATA.
+A paper is in scope only if a DATABASE SYSTEM (DBMS) is what the paper changes,
+operates, builds or measures: its query engine, optimizer, storage and index
+structures, transactions, catalog and schema, knobs, workload, physical design,
+or the act of running and maintaining a DBMS. Working "on tables" or "on data"
+is NOT sufficient. A paper whose real object is a business question, a dashboard,
+a data pipeline, an ontology, a semantic layer or an analytics answer is out of
+scope even when it reads relational data, writes SQL, and is published at
+VLDB/SIGMOD.
 
-OUT OF SCOPE (reject without hesitation): vector databases / vector search / ANN
-indexes, RAG, GraphRAG, knowledge-graph-only work, recommender systems, and papers
-that mention a database but contribute nothing about ML applied to database systems
-or DB systems supporting ML.
+IN SCOPE (each must still pass the object-of-study test above):
+- Learned DB components: cardinality/cost estimation, learned indexes and filters,
+  learned query optimization or rewriting, learned query execution and scheduling,
+  knob/configuration tuning, physical design, partitioning, materialized views,
+  buffer pool and caching, workload forecasting and diagnosis, learned storage.
+- Text-to-SQL / NL2SQL / NL2Cypher / NL2Query: mapping a natural-language question
+  to a database query language, plus its schema linking, benchmarks, verification
+  and error analysis.
+- LLM/agent for DBMS: database copilots, autonomous DBA agents, agents that
+  diagnose, tune, migrate or repair a DBMS, generate or repair SQL/schema/engine
+  code, and benchmarks that evaluate an LLM or agent ON database tasks.
 
-QUALITY BAR: a paper must plausibly be a systems or algorithms contribution that
-belongs in a database-systems reading list. Benchmarks, surveys and position papers
-are acceptable only if directly about the above topics.
+OUT OF SCOPE (reject even when the paper mentions SQL, tables or a database):
+- LLM/agent answering business or analytical questions over data while the DBMS is
+  not the object: BI and dashboard agents, "chat with your data", metric or
+  semantic layers, data catalogs, data discovery, data preparation and cleaning,
+  table/column annotation or documentation, ETL and data-engineering pipelines,
+  knowledge-graph or ontology construction, spreadsheet or document analytics.
+- Vector databases / vector search / ANN indexes, RAG, GraphRAG,
+  knowledge-graph-only work, recommender systems.
+- Incidental ML: a database systems paper that only mentions AI as motivation, or
+  an AI paper that only mentions databases as a convenient data source.
+
+QUALITY BAR: the paper must plausibly be a systems or algorithms contribution that
+belongs in a database-systems reading list. Benchmarks, surveys and position
+papers count only when they are about the above topics.
+
+FINAL TEST before accepting: would a database-systems researcher recognise this
+contribution as work on a database system? If the honest answer is "this is really
+an LLM/data-science paper that happens to use SQL", reject it.
 
 Pick the single best section for each accepted paper from the EXACT section list
 provided. Never invent a section name. If nothing fits, reject the paper.
@@ -186,22 +213,40 @@ JEV_URL = "https://api.defapi.org/api/v1/decisions"
 JEV_MODEL = "typesafe/jev-1.13"
 
 
+JEV_SCOPE_IN = (
+    "A database system is the object of the work: it changes, operates, builds or "
+    "measures a DBMS. Learned DB components (cardinality/cost estimation, learned "
+    "indexes or filters, learned query optimization/rewriting/execution, knob tuning, "
+    "physical design, materialized views, buffer pool, workload diagnosis); text-to-SQL "
+    "and other natural-language-to-query-language translation with its schema linking, "
+    "benchmarks and verification; LLM or agent systems acting ON a DBMS (copilots, "
+    "autonomous DBA agents, agents that diagnose/tune/migrate/repair a DBMS or generate "
+    "and repair SQL, schema or engine code); benchmarks evaluating LLMs or agents on "
+    "database tasks."
+)
+JEV_SCOPE_OUT = (
+    "The database is only a source of data and the real object is something else: BI or "
+    "dashboard agents, 'chat with your data', semantic or metric layers, data catalogs, "
+    "data discovery, data preparation/cleaning/annotation, ETL and data-engineering "
+    "pipelines, ontology or knowledge-graph construction, document or spreadsheet "
+    "analytics. Also out: vector databases/vector search/ANN, RAG, GraphRAG, "
+    "knowledge-graph-only work, recommender systems, and papers where ML is only "
+    "motivation or the database is only a convenience."
+)
+
+
 def _jev_questions(sections: list[tuple[str, str]], hints: dict | None = None) -> dict:
     return {
         "in_scope": {
             "type": "noul",
             "instructions": (
-                "Given the paper title, venue and abstract, is this paper about machine "
-                "learning applied to database systems, or about LLM/agent systems for "
-                "databases, in the way a database-systems reading list would collect it?"
+                "Is a DATABASE SYSTEM the object of this work, so that a database-systems "
+                "reading list on AI4DB / LLM4DB should collect it? Judge the object of "
+                "study, not whether relational data or SQL appears. If the honest answer "
+                "is 'this is an LLM or data-science paper that happens to use SQL', the "
+                "answer is false."
             ),
-            "criteria": {
-                "true": "Learned query optimization, cardinality/cost estimation, learned "
-                        "indexes, knob tuning, learned execution/scheduling, text-to-SQL, "
-                        "LLM4DB / agent-for-DB, learned physical design.",
-                "false": "Vector search or RAG, GraphRAG, knowledge-graph-only, recommender "
-                         "systems, or a database systems paper that applies no ML.",
-            },
+            "criteria": {"true": JEV_SCOPE_IN, "false": JEV_SCOPE_OUT},
         },
         "section": {
             "type": "choice",
