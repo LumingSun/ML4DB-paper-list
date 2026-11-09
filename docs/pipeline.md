@@ -21,7 +21,7 @@
 筛选后端二选一（仓库 Variable `SCREENER`）：
 
 - `llm`（默认）：OpenAI 兼容 chat 接口，需要 Secret `LLM_API_KEY`；批量送 prompt，一次判 8–12 条。
-- `jev`：TypeSafe Jev-1.13 decision 模型（`/api/v1/decisions`），需要 Secret `JEV_API_KEY`；
+- `jev`：TypeSafe Jev-1.14 decision 模型（`/api/v1/decisions`），需要 Secret `JEV_API_KEY`；
   每条论文一个请求，`in_scope` / `ai_core` / `notable` 用 noul 概率，`section` 用 choice，返回置信度。
   更便宜更快，但会多收增量式论文。
 - `double`（双层确认，需同时配 `LLM_API_KEY` 和 `JEV_API_KEY`）：两个后端独立判断，

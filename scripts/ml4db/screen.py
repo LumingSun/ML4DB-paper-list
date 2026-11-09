@@ -210,7 +210,7 @@ def batches(cands: list[Candidate], size: int) -> list[list[Candidate]]:
 # --------------------------------------------------------------------------
 
 JEV_URL = "https://api.defapi.org/api/v1/decisions"
-JEV_MODEL = "typesafe/jev-1.13"
+JEV_MODEL = "typesafe/jev-1.14.0"
 
 
 JEV_SCOPE_IN = (
