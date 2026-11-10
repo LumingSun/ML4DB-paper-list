@@ -25,7 +25,7 @@ from .readme import (delete_lines, insert_entries, parse_entries, parse_sections
                      section_choices)
 from .normalize import normalize_title
 from .validate import (duplicate_titles, removed_lines, validate_additions,
-                       validate_cleanup)
+                       validate_cleanup, validate_removal)
 
 
 def _load(path: str) -> list[Candidate]:
@@ -268,6 +268,72 @@ def cmd_cleanup(args) -> None:
     print(f"opened {url}")
 
 
+def cmd_remove(args) -> None:
+    """Delete entries by title, as planned by a scope audit.
+
+    The audit report is the input: it says which lines are out of scope and why.
+    This command re-locates each title in the current README (line numbers in a
+    report go stale as soon as master moves), refuses if a title is missing or
+    ambiguous, and validates that nothing except the planned lines changed.
+    """
+    plan = json.loads(Path(args.plan).read_text(encoding="utf-8"))
+    items = plan["removals"] if isinstance(plan, dict) else plan
+    readme_text = cfgmod.README.read_text(encoding="utf-8")
+    entries = parse_entries(readme_text)
+    by_title: dict[str, list] = {}
+    for e in entries:
+        by_title.setdefault(normalize_title(e.title), []).append(e)
+
+    remove_idx: list[int] = []
+    expected: list[str] = []
+    problems: list[str] = []
+    for item in items:
+        key = normalize_title(item["title"])
+        hits = by_title.get(key, [])
+        if not hits:
+            problems.append(f"not found: {item['title'][:80]}")
+            continue
+        if len(hits) > 1 and not item.get("allow_duplicates"):
+            problems.append(f"{len(hits)} matches: {item['title'][:80]}")
+            continue
+        for e in hits:
+            remove_idx.append(e.line_idx)
+            expected.append(e.raw)
+    if problems:
+        raise SystemExit("plan does not match the README:\n- " + "\n- ".join(problems))
+    if not remove_idx:
+        raise SystemExit("nothing to remove")
+
+    new_text = delete_lines(readme_text, remove_idx)
+    report = validate_removal(readme_text, new_text, expected)
+    report.raise_if_bad()
+
+    counts = Counter(item.get("artifact", "?") for item in items)
+    body = args.body_file and Path(args.body_file).read_text(encoding="utf-8")
+    if not body:
+        body = "\n".join([
+            "## 删除范围外的条目",
+            "",
+            f"按 `{Path(args.plan).name}` 删除 **{len(expected)}** 条：这些论文只是读写了关系型数据，"
+            "研究对象不是数据库系统（分析结论、元数据、看板、数据产品），不属于 AI4DB / LLM4DB。",
+            "",
+            "| 研究对象 | 条数 |",
+            "| --- | --- |",
+            *[f"| {k} | {v} |" for k, v in counts.most_common()],
+            "",
+            "逐条理由见审查报告。除此之外没有任何改动：不新增、不改格式、不调整分类。",
+        ])
+    if args.dry_run or not args.pr:
+        out = Path(args.out) if args.out else data_dir() / "README.removed.md"
+        out.write_text(new_text, encoding="utf-8")
+        print(f"removal validation ok: {report.added} entries; wrote {out}")
+        print(body)
+        return
+    url = open_pr(f"auto/remove-{args.slug}", {Path("README.md"): new_text},
+                  args.title, body, labels=["cleanup"])
+    print(f"opened {url}")
+
+
 def _title_of(line: str) -> str:
     from .normalize import ENTRY_RE
     m = ENTRY_RE.match(line)
@@ -347,6 +413,16 @@ def main(argv: list[str] | None = None) -> None:
     c.add_argument("--title", default="[Cleanup] 清理 README 中的重复条目")
     c.add_argument("--body-file", help="use this markdown as the PR body")
     c.set_defaults(func=cmd_cleanup)
+
+    rm = sub.add_parser("remove")
+    rm.add_argument("--plan", required=True, help="JSON with a removals list of {title, artifact, reason}")
+    rm.add_argument("--dry-run", action="store_true")
+    rm.add_argument("--pr", action="store_true")
+    rm.add_argument("--out")
+    rm.add_argument("--slug", default="run")
+    rm.add_argument("--title", default="[Cleanup] 删除范围外的条目")
+    rm.add_argument("--body-file", help="use this markdown as the PR body")
+    rm.set_defaults(func=cmd_remove)
 
     args = p.parse_args(argv)
     args.func(args)

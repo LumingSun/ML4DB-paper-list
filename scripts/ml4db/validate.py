@@ -154,3 +154,41 @@ def validate_restructure(old: str, new: str, expected_added: list[str]) -> Repor
     if before != after:
         errors.append("entry multiset changed: some paper was lost or altered")
     return Report(ok=not errors, errors=errors, warnings=[], added=len(added_entries))
+
+
+def validate_removal(old: str, new: str, expected_removed: list[str]) -> Report:
+    """Deleting whole entry lines by title is allowed -- nothing else is.
+
+    Distinct from validate_cleanup, which removes *duplicate* lines and then
+    requires that no duplicates remain.  Here the lines are removed because the
+    papers are out of scope, so duplicates are irrelevant; the invariants are
+    that exactly the intended lines go, nothing is added, no heading moves, and
+    no surviving entry is altered.
+    """
+    errors: list[str] = []
+    added = [l for l in added_lines(old, new) if l.strip()]
+    if added:
+        errors.append(f"removal must not add lines: {added[:2]}")
+    removed = [l for l in removed_lines(old, new) if l.strip()]
+    if Counter(removed) != Counter(expected_removed):
+        missing = list((Counter(expected_removed) - Counter(removed)).elements())
+        extra = list((Counter(removed) - Counter(expected_removed)).elements())
+        errors.append(f"removed lines do not match the plan; missing={missing[:2]} extra={extra[:2]}")
+    if _headings(old) != _headings(new):
+        errors.append("section headings or table of contents were modified")
+    before = Counter(normalize_title(e.title) for e in parse_entries(old))
+    after = Counter(normalize_title(e.title) for e in parse_entries(new))
+    expected_after = before - Counter(
+        normalize_title(_title_of_line(l)) for l in expected_removed)
+    if after != expected_after:
+        errors.append("entry multiset changed beyond the planned removals")
+    return Report(ok=not errors, errors=errors, warnings=[], added=len(expected_removed))
+
+
+def _title_of_line(line: str) -> str:
+    m = NEW_ENTRY_RE.match(line)
+    if m:
+        return m.group("title")
+    from .normalize import ENTRY_RE
+    m2 = ENTRY_RE.match(line)
+    return m2.group("body").strip() if m2 else line
