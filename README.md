@@ -115,6 +115,7 @@ Table of Contents
 * Bridging LLMs and Database Systems: A Deep Dive into Enhanced Relational Operators (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828141)
 * Semantic Data Systems: From Data Management to Data Understanding (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3838712)
 * VLDB S.I.: harnessing the power of foundation models for data management (VLDBJ 2026) [DOI](https://doi.org/10.1007/s00778-026-01009-y)
+* Benchmarking Native In-Database TPCx-AI at 100 Terabytes in Ocient Hyperscale Data Warehouse: An Eight-Use-Case Study of Classical and Statistical ML on Relational Primitives (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828022)
 ### Training Data Collection
 * Expand your Training Limits! Generating Training Data for ML-based Data Management (SIGMOD 2021)
 * DataFarm: Farm Your ML-based Query Optimizer's Food! - Human-Guided Training Data Generation -. (CIDR 2022)
@@ -155,6 +156,11 @@ Table of Contents
 * Correctness Firewalls for Synthesized Database Components (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.05173)
 * Stop Handcrafting Your Engine! GenDB-V: Towards AI-Generated and Formally Verified Database Systems (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.02779)
 * Policy-Aware Federated Query Orchestration Across Energy Data Spaces and Edge AI Services (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828089)
+* Does a Self-Learning Migration Agent Learn? An Audited Evaluation of Evidence-Graded Experience Memory for Oracle-to-PostgreSQL Migration (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.16143)
+* From Token Bills to Benchmark Weeks: Making Auto-Research for Data Systems Verifiable and Affordable (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.12063)
+* SpBench: An Agent-Native Framework for Cross-Engine Lakehouse Benchmarking (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.00449)
+* Leakage-Resistant Evaluation of AI-Generated Database Specifications in Specification-Driven Migration (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.12778)
+* Where LLM Agents Get Stuck Debugging Databases: Access More Than Reasoning (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.17304)
 
 ## Data Access
 ### Configuration Tuning
@@ -233,6 +239,8 @@ Table of Contents
 * LMG index: a robust and efficient learned index framework for balancing multiple performance dimensions (VLDBJ 2026) [DOI](https://doi.org/10.1007/s00778-026-01014-1)
 * Synchronized Rebuilds:The Hidden Cost of Concurrent Inserts in Learned Indexes (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.33770)
 * Replace or Augment: Rethinking the Role of Learned Indexes in Relational Databases (VLDB 2026) [DOI](https://doi.org/10.14778/3845598.3845599)
+* SAIL: Self-Adaptive Index Learning with Hybrid Models (Extended Version) (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.13856)
+* Accelerating String-Heavy Queries with LLM Token Tables (VLDB 2026) [DOI](https://doi.org/10.14778/3836663.3836714)
 #### Index
 ##### Index Structure
 * Learning to hash for indexing big data - A survey (2016)
@@ -422,6 +430,7 @@ Table of Contents
 * EcoTable: Cost-Effective Table Integration in Data Lakes for Natural Language Queries (VLDB 2026) [DOI](https://doi.org/10.14778/3836663.3836664)
 * Can LLMs Normalize Databases? A Benchmark and Multi-Agent Framework for Schema Normalization (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2609.11141)
 * The Case for Text-to-SQL Friendly Logical Database Design (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2606.03145)
+* [Experiment, Analysis, and Benchmark] How well do LLMs comprehend and design relational database schemata? (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.17044)
 
 ### Cache related
 * A Learned Cache Eviction Framework with Minimal Overhead (arXiv 2023)
@@ -451,6 +460,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Forecasting Algorithms for Intelligent Resource Scaling: An Experimental Analysis (Socc 2024)
 * LORE: Learning-Based Resource Recommendation for Big Data Queries (ICDE 2025)
 * ScaleSense: Cost-Intelligent Scaling Framework via Learned Resource Estimation in Alibaba AnalyticDB (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828016)
+* IMLane: Composable Framework for Efficient AI Function Execution in Database Engine (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828028)
 
 ### Performance Diagnosis and Modeling
 
@@ -1050,6 +1060,14 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * Never the Number: Structural Abstention for AI Systems Whose Answers Are Consumed as Fact (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2608.13926)
 * DRL: A Deterministic Relational Middleware Layer for Transaction-Safe Enterprise NL2SQL Under Schema-Graph Scaling (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2608.26172)
 * Text-to-SQL Evaluation Toolkit (VLDB 2026) [DOI](https://doi.org/10.14778/3827998.3828071)
+* MEM-SQL: Memory-Empowered Text-to-SQL (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.18338)
+* LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.17780)
+* Bridge: Database-Grounded Interactive Disambiguation for Text-to-SQL (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.17770)
+* FlinkEval: A Synthetic Corpus for Evaluating Natural Language Interfaces to Streaming SQL (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.17093)
+* FERN: Cross-Benchmark Table Retrieval for Text-to-SQL with Frozen Retrievers and Learned Ranking (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.14477)
+* NIFT-SQL: Customer-Supervised Table Scoring for Enterprise Text-to-SQL Retrieval (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.12731)
+* Verifying Text-to-SQL Queries under Changing Business Semantics (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.41090)
+* Which Part of the Context Layer Does the Work? Separating Semantic Content from Retrieval Scaffolding in Text-to-SQL Agents (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2609.22259)
 
 ## SQL Related
 * Query2Vec (ArXiv)
