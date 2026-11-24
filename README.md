@@ -161,6 +161,7 @@ Table of Contents
 * SpBench: An Agent-Native Framework for Cross-Engine Lakehouse Benchmarking (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.00449)
 * Leakage-Resistant Evaluation of AI-Generated Database Specifications in Specification-Driven Migration (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.12778)
 * Where LLM Agents Get Stuck Debugging Databases: Access More Than Reasoning (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.17304)
+* DataTrace: Benchmarking Data Agents for Evidence-Grounded Root-Cause Localization (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.18926)
 
 ## Data Access
 ### Configuration Tuning
@@ -501,6 +502,7 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * QPSEncoder: A Database Workload Encoder with Deep Learning (DEXA 2024)
 * From Feature Selection to Resource Prediction: An Analysis of Commonly Applied Workflows and Techniques (EDBT 2025)
 * Are Learned DBMS Components Robust to Workload Drift?: [Experiments & Analysis] (SIGMOD 2026) [DOI](https://doi.org/10.1145/3802014)
+* HyperDBDiag: Multi-Root-Cause Identification and Operator-Level Localization for Database Performance Anomalies (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.19241)
 
 ## Query Optimization
 * Learned Query Optimizer: What is New and What is Next (SIGMOD 2024)
@@ -1068,6 +1070,12 @@ Demonstrating SQLBarber: Leveraging Large Language Models to Generate Customized
 * NIFT-SQL: Customer-Supervised Table Scoring for Enterprise Text-to-SQL Retrieval (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.12731)
 * Verifying Text-to-SQL Queries under Changing Business Semantics (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2610.41090)
 * Which Part of the Context Layer Does the Work? Separating Semantic Content from Retrieval Scaffolding in Text-to-SQL Agents (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2609.22259)
+* AskWise: Execution-Guided Clarification of Intent and Data in Text-to-SQL (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.27474)
+* MoL-SQL: A Controlled Benchmark for Mixture-of-Language Text-to-SQL (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.22333)
+* Adaptive-Elbow Graph Traversal for Schema Retrieval in Text-to-SQL (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.20979)
+* Optimizing Query Decomposition for Reliable Validation (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.20511)
+* Asking What Matters: Disagreement-Guided Ambiguity Detection for Interactive Text-to-SQL (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.21645)
+* Know Your Context Bank: Repairing Inconsistency and Measuring Generalization in Context-Aware Text-to-SQL (arXiv 2026) [[arXiv]](https://arxiv.org/abs/2611.26775)
 
 ## SQL Related
 * Query2Vec (ArXiv)
